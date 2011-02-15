@@ -1,21 +1,26 @@
 Source: libgtextutils
+Section: science
 Priority: optional
-Maintainer: Charles Plessy <plessy@debian.org>
+Maintainer: Debian Med Packaging Team <debian-med-packaging@lists.alioth.debian.org>
+DM-Upload-Allowed: yes
+Uploaders: Charles Plessy <plessy@debian.org>
 Build-Depends: debhelper (>= 8), autotools-dev
-Standards-Version: 3.8.3
-Section: libs
+Standards-Version: 3.9.1
+Vcs-Browser: http://git.debian.org/?p=debian-med/libgtextutils.git
+Vcs-Git: git://git.debian.org/git/debian-med/libgtextutils.git
 Homepage: http://hannonlab.cshl.edu/fastx_toolkit/
 
 Package: libgtextutils-dev
 Section: libdevel
 Architecture: any
 Depends: libgtextutils0 (= ${binary:Version}), ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Description: Gordon Text_utils library (development files)
+ Development files for the Gordon Text_utils (gtextutils) library.
 
 Package: libgtextutils0
 Section: libs
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Description: Gordon Text_utils library
+ The Gordon Text_utils (gtextutils) library is a text utilities library used by
+ the FASTX-Toolkit, a suite of programs for biological sequence analysis. 
