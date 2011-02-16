@@ -1,0 +1,57 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Format: 1.8
+Date: Wed, 16 Feb 2011 12:35:53 +0900
+Source: libgtextutils
+Binary: libgtextutils-dev libgtextutils0
+Architecture: source amd64
+Version: 0.6-1
+Distribution: unstable
+Urgency: low
+Maintainer: Debian Med Packaging Team <debian-med-packaging@lists.alioth.debian.org>
+Changed-By: Charles Plessy <plessy@debian.org>
+Description: 
+ libgtextutils-dev - Gordon Text_utils library (development files)
+ libgtextutils0 - Gordon Text_utils library
+Closes: 613486
+Changes: 
+ libgtextutils (0.6-1) unstable; urgency=low
+ .
+   * Initial release (Closes: #613486)
+Checksums-Sha1: 
+ ffdfb69340d32a60158d8c2e71989b48ecb2fa2d 1943 libgtextutils_0.6-1.dsc
+ ca354ab5b8b191e5942c959f0bb5d7c430f0615c 344115 libgtextutils_0.6.orig.tar.gz
+ 87ea0783c08903c73950367cdae6ec94207be030 13935 libgtextutils_0.6-1.diff.gz
+ a14e3d5eb87ab25062c958f175fef629ee024fc1 25266 libgtextutils-dev_0.6-1_amd64.deb
+ 80d1842880bb3799a8b382d30ee9443ced6a9502 21000 libgtextutils0_0.6-1_amd64.deb
+Checksums-Sha256: 
+ 786939f5069f8902b2761b64c6b5d7162da00570538dcfeafde9f68668ff18fb 1943 libgtextutils_0.6-1.dsc
+ 9a409c98c1550f0dcf54e3b44f971fd21dbd6daedaacd61c4174b0b94ab0fe8e 344115 libgtextutils_0.6.orig.tar.gz
+ 6a77367e0b88b8edee8593dbcb8c9c84ee66cc87bf9a16ed3aad0737a06f62a7 13935 libgtextutils_0.6-1.diff.gz
+ 046651a5f619719c3fe9ac41e211ac16f66eedd47fe27b3cbd77a6882ce13b0f 25266 libgtextutils-dev_0.6-1_amd64.deb
+ ea103343966c468835d2aa2ef9c525343ecfb7c9c274a65c630d1eb87891a981 21000 libgtextutils0_0.6-1_amd64.deb
+Files: 
+ 3149399d0e06850a5bc63b0a72cecaae 1943 science optional libgtextutils_0.6-1.dsc
+ a58711bce12b5d164175d2b6aed7e536 344115 science optional libgtextutils_0.6.orig.tar.gz
+ 7473c00047ee0f4b8ee2f04609c2dc90 13935 science optional libgtextutils_0.6-1.diff.gz
+ 950f4d8d4af00bfa7fb9ebafa1d6a6b8 25266 libdevel optional libgtextutils-dev_0.6-1_amd64.deb
+ 19528260cd602801e17c3017f1e98f4e 21000 libs optional libgtextutils0_0.6-1_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.10 (GNU/Linux)
+
+iQIcBAEBCAAGBQJNW0ksAAoJEMW9bI8ildUCVK8P/3S0krz0XusyznWGyqVTFuAO
+gq/NgSjNDz++1f71UqCDup2vsDCjNyyN4bh95XghTOSKiypc1kqfYm2QVLJgsaHx
+LuLtBKeJte0Zjc1tWdVj+Dzmf5qGJe589GW70GKbkOmls2i6vZuv73a238W1PKJS
+lJMl777J0Y5aJ8AjCYt1SPMIBCAd0fd5et6LpGhy67SFFEzZynEsv34RDJ/EjDqJ
+1FIqKbeYiZoRnGRHkpLlfg6+wkpKAYbhvsxoFdW0w48zO79S2Z2/SfZeYV6EUqnE
+hcqmxaoNz+kM79MNuF4Osgttcd1QJ4Gs6unpJy4KwkWqgdJiDAePNoRDLuQTqjNF
+NKWZtdLH/ftZKaZV7tYSq8BW8VSfh7FCIt+h4GigXDZ5gIysqqMCpZ/pRsVmgcyC
+homCar9XFmJMsubtp8TPqgcEHHM20bPrkUPEt2bbdeS5soghG+8S+O0gGcVdflCj
+W4K2VuiswaMjGHhNRpLbuTdyy12Ldts2uUnTm2ov/9gBANlU478egVv82fKvdZLJ
+LcIyn976SpasyC0DJQ1iLszpKTCgweiVbQ9KIYjdfKhaxGIrcz+Awf/GpGu5U0f9
+8MGEuZ9/pN0bzc/Q6Ebf4TizR58p0LfHtEZdw4GxJ3NJTEJTIRgPlE+Vsxp8BrM6
+We/yOm1/9quoQzNS33fZ
+=vSW6
+-----END PGP SIGNATURE-----
