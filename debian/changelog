@@ -1,5 +1,5 @@
-libgtextutils (0.6-1) UNRELEASED; urgency=low
+libgtextutils (0.6-1) unstable; urgency=low
 
-  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+  * Initial release (Closes: #613486)
 
- -- Charles Plessy <plessy@debian.org>  Mon, 13 Jul 2009 13:16:17 +0900
+ -- Charles Plessy <plessy@debian.org>  Wed, 16 Feb 2011 12:35:53 +0900

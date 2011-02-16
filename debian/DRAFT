@@ -1,5 +1,0 @@
-This package is a draft. Everybody is welcome to polish it and make
-it suitable for upload in Debian.
-
-libgtextutils is a simple library needed for packaging FASTX-Toolkit. Upstream
-was interested in participating, but may be too busy…
