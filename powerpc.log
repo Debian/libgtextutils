@@ -1,0 +1,855 @@
+From buildd@poulenc.debian.org Sat Apr 09 15:41:33 2011
+Return-path: <buildd@poulenc.debian.org>
+Received: from kokkonen.debian.org ([2001:41b8:202:deb:216:35ff:fec4:6340])
+	from C=NA, ST=NA, L=Ankh Morpork, O=Debian SMTP, OU=Debian SMTP CA,
+	CN=kokkonen.debian.org,
+	EMAIL=hostmaster@kokkonen.debian.org (verified)
+	by grieg.debian.org with esmtps (TLS1.0:RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.69) (envelope-from <buildd@poulenc.debian.org>)
+	id 1Q8aI1-000067-9u
+	for logs@buildd.debian.org; Sat, 09 Apr 2011 15:41:33 +0000
+Received: from poulenc.ynic.york.ac.uk ([144.32.168.77]
+	helo=poulenc.debian.org)
+	from C=NA, ST=NA, L=Ankh Morpork, O=Debian SMTP, OU=Debian SMTP CA,
+	CN=poulenc.debian.org, EMAIL=hostmaster@poulenc.debian.org (verified)
+	by kokkonen.debian.org with esmtps (TLS1.0:RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.69) (envelope-from <buildd@poulenc.debian.org>)
+	id 1Q8aHx-0005H0-8T; Sat, 09 Apr 2011 15:41:29 +0000
+Received: from buildd by poulenc.debian.org with local (Exim 4.69)
+	(envelope-from <buildd@poulenc.debian.org>)
+	id 1Q8aHv-00084P-A6; Sat, 09 Apr 2011 15:41:27 +0000
+MIME-Version: 1.0
+Content-Transfer-Encoding: binary
+X-Mailer: MIME::Lite 3.021 (F2.76; B3.07_01; Q3.07)
+Date: Sat, 9 Apr 2011 15:41:27 +0000
+From: buildd on poulenc <buildd@poulenc.debian.org>
+To: phil+buildd@philkern.de,logs@buildd.debian.org
+Subject: Log for successful build of libgtextutils_0.6-1 on powerpc (dist=sid)
+Key-Id: 205E9E83
+Message-Id: <E1Q8aHv-00084P-A6@poulenc.debian.org>
+Delivered-To: logs@buildd.debian.org
+
+sbuild (Debian sbuild) 0.61.0 (23 Feb 2011) on poulenc.debian.org
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ libgtextutils 0.6-1 (powerpc)                              09 Apr 2011 15:39 ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+Package: libgtextutils
+Version: 0.6-1
+Source Version: 0.6-1
+Architecture: powerpc
+Get:1 http://ftp.uk.debian.org unstable InRelease [186 kB]
+Get:2 http://ftp.uk.debian.org unstable/main Sources [5228 kB]
+Get:3 http://incoming.debian.org unstable InRelease [186 kB]
+Ign http://incoming.debian.org  InRelease
+Get:4 http://ftp.uk.debian.org unstable/contrib Sources [48.5 kB]
+Get:5 http://incoming.debian.org  Release.gpg [836 B]
+Get:6 http://ftp.uk.debian.org unstable/non-free Sources [98.4 kB]
+Get:7 http://ftp.uk.debian.org unstable/main powerpc Packages [7034 kB]
+Get:8 http://incoming.debian.org unstable/main Sources [5240 kB]
+Get:9 http://ftp.uk.debian.org unstable/contrib powerpc Packages [52.4 kB]
+Ign http://ftp.uk.debian.org unstable/contrib TranslationIndex
+Get:10 http://ftp.uk.debian.org unstable/main TranslationIndex [2264 B]
+Ign http://ftp.uk.debian.org unstable/contrib Translation-en
+Get:11 http://incoming.debian.org unstable/contrib Sources [48.5 kB]
+Get:12 http://incoming.debian.org unstable/non-free Sources [98.4 kB]
+Get:13 http://incoming.debian.org unstable/main powerpc Packages [7039 kB]
+Get:14 http://incoming.debian.org unstable/contrib powerpc Packages [52.4 kB]
+Ign http://incoming.debian.org unstable/contrib TranslationIndex
+Get:15 http://incoming.debian.org unstable/main TranslationIndex [2264 B]
+Get:16 http://incoming.debian.org  Release [1604 B]
+Get:17 http://incoming.debian.org  Sources [35.8 kB]
+Get:18 http://incoming.debian.org  Packages [384 kB]
+Ign http://incoming.debian.org unstable/contrib Translation-en
+Ign http://incoming.debian.org  Translation-en
+Fetched 25.7 MB in 24s (1064 kB/s)
+Reading package lists...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Fetch source files                                                           │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+Check APT
+─────────
+
+Checking available source versions...
+
+Download source files with APT
+──────────────────────────────
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+NOTICE: 'libgtextutils' packaging is maintained in the 'Git' version control system at:
+git://git.debian.org/git/debian-med/libgtextutils.git
+Need to get 360 kB of source archives.
+Get:1 http://incoming.debian.org/debian/ unstable/main libgtextutils 0.6-1 (dsc) [1943 B]
+Get:2 http://incoming.debian.org/debian/ unstable/main libgtextutils 0.6-1 (tar) [344 kB]
+Get:3 http://incoming.debian.org/debian/ unstable/main libgtextutils 0.6-1 (diff) [13.9 kB]
+Fetched 360 kB in 1s (329 kB/s)
+Download complete and in download only mode
+
+Check arch
+──────────
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Install core build dependencies (internal resolver)                          │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Build-Depends: build-essential, fakeroot
+Checking for already installed dependencies...
+build-essential: already installed (11.5)
+fakeroot: already installed (1.15-1)
+Checking for dependency conflicts...
+Installing positive dependencies: 
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following packages were automatically installed and are no longer required:
+  libppl7 libppl-c2
+Use 'apt-get autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 20 not upgraded.
+Removing negative dependencies: 
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following packages were automatically installed and are no longer required:
+  libppl7 libppl-c2
+Use 'apt-get autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 20 not upgraded.
+Checking correctness of dependencies...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Install libgtextutils build dependencies (internal resolver)                 │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Build-Depends: base-files, base-passwd, bash, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, ncurses-base, ncurses-bin, perl-base, sed, login, sysvinit-utils, sysvinit, tar, bsdutils, mount, util-linux, libc6-dev | libc-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), debhelper (>= 8), autotools-dev
+Checking for already installed dependencies...
+base-files: already installed (6.1)
+base-passwd: already installed (3.5.22)
+bash: already installed (4.1-3)
+coreutils: already installed (8.5-1)
+dash: already installed (0.5.5.1-7.4)
+debianutils: already installed (3.4.4)
+diffutils: already installed (1:3.0-1)
+dpkg: already installed (1.15.8.10)
+e2fsprogs: already installed (1.41.12-2)
+findutils: already installed (4.4.2-1+b1)
+grep: already installed (2.6.3-3)
+gzip: already installed (1.3.12-9)
+hostname: already installed (3.06)
+ncurses-base: already installed (5.8-1)
+ncurses-bin: already installed (5.8-1)
+perl-base: already installed (5.10.1-18)
+sed: already installed (4.2.1-9)
+login: already installed (1:4.1.4.2+svn3283-3)
+sysvinit-utils: already installed (2.88dsf-13.1)
+sysvinit: already installed (2.88dsf-13.1)
+tar: already installed (1.25-3)
+bsdutils: already installed (1:2.17.2-9.1)
+mount: already installed (2.17.2-9.1)
+util-linux: already installed (2.17.2-9.1)
+libc6-dev: already installed (2.11.2-11)
+gcc: already installed (4:4.5.2-4 >= 4:4.4.3 is satisfied)
+g++: already installed (4:4.5.2-4 >= 4:4.4.3 is satisfied)
+make: already installed (3.81-8)
+dpkg-dev: already installed (1.15.8.10 >= 1.13.5 is satisfied)
+debhelper: missing
+Using default version 8.1.3
+autotools-dev: missing
+Checking for dependency conflicts...
+Installing positive dependencies: debhelper autotools-dev
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following packages were automatically installed and are no longer required:
+  libppl7 libppl-c2
+Use 'apt-get autoremove' to remove them.
+The following extra packages will be installed:
+  bsdmainutils dpkg-dev file gettext gettext-base groff-base html2text
+  intltool-debian libcroco3 libdpkg-perl libglib2.0-0 libmagic1 libpcre3
+  libpipeline1 libunistring0 libxml2 man-db po-debconf
+Suggested packages:
+  wamerican wordlist whois vacation dh-make debian-keyring gettext-doc groff
+  less www-browser libmail-box-perl
+Recommended packages:
+  libalgorithm-merge-perl curl wget lynx-cur autopoint libglib2.0-data
+  shared-mime-info xml-core libmail-sendmail-perl
+The following NEW packages will be installed:
+  autotools-dev bsdmainutils debhelper file gettext gettext-base groff-base
+  html2text intltool-debian libcroco3 libglib2.0-0 libmagic1 libpcre3
+  libpipeline1 libunistring0 libxml2 man-db po-debconf
+The following packages will be upgraded:
+  dpkg-dev libdpkg-perl
+2 upgraded, 18 newly installed, 0 to remove and 18 not upgraded.
+Need to get 10.8 MB of archives.
+After this operation, 28.3 MB of additional disk space will be used.
+Get:1 http://ftp.uk.debian.org/debian/ unstable/main bsdmainutils powerpc 8.2.2 [209 kB]
+Get:2 http://ftp.uk.debian.org/debian/ unstable/main groff-base powerpc 1.21-5 [1189 kB]
+Get:3 http://ftp.uk.debian.org/debian/ unstable/main libpipeline1 powerpc 1.2.0-1 [37.2 kB]
+Get:4 http://ftp.uk.debian.org/debian/ unstable/main man-db powerpc 2.5.9-4 [1001 kB]
+Get:5 http://ftp.uk.debian.org/debian/ unstable/main libmagic1 powerpc 5.04-5 [241 kB]
+Get:6 http://ftp.uk.debian.org/debian/ unstable/main file powerpc 5.04-5 [49.9 kB]
+Get:7 http://ftp.uk.debian.org/debian/ unstable/main gettext-base powerpc 0.18.1.1-3 [141 kB]
+Get:8 http://ftp.uk.debian.org/debian/ unstable/main libpcre3 powerpc 8.12-3 [258 kB]
+Get:9 http://ftp.uk.debian.org/debian/ unstable/main libxml2 powerpc 2.7.8.dfsg-2 [849 kB]
+Get:10 http://ftp.uk.debian.org/debian/ unstable/main autotools-dev powerpc 20100122.1 [71.9 kB]
+Get:11 http://ftp.uk.debian.org/debian/ unstable/main dpkg-dev powerpc 1.16.0.1 [871 kB]
+Get:12 http://ftp.uk.debian.org/debian/ unstable/main libdpkg-perl powerpc 1.16.0.1 [748 kB]
+Get:13 http://ftp.uk.debian.org/debian/ unstable/main html2text powerpc 1.3.2a-15 [105 kB]
+Get:14 http://ftp.uk.debian.org/debian/ unstable/main libglib2.0-0 powerpc 2.28.4-1 [1601 kB]
+Get:15 http://ftp.uk.debian.org/debian/ unstable/main libcroco3 powerpc 0.6.2-1 [128 kB]
+Get:16 http://ftp.uk.debian.org/debian/ unstable/main libunistring0 powerpc 0.9.3-3 [422 kB]
+Get:17 http://ftp.uk.debian.org/debian/ unstable/main gettext powerpc 0.18.1.1-3 [2046 kB]
+Get:18 http://ftp.uk.debian.org/debian/ unstable/main intltool-debian powerpc 0.35.0+20060710.1 [30.8 kB]
+Get:19 http://ftp.uk.debian.org/debian/ unstable/main po-debconf powerpc 1.0.16+nmu1 [223 kB]
+Get:20 http://ftp.uk.debian.org/debian/ unstable/main debhelper powerpc 8.1.3 [554 kB]
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 10.8 MB in 2s (4348 kB/s)
+Selecting previously deselected package bsdmainutils.
+(Reading database ... 10241 files and directories currently installed.)
+Unpacking bsdmainutils (from .../bsdmainutils_8.2.2_powerpc.deb) ...
+Selecting previously deselected package groff-base.
+Unpacking groff-base (from .../groff-base_1.21-5_powerpc.deb) ...
+Selecting previously deselected package libpipeline1.
+Unpacking libpipeline1 (from .../libpipeline1_1.2.0-1_powerpc.deb) ...
+Selecting previously deselected package man-db.
+Unpacking man-db (from .../man-db_2.5.9-4_powerpc.deb) ...
+Selecting previously deselected package libmagic1.
+Unpacking libmagic1 (from .../libmagic1_5.04-5_powerpc.deb) ...
+Selecting previously deselected package file.
+Unpacking file (from .../file_5.04-5_powerpc.deb) ...
+Selecting previously deselected package gettext-base.
+Unpacking gettext-base (from .../gettext-base_0.18.1.1-3_powerpc.deb) ...
+Selecting previously deselected package libpcre3.
+Unpacking libpcre3 (from .../libpcre3_8.12-3_powerpc.deb) ...
+Selecting previously deselected package libxml2.
+Unpacking libxml2 (from .../libxml2_2.7.8.dfsg-2_powerpc.deb) ...
+Selecting previously deselected package autotools-dev.
+Unpacking autotools-dev (from .../autotools-dev_20100122.1_powerpc.deb) ...
+Preparing to replace dpkg-dev 1.15.8.10 (using .../dpkg-dev_1.16.0.1_powerpc.deb) ...
+Unpacking replacement dpkg-dev ...
+Preparing to replace libdpkg-perl 1.15.8.10 (using .../libdpkg-perl_1.16.0.1_powerpc.deb) ...
+Unpacking replacement libdpkg-perl ...
+Selecting previously deselected package html2text.
+Unpacking html2text (from .../html2text_1.3.2a-15_powerpc.deb) ...
+Selecting previously deselected package libglib2.0-0.
+Unpacking libglib2.0-0 (from .../libglib2.0-0_2.28.4-1_powerpc.deb) ...
+Selecting previously deselected package libcroco3.
+Unpacking libcroco3 (from .../libcroco3_0.6.2-1_powerpc.deb) ...
+Selecting previously deselected package libunistring0.
+Unpacking libunistring0 (from .../libunistring0_0.9.3-3_powerpc.deb) ...
+Selecting previously deselected package gettext.
+Unpacking gettext (from .../gettext_0.18.1.1-3_powerpc.deb) ...
+Selecting previously deselected package intltool-debian.
+Unpacking intltool-debian (from .../intltool-debian_0.35.0+20060710.1_powerpc.deb) ...
+Selecting previously deselected package po-debconf.
+Unpacking po-debconf (from .../po-debconf_1.0.16+nmu1_powerpc.deb) ...
+Selecting previously deselected package debhelper.
+Unpacking debhelper (from .../debhelper_8.1.3_powerpc.deb) ...
+Setting up bsdmainutils (8.2.2) ...
+update-alternatives: using /usr/bin/bsd-write to provide /usr/bin/write (write) in auto mode.
+update-alternatives: using /usr/bin/bsd-from to provide /usr/bin/from (from) in auto mode.
+Setting up groff-base (1.21-5) ...
+Setting up libpipeline1 (1.2.0-1) ...
+Setting up man-db (2.5.9-4) ...
+Building database of manual pages ...
+Setting up libmagic1 (5.04-5) ...
+Setting up file (5.04-5) ...
+Setting up gettext-base (0.18.1.1-3) ...
+Setting up libpcre3 (8.12-3) ...
+Setting up libxml2 (2.7.8.dfsg-2) ...
+Setting up autotools-dev (20100122.1) ...
+Setting up libdpkg-perl (1.16.0.1) ...
+Setting up dpkg-dev (1.16.0.1) ...
+Setting up html2text (1.3.2a-15) ...
+Setting up libglib2.0-0 (2.28.4-1) ...
+No schema files found: doing nothing.
+Setting up libcroco3 (0.6.2-1) ...
+Setting up libunistring0 (0.9.3-3) ...
+Setting up gettext (0.18.1.1-3) ...
+Setting up intltool-debian (0.35.0+20060710.1) ...
+Setting up po-debconf (1.0.16+nmu1) ...
+Setting up debhelper (8.1.3) ...
+Removing negative dependencies: 
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following packages were automatically installed and are no longer required:
+  libppl7 libppl-c2
+Use 'apt-get autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 18 not upgraded.
+Checking correctness of dependencies...
+Kernel: Linux 2.6.26-2-powerpc64 powerpc (ppc64)
+Toolchain package versions: binutils_2.21.0.20110327-2 dpkg-dev_1.16.0.1 g++-4.5_4.5.2-7 gcc-4.5_4.5.2-7 libc6-dev_2.11.2-11 libstdc++6_4.6.0-2 libstdc++6-4.5-dev_4.5.2-7 linux-libc-dev_2.6.38-2
+Package versions: apt_0.8.13 autotools-dev_20100122.1 base-files_6.1 base-passwd_3.5.22 bash_4.1-3 binutils_2.21.0.20110327-2 bsdmainutils_8.2.2 bsdutils_1:2.17.2-9.1 build-essential_11.5 bzip2_1.0.5-6 coreutils_8.5-1 cpp_4:4.5.2-4 cpp-4.5_4.5.2-7 dash_0.5.5.1-7.4 debconf_1.5.38 debconf-english_1.5.38 debfoster_2.7-1.1 debhelper_8.1.3 debian-archive-keyring_2010.08.28 debianutils_3.4.4 diffutils_1:3.0-1 dpkg_1.15.8.10 dpkg-dev_1.16.0.1 e2fslibs_1.41.12-2 e2fsprogs_1.41.12-2 fakeroot_1.15-1 file_5.04-5 findutils_4.4.2-1+b1 g++_4:4.5.2-4 g++-4.5_4.5.2-7 gcc_4:4.5.2-4 gcc-4.4-base_4.4.5-15 gcc-4.5_4.5.2-7 gcc-4.5-base_4.5.2-7 gcc-4.6-base_4.6.0-2 gettext_0.18.1.1-3 gettext-base_0.18.1.1-3 gnupg_1.4.11-3 gpgv_1.4.11-3 grep_2.6.3-3 groff-base_1.21-5 gzip_1.3.12-9 hostname_3.06 html2text_1.3.2a-15 initscripts_2.88dsf-13.1 insserv_1.14.0-2.1 intltool-debian_0.35.0+20060710.1 libacl1_2.2.49-4 libattr1_1:2.4.44-2 libblkid1_2.17.2-9.1 libbz2-1.0_1.0.5-6 libc-bin_2.11.2-11 libc-dev-bin_2.11.2-11 libc6_2.11.2-11 libc6-dev_2.11.2-11 libcloog-ppl0_0.15.9-3 libcomerr2_1.41.12-2 libcroco3_0.6.2-1 libdb4.7_4.7.25-12 libdb4.8_4.8.30-5 libdpkg-perl_1.16.0.1 libelfg0_0.8.13-1 libgc1c2_1:7.1-7 libgcc1_1:4.6.0-2 libgdbm3_1.8.3-9 libglib2.0-0_2.28.4-1 libgmp10_2:5.0.1+dfsg-7 libgmp3c2_2:4.3.2+dfsg-2 libgmpxx4ldbl_2:5.0.1+dfsg-7 libgomp1_4.6.0-2 liblocale-gettext-perl_1.05-6 liblzma2_5.0.0-2 libmagic1_5.04-5 libmpc2_0.9-2 libmpfr4_3.0.0-9 libncurses5_5.8-1 libpam-modules_1.1.2-2 libpam-runtime_1.1.2-2 libpam0g_1.1.2-2 libpcre3_8.12-3 libpipeline1_1.2.0-1 libppl-c2_0.10.2-9 libppl-c4_0.11.2-3 libppl7_0.10.2-9 libppl9_0.11.2-3 libpwl5_0.11.2-3 libreadline6_6.1-3 libselinux1_2.0.98-1 libsepol1_2.0.42-1 libslang2_2.2.2-4 libss2_1.41.12-2 libstdc++6_4.6.0-2 libstdc++6-4.5-dev_4.5.2-7 libtext-charwidth-perl_0.04-6+b1 libtext-iconv-perl_1.7-2 libtext-wrapi18n-perl_0.06-7 libtimedate-perl_1.2000-1 libunistring0_0.9.3-3 libusb-0.1-4_2:0.1.12-17 libuuid1_2.17.2-9.1 libxml2_2.7.8.dfsg-2 linux-libc-dev_2.6.38-2 login_1:4.1.4.2+svn3283-3 lsb-base_3.2-27 make_3.81-8 man-db_2.5.9-4 mawk_1.3.3-15 mount_2.17.2-9.1 ncurses-base_5.8-1 ncurses-bin_5.8-1 passwd_1:4.1.4.2+svn3283-3 patch_2.6.1-1 perl_5.10.1-18 perl-base_5.10.1-18 perl-modules_5.10.1-18 po-debconf_1.0.16+nmu1 readline-common_6.1-3 sed_4.2.1-9 sensible-utils_0.0.6 sudo_1.7.4p6-1 sysv-rc_2.88dsf-13.1 sysvinit_2.88dsf-13.1 sysvinit-utils_2.88dsf-13.1 tar_1.25-3 tzdata_2011d-1 util-linux_2.17.2-9.1 xz-utils_5.0.0-2 zlib1g_1:1.2.3.4.dfsg-3
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Build                                                                        │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+Unpack source
+─────────────
+
+Use of uninitialized value $ENV{"HOME"} in concatenation (.) or string at /usr/share/perl5/Dpkg/Source/Package.pm line 258.
+gpgv: keyblock resource `/home/buildd/.gnupg/trustedkeys.gpg': file open error
+gpgv: Signature made Wed Feb 16 03:48:56 2011 UTC using RSA key ID 2295D502
+gpgv: Can't check signature: public key not found
+dpkg-source: warning: failed to verify signature on ./libgtextutils_0.6-1.dsc
+dpkg-source: info: extracting libgtextutils in libgtextutils-0.6
+dpkg-source: info: unpacking libgtextutils_0.6.orig.tar.gz
+dpkg-source: info: applying libgtextutils_0.6-1.diff.gz
+
+Check disc space
+────────────────
+
+
+dpkg-buildpackage
+─────────────────
+
+Use of uninitialized value $ENV{"HOME"} in concatenation (.) or string at /usr/share/perl5/Dpkg/BuildFlags.pm line 109.
+dpkg-buildpackage: export CFLAGS from dpkg-buildflags (origin: vendor): -g -O2
+dpkg-buildpackage: export CPPFLAGS from dpkg-buildflags (origin: vendor): 
+dpkg-buildpackage: export CXXFLAGS from dpkg-buildflags (origin: vendor): -g -O2
+dpkg-buildpackage: export FFLAGS from dpkg-buildflags (origin: vendor): -g -O2
+dpkg-buildpackage: export LDFLAGS from dpkg-buildflags (origin: vendor): 
+dpkg-buildpackage: source package libgtextutils
+dpkg-buildpackage: source version 0.6-1
+ dpkg-source --before-build libgtextutils-0.6
+dpkg-buildpackage: host architecture powerpc
+ fakeroot debian/rules clean
+dh clean --with autotools_dev
+   dh_testdir
+   dh_auto_clean
+   dh_autotools-dev_restoreconfig
+   dh_clean
+ debian/rules build
+dh build --with autotools_dev
+   dh_testdir
+   dh_autotools-dev_updateconfig
+   dh_auto_configure
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... no
+checking for mawk... mawk
+checking whether make sets $(MAKE)... yes
+checking for gcc... gcc
+checking for C compiler default output file name... a.out
+checking whether the C compiler works... yes
+checking whether we are cross compiling... no
+checking for suffix of executables... 
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking for style of include used by make... GNU
+checking dependency style of gcc... none
+checking for g++... g++
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking dependency style of g++... none
+checking build system type... powerpc-unknown-linux-gnu
+checking host system type... powerpc-unknown-linux-gnu
+checking for a sed that does not truncate output... /bin/sed
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for fgrep... /bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 805306365
+checking whether the shell understands some XSI constructs... yes
+checking whether the shell understands "+="... yes
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for ar... ar
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking how to run the C preprocessor... gcc -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking whether we are using the GNU C++ compiler... (cached) yes
+checking whether g++ accepts -g... (cached) yes
+checking dependency style of g++... (cached) none
+checking how to run the C++ preprocessor... g++ -E
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking for ld used by g++... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking whether the g++ linker (/usr/bin/ld) supports shared libraries... yes
+checking for g++ option to produce PIC... -fPIC -DPIC
+checking if g++ PIC flag -fPIC -DPIC works... yes
+checking if g++ static flag -static works... yes
+checking if g++ supports -c -o file.o... yes
+checking if g++ supports -c -o file.o... (cached) yes
+checking whether the g++ linker (/usr/bin/ld) supports shared libraries... yes
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating README
+config.status: creating doc/Makefile
+config.status: creating m4/Makefile
+config.status: creating src/Makefile
+config.status: creating src/gtextutils/Makefile
+config.status: creating gtextutils.pc
+config.status: creating tests/Makefile
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+   dh_auto_build
+make[1]: Entering directory `/build/buildd-libgtextutils_0.6-1-powerpc-M9DxFF/libgtextutils-0.6'
+make  all-recursive
+make[2]: Entering directory `/build/buildd-libgtextutils_0.6-1-powerpc-M9DxFF/libgtextutils-0.6'
+Making all in m4
+make[3]: Entering directory `/build/buildd-libgtextutils_0.6-1-powerpc-M9DxFF/libgtextutils-0.6/m4'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/build/buildd-libgtextutils_0.6-1-powerpc-M9DxFF/libgtextutils-0.6/m4'
+Making all in src
+make[3]: Entering directory `/build/buildd-libgtextutils_0.6-1-powerpc-M9DxFF/libgtextutils-0.6/src'
+Making all in gtextutils
+make[4]: Entering directory `/build/buildd-libgtextutils_0.6-1-powerpc-M9DxFF/libgtextutils-0.6/src/gtextutils'
+/bin/bash ../../libtool --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I../..     -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -c -o stream_wrapper.lo stream_wrapper.cpp
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../.. -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -c stream_wrapper.cpp  -fPIC -DPIC -o .libs/stream_wrapper.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../.. -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -c stream_wrapper.cpp -o stream_wrapper.o >/dev/null 2>&1
+/bin/bash ../../libtool --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I../..     -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -c -o text_line_reader.lo text_line_reader.cpp
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../.. -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -c text_line_reader.cpp  -fPIC -DPIC -o .libs/text_line_reader.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../.. -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -c text_line_reader.cpp -o text_line_reader.o >/dev/null 2>&1
+/bin/bash ../../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..     -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -c -o strnatcmp.lo strnatcmp.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -c strnatcmp.c  -fPIC -DPIC -o .libs/strnatcmp.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -c strnatcmp.c -o strnatcmp.o >/dev/null 2>&1
+/bin/bash ../../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..     -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -c -o pipe_fitter.lo pipe_fitter.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -c pipe_fitter.c  -fPIC -DPIC -o .libs/pipe_fitter.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -c pipe_fitter.c -o pipe_fitter.o >/dev/null 2>&1
+/bin/bash ../../libtool --tag=CXX   --mode=link g++  -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -version-info 0:0:0 -release 0.6  -o libgtextutils.la -rpath /usr/lib stream_wrapper.lo text_line_reader.lo strnatcmp.lo pipe_fitter.lo  
+libtool: link: g++ -shared -nostdlib /usr/lib/gcc/powerpc-linux-gnu/4.5.2/../../../../lib/crti.o /usr/lib/gcc/powerpc-linux-gnu/4.5.2/crtbeginS.o  .libs/stream_wrapper.o .libs/text_line_reader.o .libs/strnatcmp.o .libs/pipe_fitter.o   -L/usr/lib/gcc/powerpc-linux-gnu/4.5.2 -L/usr/lib/gcc/powerpc-linux-gnu/4.5.2/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/powerpc-linux-gnu/4.5.2/../../.. -lstdc++ -lm -lc -lgcc_s /usr/lib/gcc/powerpc-linux-gnu/4.5.2/crtendS.o /usr/lib/gcc/powerpc-linux-gnu/4.5.2/../../../../lib/crtn.o    -Wl,-soname -Wl,libgtextutils-0.6.so.0 -o .libs/libgtextutils-0.6.so.0.0.0
+libtool: link: (cd ".libs" && rm -f "libgtextutils-0.6.so.0" && ln -s "libgtextutils-0.6.so.0.0.0" "libgtextutils-0.6.so.0")
+libtool: link: (cd ".libs" && rm -f "libgtextutils.so" && ln -s "libgtextutils-0.6.so.0.0.0" "libgtextutils.so")
+libtool: link: ar cru .libs/libgtextutils.a  stream_wrapper.o text_line_reader.o strnatcmp.o pipe_fitter.o
+libtool: link: ranlib .libs/libgtextutils.a
+libtool: link: ( cd ".libs" && rm -f "libgtextutils.la" && ln -s "../libgtextutils.la" "libgtextutils.la" )
+make[4]: Leaving directory `/build/buildd-libgtextutils_0.6-1-powerpc-M9DxFF/libgtextutils-0.6/src/gtextutils'
+make[4]: Entering directory `/build/buildd-libgtextutils_0.6-1-powerpc-M9DxFF/libgtextutils-0.6/src'
+make[4]: Nothing to be done for `all-am'.
+make[4]: Leaving directory `/build/buildd-libgtextutils_0.6-1-powerpc-M9DxFF/libgtextutils-0.6/src'
+make[3]: Leaving directory `/build/buildd-libgtextutils_0.6-1-powerpc-M9DxFF/libgtextutils-0.6/src'
+Making all in doc
+make[3]: Entering directory `/build/buildd-libgtextutils_0.6-1-powerpc-M9DxFF/libgtextutils-0.6/doc'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/build/buildd-libgtextutils_0.6-1-powerpc-M9DxFF/libgtextutils-0.6/doc'
+Making all in tests
+make[3]: Entering directory `/build/buildd-libgtextutils_0.6-1-powerpc-M9DxFF/libgtextutils-0.6/tests'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/build/buildd-libgtextutils_0.6-1-powerpc-M9DxFF/libgtextutils-0.6/tests'
+make[3]: Entering directory `/build/buildd-libgtextutils_0.6-1-powerpc-M9DxFF/libgtextutils-0.6'
+make[3]: Nothing to be done for `all-am'.
+make[3]: Leaving directory `/build/buildd-libgtextutils_0.6-1-powerpc-M9DxFF/libgtextutils-0.6'
+make[2]: Leaving directory `/build/buildd-libgtextutils_0.6-1-powerpc-M9DxFF/libgtextutils-0.6'
+make[1]: Leaving directory `/build/buildd-libgtextutils_0.6-1-powerpc-M9DxFF/libgtextutils-0.6'
+   dh_auto_test
+make[1]: Entering directory `/build/buildd-libgtextutils_0.6-1-powerpc-M9DxFF/libgtextutils-0.6'
+Making check in m4
+make[2]: Entering directory `/build/buildd-libgtextutils_0.6-1-powerpc-M9DxFF/libgtextutils-0.6/m4'
+make[2]: Nothing to be done for `check'.
+make[2]: Leaving directory `/build/buildd-libgtextutils_0.6-1-powerpc-M9DxFF/libgtextutils-0.6/m4'
+Making check in src
+make[2]: Entering directory `/build/buildd-libgtextutils_0.6-1-powerpc-M9DxFF/libgtextutils-0.6/src'
+Making check in gtextutils
+make[3]: Entering directory `/build/buildd-libgtextutils_0.6-1-powerpc-M9DxFF/libgtextutils-0.6/src/gtextutils'
+make[3]: Nothing to be done for `check'.
+make[3]: Leaving directory `/build/buildd-libgtextutils_0.6-1-powerpc-M9DxFF/libgtextutils-0.6/src/gtextutils'
+make[3]: Entering directory `/build/buildd-libgtextutils_0.6-1-powerpc-M9DxFF/libgtextutils-0.6/src'
+make[3]: Nothing to be done for `check-am'.
+make[3]: Leaving directory `/build/buildd-libgtextutils_0.6-1-powerpc-M9DxFF/libgtextutils-0.6/src'
+make[2]: Leaving directory `/build/buildd-libgtextutils_0.6-1-powerpc-M9DxFF/libgtextutils-0.6/src'
+Making check in doc
+make[2]: Entering directory `/build/buildd-libgtextutils_0.6-1-powerpc-M9DxFF/libgtextutils-0.6/doc'
+make[2]: Nothing to be done for `check'.
+make[2]: Leaving directory `/build/buildd-libgtextutils_0.6-1-powerpc-M9DxFF/libgtextutils-0.6/doc'
+Making check in tests
+make[2]: Entering directory `/build/buildd-libgtextutils_0.6-1-powerpc-M9DxFF/libgtextutils-0.6/tests'
+make  test_container_join test_natural_sort test_input_stream_wrapper test_text_reader test_text_reader_unget test_fd_outbuf test_fd_inbuf test_in_out_buf test_pipe_fitter test_string_tokenize 
+make[3]: Entering directory `/build/buildd-libgtextutils_0.6-1-powerpc-M9DxFF/libgtextutils-0.6/tests'
+g++ -DHAVE_CONFIG_H -I. -I.. -I../src    -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -c -o test_container_join.o test_container_join.cpp
+/bin/bash ../libtool --tag=CXX   --mode=link g++  -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1   -o test_container_join test_container_join.o ../src/gtextutils/libgtextutils.la 
+libtool: link: g++ -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -o .libs/test_container_join test_container_join.o  ../src/gtextutils/.libs/libgtextutils.so
+g++ -DHAVE_CONFIG_H -I. -I.. -I../src    -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -c -o test_natural_sort.o test_natural_sort.cpp
+/bin/bash ../libtool --tag=CXX   --mode=link g++  -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1   -o test_natural_sort test_natural_sort.o ../src/gtextutils/libgtextutils.la 
+libtool: link: g++ -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -o .libs/test_natural_sort test_natural_sort.o  ../src/gtextutils/.libs/libgtextutils.so
+g++ -DHAVE_CONFIG_H -I. -I.. -I../src    -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -c -o test_input_stream_wrapper.o test_input_stream_wrapper.cpp
+/bin/bash ../libtool --tag=CXX   --mode=link g++  -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1   -o test_input_stream_wrapper test_input_stream_wrapper.o ../src/gtextutils/libgtextutils.la 
+libtool: link: g++ -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -o .libs/test_input_stream_wrapper test_input_stream_wrapper.o  ../src/gtextutils/.libs/libgtextutils.so
+g++ -DHAVE_CONFIG_H -I. -I.. -I../src    -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -c -o test_text_reader.o test_text_reader.cpp
+/bin/bash ../libtool --tag=CXX   --mode=link g++  -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1   -o test_text_reader test_text_reader.o ../src/gtextutils/libgtextutils.la 
+libtool: link: g++ -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -o .libs/test_text_reader test_text_reader.o  ../src/gtextutils/.libs/libgtextutils.so
+g++ -DHAVE_CONFIG_H -I. -I.. -I../src    -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -c -o test_text_reader_unget.o test_text_reader_unget.cpp
+/bin/bash ../libtool --tag=CXX   --mode=link g++  -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1   -o test_text_reader_unget test_text_reader_unget.o ../src/gtextutils/libgtextutils.la 
+libtool: link: g++ -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -o .libs/test_text_reader_unget test_text_reader_unget.o  ../src/gtextutils/.libs/libgtextutils.so
+g++ -DHAVE_CONFIG_H -I. -I.. -I../src    -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -c -o test_fd_outbuf.o test_fd_outbuf.cpp
+/bin/bash ../libtool --tag=CXX   --mode=link g++  -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1   -o test_fd_outbuf test_fd_outbuf.o ../src/gtextutils/libgtextutils.la 
+libtool: link: g++ -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -o .libs/test_fd_outbuf test_fd_outbuf.o  ../src/gtextutils/.libs/libgtextutils.so
+g++ -DHAVE_CONFIG_H -I. -I.. -I../src    -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -c -o test_fd_inbuf.o test_fd_inbuf.cpp
+/bin/bash ../libtool --tag=CXX   --mode=link g++  -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1   -o test_fd_inbuf test_fd_inbuf.o ../src/gtextutils/libgtextutils.la 
+libtool: link: g++ -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -o .libs/test_fd_inbuf test_fd_inbuf.o  ../src/gtextutils/.libs/libgtextutils.so
+g++ -DHAVE_CONFIG_H -I. -I.. -I../src    -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -c -o test_in_out_buf.o test_in_out_buf.cpp
+/bin/bash ../libtool --tag=CXX   --mode=link g++  -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1   -o test_in_out_buf test_in_out_buf.o ../src/gtextutils/libgtextutils.la 
+libtool: link: g++ -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -o .libs/test_in_out_buf test_in_out_buf.o  ../src/gtextutils/.libs/libgtextutils.so
+gcc -DHAVE_CONFIG_H -I. -I.. -I../src    -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -c test_pipe_fitter.c
+/bin/bash ../libtool --tag=CC   --mode=link gcc  -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1   -o test_pipe_fitter test_pipe_fitter.o ../src/gtextutils/libgtextutils.la 
+libtool: link: gcc -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -o .libs/test_pipe_fitter test_pipe_fitter.o  ../src/gtextutils/.libs/libgtextutils.so
+g++ -DHAVE_CONFIG_H -I. -I.. -I../src    -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -c -o test_string_tokenize.o test_string_tokenize.cpp
+/bin/bash ../libtool --tag=CXX   --mode=link g++  -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1   -o test_string_tokenize test_string_tokenize.o ../src/gtextutils/libgtextutils.la 
+libtool: link: g++ -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -o .libs/test_string_tokenize test_string_tokenize.o  ../src/gtextutils/.libs/libgtextutils.so
+make[3]: Leaving directory `/build/buildd-libgtextutils_0.6-1-powerpc-M9DxFF/libgtextutils-0.6/tests'
+make  check-TESTS
+make[3]: Entering directory `/build/buildd-libgtextutils_0.6-1-powerpc-M9DxFF/libgtextutils-0.6/tests'
+0,1,2,3,4,5,6,7,8,9
+0-1-2-3-4-5-6-7-8-9
+keys  = 42	666
+keys  = 42,666
+values= Don't Panic	Beast
+values= Don't Panic,Beast
+PASS: test_container_join
+Regular sort:                    ChR13	chr1	chr10	chr11	chr2	chr20	chr4	chrX
+Natural sort (case sensitive):   ChR13	chr1	chr2	chr4	chr10	chr11	chr20	chrX
+Natural sort (case-insensitive): chr1	chr2	chr4	chr10	chr11	ChR13	chr20	chrX
+PASS: test_natural_sort
+PASS: test_input_stream_wrapper
+PASS: test_text_reader
+PASS: test_text_reader_unget
+Hello World from File-Descriptor Output Stream (josuttifs_fdostream)!
+PASS: test_fd_outbuf
+PASS: test_fd_inbuf
+PASS: test_in_out_buf
+PASS: test_pipe_fitter
+PASS: test_string_tokenize
+===================
+All 10 tests passed
+===================
+make[3]: Leaving directory `/build/buildd-libgtextutils_0.6-1-powerpc-M9DxFF/libgtextutils-0.6/tests'
+make[2]: Leaving directory `/build/buildd-libgtextutils_0.6-1-powerpc-M9DxFF/libgtextutils-0.6/tests'
+make[2]: Entering directory `/build/buildd-libgtextutils_0.6-1-powerpc-M9DxFF/libgtextutils-0.6'
+make[2]: Nothing to be done for `check-am'.
+make[2]: Leaving directory `/build/buildd-libgtextutils_0.6-1-powerpc-M9DxFF/libgtextutils-0.6'
+make[1]: Leaving directory `/build/buildd-libgtextutils_0.6-1-powerpc-M9DxFF/libgtextutils-0.6'
+ fakeroot debian/rules binary-arch
+dh binary-arch --with autotools_dev
+   dh_testroot -a
+   dh_prep -a
+   dh_installdirs -a
+   dh_auto_install -a
+make[1]: Entering directory `/build/buildd-libgtextutils_0.6-1-powerpc-M9DxFF/libgtextutils-0.6'
+Making install in m4
+make[2]: Entering directory `/build/buildd-libgtextutils_0.6-1-powerpc-M9DxFF/libgtextutils-0.6/m4'
+make[3]: Entering directory `/build/buildd-libgtextutils_0.6-1-powerpc-M9DxFF/libgtextutils-0.6/m4'
+make[3]: Nothing to be done for `install-exec-am'.
+test -z "/usr/share/aclocal" || /bin/mkdir -p "/build/buildd-libgtextutils_0.6-1-powerpc-M9DxFF/libgtextutils-0.6/debian/tmp/usr/share/aclocal"
+make[3]: Leaving directory `/build/buildd-libgtextutils_0.6-1-powerpc-M9DxFF/libgtextutils-0.6/m4'
+make[2]: Leaving directory `/build/buildd-libgtextutils_0.6-1-powerpc-M9DxFF/libgtextutils-0.6/m4'
+Making install in src
+make[2]: Entering directory `/build/buildd-libgtextutils_0.6-1-powerpc-M9DxFF/libgtextutils-0.6/src'
+Making install in gtextutils
+make[3]: Entering directory `/build/buildd-libgtextutils_0.6-1-powerpc-M9DxFF/libgtextutils-0.6/src/gtextutils'
+make[4]: Entering directory `/build/buildd-libgtextutils_0.6-1-powerpc-M9DxFF/libgtextutils-0.6/src/gtextutils'
+test -z "/usr/lib" || /bin/mkdir -p "/build/buildd-libgtextutils_0.6-1-powerpc-M9DxFF/libgtextutils-0.6/debian/tmp/usr/lib"
+ /bin/bash ../../libtool   --mode=install /usr/bin/install -c  'libgtextutils.la' '/build/buildd-libgtextutils_0.6-1-powerpc-M9DxFF/libgtextutils-0.6/debian/tmp/usr/lib/libgtextutils.la'
+libtool: install: /usr/bin/install -c .libs/libgtextutils-0.6.so.0.0.0 /build/buildd-libgtextutils_0.6-1-powerpc-M9DxFF/libgtextutils-0.6/debian/tmp/usr/lib/libgtextutils-0.6.so.0.0.0
+libtool: install: (cd /build/buildd-libgtextutils_0.6-1-powerpc-M9DxFF/libgtextutils-0.6/debian/tmp/usr/lib && { ln -s -f libgtextutils-0.6.so.0.0.0 libgtextutils-0.6.so.0 || { rm -f libgtextutils-0.6.so.0 && ln -s libgtextutils-0.6.so.0.0.0 libgtextutils-0.6.so.0; }; })
+libtool: install: (cd /build/buildd-libgtextutils_0.6-1-powerpc-M9DxFF/libgtextutils-0.6/debian/tmp/usr/lib && { ln -s -f libgtextutils-0.6.so.0.0.0 libgtextutils.so || { rm -f libgtextutils.so && ln -s libgtextutils-0.6.so.0.0.0 libgtextutils.so; }; })
+libtool: install: /usr/bin/install -c .libs/libgtextutils.lai /build/buildd-libgtextutils_0.6-1-powerpc-M9DxFF/libgtextutils-0.6/debian/tmp/usr/lib/libgtextutils.la
+libtool: install: /usr/bin/install -c .libs/libgtextutils.a /build/buildd-libgtextutils_0.6-1-powerpc-M9DxFF/libgtextutils-0.6/debian/tmp/usr/lib/libgtextutils.a
+libtool: install: chmod 644 /build/buildd-libgtextutils_0.6-1-powerpc-M9DxFF/libgtextutils-0.6/debian/tmp/usr/lib/libgtextutils.a
+libtool: install: ranlib /build/buildd-libgtextutils_0.6-1-powerpc-M9DxFF/libgtextutils-0.6/debian/tmp/usr/lib/libgtextutils.a
+libtool: install: warning: remember to run `libtool --finish /usr/lib'
+test -z "/usr/include/gtextutils/gtextutils" || /bin/mkdir -p "/build/buildd-libgtextutils_0.6-1-powerpc-M9DxFF/libgtextutils-0.6/debian/tmp/usr/include/gtextutils/gtextutils"
+ /usr/bin/install -c -m 644 'container_join.h' '/build/buildd-libgtextutils_0.6-1-powerpc-M9DxFF/libgtextutils-0.6/debian/tmp/usr/include/gtextutils/gtextutils/container_join.h'
+ /usr/bin/install -c -m 644 'text_line_reader.h' '/build/buildd-libgtextutils_0.6-1-powerpc-M9DxFF/libgtextutils-0.6/debian/tmp/usr/include/gtextutils/gtextutils/text_line_reader.h'
+ /usr/bin/install -c -m 644 'stream_wrapper.h' '/build/buildd-libgtextutils_0.6-1-powerpc-M9DxFF/libgtextutils-0.6/debian/tmp/usr/include/gtextutils/gtextutils/stream_wrapper.h'
+ /usr/bin/install -c -m 644 'natsort.h' '/build/buildd-libgtextutils_0.6-1-powerpc-M9DxFF/libgtextutils-0.6/debian/tmp/usr/include/gtextutils/gtextutils/natsort.h'
+ /usr/bin/install -c -m 644 'strnatcmp.h' '/build/buildd-libgtextutils_0.6-1-powerpc-M9DxFF/libgtextutils-0.6/debian/tmp/usr/include/gtextutils/gtextutils/strnatcmp.h'
+ /usr/bin/install -c -m 644 'outbuf3.hpp' '/build/buildd-libgtextutils_0.6-1-powerpc-M9DxFF/libgtextutils-0.6/debian/tmp/usr/include/gtextutils/gtextutils/outbuf3.hpp'
+ /usr/bin/install -c -m 644 'inbuf1.hpp' '/build/buildd-libgtextutils_0.6-1-powerpc-M9DxFF/libgtextutils-0.6/debian/tmp/usr/include/gtextutils/gtextutils/inbuf1.hpp'
+ /usr/bin/install -c -m 644 'tuple_parser.h' '/build/buildd-libgtextutils_0.6-1-powerpc-M9DxFF/libgtextutils-0.6/debian/tmp/usr/include/gtextutils/gtextutils/tuple_parser.h'
+ /usr/bin/install -c -m 644 'exit_manip.h' '/build/buildd-libgtextutils_0.6-1-powerpc-M9DxFF/libgtextutils-0.6/debian/tmp/usr/include/gtextutils/gtextutils/exit_manip.h'
+ /usr/bin/install -c -m 644 'string_tokenize.h' '/build/buildd-libgtextutils_0.6-1-powerpc-M9DxFF/libgtextutils-0.6/debian/tmp/usr/include/gtextutils/gtextutils/string_tokenize.h'
+ /usr/bin/install -c -m 644 'pipe_fitter.h' '/build/buildd-libgtextutils_0.6-1-powerpc-M9DxFF/libgtextutils-0.6/debian/tmp/usr/include/gtextutils/gtextutils/pipe_fitter.h'
+make[4]: Leaving directory `/build/buildd-libgtextutils_0.6-1-powerpc-M9DxFF/libgtextutils-0.6/src/gtextutils'
+make[3]: Leaving directory `/build/buildd-libgtextutils_0.6-1-powerpc-M9DxFF/libgtextutils-0.6/src/gtextutils'
+make[3]: Entering directory `/build/buildd-libgtextutils_0.6-1-powerpc-M9DxFF/libgtextutils-0.6/src'
+make[4]: Entering directory `/build/buildd-libgtextutils_0.6-1-powerpc-M9DxFF/libgtextutils-0.6/src'
+make[4]: Nothing to be done for `install-exec-am'.
+make[4]: Nothing to be done for `install-data-am'.
+make[4]: Leaving directory `/build/buildd-libgtextutils_0.6-1-powerpc-M9DxFF/libgtextutils-0.6/src'
+make[3]: Leaving directory `/build/buildd-libgtextutils_0.6-1-powerpc-M9DxFF/libgtextutils-0.6/src'
+make[2]: Leaving directory `/build/buildd-libgtextutils_0.6-1-powerpc-M9DxFF/libgtextutils-0.6/src'
+Making install in doc
+make[2]: Entering directory `/build/buildd-libgtextutils_0.6-1-powerpc-M9DxFF/libgtextutils-0.6/doc'
+make[3]: Entering directory `/build/buildd-libgtextutils_0.6-1-powerpc-M9DxFF/libgtextutils-0.6/doc'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/build/buildd-libgtextutils_0.6-1-powerpc-M9DxFF/libgtextutils-0.6/doc'
+make[2]: Leaving directory `/build/buildd-libgtextutils_0.6-1-powerpc-M9DxFF/libgtextutils-0.6/doc'
+Making install in tests
+make[2]: Entering directory `/build/buildd-libgtextutils_0.6-1-powerpc-M9DxFF/libgtextutils-0.6/tests'
+make[3]: Entering directory `/build/buildd-libgtextutils_0.6-1-powerpc-M9DxFF/libgtextutils-0.6/tests'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/build/buildd-libgtextutils_0.6-1-powerpc-M9DxFF/libgtextutils-0.6/tests'
+make[2]: Leaving directory `/build/buildd-libgtextutils_0.6-1-powerpc-M9DxFF/libgtextutils-0.6/tests'
+make[2]: Entering directory `/build/buildd-libgtextutils_0.6-1-powerpc-M9DxFF/libgtextutils-0.6'
+make[3]: Entering directory `/build/buildd-libgtextutils_0.6-1-powerpc-M9DxFF/libgtextutils-0.6'
+make[3]: Nothing to be done for `install-exec-am'.
+test -z "/usr/lib/pkgconfig" || /bin/mkdir -p "/build/buildd-libgtextutils_0.6-1-powerpc-M9DxFF/libgtextutils-0.6/debian/tmp/usr/lib/pkgconfig"
+ /usr/bin/install -c -m 644 'gtextutils.pc' '/build/buildd-libgtextutils_0.6-1-powerpc-M9DxFF/libgtextutils-0.6/debian/tmp/usr/lib/pkgconfig/gtextutils.pc'
+make[3]: Leaving directory `/build/buildd-libgtextutils_0.6-1-powerpc-M9DxFF/libgtextutils-0.6'
+make[2]: Leaving directory `/build/buildd-libgtextutils_0.6-1-powerpc-M9DxFF/libgtextutils-0.6'
+make[1]: Leaving directory `/build/buildd-libgtextutils_0.6-1-powerpc-M9DxFF/libgtextutils-0.6'
+   dh_install -a
+   dh_installdocs -a
+   dh_installchangelogs -a
+   dh_installexamples -a
+   dh_installman -a
+   dh_installcatalogs -a
+   dh_installcron -a
+   dh_installdebconf -a
+   dh_installemacsen -a
+   dh_installifupdown -a
+   dh_installinfo -a
+   dh_installinit -a
+   dh_installmenu -a
+   dh_installmime -a
+   dh_installmodules -a
+   dh_installlogcheck -a
+   dh_installlogrotate -a
+   dh_installpam -a
+   dh_installppp -a
+   dh_installudev -a
+   dh_installwm -a
+   dh_installxfonts -a
+   dh_installgsettings -a
+   dh_bugfiles -a
+   dh_lintian -a
+   dh_gconf -a
+   dh_icons -a
+   dh_perl -a
+   dh_usrlocal -a
+   dh_link -a
+   dh_compress -a
+   dh_fixperms -a
+   dh_strip -a
+   dh_makeshlibs -a
+dpkg-gensymbols: warning: some new symbols appeared in the symbols file: see diff output below
+dpkg-gensymbols: warning: debian/libgtextutils0/DEBIAN/symbols doesn't match completely debian/libgtextutils0.symbols
+--- debian/libgtextutils0.symbols (libgtextutils0_0.6-1_powerpc)
++++ dpkg-gensymbolsk0vS47	2011-04-09 15:41:20.000000000 +0000
+@@ -6,6 +6,9 @@
+  _ZN18InputStreamWrapperC2ERKSs@Base 0.6
+  _ZN19OutputStreamWrapperC1ERKSsb@Base 0.6
+  _ZN19OutputStreamWrapperC2ERKSsb@Base 0.6
++ _ZNSt15basic_stringbufIcSt11char_traitsIcESaIcEED0Ev@Base 0.6-1
++ _ZNSt15basic_stringbufIcSt11char_traitsIcESaIcEED1Ev@Base 0.6-1
++ _ZNSt15basic_stringbufIcSt11char_traitsIcESaIcEED2Ev@Base 0.6-1
+  pipe_close@Base 0.6
+  pipe_input_command@Base 0.6
+  pipe_output_command@Base 0.6
+   dh_shlibdeps -a
+   dh_installdeb -a
+   dh_gencontrol -a
+   dh_md5sums -a
+   dh_builddeb -a
+dpkg-deb: building package `libgtextutils-dev' in `../libgtextutils-dev_0.6-1_powerpc.deb'.
+dpkg-deb: building package `libgtextutils0' in `../libgtextutils0_0.6-1_powerpc.deb'.
+ dpkg-genchanges -B -mpowerpc Build Daemon (poulenc) <buildd_powerpc-poulenc@buildd.debian.org> >../libgtextutils_0.6-1_powerpc.changes
+dpkg-genchanges: arch-specific upload - not including arch-independent packages
+dpkg-genchanges: binary-only upload - not including any source code
+ dpkg-source --after-build libgtextutils-0.6
+dpkg-buildpackage: binary only upload (no source included)
+────────────────────────────────────────────────────────────────────────────────
+Build finished at 20110409-1541
+
+libgtextutils_0.6-1_powerpc.changes:
+Format: 1.8
+Date: Wed, 16 Feb 2011 12:35:53 +0900
+Source: libgtextutils
+Binary: libgtextutils-dev libgtextutils0
+Architecture: powerpc
+Version: 0.6-1
+Distribution: sid
+Urgency: low
+Maintainer: powerpc Build Daemon (poulenc) <buildd_powerpc-poulenc@buildd.debian.org>
+Changed-By: Charles Plessy <plessy@debian.org>
+Description: 
+ libgtextutils-dev - Gordon Text_utils library (development files)
+ libgtextutils0 - Gordon Text_utils library
+Closes: 613486
+Changes: 
+ libgtextutils (0.6-1) unstable; urgency=low
+ .
+   * Initial release (Closes: #613486)
+Checksums-Sha1: 
+ 09b9fb80454e3e7f031ef6bd58c89f239a8951cd 25732 libgtextutils-dev_0.6-1_powerpc.deb
+ bcf5dea826a1775d286fddf0cacf1e46d650f6ad 21114 libgtextutils0_0.6-1_powerpc.deb
+Checksums-Sha256: 
+ 8014db19acfad1907cd0234eb352cc167b9484c8aa608e35b8ed4d194551d118 25732 libgtextutils-dev_0.6-1_powerpc.deb
+ feffaa507fbd1aaac5c6e835bc54fb7966875e1e15e6fed8a38211e3a7dacee7 21114 libgtextutils0_0.6-1_powerpc.deb
+Files: 
+ 8dd86abbb003dcbe7fa5b317501617c4 25732 libdevel optional libgtextutils-dev_0.6-1_powerpc.deb
+ 38697c82c699296ff7a8cc324037b9ec 21114 libs optional libgtextutils0_0.6-1_powerpc.deb
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Package contents                                                             │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+libgtextutils-dev_0.6-1_powerpc.deb
+───────────────────────────────────
+
+ new debian package, version 2.0.
+ size 25732 bytes: control archive= 1016 bytes.
+     439 bytes,    12 lines      control              
+    1354 bytes,    17 lines      md5sums              
+ Package: libgtextutils-dev
+ Source: libgtextutils
+ Version: 0.6-1
+ Architecture: powerpc
+ Maintainer: Debian Med Packaging Team <debian-med-packaging@lists.alioth.debian.org>
+ Installed-Size: 164
+ Depends: libgtextutils0 (= 0.6-1)
+ Section: libdevel
+ Priority: optional
+ Homepage: http://hannonlab.cshl.edu/fastx_toolkit/
+ Description: Gordon Text_utils library (development files)
+  Development files for the Gordon Text_utils (gtextutils) library.
+
+drwxr-xr-x root/root         0 2011-04-09 15:41 ./
+drwxr-xr-x root/root         0 2011-04-09 15:41 ./usr/
+drwxr-xr-x root/root         0 2011-04-09 15:41 ./usr/share/
+drwxr-xr-x root/root         0 2011-04-09 15:41 ./usr/share/doc/
+drwxr-xr-x root/root         0 2011-04-09 15:41 ./usr/share/doc/libgtextutils-dev/
+-rw-r--r-- root/root       314 2009-02-25 22:33 ./usr/share/doc/libgtextutils-dev/THANKS
+-rw-r--r-- root/root     38877 2011-04-09 15:40 ./usr/share/doc/libgtextutils-dev/copyright
+-rw-r--r-- root/root       261 2011-04-09 15:40 ./usr/share/doc/libgtextutils-dev/README
+-rw-r--r-- root/root       158 2011-04-09 15:40 ./usr/share/doc/libgtextutils-dev/changelog.Debian.gz
+-rw-r--r-- root/root       429 2009-02-25 22:33 ./usr/share/doc/libgtextutils-dev/NEWS.gz
+drwxr-xr-x root/root         0 2011-04-09 15:41 ./usr/include/
+drwxr-xr-x root/root         0 2011-04-09 15:41 ./usr/include/gtextutils/
+drwxr-xr-x root/root         0 2011-04-09 15:41 ./usr/include/gtextutils/gtextutils/
+-rw-r--r-- root/root      1852 2011-04-09 15:41 ./usr/include/gtextutils/gtextutils/text_line_reader.h
+-rw-r--r-- root/root      1143 2011-04-09 15:41 ./usr/include/gtextutils/gtextutils/pipe_fitter.h
+-rw-r--r-- root/root      1287 2011-04-09 15:41 ./usr/include/gtextutils/gtextutils/strnatcmp.h
+-rw-r--r-- root/root      1984 2011-04-09 15:41 ./usr/include/gtextutils/gtextutils/string_tokenize.h
+-rw-r--r-- root/root      1472 2011-04-09 15:41 ./usr/include/gtextutils/gtextutils/stream_wrapper.h
+-rw-r--r-- root/root      2990 2011-04-09 15:41 ./usr/include/gtextutils/gtextutils/natsort.h
+-rw-r--r-- root/root      2094 2011-04-09 15:41 ./usr/include/gtextutils/gtextutils/exit_manip.h
+-rw-r--r-- root/root     11049 2011-04-09 15:41 ./usr/include/gtextutils/gtextutils/tuple_parser.h
+-rw-r--r-- root/root      4068 2011-04-09 15:41 ./usr/include/gtextutils/gtextutils/outbuf3.hpp
+-rw-r--r-- root/root      6023 2011-04-09 15:41 ./usr/include/gtextutils/gtextutils/container_join.h
+-rw-r--r-- root/root      4354 2011-04-09 15:41 ./usr/include/gtextutils/gtextutils/inbuf1.hpp
+drwxr-xr-x root/root         0 2011-04-09 15:41 ./usr/lib/
+drwxr-xr-x root/root         0 2011-04-09 15:41 ./usr/lib/pkgconfig/
+-rw-r--r-- root/root       229 2011-04-09 15:41 ./usr/lib/pkgconfig/gtextutils.pc
+lrwxrwxrwx root/root         0 2011-04-09 15:41 ./usr/lib/libgtextutils.so -> libgtextutils-0.6.so.0.0.0
+
+
+libgtextutils0_0.6-1_powerpc.deb
+────────────────────────────────
+
+ new debian package, version 2.0.
+ size 21114 bytes: control archive= 1010 bytes.
+     538 bytes,    13 lines      control              
+     225 bytes,     3 lines      md5sums              
+     135 bytes,     7 lines   *  postinst             #!/bin/sh
+     132 bytes,     7 lines   *  postrm               #!/bin/sh
+      35 bytes,     1 lines      shlibs               
+     648 bytes,    16 lines      symbols              
+ Package: libgtextutils0
+ Source: libgtextutils
+ Version: 0.6-1
+ Architecture: powerpc
+ Maintainer: Debian Med Packaging Team <debian-med-packaging@lists.alioth.debian.org>
+ Installed-Size: 104
+ Depends: libc6 (>= 2.3), libgcc1 (>= 1:4.1.1), libstdc++6 (>= 4.4.0)
+ Section: libs
+ Priority: optional
+ Homepage: http://hannonlab.cshl.edu/fastx_toolkit/
+ Description: Gordon Text_utils library
+  The Gordon Text_utils (gtextutils) library is a text utilities library used by
+  the FASTX-Toolkit, a suite of programs for biological sequence analysis.
+
+drwxr-xr-x root/root         0 2011-04-09 15:41 ./
+drwxr-xr-x root/root         0 2011-04-09 15:41 ./usr/
+drwxr-xr-x root/root         0 2011-04-09 15:41 ./usr/share/
+drwxr-xr-x root/root         0 2011-04-09 15:41 ./usr/share/doc/
+drwxr-xr-x root/root         0 2011-04-09 15:41 ./usr/share/doc/libgtextutils0/
+-rw-r--r-- root/root     38877 2011-04-09 15:40 ./usr/share/doc/libgtextutils0/copyright
+-rw-r--r-- root/root       158 2011-04-09 15:40 ./usr/share/doc/libgtextutils0/changelog.Debian.gz
+drwxr-xr-x root/root         0 2011-04-09 15:41 ./usr/lib/
+-rw-r--r-- root/root     14312 2011-04-09 15:41 ./usr/lib/libgtextutils-0.6.so.0.0.0
+lrwxrwxrwx root/root         0 2011-04-09 15:41 ./usr/lib/libgtextutils-0.6.so.0 -> libgtextutils-0.6.so.0.0.0
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Finished                                                                     │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Built successfully
+────────────────────────────────────────────────────────────────────────────────
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Post Build                                                                   │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Purging /var/lib/schroot/mount/sid-powerpc-sbuild-124fdd4e-c12b-4a32-8700-64f30806b95e/build/buildd-libgtextutils_0.6-1-powerpc-M9DxFF
+Not cleaning session: cloned chroot in use
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Summary                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Architecture: powerpc
+Build-Space: 6472
+Build-Time: 40
+Distribution: sid
+Install-Time: 65
+Job: libgtextutils_0.6-1
+Package: libgtextutils
+Package-Time: 144
+Source-Version: 0.6-1
+Space: 6472
+Status: successful
+Version: 0.6-1
+────────────────────────────────────────────────────────────────────────────────
+Finished at 20110409-1541
+Build needed 00:02:24, 6472k disc space
+Signature with key '205E9E83' requested:
