@@ -1,18 +1,26 @@
-sbuild (Debian sbuild) 0.60.8 (12 Dec 2010) on anx178.gsc.riken.jp
+sbuild (Debian sbuild) 0.62.4 (25 Jun 2011) on anx191
 
 ╔══════════════════════════════════════════════════════════════════════════════╗
-║ libgtextutils 0.6-1 (amd64)                                16 Feb 2011 12:46 ║
+║ libgtextutils 0.6.2-1 (amd64)                              04 Jul 2011 19:01 ║
 ╚══════════════════════════════════════════════════════════════════════════════╝
 
 Package: libgtextutils
-Version: 0.6-1
-Source Version: 0.6-1
+Version: 0.6.2-1
+Source Version: 0.6.2-1
+Distribution: unstable
 Architecture: amd64
-Get:1 http://ftp.riken.jp unstable InRelease [105 kB]
-Hit http://ftp.riken.jp unstable/main Sources/DiffIndex
-Hit http://ftp.riken.jp unstable/main amd64 Packages/DiffIndex
-Get:2 http://ftp.riken.jp unstable/main TranslationIndex [2232 B]
-Fetched 107 kB in 0s (148 kB/s)
+
+I: NOTICE: Log filtering will replace 'build/libgtextutils-ROcJxS/libgtextutils-0.6.2' with '«PKGBUILDDIR»'
+I: NOTICE: Log filtering will replace 'build/libgtextutils-ROcJxS' with '«BUILDDIR»'
+I: NOTICE: Log filtering will replace 'var/lib/schroot/mount/sid-amd64-sbuild-0584ac64-ab05-4892-bea0-6de2ec550426' with '«CHROOT»'
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Update chroot                                                                │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Hit http://ftp.jp.debian.org sid InRelease
+Hit http://ftp.jp.debian.org sid/main amd64 Packages/DiffIndex
+Hit http://ftp.jp.debian.org sid/main TranslationIndex
 Reading package lists...
 Reading package lists...
 Building dependency tree...
@@ -27,172 +35,114 @@ Reading state information...
 Local sources
 ─────────────
 
-libgtextutils_0.6-1.dsc exists in .; copying to chroot
+libgtextutils_0.6.2-1.dsc exists in .; copying to chroot
 
 Check arch
 ──────────
 
+Merged Build-Depends: build-essential, fakeroot
+Filtered Build-Depends: build-essential, fakeroot
+dpkg-deb: building package `sbuild-build-depends-core-dummy' in `/«BUILDDIR»/resolver-KaYoCm/apt_archive/sbuild-build-depends-core-dummy.deb'.
+OK
+Reading package lists...
 
 ┌──────────────────────────────────────────────────────────────────────────────┐
-│ Install core build dependencies (internal resolver)                          │
+│ Install core build dependencies (apt-based resolver)                         │
 └──────────────────────────────────────────────────────────────────────────────┘
 
-Build-Depends: build-essential, fakeroot
-Checking for already installed dependencies...
-build-essential: already installed (11.5)
-fakeroot: already installed (1.14.5-2)
-Checking for dependency conflicts...
-Installing positive dependencies: 
+Installing build dependencies
 Reading package lists...
 Building dependency tree...
 Reading state information...
+sbuild-build-depends-core-dummy is already the newest version.
+The following packages were automatically installed and are no longer required:
+  libkrb5-3 libatk1.0-0 libk5crypto3 libjaxp1.3-java libgtk2.0-common
+  libxfixes3 junit4 libaccess-bridge-java libjargs-java libxcomposite1
+  liboro-java liblcms1 libunistring0 libxerces2-java debhelper libwrap0
+  libavalon-framework-java libatk1.0-data ttf-dejavu-core libx11-data
+  libxalan2-java libdbus-1-3 unzip libpipeline1 libcap2 java-common po-debconf
+  libpcre3 libnspr4-0d groff-base gettext-base java-wrappers
+  default-jre-headless libcairo2 libgnutls26 libcommons-logging-java
+  intltool-debian libtasn1-3 openjdk-6-jre-lib libfreetype6 libthai-data
+  shared-mime-info libglib2.0-0 libexpat1 libcommons-math-java libdatrie1
+  openjdk-6-jre-headless fontconfig libavahi-common-data libsam-java
+  libgdk-pixbuf2.0-0 gettext libxcb1 ant libaccess-bridge-java-jni default-jdk
+  libxau6 libpixman-1-0 libcups2 default-jre libxinerama1 libkrb5support0
+  libgif4 libcommons-net-java libxft2 fontconfig-config libbsf-java libcroco3
+  libxml-commons-external-java tzdata-java libice6 libxdmcp6 libgcrypt11
+  libthai0 libxml2 libkeyutils1 file libasound2 libflac8 libxrender1
+  libconcurrent-java libvorbisenc2 libjama-java ucf libasyncns0 libtiff4
+  libjasper1 libswing-layout-java libjpeg62 libxtst6 libavahi-client3
+  x11-common libx11-6 man-db libfontconfig1 ca-certificates-java html2text
+  openssl libhamcrest-java libpango1.0-0 libsm6 libpulse0 libxdamage1
+  libxcb-render0 libgssapi-krb5-2 libxi6 libvorbis0a openjdk-6-jdk
+  libbatik-java libxcursor1 libxcb-shm0 libjlibeps-java libxext6 openjdk-6-jre
+  libavahi-common3 liblog4j1.2-java libcommons-io-java libxrandr2 libnss3-1d
+  ca-certificates libsndfile1 libsqlite3-0 libgtk2.0-0 libmagic1 libssl1.0.0
+  libgpg-error0 libogg0
+Use 'apt-get autoremove' to remove them.
 0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
-Removing negative dependencies: 
+Merged Build-Depends: base-files, base-passwd, bash, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, ncurses-base, ncurses-bin, perl-base, sed, login, sysvinit-utils, sysvinit, tar, bsdutils, mount, util-linux, libc6-dev | libc-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), debhelper (>= 8), autotools-dev
+Filtered Build-Depends: base-files, base-passwd, bash, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, ncurses-base, ncurses-bin, perl-base, sed, login, sysvinit-utils, sysvinit, tar, bsdutils, mount, util-linux, libc6-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), debhelper (>= 8), autotools-dev
+dpkg-deb: building package `sbuild-build-depends-libgtextutils-dummy' in `/«BUILDDIR»/resolver-1vzJL0/apt_archive/sbuild-build-depends-libgtextutils-dummy.deb'.
+OK
 Reading package lists...
-Building dependency tree...
-Reading state information...
-0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
-Checking correctness of dependencies...
 
 ┌──────────────────────────────────────────────────────────────────────────────┐
-│ Install libgtextutils build dependencies (internal resolver)                 │
+│ Install libgtextutils build dependencies (apt-based resolver)                │
 └──────────────────────────────────────────────────────────────────────────────┘
 
-Build-Depends: base-files, base-passwd, bash, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, ncurses-base, ncurses-bin, perl-base, sed, login, sysvinit-utils, sysvinit, tar, bsdutils, mount, util-linux, libc6-dev | libc-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), debhelper (>= 8), autotools-dev
-Checking for already installed dependencies...
-base-files: already installed (6.1)
-base-passwd: already installed (3.5.22)
-bash: already installed (4.1-3)
-coreutils: already installed (8.5-1)
-dash: already installed (0.5.5.1-7.4)
-debianutils: already installed (3.4.4)
-diffutils: already installed (1:3.0-1)
-dpkg: already installed (1.15.8.10)
-e2fsprogs: already installed (1.41.12-2)
-findutils: already installed (4.4.2-1+b1)
-grep: already installed (2.6.3-3)
-gzip: already installed (1.3.12-9)
-hostname: already installed (3.05)
-ncurses-base: already installed (5.7+20100313-5)
-ncurses-bin: already installed (5.7+20100313-5)
-perl-base: already installed (5.10.1-17)
-sed: already installed (4.2.1-9)
-login: already installed (1:4.1.4.2+svn3283-2)
-sysvinit-utils: already installed (2.88dsf-13.1)
-sysvinit: already installed (2.88dsf-13.1)
-tar: already installed (1.25-3)
-bsdutils: already installed (1:2.17.2-9.1)
-mount: already installed (2.17.2-9.1)
-util-linux: already installed (2.17.2-9.1)
-libc6-dev: already installed (2.11.2-11)
-gcc: already installed (4:4.4.5-2 >= 4:4.4.3 is satisfied)
-g++: already installed (4:4.4.5-2 >= 4:4.4.3 is satisfied)
-make: already installed (3.81-8)
-dpkg-dev: already installed (1.15.8.10 >= 1.13.5 is satisfied)
-debhelper: missing
-Using default version 8.1.2
-autotools-dev: missing
-Checking for dependency conflicts...
-Installing positive dependencies: debhelper autotools-dev
+Installing build dependencies
 Reading package lists...
 Building dependency tree...
 Reading state information...
+The following packages were automatically installed and are no longer required:
+  libkrb5-3 libatk1.0-0 libk5crypto3 libjaxp1.3-java libgtk2.0-common
+  libxfixes3 junit4 libaccess-bridge-java libjargs-java libxcomposite1
+  liboro-java liblcms1 libxerces2-java libwrap0 libavalon-framework-java
+  libatk1.0-data ttf-dejavu-core libx11-data libxalan2-java libdbus-1-3 unzip
+  libcap2 java-common libnspr4-0d java-wrappers default-jre-headless libcairo2
+  libgnutls26 libcommons-logging-java libtasn1-3 openjdk-6-jre-lib
+  libfreetype6 libthai-data libexpat1 libcommons-math-java libdatrie1
+  openjdk-6-jre-headless fontconfig libavahi-common-data libsam-java
+  libgdk-pixbuf2.0-0 libxcb1 ant libaccess-bridge-java-jni default-jdk libxau6
+  libpixman-1-0 libcups2 default-jre libxinerama1 libkrb5support0 libgif4
+  libcommons-net-java libxft2 fontconfig-config libbsf-java
+  libxml-commons-external-java tzdata-java libice6 libxdmcp6 libgcrypt11
+  libthai0 libkeyutils1 libasound2 libflac8 libxrender1 libconcurrent-java
+  libvorbisenc2 libjama-java ucf libasyncns0 libtiff4 libjasper1
+  libswing-layout-java libjpeg62 libxtst6 libavahi-client3 x11-common libx11-6
+  libfontconfig1 ca-certificates-java openssl libhamcrest-java libpango1.0-0
+  libsm6 libpulse0 libxdamage1 libxcb-render0 libgssapi-krb5-2 libxi6
+  libvorbis0a openjdk-6-jdk libbatik-java libxcursor1 libxcb-shm0
+  libjlibeps-java libxext6 openjdk-6-jre libavahi-common3 liblog4j1.2-java
+  libcommons-io-java libxrandr2 libnss3-1d ca-certificates libsndfile1
+  libsqlite3-0 libgtk2.0-0 libssl1.0.0 libgpg-error0 libogg0
+Use 'apt-get autoremove' to remove them.
 The following extra packages will be installed:
-  bsdmainutils file gettext gettext-base groff-base html2text intltool-debian
-  libcroco3 libglib2.0-0 libmagic1 libpcre3 libpipeline1 libunistring0 libxml2
-  man-db po-debconf
-Suggested packages:
-  wamerican wordlist whois vacation dh-make gettext-doc groff less www-browser
-  libmail-box-perl
-Recommended packages:
-  curl wget lynx-cur autopoint libglib2.0-data shared-mime-info xml-core
-  libmail-sendmail-perl
+  autotools-dev
 The following NEW packages will be installed:
-  autotools-dev bsdmainutils debhelper file gettext gettext-base groff-base
-  html2text intltool-debian libcroco3 libglib2.0-0 libmagic1 libpcre3
-  libpipeline1 libunistring0 libxml2 man-db po-debconf
-0 upgraded, 18 newly installed, 0 to remove and 0 not upgraded.
-Need to get 4621 kB/9206 kB of archives.
-After this operation, 27.4 MB of additional disk space will be used.
-Get:1 http://ftp.riken.jp/Linux/debian/debian/ unstable/main groff-base amd64 1.21-4 [1129 kB]
-Get:2 http://ftp.riken.jp/Linux/debian/debian/ unstable/main libpipeline1 amd64 1.1.0-1 [37.5 kB]
-Get:3 http://ftp.riken.jp/Linux/debian/debian/ unstable/main man-db amd64 2.5.9-4 [1042 kB]
-Get:4 http://ftp.riken.jp/Linux/debian/debian/ unstable/main libpcre3 amd64 8.12-2 [257 kB]
-Get:5 http://ftp.riken.jp/Linux/debian/debian/ unstable/main libglib2.0-0 amd64 2.28.0-1 [1603 kB]
-Get:6 http://ftp.riken.jp/Linux/debian/debian/ unstable/main debhelper all 8.1.2 [553 kB]
+  autotools-dev sbuild-build-depends-libgtextutils-dummy
 debconf: delaying package configuration, since apt-utils is not installed
-Fetched 4621 kB in 0s (6088 kB/s)
-Selecting previously deselected package bsdmainutils.
-(Reading database ... 10137 files and directories currently installed.)
-Unpacking bsdmainutils (from .../bsdmainutils_8.2.2_amd64.deb) ...
-Selecting previously deselected package groff-base.
-Unpacking groff-base (from .../groff-base_1.21-4_amd64.deb) ...
-Selecting previously deselected package libpipeline1.
-Unpacking libpipeline1 (from .../libpipeline1_1.1.0-1_amd64.deb) ...
-Selecting previously deselected package man-db.
-Unpacking man-db (from .../man-db_2.5.9-4_amd64.deb) ...
-Selecting previously deselected package libmagic1.
-Unpacking libmagic1 (from .../libmagic1_5.04-5_amd64.deb) ...
-Selecting previously deselected package file.
-Unpacking file (from .../archives/file_5.04-5_amd64.deb) ...
-Selecting previously deselected package gettext-base.
-Unpacking gettext-base (from .../gettext-base_0.18.1.1-3_amd64.deb) ...
-Selecting previously deselected package libpcre3.
-Unpacking libpcre3 (from .../libpcre3_8.12-2_amd64.deb) ...
-Selecting previously deselected package libxml2.
-Unpacking libxml2 (from .../libxml2_2.7.8.dfsg-2_amd64.deb) ...
+0 upgraded, 2 newly installed, 0 to remove and 0 not upgraded.
+Need to get 0 B/74.7 kB of archives.
+After this operation, 225 kB of additional disk space will be used.
 Selecting previously deselected package autotools-dev.
-Unpacking autotools-dev (from .../autotools-dev_20100122.1_all.deb) ...
-Selecting previously deselected package html2text.
-Unpacking html2text (from .../html2text_1.3.2a-15_amd64.deb) ...
-Selecting previously deselected package libglib2.0-0.
-Unpacking libglib2.0-0 (from .../libglib2.0-0_2.28.0-1_amd64.deb) ...
-Selecting previously deselected package libcroco3.
-Unpacking libcroco3 (from .../libcroco3_0.6.2-1_amd64.deb) ...
-Selecting previously deselected package libunistring0.
-Unpacking libunistring0 (from .../libunistring0_0.9.3-3_amd64.deb) ...
-Selecting previously deselected package gettext.
-Unpacking gettext (from .../gettext_0.18.1.1-3_amd64.deb) ...
-Selecting previously deselected package intltool-debian.
-Unpacking intltool-debian (from .../intltool-debian_0.35.0+20060710.1_all.deb) ...
-Selecting previously deselected package po-debconf.
-Unpacking po-debconf (from .../po-debconf_1.0.16+nmu1_all.deb) ...
-Selecting previously deselected package debhelper.
-Unpacking debhelper (from .../debhelper_8.1.2_all.deb) ...
-Setting up bsdmainutils (8.2.2) ...
-update-alternatives: using /usr/bin/bsd-write to provide /usr/bin/write (write) in auto mode.
-update-alternatives: using /usr/bin/bsd-from to provide /usr/bin/from (from) in auto mode.
-Setting up groff-base (1.21-4) ...
-Setting up libpipeline1 (1.1.0-1) ...
-Setting up man-db (2.5.9-4) ...
-debconf: unable to initialize frontend: Dialog
-debconf: (TERM is not set, so the dialog frontend is not usable.)
-debconf: falling back to frontend: Readline
-Building database of manual pages ...
-Setting up libmagic1 (5.04-5) ...
-Setting up file (5.04-5) ...
-Setting up gettext-base (0.18.1.1-3) ...
-Setting up libpcre3 (8.12-2) ...
-Setting up libxml2 (2.7.8.dfsg-2) ...
-Setting up autotools-dev (20100122.1) ...
-Setting up html2text (1.3.2a-15) ...
-Setting up libglib2.0-0 (2.28.0-1) ...
-No schema files found: doing nothing.
-Setting up libcroco3 (0.6.2-1) ...
-Setting up libunistring0 (0.9.3-3) ...
-Setting up gettext (0.18.1.1-3) ...
-Setting up intltool-debian (0.35.0+20060710.1) ...
-Setting up po-debconf (1.0.16+nmu1) ...
-Setting up debhelper (8.1.2) ...
-Removing negative dependencies: 
-Reading package lists...
-Building dependency tree...
-Reading state information...
-0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
-Checking correctness of dependencies...
-Kernel: Linux 2.6.32-5-vserver-amd64 amd64 (x86_64)
-Toolchain package versions: binutils_2.20.1-16 dpkg-dev_1.15.8.10 g++-4.4_4.4.5-10 gcc-4.4_4.4.5-10 libc6-dev_2.11.2-11 libstdc++6_4.4.5-10 libstdc++6-4.4-dev_4.4.5-10 linux-libc-dev_2.6.32-30
-Package versions: apt_0.8.11.3 autotools-dev_20100122.1 base-files_6.1 base-passwd_3.5.22 bash_4.1-3 binutils_2.20.1-16 bsdmainutils_8.2.2 bsdutils_1:2.17.2-9.1 build-essential_11.5 bzip2_1.0.5-6 coreutils_8.5-1 cpp_4:4.4.5-2 cpp-4.4_4.4.5-10 dash_0.5.5.1-7.4 debconf_1.5.38 debconf-i18n_1.5.38 debfoster_2.7-1.1 debhelper_8.1.2 debian-archive-keyring_2010.08.28 debianutils_3.4.4 diffutils_1:3.0-1 dpkg_1.15.8.10 dpkg-dev_1.15.8.10 e2fslibs_1.41.12-2 e2fsprogs_1.41.12-2 fakeroot_1.14.5-2 file_5.04-5 findutils_4.4.2-1+b1 g++_4:4.4.5-2 g++-4.4_4.4.5-10 gcc_4:4.4.5-2 gcc-4.4_4.4.5-10 gcc-4.4-base_4.4.5-10 gettext_0.18.1.1-3 gettext-base_0.18.1.1-3 gnupg_1.4.10-4 gpgv_1.4.10-4 grep_2.6.3-3 groff-base_1.21-4 gzip_1.3.12-9 hostname_3.05 html2text_1.3.2a-15 initscripts_2.88dsf-13.1 insserv_1.14.0-2 intltool-debian_0.35.0+20060710.1 libacl1_2.2.49-4 libattr1_1:2.4.44-2 libblkid1_2.17.2-9.1 libbz2-1.0_1.0.5-6 libc-bin_2.11.2-11 libc-dev-bin_2.11.2-11 libc6_2.11.2-11 libc6-dev_2.11.2-11 libcomerr2_1.41.12-2 libcroco3_0.6.2-1 libdb4.7_4.7.25-12 libdb4.8_4.8.30-5 libdpkg-perl_1.15.8.10 libgc1c2_1:6.8-1.2 libgcc1_1:4.4.5-10 libgdbm3_1.8.3-9 libglib2.0-0_2.28.0-1 libgmp3c2_2:4.3.2+dfsg-1 libgomp1_4.4.5-10 liblocale-gettext-perl_1.05-6 liblzma2_5.0.0-2 libmagic1_5.04-5 libmpfr4_3.0.0-2 libncurses5_5.7+20100313-5 libpam-modules_1.1.1-6.1 libpam-runtime_1.1.1-6.1 libpam0g_1.1.1-6.1 libpcre3_8.12-2 libpipeline1_1.1.0-1 libreadline6_6.1-3 libselinux1_2.0.96-1 libsepol1_2.0.42-1 libslang2_2.2.2-4 libss2_1.41.12-2 libstdc++6_4.4.5-10 libstdc++6-4.4-dev_4.4.5-10 libtext-charwidth-perl_0.04-6 libtext-iconv-perl_1.7-2 libtext-wrapi18n-perl_0.06-7 libtimedate-perl_1.2000-1 libunistring0_0.9.3-3 libusb-0.1-4_2:0.1.12-17 libuuid1_2.17.2-9.1 libxml2_2.7.8.dfsg-2 linux-libc-dev_2.6.32-30 login_1:4.1.4.2+svn3283-2 lsb-base_3.2-27 make_3.81-8 man-db_2.5.9-4 mawk_1.3.3-15 mount_2.17.2-9.1 ncurses-base_5.7+20100313-5 ncurses-bin_5.7+20100313-5 passwd_1:4.1.4.2+svn3283-2 patch_2.6.1-1 perl_5.10.1-17 perl-base_5.10.1-17 perl-modules_5.10.1-17 po-debconf_1.0.16+nmu1 readline-common_6.1-3 sed_4.2.1-9 sensible-utils_0.0.6 sysv-rc_2.88dsf-13.1 sysvinit_2.88dsf-13.1 sysvinit-utils_2.88dsf-13.1 tar_1.25-3 tzdata_2011b-2 util-linux_2.17.2-9.1 xz-utils_5.0.0-2 zlib1g_1:1.2.3.4.dfsg-3
+(Reading database ... 16393 files and directories currently installed.)
+Unpacking autotools-dev (from .../autotools-dev_20110511.1_all.deb) ...
+Selecting previously deselected package sbuild-build-depends-libgtextutils-dummy.
+Unpacking sbuild-build-depends-libgtextutils-dummy (from .../sbuild-build-depends-libgtextutils-dummy.deb) ...
+Processing triggers for man-db ...
+Setting up autotools-dev (20110511.1) ...
+Setting up sbuild-build-depends-libgtextutils-dummy (0.invalid.0) ...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Build environment                                                            │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Kernel: Linux 2.6.32-5-amd64 amd64 (x86_64)
+Toolchain package versions: binutils_2.21.52.20110703-1 dpkg-dev_1.16.0.3 g++-4.6_4.6.1-1 gcc-4.6_4.6.1-1 libc6-dev_2.13-9 libstdc++6_4.6.1-1 libstdc++6-4.6-dev_4.6.1-1 linux-libc-dev_2.6.39-2
+Package versions: ant_1.8.2-2 apt_0.8.15.1 autotools-dev_20110511.1 base-files_6.4 base-passwd_3.5.22 bash_4.1-3 binutils_2.21.52.20110703-1 bsdmainutils_8.2.3 bsdutils_1:2.19.1-2 build-essential_11.5 bzip2_1.0.5-6 ca-certificates_20110502 ca-certificates-java_20110531 coreutils_8.5-1 cpp_4:4.6.0-6 cpp-4.6_4.6.1-1 dash_0.5.5.1-7.4 debconf_1.5.40 debconf-i18n_1.5.40 debfoster_2.7-1.1 debhelper_8.9.0 debian-archive-keyring_2010.08.28 debianutils_4.0.2 default-jdk_1:1.6-40 default-jre_1:1.6-40 default-jre-headless_1:1.6-40 diffutils_1:3.0-1 dpkg_1.16.0.3 dpkg-dev_1.16.0.3 e2fslibs_1.42~WIP-2011-07-02-1 e2fsprogs_1.42~WIP-2011-07-02-1 fakeroot_1.16-1 file_5.04-5+b1 findutils_4.4.2-1+b1 fontconfig_2.8.0-3 fontconfig-config_2.8.0-3 g++_4:4.6.0-6 g++-4.6_4.6.1-1 gcc_4:4.6.0-6 gcc-4.6_4.6.1-1 gcc-4.6-base_4.6.1-1 gettext_0.18.1.1-3 gettext-base_0.18.1.1-3 gnupg_1.4.11-3 gpgv_1.4.11-3 grep_2.8-2 groff-base_1.21-6 gzip_1.3.12-9 hostname_3.06 html2text_1.3.2a-15 initscripts_2.88dsf-13.10 insserv_1.14.0-2.1 intltool-debian_0.35.0+20060710.1 java-common_0.40 java-wrappers_0.1.22 junit4_4.8.2-2 libaccess-bridge-java_1.26.2-5 libaccess-bridge-java-jni_1.26.2-5 libacl1_2.2.51-1 libasound2_1.0.23-4 libasyncns0_0.8-2 libatk1.0-0_2.0.1-2 libatk1.0-data_2.0.1-2 libattr1_1:2.4.46-1 libavahi-client3_0.6.30-5 libavahi-common-data_0.6.30-5 libavahi-common3_0.6.30-5 libavalon-framework-java_4.2.0-7 libbatik-java_1.7-7 libblkid1_2.19.1-2 libbsf-java_1:2.4.0-4 libbz2-1.0_1.0.5-6 libc-bin_2.13-9 libc-dev-bin_2.13-9 libc6_2.13-9 libc6-dev_2.13-9 libcairo2_1.10.2-6 libcap2_1:2.21-1 libclass-isa-perl_0.36-1 libcloog-ppl0_0.15.9-3 libcomerr2_1.42~WIP-2011-07-02-1 libcommons-io-java_1.4-3 libcommons-logging-java_1.1.1-8 libcommons-math-java_2.2-1 libcommons-net-java_1.4.1-2 libconcurrent-java_1.3.4-4 libcroco3_0.6.2-1 libcups2_1.4.6-11 libdatrie1_0.2.4-3 libdb4.7_4.7.25-20 libdb4.8_4.8.30-9 libdb5.1_5.1.25-11 libdbus-1-3_1.4.12-4 libdpkg-perl_1.16.0.3 libelfg0_0.8.13-3 libexpat1_2.0.1-7 libflac8_1.2.1-3 libfontconfig1_2.8.0-3 libfreetype6_2.4.4-2 libgc1c2_1:7.1-8 libgcc1_1:4.6.1-1 libgcrypt11_1.4.6-7 libgdbm3_1.8.3-10 libgdk-pixbuf2.0-0_2.23.5-1 libgif4_4.1.6-9 libglib2.0-0_2.28.6-1 libgmp10_2:5.0.1+dfsg-7 libgmpxx4ldbl_2:5.0.1+dfsg-7 libgnutls26_2.10.5-2 libgomp1_4.6.1-1 libgpg-error0_1.10-0.3 libgssapi-krb5-2_1.9.1+dfsg-1+b1 libgtk2.0-0_2.24.4-3 libgtk2.0-common_2.24.4-3 libhamcrest-java_1.1-8 libice6_2:1.0.7-2 libjama-java_1.0.2-3 libjargs-java_1.0.0-3 libjasper1_1.900.1-7+b1 libjaxp1.3-java_1.3.05-1 libjlibeps-java_0.1+2-1 libjpeg62_6b1-1 libk5crypto3_1.9.1+dfsg-1+b1 libkeyutils1_1.4-5 libkrb5-3_1.9.1+dfsg-1+b1 libkrb5support0_1.9.1+dfsg-1+b1 liblcms1_1.18.dfsg-1.2+b4 liblocale-gettext-perl_1.05-6+b1 liblog4j1.2-java_1.2.15-11 liblzma2_5.0.0-2 libmagic1_5.04-5+b1 libmount1_2.19.1-2 libmpc2_0.9-3 libmpfr4_3.0.1-4 libncurses5_5.9-1 libnspr4-0d_4.8.8-2 libnss3-1d_3.12.10-1 libogg0_1.2.2~dfsg-1 liboro-java_2.0.8a-7 libpam-modules_1.1.3-2 libpam-modules-bin_1.1.3-2 libpam-runtime_1.1.3-2 libpam0g_1.1.3-2 libpango1.0-0_1.28.4-1 libpcre3_8.12-3 libpipeline1_1.2.0-3 libpixman-1-0_0.22.0-1 libpng12-0_1.2.44-2 libpod-plainer-perl_1.03-1 libppl-c4_0.11.2-3 libppl9_0.11.2-3 libpulse0_0.9.21-4.1 libpwl5_0.11.2-3 libquadmath0_4.6.1-1 libreadline6_6.2-2 libsam-java_1.46-1 libselinux1_2.0.98-1.1 libsepol1_2.0.42-1 libslang2_2.2.4-2 libsm6_2:1.2.0-2 libsndfile1_1.0.24-1 libsqlite3-0_3.7.7-2 libss2_1.42~WIP-2011-07-02-1 libssl1.0.0_1.0.0d-3 libstdc++6_4.6.1-1 libstdc++6-4.6-dev_4.6.1-1 libswing-layout-java_1.0.4-1 libswitch-perl_2.16-1 libtasn1-3_2.9-4 libtext-charwidth-perl_0.04-6+b1 libtext-iconv-perl_1.7-2+b1 libtext-wrapi18n-perl_0.06-7 libthai-data_0.1.15-2 libthai0_0.1.15-2 libtiff4_3.9.5-1 libtimedate-perl_1.2000-1 libunistring0_0.9.3-4 libusb-0.1-4_2:0.1.12-17 libuuid1_2.19.1-2 libvorbis0a_1.3.2-1 libvorbisenc2_1.3.2-1 libwrap0_7.6.q-21 libx11-6_2:1.4.3-2 libx11-data_2:1.4.3-2 libxalan2-java_2.7.1-5 libxau6_1:1.0.6-3 libxcb-render0_1.7-3 libxcb-shm0_1.7-3 libxcb1_1.7-3 libxcomposite1_1:0.4.3-2 libxcursor1_1:1.1.12-1 libxdamage1_1:1.1.3-2 libxdmcp6_1:1.1.0-3 libxerces2-java_2.9.1-4.1 libxext6_2:1.3.0-3 libxfixes3_1:5.0-4 libxft2_2.2.0-3 libxi6_2:1.4.3-3 libxinerama1_2:1.1.1-3 libxml-commons-external-java_1.3.05-2 libxml2_2.7.8.dfsg-3 libxrandr2_2:1.3.2-2 libxrender1_1:0.9.6-2 libxtst6_2:1.2.0-1 linux-libc-dev_2.6.39-2 login_1:4.1.4.2+svn3283-3 lsb-base_3.2-27 make_3.81-8.1 man-db_2.6.0.2-1 mawk_1.3.3-15 mount_2.19.1-2 multiarch-support_2.13-9 ncurses-base_5.9-1 ncurses-bin_5.9-1 openjdk-6-jdk_6b18-1.8.7-5 openjdk-6-jre_6b18-1.8.7-5 openjdk-6-jre-headless_6b18-1.8.7-5 openjdk-6-jre-lib_6b18-1.8.7-5 openssl_1.0.0d-3 passwd_1:4.1.4.2+svn3283-3 patch_2.6.1-2 perl_5.12.4-1 perl-base_5.12.4-1 perl-modules_5.12.4-1 po-debconf_1.0.16+nmu1 readline-common_6.2-2 sbuild-build-depends-core-dummy_0.invalid.0 sbuild-build-depends-libgtextutils-dummy_0.invalid.0 sed_4.2.1-9 sensible-utils_0.0.6 shared-mime-info_0.90-1 sysv-rc_2.88dsf-13.10 sysvinit_2.88dsf-13.10 sysvinit-utils_2.88dsf-13.10 tar_1.25-3 ttf-dejavu-core_2.33-1 tzdata_2011h-2 tzdata-java_2011h-2 ucf_3.0025+nmu2 unzip_6.0-5 util-linux_2.19.1-2 x11-common_1:7.6+7 xz-utils_5.0.0-2 zlib1g_1:1.2.3.4.dfsg-3
 
 ┌──────────────────────────────────────────────────────────────────────────────┐
 │ Build                                                                        │
@@ -202,14 +152,33 @@ Package versions: apt_0.8.11.3 autotools-dev_20100122.1 base-files_6.1 base-pass
 Unpack source
 ─────────────
 
-dpkg-source: warning: extracting unsigned source package (libgtextutils_0.6-1.dsc)
-dpkg-source: info: extracting libgtextutils in libgtextutils-0.6
-dpkg-source: info: unpacking libgtextutils_0.6.orig.tar.gz
-dpkg-source: info: applying libgtextutils_0.6-1.diff.gz
+dpkg-source: warning: extracting unsigned source package (libgtextutils_0.6.2-1.dsc)
+dpkg-source: info: extracting libgtextutils in libgtextutils-0.6.2
+dpkg-source: info: unpacking libgtextutils_0.6.2.orig.tar.bz2
+dpkg-source: info: unpacking libgtextutils_0.6.2-1.debian.tar.gz
 
 Check disc space
 ────────────────
 
+Sufficient free space for build
+
+User Environment
+────────────────
+
+HOME=/sbuild-nonexistent
+LOGNAME=charles
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+SCHROOT_CHROOT_NAME=sid-amd64-sbuild
+SCHROOT_COMMAND=env
+SCHROOT_GID=1000
+SCHROOT_GROUP=charles
+SCHROOT_SESSION_ID=sid-amd64-sbuild-0584ac64-ab05-4892-bea0-6de2ec550426
+SCHROOT_UID=31051
+SCHROOT_USER=charles
+SHELL=/bin/sh
+TERM=xterm
+USER=charles
+USERNAME=charles
 
 dpkg-buildpackage
 ─────────────────
@@ -220,9 +189,9 @@ dpkg-buildpackage: export CXXFLAGS from dpkg-buildflags (origin: vendor): -g -O2
 dpkg-buildpackage: export FFLAGS from dpkg-buildflags (origin: vendor): -g -O2
 dpkg-buildpackage: export LDFLAGS from dpkg-buildflags (origin: vendor): 
 dpkg-buildpackage: source package libgtextutils
-dpkg-buildpackage: source version 0.6-1
+dpkg-buildpackage: source version 0.6.2-1
 dpkg-buildpackage: source changed by Charles Plessy <plessy@debian.org>
- dpkg-source --before-build libgtextutils-0.6
+ dpkg-source --before-build libgtextutils-0.6.2
 dpkg-buildpackage: host architecture amd64
  fakeroot debian/rules clean
 dh clean --with autotools_dev
@@ -230,17 +199,17 @@ dh clean --with autotools_dev
    dh_auto_clean
    dh_autotools-dev_restoreconfig
    dh_clean
- dpkg-source -b libgtextutils-0.6
-dpkg-source: warning: no source format specified in debian/source/format, see dpkg-source(1)
-dpkg-source: info: using source format `1.0'
-dpkg-source: info: building libgtextutils using existing libgtextutils_0.6.orig.tar.gz
-dpkg-source: info: building libgtextutils in libgtextutils_0.6-1.diff.gz
-dpkg-source: info: building libgtextutils in libgtextutils_0.6-1.dsc
+ dpkg-source -b libgtextutils-0.6.2
+dpkg-source: info: using source format `3.0 (quilt)'
+dpkg-source: info: building libgtextutils using existing ./libgtextutils_0.6.2.orig.tar.bz2
+dpkg-source: info: building libgtextutils in libgtextutils_0.6.2-1.debian.tar.gz
+dpkg-source: info: building libgtextutils in libgtextutils_0.6.2-1.dsc
  debian/rules build
 dh build --with autotools_dev
    dh_testdir
    dh_autotools-dev_updateconfig
    dh_auto_configure
+configure: WARNING: unrecognized options: --disable-maintainer-mode
 checking for a BSD-compatible install... /usr/bin/install -c
 checking whether build environment is sane... yes
 checking for a thread-safe mkdir -p... /bin/mkdir -p
@@ -248,10 +217,10 @@ checking for gawk... no
 checking for mawk... mawk
 checking whether make sets $(MAKE)... yes
 checking for gcc... gcc
-checking for C compiler default output file name... a.out
 checking whether the C compiler works... yes
-checking whether we are cross compiling... no
+checking for C compiler default output file name... a.out
 checking for suffix of executables... 
+checking whether we are cross compiling... no
 checking for suffix of object files... o
 checking whether we are using the GNU C compiler... yes
 checking whether gcc accepts -g... yes
@@ -337,18 +306,19 @@ config.status: creating tests/Makefile
 config.status: creating config.h
 config.status: executing depfiles commands
 config.status: executing libtool commands
+configure: WARNING: unrecognized options: --disable-maintainer-mode
    dh_auto_build
-make[1]: Entering directory `/build/charles-libgtextutils_0.6-1-amd64-TImDp5/libgtextutils-0.6'
+make[1]: Entering directory `/«PKGBUILDDIR»'
 make  all-recursive
-make[2]: Entering directory `/build/charles-libgtextutils_0.6-1-amd64-TImDp5/libgtextutils-0.6'
+make[2]: Entering directory `/«PKGBUILDDIR»'
 Making all in m4
-make[3]: Entering directory `/build/charles-libgtextutils_0.6-1-amd64-TImDp5/libgtextutils-0.6/m4'
+make[3]: Entering directory `/«PKGBUILDDIR»/m4'
 make[3]: Nothing to be done for `all'.
-make[3]: Leaving directory `/build/charles-libgtextutils_0.6-1-amd64-TImDp5/libgtextutils-0.6/m4'
+make[3]: Leaving directory `/«PKGBUILDDIR»/m4'
 Making all in src
-make[3]: Entering directory `/build/charles-libgtextutils_0.6-1-amd64-TImDp5/libgtextutils-0.6/src'
+make[3]: Entering directory `/«PKGBUILDDIR»/src'
 Making all in gtextutils
-make[4]: Entering directory `/build/charles-libgtextutils_0.6-1-amd64-TImDp5/libgtextutils-0.6/src/gtextutils'
+make[4]: Entering directory `/«PKGBUILDDIR»/src/gtextutils'
 /bin/bash ../../libtool --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I../..     -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -c -o stream_wrapper.lo stream_wrapper.cpp
 libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../.. -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -c stream_wrapper.cpp  -fPIC -DPIC -o .libs/stream_wrapper.o
 libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../.. -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -c stream_wrapper.cpp -o stream_wrapper.o >/dev/null 2>&1
@@ -361,55 +331,54 @@ libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -g -O2 -Wall -Wextra -Wformat
 /bin/bash ../../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..     -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -c -o pipe_fitter.lo pipe_fitter.c
 libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -c pipe_fitter.c  -fPIC -DPIC -o .libs/pipe_fitter.o
 libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -c pipe_fitter.c -o pipe_fitter.o >/dev/null 2>&1
-/bin/bash ../../libtool --tag=CXX   --mode=link g++  -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -version-info 0:0:0 -release 0.6  -o libgtextutils.la -rpath /usr/lib stream_wrapper.lo text_line_reader.lo strnatcmp.lo pipe_fitter.lo  
-libtool: link: g++ -shared -nostdlib /usr/lib/gcc/x86_64-linux-gnu/4.4.5/../../../../lib/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.4.5/crtbeginS.o  .libs/stream_wrapper.o .libs/text_line_reader.o .libs/strnatcmp.o .libs/pipe_fitter.o   -L/usr/lib/gcc/x86_64-linux-gnu/4.4.5 -L/usr/lib/gcc/x86_64-linux-gnu/4.4.5/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.4.5/../../.. -lstdc++ -lm -lc -lgcc_s /usr/lib/gcc/x86_64-linux-gnu/4.4.5/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/4.4.5/../../../../lib/crtn.o    -Wl,-soname -Wl,libgtextutils-0.6.so.0 -o .libs/libgtextutils-0.6.so.0.0.0
-libtool: link: (cd ".libs" && rm -f "libgtextutils-0.6.so.0" && ln -s "libgtextutils-0.6.so.0.0.0" "libgtextutils-0.6.so.0")
-libtool: link: (cd ".libs" && rm -f "libgtextutils.so" && ln -s "libgtextutils-0.6.so.0.0.0" "libgtextutils.so")
+/bin/bash ../../libtool --tag=CXX   --mode=link g++  -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -version-info 0:0:0 -release 0.6.2  -o libgtextutils.la -rpath /usr/lib stream_wrapper.lo text_line_reader.lo strnatcmp.lo pipe_fitter.lo  
+libtool: link: g++ -shared -nostdlib /usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu/4.6.1/../../../crti.o /usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu/4.6.1/crtbeginS.o  .libs/stream_wrapper.o .libs/text_line_reader.o .libs/strnatcmp.o .libs/pipe_fitter.o   -L/usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu/4.6.1 -L/usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu/4.6.1/../../.. -L/usr/lib/x86_64-linux-gnu -lstdc++ -lm -lc -lgcc_s /usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu/4.6.1/crtendS.o /usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu/4.6.1/../../../crtn.o    -Wl,-soname -Wl,libgtextutils-0.6.2.so.0 -o .libs/libgtextutils-0.6.2.so.0.0.0
+libtool: link: (cd ".libs" && rm -f "libgtextutils-0.6.2.so.0" && ln -s "libgtextutils-0.6.2.so.0.0.0" "libgtextutils-0.6.2.so.0")
+libtool: link: (cd ".libs" && rm -f "libgtextutils.so" && ln -s "libgtextutils-0.6.2.so.0.0.0" "libgtextutils.so")
 libtool: link: ar cru .libs/libgtextutils.a  stream_wrapper.o text_line_reader.o strnatcmp.o pipe_fitter.o
 libtool: link: ranlib .libs/libgtextutils.a
 libtool: link: ( cd ".libs" && rm -f "libgtextutils.la" && ln -s "../libgtextutils.la" "libgtextutils.la" )
-make[4]: Leaving directory `/build/charles-libgtextutils_0.6-1-amd64-TImDp5/libgtextutils-0.6/src/gtextutils'
-make[4]: Entering directory `/build/charles-libgtextutils_0.6-1-amd64-TImDp5/libgtextutils-0.6/src'
+make[4]: Leaving directory `/«PKGBUILDDIR»/src/gtextutils'
+make[4]: Entering directory `/«PKGBUILDDIR»/src'
 make[4]: Nothing to be done for `all-am'.
-make[4]: Leaving directory `/build/charles-libgtextutils_0.6-1-amd64-TImDp5/libgtextutils-0.6/src'
-make[3]: Leaving directory `/build/charles-libgtextutils_0.6-1-amd64-TImDp5/libgtextutils-0.6/src'
+make[4]: Leaving directory `/«PKGBUILDDIR»/src'
+make[3]: Leaving directory `/«PKGBUILDDIR»/src'
 Making all in doc
-make[3]: Entering directory `/build/charles-libgtextutils_0.6-1-amd64-TImDp5/libgtextutils-0.6/doc'
+make[3]: Entering directory `/«PKGBUILDDIR»/doc'
 make[3]: Nothing to be done for `all'.
-make[3]: Leaving directory `/build/charles-libgtextutils_0.6-1-amd64-TImDp5/libgtextutils-0.6/doc'
+make[3]: Leaving directory `/«PKGBUILDDIR»/doc'
 Making all in tests
-make[3]: Entering directory `/build/charles-libgtextutils_0.6-1-amd64-TImDp5/libgtextutils-0.6/tests'
+make[3]: Entering directory `/«PKGBUILDDIR»/tests'
 make[3]: Nothing to be done for `all'.
-make[3]: Leaving directory `/build/charles-libgtextutils_0.6-1-amd64-TImDp5/libgtextutils-0.6/tests'
-make[3]: Entering directory `/build/charles-libgtextutils_0.6-1-amd64-TImDp5/libgtextutils-0.6'
-make[3]: Nothing to be done for `all-am'.
-make[3]: Leaving directory `/build/charles-libgtextutils_0.6-1-amd64-TImDp5/libgtextutils-0.6'
-make[2]: Leaving directory `/build/charles-libgtextutils_0.6-1-amd64-TImDp5/libgtextutils-0.6'
-make[1]: Leaving directory `/build/charles-libgtextutils_0.6-1-amd64-TImDp5/libgtextutils-0.6'
+make[3]: Leaving directory `/«PKGBUILDDIR»/tests'
+make[3]: Entering directory `/«PKGBUILDDIR»'
+make[3]: Leaving directory `/«PKGBUILDDIR»'
+make[2]: Leaving directory `/«PKGBUILDDIR»'
+make[1]: Leaving directory `/«PKGBUILDDIR»'
    dh_auto_test
-make[1]: Entering directory `/build/charles-libgtextutils_0.6-1-amd64-TImDp5/libgtextutils-0.6'
+make[1]: Entering directory `/«PKGBUILDDIR»'
 Making check in m4
-make[2]: Entering directory `/build/charles-libgtextutils_0.6-1-amd64-TImDp5/libgtextutils-0.6/m4'
+make[2]: Entering directory `/«PKGBUILDDIR»/m4'
 make[2]: Nothing to be done for `check'.
-make[2]: Leaving directory `/build/charles-libgtextutils_0.6-1-amd64-TImDp5/libgtextutils-0.6/m4'
+make[2]: Leaving directory `/«PKGBUILDDIR»/m4'
 Making check in src
-make[2]: Entering directory `/build/charles-libgtextutils_0.6-1-amd64-TImDp5/libgtextutils-0.6/src'
+make[2]: Entering directory `/«PKGBUILDDIR»/src'
 Making check in gtextutils
-make[3]: Entering directory `/build/charles-libgtextutils_0.6-1-amd64-TImDp5/libgtextutils-0.6/src/gtextutils'
+make[3]: Entering directory `/«PKGBUILDDIR»/src/gtextutils'
 make[3]: Nothing to be done for `check'.
-make[3]: Leaving directory `/build/charles-libgtextutils_0.6-1-amd64-TImDp5/libgtextutils-0.6/src/gtextutils'
-make[3]: Entering directory `/build/charles-libgtextutils_0.6-1-amd64-TImDp5/libgtextutils-0.6/src'
+make[3]: Leaving directory `/«PKGBUILDDIR»/src/gtextutils'
+make[3]: Entering directory `/«PKGBUILDDIR»/src'
 make[3]: Nothing to be done for `check-am'.
-make[3]: Leaving directory `/build/charles-libgtextutils_0.6-1-amd64-TImDp5/libgtextutils-0.6/src'
-make[2]: Leaving directory `/build/charles-libgtextutils_0.6-1-amd64-TImDp5/libgtextutils-0.6/src'
+make[3]: Leaving directory `/«PKGBUILDDIR»/src'
+make[2]: Leaving directory `/«PKGBUILDDIR»/src'
 Making check in doc
-make[2]: Entering directory `/build/charles-libgtextutils_0.6-1-amd64-TImDp5/libgtextutils-0.6/doc'
+make[2]: Entering directory `/«PKGBUILDDIR»/doc'
 make[2]: Nothing to be done for `check'.
-make[2]: Leaving directory `/build/charles-libgtextutils_0.6-1-amd64-TImDp5/libgtextutils-0.6/doc'
+make[2]: Leaving directory `/«PKGBUILDDIR»/doc'
 Making check in tests
-make[2]: Entering directory `/build/charles-libgtextutils_0.6-1-amd64-TImDp5/libgtextutils-0.6/tests'
+make[2]: Entering directory `/«PKGBUILDDIR»/tests'
 make  test_container_join test_natural_sort test_input_stream_wrapper test_text_reader test_text_reader_unget test_fd_outbuf test_fd_inbuf test_in_out_buf test_pipe_fitter test_string_tokenize 
-make[3]: Entering directory `/build/charles-libgtextutils_0.6-1-amd64-TImDp5/libgtextutils-0.6/tests'
+make[3]: Entering directory `/«PKGBUILDDIR»/tests'
 g++ -DHAVE_CONFIG_H -I. -I.. -I../src    -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -c -o test_container_join.o test_container_join.cpp
 /bin/bash ../libtool --tag=CXX   --mode=link g++  -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1   -o test_container_join test_container_join.o ../src/gtextutils/libgtextutils.la 
 libtool: link: g++ -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -o .libs/test_container_join test_container_join.o  ../src/gtextutils/.libs/libgtextutils.so
@@ -440,9 +409,9 @@ libtool: link: gcc -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -W
 g++ -DHAVE_CONFIG_H -I. -I.. -I../src    -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -c -o test_string_tokenize.o test_string_tokenize.cpp
 /bin/bash ../libtool --tag=CXX   --mode=link g++  -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1   -o test_string_tokenize test_string_tokenize.o ../src/gtextutils/libgtextutils.la 
 libtool: link: g++ -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -o .libs/test_string_tokenize test_string_tokenize.o  ../src/gtextutils/.libs/libgtextutils.so
-make[3]: Leaving directory `/build/charles-libgtextutils_0.6-1-amd64-TImDp5/libgtextutils-0.6/tests'
+make[3]: Leaving directory `/«PKGBUILDDIR»/tests'
 make  check-TESTS
-make[3]: Entering directory `/build/charles-libgtextutils_0.6-1-amd64-TImDp5/libgtextutils-0.6/tests'
+make[3]: Entering directory `/«PKGBUILDDIR»/tests'
 0,1,2,3,4,5,6,7,8,9
 0-1-2-3-4-5-6-7-8-9
 keys  = 42	666
@@ -466,84 +435,73 @@ PASS: test_string_tokenize
 ===================
 All 10 tests passed
 ===================
-make[3]: Leaving directory `/build/charles-libgtextutils_0.6-1-amd64-TImDp5/libgtextutils-0.6/tests'
-make[2]: Leaving directory `/build/charles-libgtextutils_0.6-1-amd64-TImDp5/libgtextutils-0.6/tests'
-make[2]: Entering directory `/build/charles-libgtextutils_0.6-1-amd64-TImDp5/libgtextutils-0.6'
-make[2]: Nothing to be done for `check-am'.
-make[2]: Leaving directory `/build/charles-libgtextutils_0.6-1-amd64-TImDp5/libgtextutils-0.6'
-make[1]: Leaving directory `/build/charles-libgtextutils_0.6-1-amd64-TImDp5/libgtextutils-0.6'
+make[3]: Leaving directory `/«PKGBUILDDIR»/tests'
+make[2]: Leaving directory `/«PKGBUILDDIR»/tests'
+make[2]: Entering directory `/«PKGBUILDDIR»'
+make[2]: Leaving directory `/«PKGBUILDDIR»'
+make[1]: Leaving directory `/«PKGBUILDDIR»'
  fakeroot debian/rules binary
 dh binary --with autotools_dev
    dh_testroot
    dh_prep
    dh_installdirs
    dh_auto_install
-make[1]: Entering directory `/build/charles-libgtextutils_0.6-1-amd64-TImDp5/libgtextutils-0.6'
+make[1]: Entering directory `/«PKGBUILDDIR»'
 Making install in m4
-make[2]: Entering directory `/build/charles-libgtextutils_0.6-1-amd64-TImDp5/libgtextutils-0.6/m4'
-make[3]: Entering directory `/build/charles-libgtextutils_0.6-1-amd64-TImDp5/libgtextutils-0.6/m4'
+make[2]: Entering directory `/«PKGBUILDDIR»/m4'
+make[3]: Entering directory `/«PKGBUILDDIR»/m4'
 make[3]: Nothing to be done for `install-exec-am'.
-test -z "/usr/share/aclocal" || /bin/mkdir -p "/build/charles-libgtextutils_0.6-1-amd64-TImDp5/libgtextutils-0.6/debian/tmp/usr/share/aclocal"
-make[3]: Leaving directory `/build/charles-libgtextutils_0.6-1-amd64-TImDp5/libgtextutils-0.6/m4'
-make[2]: Leaving directory `/build/charles-libgtextutils_0.6-1-amd64-TImDp5/libgtextutils-0.6/m4'
+test -z "/usr/share/aclocal" || /bin/mkdir -p "/«PKGBUILDDIR»/debian/tmp/usr/share/aclocal"
+make[3]: Leaving directory `/«PKGBUILDDIR»/m4'
+make[2]: Leaving directory `/«PKGBUILDDIR»/m4'
 Making install in src
-make[2]: Entering directory `/build/charles-libgtextutils_0.6-1-amd64-TImDp5/libgtextutils-0.6/src'
+make[2]: Entering directory `/«PKGBUILDDIR»/src'
 Making install in gtextutils
-make[3]: Entering directory `/build/charles-libgtextutils_0.6-1-amd64-TImDp5/libgtextutils-0.6/src/gtextutils'
-make[4]: Entering directory `/build/charles-libgtextutils_0.6-1-amd64-TImDp5/libgtextutils-0.6/src/gtextutils'
-test -z "/usr/lib" || /bin/mkdir -p "/build/charles-libgtextutils_0.6-1-amd64-TImDp5/libgtextutils-0.6/debian/tmp/usr/lib"
- /bin/bash ../../libtool   --mode=install /usr/bin/install -c  'libgtextutils.la' '/build/charles-libgtextutils_0.6-1-amd64-TImDp5/libgtextutils-0.6/debian/tmp/usr/lib/libgtextutils.la'
-libtool: install: /usr/bin/install -c .libs/libgtextutils-0.6.so.0.0.0 /build/charles-libgtextutils_0.6-1-amd64-TImDp5/libgtextutils-0.6/debian/tmp/usr/lib/libgtextutils-0.6.so.0.0.0
-libtool: install: (cd /build/charles-libgtextutils_0.6-1-amd64-TImDp5/libgtextutils-0.6/debian/tmp/usr/lib && { ln -s -f libgtextutils-0.6.so.0.0.0 libgtextutils-0.6.so.0 || { rm -f libgtextutils-0.6.so.0 && ln -s libgtextutils-0.6.so.0.0.0 libgtextutils-0.6.so.0; }; })
-libtool: install: (cd /build/charles-libgtextutils_0.6-1-amd64-TImDp5/libgtextutils-0.6/debian/tmp/usr/lib && { ln -s -f libgtextutils-0.6.so.0.0.0 libgtextutils.so || { rm -f libgtextutils.so && ln -s libgtextutils-0.6.so.0.0.0 libgtextutils.so; }; })
-libtool: install: /usr/bin/install -c .libs/libgtextutils.lai /build/charles-libgtextutils_0.6-1-amd64-TImDp5/libgtextutils-0.6/debian/tmp/usr/lib/libgtextutils.la
-libtool: install: /usr/bin/install -c .libs/libgtextutils.a /build/charles-libgtextutils_0.6-1-amd64-TImDp5/libgtextutils-0.6/debian/tmp/usr/lib/libgtextutils.a
-libtool: install: chmod 644 /build/charles-libgtextutils_0.6-1-amd64-TImDp5/libgtextutils-0.6/debian/tmp/usr/lib/libgtextutils.a
-libtool: install: ranlib /build/charles-libgtextutils_0.6-1-amd64-TImDp5/libgtextutils-0.6/debian/tmp/usr/lib/libgtextutils.a
+make[3]: Entering directory `/«PKGBUILDDIR»/src/gtextutils'
+make[4]: Entering directory `/«PKGBUILDDIR»/src/gtextutils'
+test -z "/usr/lib" || /bin/mkdir -p "/«PKGBUILDDIR»/debian/tmp/usr/lib"
+ /bin/bash ../../libtool   --mode=install /usr/bin/install -c   libgtextutils.la '/«PKGBUILDDIR»/debian/tmp/usr/lib'
+libtool: install: /usr/bin/install -c .libs/libgtextutils-0.6.2.so.0.0.0 /«PKGBUILDDIR»/debian/tmp/usr/lib/libgtextutils-0.6.2.so.0.0.0
+libtool: install: (cd /«PKGBUILDDIR»/debian/tmp/usr/lib && { ln -s -f libgtextutils-0.6.2.so.0.0.0 libgtextutils-0.6.2.so.0 || { rm -f libgtextutils-0.6.2.so.0 && ln -s libgtextutils-0.6.2.so.0.0.0 libgtextutils-0.6.2.so.0; }; })
+libtool: install: (cd /«PKGBUILDDIR»/debian/tmp/usr/lib && { ln -s -f libgtextutils-0.6.2.so.0.0.0 libgtextutils.so || { rm -f libgtextutils.so && ln -s libgtextutils-0.6.2.so.0.0.0 libgtextutils.so; }; })
+libtool: install: /usr/bin/install -c .libs/libgtextutils.lai /«PKGBUILDDIR»/debian/tmp/usr/lib/libgtextutils.la
+libtool: install: /usr/bin/install -c .libs/libgtextutils.a /«PKGBUILDDIR»/debian/tmp/usr/lib/libgtextutils.a
+libtool: install: chmod 644 /«PKGBUILDDIR»/debian/tmp/usr/lib/libgtextutils.a
+libtool: install: ranlib /«PKGBUILDDIR»/debian/tmp/usr/lib/libgtextutils.a
 libtool: install: warning: remember to run `libtool --finish /usr/lib'
-test -z "/usr/include/gtextutils/gtextutils" || /bin/mkdir -p "/build/charles-libgtextutils_0.6-1-amd64-TImDp5/libgtextutils-0.6/debian/tmp/usr/include/gtextutils/gtextutils"
- /usr/bin/install -c -m 644 'container_join.h' '/build/charles-libgtextutils_0.6-1-amd64-TImDp5/libgtextutils-0.6/debian/tmp/usr/include/gtextutils/gtextutils/container_join.h'
- /usr/bin/install -c -m 644 'text_line_reader.h' '/build/charles-libgtextutils_0.6-1-amd64-TImDp5/libgtextutils-0.6/debian/tmp/usr/include/gtextutils/gtextutils/text_line_reader.h'
- /usr/bin/install -c -m 644 'stream_wrapper.h' '/build/charles-libgtextutils_0.6-1-amd64-TImDp5/libgtextutils-0.6/debian/tmp/usr/include/gtextutils/gtextutils/stream_wrapper.h'
- /usr/bin/install -c -m 644 'natsort.h' '/build/charles-libgtextutils_0.6-1-amd64-TImDp5/libgtextutils-0.6/debian/tmp/usr/include/gtextutils/gtextutils/natsort.h'
- /usr/bin/install -c -m 644 'strnatcmp.h' '/build/charles-libgtextutils_0.6-1-amd64-TImDp5/libgtextutils-0.6/debian/tmp/usr/include/gtextutils/gtextutils/strnatcmp.h'
- /usr/bin/install -c -m 644 'outbuf3.hpp' '/build/charles-libgtextutils_0.6-1-amd64-TImDp5/libgtextutils-0.6/debian/tmp/usr/include/gtextutils/gtextutils/outbuf3.hpp'
- /usr/bin/install -c -m 644 'inbuf1.hpp' '/build/charles-libgtextutils_0.6-1-amd64-TImDp5/libgtextutils-0.6/debian/tmp/usr/include/gtextutils/gtextutils/inbuf1.hpp'
- /usr/bin/install -c -m 644 'tuple_parser.h' '/build/charles-libgtextutils_0.6-1-amd64-TImDp5/libgtextutils-0.6/debian/tmp/usr/include/gtextutils/gtextutils/tuple_parser.h'
- /usr/bin/install -c -m 644 'exit_manip.h' '/build/charles-libgtextutils_0.6-1-amd64-TImDp5/libgtextutils-0.6/debian/tmp/usr/include/gtextutils/gtextutils/exit_manip.h'
- /usr/bin/install -c -m 644 'string_tokenize.h' '/build/charles-libgtextutils_0.6-1-amd64-TImDp5/libgtextutils-0.6/debian/tmp/usr/include/gtextutils/gtextutils/string_tokenize.h'
- /usr/bin/install -c -m 644 'pipe_fitter.h' '/build/charles-libgtextutils_0.6-1-amd64-TImDp5/libgtextutils-0.6/debian/tmp/usr/include/gtextutils/gtextutils/pipe_fitter.h'
-make[4]: Leaving directory `/build/charles-libgtextutils_0.6-1-amd64-TImDp5/libgtextutils-0.6/src/gtextutils'
-make[3]: Leaving directory `/build/charles-libgtextutils_0.6-1-amd64-TImDp5/libgtextutils-0.6/src/gtextutils'
-make[3]: Entering directory `/build/charles-libgtextutils_0.6-1-amd64-TImDp5/libgtextutils-0.6/src'
-make[4]: Entering directory `/build/charles-libgtextutils_0.6-1-amd64-TImDp5/libgtextutils-0.6/src'
+test -z "/usr/include/gtextutils/gtextutils" || /bin/mkdir -p "/«PKGBUILDDIR»/debian/tmp/usr/include/gtextutils/gtextutils"
+ /usr/bin/install -c -m 644 container_join.h text_line_reader.h stream_wrapper.h natsort.h strnatcmp.h outbuf3.hpp inbuf1.hpp tuple_parser.h exit_manip.h string_tokenize.h pipe_fitter.h '/«PKGBUILDDIR»/debian/tmp/usr/include/gtextutils/gtextutils'
+make[4]: Leaving directory `/«PKGBUILDDIR»/src/gtextutils'
+make[3]: Leaving directory `/«PKGBUILDDIR»/src/gtextutils'
+make[3]: Entering directory `/«PKGBUILDDIR»/src'
+make[4]: Entering directory `/«PKGBUILDDIR»/src'
 make[4]: Nothing to be done for `install-exec-am'.
 make[4]: Nothing to be done for `install-data-am'.
-make[4]: Leaving directory `/build/charles-libgtextutils_0.6-1-amd64-TImDp5/libgtextutils-0.6/src'
-make[3]: Leaving directory `/build/charles-libgtextutils_0.6-1-amd64-TImDp5/libgtextutils-0.6/src'
-make[2]: Leaving directory `/build/charles-libgtextutils_0.6-1-amd64-TImDp5/libgtextutils-0.6/src'
+make[4]: Leaving directory `/«PKGBUILDDIR»/src'
+make[3]: Leaving directory `/«PKGBUILDDIR»/src'
+make[2]: Leaving directory `/«PKGBUILDDIR»/src'
 Making install in doc
-make[2]: Entering directory `/build/charles-libgtextutils_0.6-1-amd64-TImDp5/libgtextutils-0.6/doc'
-make[3]: Entering directory `/build/charles-libgtextutils_0.6-1-amd64-TImDp5/libgtextutils-0.6/doc'
+make[2]: Entering directory `/«PKGBUILDDIR»/doc'
+make[3]: Entering directory `/«PKGBUILDDIR»/doc'
 make[3]: Nothing to be done for `install-exec-am'.
 make[3]: Nothing to be done for `install-data-am'.
-make[3]: Leaving directory `/build/charles-libgtextutils_0.6-1-amd64-TImDp5/libgtextutils-0.6/doc'
-make[2]: Leaving directory `/build/charles-libgtextutils_0.6-1-amd64-TImDp5/libgtextutils-0.6/doc'
+make[3]: Leaving directory `/«PKGBUILDDIR»/doc'
+make[2]: Leaving directory `/«PKGBUILDDIR»/doc'
 Making install in tests
-make[2]: Entering directory `/build/charles-libgtextutils_0.6-1-amd64-TImDp5/libgtextutils-0.6/tests'
-make[3]: Entering directory `/build/charles-libgtextutils_0.6-1-amd64-TImDp5/libgtextutils-0.6/tests'
+make[2]: Entering directory `/«PKGBUILDDIR»/tests'
+make[3]: Entering directory `/«PKGBUILDDIR»/tests'
 make[3]: Nothing to be done for `install-exec-am'.
 make[3]: Nothing to be done for `install-data-am'.
-make[3]: Leaving directory `/build/charles-libgtextutils_0.6-1-amd64-TImDp5/libgtextutils-0.6/tests'
-make[2]: Leaving directory `/build/charles-libgtextutils_0.6-1-amd64-TImDp5/libgtextutils-0.6/tests'
-make[2]: Entering directory `/build/charles-libgtextutils_0.6-1-amd64-TImDp5/libgtextutils-0.6'
-make[3]: Entering directory `/build/charles-libgtextutils_0.6-1-amd64-TImDp5/libgtextutils-0.6'
+make[3]: Leaving directory `/«PKGBUILDDIR»/tests'
+make[2]: Leaving directory `/«PKGBUILDDIR»/tests'
+make[2]: Entering directory `/«PKGBUILDDIR»'
+make[3]: Entering directory `/«PKGBUILDDIR»'
 make[3]: Nothing to be done for `install-exec-am'.
-test -z "/usr/lib/pkgconfig" || /bin/mkdir -p "/build/charles-libgtextutils_0.6-1-amd64-TImDp5/libgtextutils-0.6/debian/tmp/usr/lib/pkgconfig"
- /usr/bin/install -c -m 644 'gtextutils.pc' '/build/charles-libgtextutils_0.6-1-amd64-TImDp5/libgtextutils-0.6/debian/tmp/usr/lib/pkgconfig/gtextutils.pc'
-make[3]: Leaving directory `/build/charles-libgtextutils_0.6-1-amd64-TImDp5/libgtextutils-0.6'
-make[2]: Leaving directory `/build/charles-libgtextutils_0.6-1-amd64-TImDp5/libgtextutils-0.6'
-make[1]: Leaving directory `/build/charles-libgtextutils_0.6-1-amd64-TImDp5/libgtextutils-0.6'
+test -z "/usr/lib/pkgconfig" || /bin/mkdir -p "/«PKGBUILDDIR»/debian/tmp/usr/lib/pkgconfig"
+ /usr/bin/install -c -m 644 gtextutils.pc '/«PKGBUILDDIR»/debian/tmp/usr/lib/pkgconfig'
+make[3]: Leaving directory `/«PKGBUILDDIR»'
+make[2]: Leaving directory `/«PKGBUILDDIR»'
+make[1]: Leaving directory `/«PKGBUILDDIR»'
    dh_install
    dh_installdocs
    dh_installchangelogs
@@ -566,7 +524,9 @@ make[1]: Leaving directory `/build/charles-libgtextutils_0.6-1-amd64-TImDp5/libg
    dh_installudev
    dh_installwm
    dh_installxfonts
+   dh_installgsettings
    dh_bugfiles
+   dh_ucf
    dh_lintian
    dh_gconf
    dh_icons
@@ -582,22 +542,34 @@ make[1]: Leaving directory `/build/charles-libgtextutils_0.6-1-amd64-TImDp5/libg
    dh_gencontrol
    dh_md5sums
    dh_builddeb
-dpkg-deb: building package `libgtextutils-dev' in `../libgtextutils-dev_0.6-1_amd64.deb'.
-dpkg-deb: building package `libgtextutils0' in `../libgtextutils0_0.6-1_amd64.deb'.
- dpkg-genchanges  >../libgtextutils_0.6-1_amd64.changes
+dpkg-deb: building package `libgtextutils-dev' in `../libgtextutils-dev_0.6.2-1_amd64.deb'.
+dpkg-deb: building package `libgtextutils0' in `../libgtextutils0_0.6.2-1_amd64.deb'.
+ dpkg-genchanges  >../libgtextutils_0.6.2-1_amd64.changes
 dpkg-genchanges: including full source code in upload
- dpkg-source --after-build libgtextutils-0.6
+ dpkg-source --after-build libgtextutils-0.6.2
 dpkg-buildpackage: full upload (original source is included)
 ────────────────────────────────────────────────────────────────────────────────
-Build finished at 20110216-1246
+Build finished at 20110704-1902
 
-libgtextutils_0.6-1_amd64.changes:
+Finished
+────────
+
+I: Built successfully
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Changes                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+libgtextutils_0.6.2-1_amd64.changes:
+────────────────────────────────────
+
 Format: 1.8
-Date: Wed, 16 Feb 2011 12:35:53 +0900
+Date: Mon, 04 Jul 2011 18:55:22 +0900
 Source: libgtextutils
 Binary: libgtextutils-dev libgtextutils0
 Architecture: source amd64
-Version: 0.6-1
+Version: 0.6.2-1
 Distribution: unstable
 Urgency: low
 Maintainer: Debian Med Packaging Team <debian-med-packaging@lists.alioth.debian.org>
@@ -605,103 +577,108 @@ Changed-By: Charles Plessy <plessy@debian.org>
 Description: 
  libgtextutils-dev - Gordon Text_utils library (development files)
  libgtextutils0 - Gordon Text_utils library
-Closes: 613486
+Closes: 625365 626757
 Changes: 
- libgtextutils (0.6-1) unstable; urgency=low
+ libgtextutils (0.6.2-1) unstable; urgency=low
  .
-   * Initial release (Closes: #613486)
+   * New upstream release (Closes: #625365, #626757), whith new soname 0.6.2.
+   * debian/libgtextutils0.symbols upgraded to new soname.
+   * Breaks: fastx-toolkit =< 0.0.13-1 (debian/control).
+   * Incremented Standards-Version to reflect conformance with Policy 3.9.2
+     (debian/control, no changes needed).
 Checksums-Sha1: 
- 7bab6c976ea60f6b3cd6720de2f3568863d33ee2 1057 libgtextutils_0.6-1.dsc
- ca354ab5b8b191e5942c959f0bb5d7c430f0615c 344115 libgtextutils_0.6.orig.tar.gz
- 87ea0783c08903c73950367cdae6ec94207be030 13935 libgtextutils_0.6-1.diff.gz
- a14e3d5eb87ab25062c958f175fef629ee024fc1 25266 libgtextutils-dev_0.6-1_amd64.deb
- 80d1842880bb3799a8b382d30ee9443ced6a9502 21000 libgtextutils0_0.6-1_amd64.deb
+ bf6473fd2e9b8ecdacd0acc5057b37f233d5f496 1100 libgtextutils_0.6.2-1.dsc
+ 653ea42a5f76714dee1572b2ff78468b0d0ccb14 276103 libgtextutils_0.6.2.orig.tar.bz2
+ 148bc35ed7f14ceda6c2799ec2cbc9c132be159c 14681 libgtextutils_0.6.2-1.debian.tar.gz
+ c95489843887b9e523bfad7784ca99906d400109 25920 libgtextutils-dev_0.6.2-1_amd64.deb
+ 2b7a69449cbfc56460ed082359a676652d671577 21098 libgtextutils0_0.6.2-1_amd64.deb
 Checksums-Sha256: 
- 7bc566d1943407f32bbebe432bdaa494557e370700f0132fc5bcf61ff901c679 1057 libgtextutils_0.6-1.dsc
- 9a409c98c1550f0dcf54e3b44f971fd21dbd6daedaacd61c4174b0b94ab0fe8e 344115 libgtextutils_0.6.orig.tar.gz
- 6a77367e0b88b8edee8593dbcb8c9c84ee66cc87bf9a16ed3aad0737a06f62a7 13935 libgtextutils_0.6-1.diff.gz
- 046651a5f619719c3fe9ac41e211ac16f66eedd47fe27b3cbd77a6882ce13b0f 25266 libgtextutils-dev_0.6-1_amd64.deb
- ea103343966c468835d2aa2ef9c525343ecfb7c9c274a65c630d1eb87891a981 21000 libgtextutils0_0.6-1_amd64.deb
+ 03cc2fee3821eebbb8a15abd8a949d4b3b0c176173a12e7cec51d0df2d7ee407 1100 libgtextutils_0.6.2-1.dsc
+ 14af5612ca70022ca4371ff50aff0b3f1fe287bc4536a728a9c48ba7160f9861 276103 libgtextutils_0.6.2.orig.tar.bz2
+ 847bbc42c7a1b6d07243ce5429a3259e985036d54d721ac87bc1ba9d4ce52254 14681 libgtextutils_0.6.2-1.debian.tar.gz
+ 87e1ae1cf7a6e706e0870700770b012b239326ed7116aea9cf6b026cd294c006 25920 libgtextutils-dev_0.6.2-1_amd64.deb
+ b2895f5cc70d9bf609b8110e556f6a3accb52c017346cc8cf7e2493ba7c3d4ee 21098 libgtextutils0_0.6.2-1_amd64.deb
 Files: 
- 54e8607df726f05ef3cf67c24328f4f4 1057 science optional libgtextutils_0.6-1.dsc
- a58711bce12b5d164175d2b6aed7e536 344115 science optional libgtextutils_0.6.orig.tar.gz
- 7473c00047ee0f4b8ee2f04609c2dc90 13935 science optional libgtextutils_0.6-1.diff.gz
- 950f4d8d4af00bfa7fb9ebafa1d6a6b8 25266 libdevel optional libgtextutils-dev_0.6-1_amd64.deb
- 19528260cd602801e17c3017f1e98f4e 21000 libs optional libgtextutils0_0.6-1_amd64.deb
+ 30f4081630d7fc7348ee4e04fa72d72b 1100 science optional libgtextutils_0.6.2-1.dsc
+ 6b37627b342a12b6f1522ae7b77f325c 276103 science optional libgtextutils_0.6.2.orig.tar.bz2
+ b79514a29a3f4b7ac41e53fbf09716fd 14681 science optional libgtextutils_0.6.2-1.debian.tar.gz
+ f57d8268d809f3fcc524ca5ccd256dc1 25920 libdevel optional libgtextutils-dev_0.6.2-1_amd64.deb
+ 8f253c99fb4f1d1c776656cfd115a897 21098 libs optional libgtextutils0_0.6.2-1_amd64.deb
 
 ┌──────────────────────────────────────────────────────────────────────────────┐
 │ Package contents                                                             │
 └──────────────────────────────────────────────────────────────────────────────┘
 
 
-libgtextutils-dev_0.6-1_amd64.deb
-─────────────────────────────────
+libgtextutils-dev_0.6.2-1_amd64.deb
+───────────────────────────────────
 
  new debian package, version 2.0.
- size 25266 bytes: control archive= 1011 bytes.
-     437 bytes,    12 lines      control              
+ size 25920 bytes: control archive= 1010 bytes.
+     441 bytes,    12 lines      control              
     1354 bytes,    17 lines      md5sums              
  Package: libgtextutils-dev
  Source: libgtextutils
- Version: 0.6-1
+ Version: 0.6.2-1
  Architecture: amd64
  Maintainer: Debian Med Packaging Team <debian-med-packaging@lists.alioth.debian.org>
  Installed-Size: 164
- Depends: libgtextutils0 (= 0.6-1)
+ Depends: libgtextutils0 (= 0.6.2-1)
  Section: libdevel
  Priority: optional
  Homepage: http://hannonlab.cshl.edu/fastx_toolkit/
  Description: Gordon Text_utils library (development files)
   Development files for the Gordon Text_utils (gtextutils) library.
 
-drwxr-xr-x root/root         0 2011-02-16 12:46 ./
-drwxr-xr-x root/root         0 2011-02-16 12:46 ./usr/
-drwxr-xr-x root/root         0 2011-02-16 12:46 ./usr/lib/
-drwxr-xr-x root/root         0 2011-02-16 12:46 ./usr/lib/pkgconfig/
--rw-r--r-- root/root       229 2011-02-16 12:46 ./usr/lib/pkgconfig/gtextutils.pc
-drwxr-xr-x root/root         0 2011-02-16 12:46 ./usr/include/
-drwxr-xr-x root/root         0 2011-02-16 12:46 ./usr/include/gtextutils/
-drwxr-xr-x root/root         0 2011-02-16 12:46 ./usr/include/gtextutils/gtextutils/
--rw-r--r-- root/root     11049 2011-02-16 12:46 ./usr/include/gtextutils/gtextutils/tuple_parser.h
--rw-r--r-- root/root      1852 2011-02-16 12:46 ./usr/include/gtextutils/gtextutils/text_line_reader.h
--rw-r--r-- root/root      2094 2011-02-16 12:46 ./usr/include/gtextutils/gtextutils/exit_manip.h
--rw-r--r-- root/root      1143 2011-02-16 12:46 ./usr/include/gtextutils/gtextutils/pipe_fitter.h
--rw-r--r-- root/root      1984 2011-02-16 12:46 ./usr/include/gtextutils/gtextutils/string_tokenize.h
--rw-r--r-- root/root      6023 2011-02-16 12:46 ./usr/include/gtextutils/gtextutils/container_join.h
--rw-r--r-- root/root      2990 2011-02-16 12:46 ./usr/include/gtextutils/gtextutils/natsort.h
--rw-r--r-- root/root      1472 2011-02-16 12:46 ./usr/include/gtextutils/gtextutils/stream_wrapper.h
--rw-r--r-- root/root      1287 2011-02-16 12:46 ./usr/include/gtextutils/gtextutils/strnatcmp.h
--rw-r--r-- root/root      4354 2011-02-16 12:46 ./usr/include/gtextutils/gtextutils/inbuf1.hpp
--rw-r--r-- root/root      4068 2011-02-16 12:46 ./usr/include/gtextutils/gtextutils/outbuf3.hpp
-drwxr-xr-x root/root         0 2011-02-16 12:46 ./usr/share/
-drwxr-xr-x root/root         0 2011-02-16 12:46 ./usr/share/doc/
-drwxr-xr-x root/root         0 2011-02-16 12:46 ./usr/share/doc/libgtextutils-dev/
--rw-r--r-- root/root       158 2011-02-16 12:46 ./usr/share/doc/libgtextutils-dev/changelog.Debian.gz
--rw-r--r-- root/root       314 2009-02-26 07:33 ./usr/share/doc/libgtextutils-dev/THANKS
--rw-r--r-- root/root       261 2011-02-16 12:46 ./usr/share/doc/libgtextutils-dev/README
+drwxr-xr-x root/root         0 2011-07-04 19:02 ./
+drwxr-xr-x root/root         0 2011-07-04 19:02 ./usr/
+drwxr-xr-x root/root         0 2011-07-04 19:02 ./usr/lib/
+drwxr-xr-x root/root         0 2011-07-04 19:02 ./usr/lib/pkgconfig/
+-rw-r--r-- root/root       231 2011-07-04 19:02 ./usr/lib/pkgconfig/gtextutils.pc
+drwxr-xr-x root/root         0 2011-07-04 19:02 ./usr/include/
+drwxr-xr-x root/root         0 2011-07-04 19:02 ./usr/include/gtextutils/
+drwxr-xr-x root/root         0 2011-07-04 19:02 ./usr/include/gtextutils/gtextutils/
+-rw-r--r-- root/root      6023 2011-07-04 19:02 ./usr/include/gtextutils/gtextutils/container_join.h
+-rw-r--r-- root/root     11049 2011-07-04 19:02 ./usr/include/gtextutils/gtextutils/tuple_parser.h
+-rw-r--r-- root/root      2094 2011-07-04 19:02 ./usr/include/gtextutils/gtextutils/exit_manip.h
+-rw-r--r-- root/root      2990 2011-07-04 19:02 ./usr/include/gtextutils/gtextutils/natsort.h
+-rw-r--r-- root/root      1143 2011-07-04 19:02 ./usr/include/gtextutils/gtextutils/pipe_fitter.h
+-rw-r--r-- root/root      1852 2011-07-04 19:02 ./usr/include/gtextutils/gtextutils/text_line_reader.h
+-rw-r--r-- root/root      1287 2011-07-04 19:02 ./usr/include/gtextutils/gtextutils/strnatcmp.h
+-rw-r--r-- root/root      1984 2011-07-04 19:02 ./usr/include/gtextutils/gtextutils/string_tokenize.h
+-rw-r--r-- root/root      4068 2011-07-04 19:02 ./usr/include/gtextutils/gtextutils/outbuf3.hpp
+-rw-r--r-- root/root      1472 2011-07-04 19:02 ./usr/include/gtextutils/gtextutils/stream_wrapper.h
+-rw-r--r-- root/root      4354 2011-07-04 19:02 ./usr/include/gtextutils/gtextutils/inbuf1.hpp
+drwxr-xr-x root/root         0 2011-07-04 19:02 ./usr/share/
+drwxr-xr-x root/root         0 2011-07-04 19:02 ./usr/share/doc/
+drwxr-xr-x root/root         0 2011-07-04 19:02 ./usr/share/doc/libgtextutils-dev/
 -rw-r--r-- root/root       429 2009-02-26 07:33 ./usr/share/doc/libgtextutils-dev/NEWS.gz
--rw-r--r-- root/root     38877 2011-02-16 12:46 ./usr/share/doc/libgtextutils-dev/copyright
-lrwxrwxrwx root/root         0 2011-02-16 12:46 ./usr/lib/libgtextutils.so -> libgtextutils-0.6.so.0.0.0
+-rw-r--r-- root/root       314 2009-02-26 07:33 ./usr/share/doc/libgtextutils-dev/THANKS
+-rw-r--r-- root/root     38905 2011-07-04 18:58 ./usr/share/doc/libgtextutils-dev/copyright
+-rw-r--r-- root/root       261 2011-07-04 19:02 ./usr/share/doc/libgtextutils-dev/README
+-rw-r--r-- root/root       356 2011-07-04 18:58 ./usr/share/doc/libgtextutils-dev/changelog.Debian.gz
+lrwxrwxrwx root/root         0 2011-07-04 19:02 ./usr/lib/libgtextutils.so -> libgtextutils-0.6.2.so.0.0.0
 
 
-libgtextutils0_0.6-1_amd64.deb
-──────────────────────────────
+libgtextutils0_0.6.2-1_amd64.deb
+────────────────────────────────
 
  new debian package, version 2.0.
- size 21000 bytes: control archive= 954 bytes.
-     536 bytes,    13 lines      control              
-     225 bytes,     3 lines      md5sums              
+ size 21098 bytes: control archive= 978 bytes.
+     574 bytes,    14 lines      control              
+     227 bytes,     3 lines      md5sums              
      135 bytes,     7 lines   *  postinst             #!/bin/sh
      132 bytes,     7 lines   *  postrm               #!/bin/sh
-      35 bytes,     1 lines      shlibs               
-     453 bytes,    13 lines      symbols              
+      37 bytes,     1 lines      shlibs               
+     479 bytes,    13 lines      symbols              
  Package: libgtextutils0
  Source: libgtextutils
- Version: 0.6-1
+ Version: 0.6.2-1
  Architecture: amd64
  Maintainer: Debian Med Packaging Team <debian-med-packaging@lists.alioth.debian.org>
  Installed-Size: 104
  Depends: libc6 (>= 2.3), libgcc1 (>= 1:4.1.1), libstdc++6 (>= 4.4.0)
+ Breaks: fastx-toolkit (<= 0.0.13-1)
  Section: libs
  Priority: optional
  Homepage: http://hannonlab.cshl.edu/fastx_toolkit/
@@ -709,93 +686,121 @@ libgtextutils0_0.6-1_amd64.deb
   The Gordon Text_utils (gtextutils) library is a text utilities library used by
   the FASTX-Toolkit, a suite of programs for biological sequence analysis.
 
-drwxr-xr-x root/root         0 2011-02-16 12:46 ./
-drwxr-xr-x root/root         0 2011-02-16 12:46 ./usr/
-drwxr-xr-x root/root         0 2011-02-16 12:46 ./usr/lib/
--rw-r--r-- root/root     15792 2011-02-16 12:46 ./usr/lib/libgtextutils-0.6.so.0.0.0
-drwxr-xr-x root/root         0 2011-02-16 12:46 ./usr/share/
-drwxr-xr-x root/root         0 2011-02-16 12:46 ./usr/share/doc/
-drwxr-xr-x root/root         0 2011-02-16 12:46 ./usr/share/doc/libgtextutils0/
--rw-r--r-- root/root       158 2011-02-16 12:46 ./usr/share/doc/libgtextutils0/changelog.Debian.gz
--rw-r--r-- root/root     38877 2011-02-16 12:46 ./usr/share/doc/libgtextutils0/copyright
-lrwxrwxrwx root/root         0 2011-02-16 12:46 ./usr/lib/libgtextutils-0.6.so.0 -> libgtextutils-0.6.so.0.0.0
+drwxr-xr-x root/root         0 2011-07-04 19:02 ./
+drwxr-xr-x root/root         0 2011-07-04 19:02 ./usr/
+drwxr-xr-x root/root         0 2011-07-04 19:02 ./usr/lib/
+-rw-r--r-- root/root     15312 2011-07-04 19:02 ./usr/lib/libgtextutils-0.6.2.so.0.0.0
+drwxr-xr-x root/root         0 2011-07-04 19:02 ./usr/share/
+drwxr-xr-x root/root         0 2011-07-04 19:02 ./usr/share/doc/
+drwxr-xr-x root/root         0 2011-07-04 19:02 ./usr/share/doc/libgtextutils0/
+-rw-r--r-- root/root     38905 2011-07-04 18:58 ./usr/share/doc/libgtextutils0/copyright
+-rw-r--r-- root/root       356 2011-07-04 18:58 ./usr/share/doc/libgtextutils0/changelog.Debian.gz
+lrwxrwxrwx root/root         0 2011-07-04 19:02 ./usr/lib/libgtextutils-0.6.2.so.0 -> libgtextutils-0.6.2.so.0.0.0
 
-
-┌──────────────────────────────────────────────────────────────────────────────┐
-│ Finished                                                                     │
-└──────────────────────────────────────────────────────────────────────────────┘
-
-Built successfully
-────────────────────────────────────────────────────────────────────────────────
 
 ┌──────────────────────────────────────────────────────────────────────────────┐
 │ Post Build                                                                   │
 └──────────────────────────────────────────────────────────────────────────────┘
 
-Purging /var/lib/schroot/mount/unstable-amd64-sbuild-21c8f76c-dba6-42a1-8764-50f01f484803/build/charles-libgtextutils_0.6-1-amd64-TImDp5
+
+lintian
+───────
+
+P: libgtextutils-dev: no-upstream-changelog
+I: libgtextutils-dev: extended-description-is-probably-too-short
+W: libgtextutils0: package-name-doesnt-match-sonames libgtextutils-0.6.2-0
+P: libgtextutils0: no-upstream-changelog
+I: libgtextutils0: extended-description-is-probably-too-short
+
+I: Lintian run was successful.
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Cleanup                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Purging /«BUILDDIR»
 Reading package lists...
 Building dependency tree...
 Reading state information...
+The following packages were automatically installed and are no longer required:
+  libkrb5-3 libatk1.0-0 libk5crypto3 libjaxp1.3-java libgtk2.0-common
+  libxfixes3 junit4 libaccess-bridge-java libjargs-java libxcomposite1
+  liboro-java liblcms1 libxerces2-java libwrap0 libavalon-framework-java
+  libatk1.0-data ttf-dejavu-core libx11-data libxalan2-java libdbus-1-3 unzip
+  libcap2 java-common libnspr4-0d java-wrappers default-jre-headless libcairo2
+  libgnutls26 libcommons-logging-java libtasn1-3 openjdk-6-jre-lib
+  libfreetype6 libthai-data libexpat1 libcommons-math-java libdatrie1
+  openjdk-6-jre-headless fontconfig libavahi-common-data libsam-java
+  libgdk-pixbuf2.0-0 libxcb1 ant libaccess-bridge-java-jni default-jdk libxau6
+  libpixman-1-0 libcups2 default-jre libxinerama1 libkrb5support0 libgif4
+  libcommons-net-java libxft2 fontconfig-config libbsf-java
+  libxml-commons-external-java tzdata-java libice6 libxdmcp6 libgcrypt11
+  libthai0 libkeyutils1 libasound2 libflac8 libxrender1 libconcurrent-java
+  libvorbisenc2 libjama-java ucf libasyncns0 libtiff4 libjasper1
+  libswing-layout-java libjpeg62 libxtst6 libavahi-client3 x11-common libx11-6
+  libfontconfig1 ca-certificates-java openssl libhamcrest-java libpango1.0-0
+  libsm6 libpulse0 libxdamage1 libxcb-render0 libgssapi-krb5-2 libxi6
+  libvorbis0a openjdk-6-jdk libbatik-java libxcursor1 libxcb-shm0
+  libjlibeps-java libxext6 openjdk-6-jre libavahi-common3 liblog4j1.2-java
+  libcommons-io-java libxrandr2 libnss3-1d ca-certificates libsndfile1
+  libsqlite3-0 libgtk2.0-0 libssl1.0.0 libgpg-error0 libogg0
+Use 'apt-get autoremove' to remove them.
 0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
 Reading package lists...
 Building dependency tree...
 Reading state information...
+The following packages were automatically installed and are no longer required:
+  libkrb5-3 libatk1.0-0 libk5crypto3 libjaxp1.3-java libgtk2.0-common
+  libxfixes3 junit4 libaccess-bridge-java libjargs-java libxcomposite1
+  liboro-java liblcms1 libunistring0 libxerces2-java debhelper libwrap0
+  libavalon-framework-java libatk1.0-data ttf-dejavu-core libx11-data
+  libxalan2-java libdbus-1-3 unzip libpipeline1 libcap2 java-common po-debconf
+  libpcre3 libnspr4-0d groff-base gettext-base java-wrappers
+  default-jre-headless libcairo2 libgnutls26 libcommons-logging-java
+  intltool-debian libtasn1-3 openjdk-6-jre-lib libfreetype6 libthai-data
+  shared-mime-info libglib2.0-0 libexpat1 libcommons-math-java libdatrie1
+  openjdk-6-jre-headless fontconfig libavahi-common-data libsam-java
+  libgdk-pixbuf2.0-0 gettext libxcb1 ant libaccess-bridge-java-jni default-jdk
+  libxau6 libpixman-1-0 libcups2 default-jre libxinerama1 libkrb5support0
+  libgif4 libcommons-net-java libxft2 fontconfig-config libbsf-java libcroco3
+  libxml-commons-external-java tzdata-java libice6 libxdmcp6 libgcrypt11
+  libthai0 libxml2 libkeyutils1 file libasound2 libflac8 libxrender1
+  libconcurrent-java libvorbisenc2 libjama-java ucf libasyncns0 libtiff4
+  libjasper1 libswing-layout-java libjpeg62 libxtst6 libavahi-client3
+  x11-common libx11-6 man-db libfontconfig1 ca-certificates-java html2text
+  openssl libhamcrest-java libpango1.0-0 libsm6 libpulse0 libxdamage1
+  libxcb-render0 libgssapi-krb5-2 libxi6 libvorbis0a openjdk-6-jdk
+  libbatik-java libxcursor1 libxcb-shm0 libjlibeps-java libxext6 openjdk-6-jre
+  libavahi-common3 liblog4j1.2-java libcommons-io-java libxrandr2 libnss3-1d
+  ca-certificates libsndfile1 libsqlite3-0 libgtk2.0-0 libmagic1 libssl1.0.0
+  libgpg-error0 libogg0
+Use 'apt-get autoremove' to remove them.
 The following packages will be REMOVED:
-  autotools-dev* bsdmainutils* debhelper* file* gettext* gettext-base*
-  groff-base* html2text* intltool-debian* libcroco3* libglib2.0-0* libmagic1*
-  libpcre3* libpipeline1* libunistring0* libxml2* man-db* po-debconf*
-0 upgraded, 0 newly installed, 18 to remove and 0 not upgraded.
-After this operation, 27.4 MB disk space will be freed.
-(Reading database ... 11463 files and directories currently installed.)
+  autotools-dev* sbuild-build-depends-libgtextutils-dummy*
+0 upgraded, 0 newly installed, 2 to remove and 0 not upgraded.
+After this operation, 225 kB disk space will be freed.
+(Reading database ... 16410 files and directories currently installed.)
+Removing sbuild-build-depends-libgtextutils-dummy ...
 Removing autotools-dev ...
-Removing debhelper ...
-Removing man-db ...
-Purging configuration files for man-db ...
-debconf: unable to initialize frontend: Dialog
-debconf: (TERM is not set, so the dialog frontend is not usable.)
-debconf: falling back to frontend: Readline
-Removing bsdmainutils ...
-Purging configuration files for bsdmainutils ...
-Removing file ...
-Removing po-debconf ...
-Removing intltool-debian ...
-Removing gettext ...
-Removing gettext-base ...
-Removing groff-base ...
-Purging configuration files for groff-base ...
-Removing html2text ...
-Purging configuration files for html2text ...
-Removing libcroco3 ...
-Purging configuration files for libcroco3 ...
-Removing libglib2.0-0 ...
-Purging configuration files for libglib2.0-0 ...
-Removing libmagic1 ...
-Purging configuration files for libmagic1 ...
-Removing libpcre3 ...
-Purging configuration files for libpcre3 ...
-Removing libpipeline1 ...
-Purging configuration files for libpipeline1 ...
-Removing libunistring0 ...
-Purging configuration files for libunistring0 ...
-Removing libxml2 ...
-Purging configuration files for libxml2 ...
+Processing triggers for man-db ...
 
 ┌──────────────────────────────────────────────────────────────────────────────┐
 │ Summary                                                                      │
 └──────────────────────────────────────────────────────────────────────────────┘
 
 Architecture: amd64
-Build-Space: 6916
-Build-Time: 18
+Build-Space: 6928
+Build-Time: 12
 Distribution: unstable
-Install-Time: 7
-Job: libgtextutils_0.6-1.dsc
+Install-Time: 6
+Job: libgtextutils_0.6.2-1.dsc
+Lintian: pass
 Package: libgtextutils
-Package-Time: 27
-Source-Version: 0.6-1
-Space: 6916
+Package-Time: 20
+Source-Version: 0.6.2-1
+Space: 6928
 Status: successful
-Version: 0.6-1
+Version: 0.6.2-1
 ────────────────────────────────────────────────────────────────────────────────
-Finished at 20110216-1246
-Build needed 00:00:27, 6916k disc space
+Finished at 20110704-1902
+Build needed 00:00:20, 6928k disc space

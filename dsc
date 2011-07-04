@@ -1,43 +1,43 @@
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA256
 
-Format: 1.0
+Format: 3.0 (quilt)
 Source: libgtextutils
 Binary: libgtextutils-dev, libgtextutils0
 Architecture: any
-Version: 0.6-1
+Version: 0.6.2-1
 Maintainer: Debian Med Packaging Team <debian-med-packaging@lists.alioth.debian.org>
 Uploaders: Charles Plessy <plessy@debian.org>
 Dm-Upload-Allowed: yes
 Homepage: http://hannonlab.cshl.edu/fastx_toolkit/
-Standards-Version: 3.9.1
+Standards-Version: 3.9.2
 Vcs-Browser: http://git.debian.org/?p=debian-med/libgtextutils.git
 Vcs-Git: git://git.debian.org/git/debian-med/libgtextutils.git
 Build-Depends: debhelper (>= 8), autotools-dev
 Checksums-Sha1: 
- ca354ab5b8b191e5942c959f0bb5d7c430f0615c 344115 libgtextutils_0.6.orig.tar.gz
- 87ea0783c08903c73950367cdae6ec94207be030 13935 libgtextutils_0.6-1.diff.gz
+ 653ea42a5f76714dee1572b2ff78468b0d0ccb14 276103 libgtextutils_0.6.2.orig.tar.bz2
+ 148bc35ed7f14ceda6c2799ec2cbc9c132be159c 14681 libgtextutils_0.6.2-1.debian.tar.gz
 Checksums-Sha256: 
- 9a409c98c1550f0dcf54e3b44f971fd21dbd6daedaacd61c4174b0b94ab0fe8e 344115 libgtextutils_0.6.orig.tar.gz
- 6a77367e0b88b8edee8593dbcb8c9c84ee66cc87bf9a16ed3aad0737a06f62a7 13935 libgtextutils_0.6-1.diff.gz
+ 14af5612ca70022ca4371ff50aff0b3f1fe287bc4536a728a9c48ba7160f9861 276103 libgtextutils_0.6.2.orig.tar.bz2
+ 847bbc42c7a1b6d07243ce5429a3259e985036d54d721ac87bc1ba9d4ce52254 14681 libgtextutils_0.6.2-1.debian.tar.gz
 Files: 
- a58711bce12b5d164175d2b6aed7e536 344115 libgtextutils_0.6.orig.tar.gz
- 7473c00047ee0f4b8ee2f04609c2dc90 13935 libgtextutils_0.6-1.diff.gz
+ 6b37627b342a12b6f1522ae7b77f325c 276103 libgtextutils_0.6.2.orig.tar.bz2
+ b79514a29a3f4b7ac41e53fbf09716fd 14681 libgtextutils_0.6.2-1.debian.tar.gz
 
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.4.10 (GNU/Linux)
 
-iQIcBAEBCAAGBQJNW0koAAoJEMW9bI8ildUCUegQAJr/fn6FProcubwQbHZrRON6
-KV637LIHd9CnlmvK6ZZ0ZayQoe39pQRRUNZ0FJd8dWK1fD9tpB+fZmy8WgB9MtNg
-XujqgKejmXNFZJ9He5e34ANAIZ6ylhPdcRBazUEomgV3LmUNqYvk1p9TYEhzMxP1
-40H+ZeemqkrjtilqB1k3fhHCUN53T0xudVCDU2Mldylionm9+D2dGSgcZnyQiHsD
-KbNDoXbtSLL+RroVJqUx7K+fUfcz1ZWMY+9mhKSNEuJB51psdUL8OqHeBAJaULL3
-Ue7c3k0WQnS84GogIjUo92Qv4+gnd1hm2M7IFauj2zk11Gze+XFA3fiNcdrkreQr
-ZxWLuZi9XGBNnbuLEVuwDLWusrEEXFA63W5xMUKaMiAxBaKuaqgOaHZd5Btcswwn
-kwmFLrINKbOd1m6Uvcq2O6va+zKpv/NHc3hPBn0EuJhZeoFZFvka4KPQJgWIZyu3
-LYbrydY+I0zT0XmT+6vVVVhBBDHyOApKL/2ZVuL8R9BBKPc0oVPZ4+m6u13jFhbX
-udjao94kTCH/4Y0w/6EHFGXypaZeelhR8rXRSN7Hn1G4YOJIExqfCNkqzyMloNdM
-0rSrkk5AMUe3+umksgr5VaQe4W6nNdpRl27upPNxrQmC893oRZzAWx8FQ5fgmMP7
-3nhB/xl+M2Sg4voSAKTu
-=MiAe
+iQIcBAEBCAAGBQJOEZL1AAoJEMW9bI8ildUCRuoQAJX7H5TGH2PdCxeXohH5WwPP
+soJjYgJ180tsDi67GAQ/KeQMwMdUvcT5++vZrp8nyLhCrI09szNKhtIrUpbddtzG
+MYwFeZvRT43GaMpQF3AonNxtKvCCOR2b8KvFs7DmRlS0DO7ghetdlpsHwpzeVRar
+Dqexwf6ZiSfiZyBXefurw+YZG6E2MuDNUsF7TkwA4BHDP/dbEJVwE7LHlNG14QsK
+vxklP0VKtOVqgAJy7W1bjMMbz6mD5KyDcuec1C10Sbw6DR/xQGszKLCMke4gwSI6
+1TJOhbQAx0NG5Q+MPjCGA4megfA29vjDFBjGi/yJkOJYflvu0IkwLnG1N86TSO8d
+tjcF/JYdHYPnDCCROojMfCS1FtP1BuF26pFkfN9vkwqwGl6xcEm+8lAt4ywbQ67H
+44rJ+X5MZr34S1aswZdN2bmHEBUYW47xRTh9p8iKIuEWAWkxUisyCSiqSm9Ow3IK
+kB4QJdPNnaX4xK/qPEtt+thgpmwdzQHGmJA+KaVXmNeIhJHbr+vAtPrHT/n9KED4
+XhKQoZvpZwxGeV4EEWSvYhGxbUmBFcQXU20oVsOxPx/D8/ThfipMucmbypPK1w8u
+WJGLTJqOus0x6VEAHJv0LCtUnuyqRRpDgtAO//GATrKgL4b9Vn3HgYgVpxQ4mekc
+bXJdzCHhQkWgGLxDGoeS
+=BMth
 -----END PGP SIGNATURE-----
