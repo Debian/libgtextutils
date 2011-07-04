@@ -1,3 +1,9 @@
+libgtextutils (0.6.2-1) UNRELEASED; urgency=low
+
+  * New upstream release (Closes: #625365, #626757).
+
+ -- Charles Plessy <plessy@debian.org>  Mon, 04 Jul 2011 18:55:22 +0900
+
 libgtextutils (0.6-1) unstable; urgency=low
 
   * Initial release (Closes: #613486)
