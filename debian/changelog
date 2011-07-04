@@ -1,6 +1,10 @@
-libgtextutils (0.6.2-1) UNRELEASED; urgency=low
+libgtextutils (0.6.2-1) unstable; urgency=low
 
-  * New upstream release (Closes: #625365, #626757).
+  * New upstream release (Closes: #625365, #626757), whith new soname 0.6.2.
+  * debian/libgtextutils0.symbols upgraded to new soname.
+  * Breaks: fastx-toolkit =< 0.0.13-1 (debian/control).
+  * Incremented Standards-Version to reflect conformance with Policy 3.9.2
+    (debian/control, no changes needed).
 
  -- Charles Plessy <plessy@debian.org>  Mon, 04 Jul 2011 18:55:22 +0900
 
