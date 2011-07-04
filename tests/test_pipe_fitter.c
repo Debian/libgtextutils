@@ -39,7 +39,8 @@ int main()
 
 	//Pipe output through a GZIP program
 	fd = pipe_output_command ( "gzip", "pipe_out.txt.gz", &pid ) ;
-	write ( fd, text, strlen(text))  ;
+	if (write ( fd, text, strlen(text))==-1)
+		err(1,"write(to gzip pipe) failed");
 	pipe_close(fd, pid);
 
 
