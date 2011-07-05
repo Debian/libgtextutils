@@ -1,70 +1,70 @@
-From buildd@spontini.debian.org Sat Apr 09 15:53:49 2011
-Return-path: <buildd@spontini.debian.org>
-Received: from kokkonen.debian.org ([2001:41b8:202:deb:216:35ff:fec4:6340])
+From buildd@schroeder.debian.org Mon Jul 04 10:47:02 2011
+Return-path: <buildd@schroeder.debian.org>
+Received: from merikanto.debian.org ([2001:858:2:2:216:35ff:fec4:a49a])
 	from C=NA, ST=NA, L=Ankh Morpork, O=Debian SMTP, OU=Debian SMTP CA,
-	CN=kokkonen.debian.org,
-	EMAIL=hostmaster@kokkonen.debian.org (verified)
+	CN=merikanto.debian.org,
+	EMAIL=hostmaster@merikanto.debian.org (verified)
 	by grieg.debian.org with esmtps (TLS1.0:RSA_AES_256_CBC_SHA1:32)
-	(Exim 4.69) (envelope-from <buildd@spontini.debian.org>)
-	id 1Q8aTs-0002Ex-UD
-	for logs@buildd.debian.org; Sat, 09 Apr 2011 15:53:49 +0000
-Received: from spontini.debian.org ([2607:f8f0:610:4000:a00:20ff:fea0:918b])
+	(Exim 4.72) (envelope-from <buildd@schroeder.debian.org>)
+	id 1Qdgg9-0006mD-Rl
+	for logs@buildd.debian.org; Mon, 04 Jul 2011 10:47:02 +0000
+Received: from schroeder.debian.org ([193.198.184.11])
 	from C=NA, ST=NA, L=Ankh Morpork, O=Debian SMTP, OU=Debian SMTP CA,
-	CN=spontini.debian.org,
-	EMAIL=hostmaster@spontini.debian.org (verified)
-	by kokkonen.debian.org with esmtps (TLS1.0:RSA_AES_256_CBC_SHA1:32)
-	(Exim 4.69) (envelope-from <buildd@spontini.debian.org>)
-	id 1Q8aTo-0005kl-JR
-	for logs@buildd.debian.org; Sat, 09 Apr 2011 15:53:45 +0000
-Received: from buildd by spontini.debian.org with local (Exim 4.72)
-	(envelope-from <buildd@spontini.debian.org>)
-	id 1Q8aTi-0002oD-RD; Sat, 09 Apr 2011 15:53:38 +0000
-Message-Id: <E1Q8aTi-0002oD-RD@spontini.debian.org>
+	CN=schroeder.debian.org,
+	EMAIL=hostmaster@schroeder.debian.org (verified)
+	by merikanto.debian.org with esmtps (TLS1.0:RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.72) (envelope-from <buildd@schroeder.debian.org>)
+	id 1Qdgg8-0003Ph-Gh
+	for logs@buildd.debian.org; Mon, 04 Jul 2011 10:47:00 +0000
+Received: from buildd by schroeder.debian.org with local (Exim 4.72)
+	(envelope-from <buildd@schroeder.debian.org>)
+	id 1Qdgg6-0007gO-9o; Mon, 04 Jul 2011 10:46:58 +0000
+Message-Id: <E1Qdgg6-0007gO-9o@schroeder.debian.org>
 MIME-Version: 1.0
 Content-Transfer-Encoding: binary
 X-Mailer: MIME::Lite 3.027 (F2.77; B3.08; Q3.08)
-Date: Sat, 9 Apr 2011 15:53:38 +0000
-From: buildd on spontini <buildd@spontini.debian.org>
-To: logs@buildd.debian.org,buildd-admin@spontini.debian.org
-Subject: Log for successful build of libgtextutils_0.6-1 on sparc (dist=sid)
-Key-Id: 3B3DF88C
+Date: Mon, 4 Jul 2011 10:46:58 +0000
+From: buildd on schroeder <buildd@schroeder.debian.org>
+To: logs@buildd.debian.org,buildd-admin@schroeder.debian.org
+Subject: Log for successful build of libgtextutils_0.6.2-1 on sparc (dist=sid)
+Key-Id: 9BBB678A
 Delivered-To: logs@buildd.debian.org
 
-sbuild (Debian sbuild) 0.61.0 (23 Feb 2011) on spontini.debian.org
+sbuild (Debian sbuild) 0.61.0 (23 Feb 2011) on schroeder.debian.org
 
 ╔══════════════════════════════════════════════════════════════════════════════╗
-║ libgtextutils 0.6-1 (sparc)                                09 Apr 2011 15:47 ║
+║ libgtextutils 0.6.2-1 (sparc)                              04 Jul 2011 10:44 ║
 ╚══════════════════════════════════════════════════════════════════════════════╝
 
 Package: libgtextutils
-Version: 0.6-1
-Source Version: 0.6-1
+Version: 0.6.2-1
+Source Version: 0.6.2-1
 Architecture: sparc
-Get:1 http://mirror-ubc.debian.org unstable InRelease [186 kB]
-Get:2 http://incoming.debian.org unstable InRelease [186 kB]
-Get:3 http://mirror-ubc.debian.org unstable/main Sources [5240 kB]
+Get:1 http://ftp.carnet.hr unstable InRelease [146 kB]
+Get:2 http://incoming.debian.org unstable InRelease [146 kB]
+Get:3 http://ftp.carnet.hr unstable/main Sources [5359 kB]
+Get:4 http://ftp.carnet.hr unstable/contrib Sources [51.7 kB]
 Ign http://incoming.debian.org  InRelease
-Get:4 http://incoming.debian.org  Release.gpg [836 B]
-Get:5 http://incoming.debian.org  Release [1604 B]
-Get:6 http://incoming.debian.org unstable/main Sources [5240 kB]
-Get:7 http://mirror-ubc.debian.org unstable/contrib Sources [48.5 kB]
-Get:8 http://mirror-ubc.debian.org unstable/non-free Sources [98.4 kB]
-Get:9 http://mirror-ubc.debian.org unstable/main sparc Packages [6989 kB]
-Get:10 http://mirror-ubc.debian.org unstable/contrib sparc Packages [52.5 kB]
-Ign http://mirror-ubc.debian.org unstable/contrib TranslationIndex
-Get:11 http://mirror-ubc.debian.org unstable/main TranslationIndex [2264 B]
-Ign http://mirror-ubc.debian.org unstable/contrib Translation-en
-Get:12 http://incoming.debian.org unstable/contrib Sources [48.5 kB]
-Get:13 http://incoming.debian.org unstable/non-free Sources [98.4 kB]
-Get:14 http://incoming.debian.org unstable/main sparc Packages [6989 kB]
-Get:15 http://incoming.debian.org unstable/contrib sparc Packages [52.5 kB]
+Get:5 http://incoming.debian.org  Release.gpg [836 B]
+Get:6 http://ftp.carnet.hr unstable/non-free Sources [95.1 kB]
+Get:7 http://incoming.debian.org unstable/main Sources [5359 kB]
+Get:8 http://ftp.carnet.hr unstable/main sparc Packages [7341 kB]
+Get:9 http://ftp.carnet.hr unstable/contrib sparc Packages [53.3 kB]
+Ign http://ftp.carnet.hr unstable/contrib TranslationIndex
+Get:10 http://ftp.carnet.hr unstable/main TranslationIndex [2045 B]
+Get:11 http://incoming.debian.org unstable/contrib Sources [51.7 kB]
+Get:12 http://incoming.debian.org unstable/non-free Sources [95.1 kB]
+Get:13 http://incoming.debian.org unstable/main sparc Packages [7341 kB]
+Ign http://ftp.carnet.hr unstable/contrib Translation-en
+Get:14 http://incoming.debian.org unstable/contrib sparc Packages [53.3 kB]
 Ign http://incoming.debian.org unstable/contrib TranslationIndex
-Get:16 http://incoming.debian.org unstable/main TranslationIndex [2264 B]
-Get:17 http://incoming.debian.org  Sources [35.8 kB]
-Get:18 http://incoming.debian.org  Packages [384 kB]
-Ign http://incoming.debian.org  Translation-en
+Get:15 http://incoming.debian.org unstable/main TranslationIndex [2045 B]
+Get:16 http://incoming.debian.org  Release [1604 B]
+Get:17 http://incoming.debian.org  Sources [38.7 kB]
+Get:18 http://incoming.debian.org  Packages [377 kB]
 Ign http://incoming.debian.org unstable/contrib Translation-en
-Fetched 25.7 MB in 58s (438 kB/s)
+Ign http://incoming.debian.org  Translation-en
+Fetched 26.5 MB in 27s (963 kB/s)
 Reading package lists...
 
 ┌──────────────────────────────────────────────────────────────────────────────┐
@@ -85,11 +85,11 @@ Building dependency tree...
 Reading state information...
 NOTICE: 'libgtextutils' packaging is maintained in the 'Git' version control system at:
 git://git.debian.org/git/debian-med/libgtextutils.git
-Need to get 360 kB of source archives.
-Get:1 http://mirror-ubc.debian.org/debian/ unstable/main libgtextutils 0.6-1 (dsc) [1943 B]
-Get:2 http://mirror-ubc.debian.org/debian/ unstable/main libgtextutils 0.6-1 (tar) [344 kB]
-Get:3 http://mirror-ubc.debian.org/debian/ unstable/main libgtextutils 0.6-1 (diff) [13.9 kB]
-Fetched 360 kB in 0s (2968 kB/s)
+Need to get 293 kB of source archives.
+Get:1 http://incoming.debian.org/buildd-unstable/  libgtextutils 0.6.2-1 (dsc) [1986 B]
+Get:2 http://incoming.debian.org/buildd-unstable/  libgtextutils 0.6.2-1 (tar) [276 kB]
+Get:3 http://incoming.debian.org/buildd-unstable/  libgtextutils 0.6.2-1 (diff) [14.7 kB]
+Fetched 293 kB in 1s (213 kB/s)
 Download complete and in download only mode
 
 Check arch
@@ -103,18 +103,18 @@ Check arch
 Build-Depends: build-essential, fakeroot
 Checking for already installed dependencies...
 build-essential: already installed (11.5)
-fakeroot: already installed (1.15.1-1)
+fakeroot: already installed (1.16-1)
 Checking for dependency conflicts...
 Installing positive dependencies: 
 Reading package lists...
 Building dependency tree...
 Reading state information...
-0 upgraded, 0 newly installed, 0 to remove and 9 not upgraded.
+0 upgraded, 0 newly installed, 0 to remove and 12 not upgraded.
 Removing negative dependencies: 
 Reading package lists...
 Building dependency tree...
 Reading state information...
-0 upgraded, 0 newly installed, 0 to remove and 9 not upgraded.
+0 upgraded, 0 newly installed, 0 to remove and 12 not upgraded.
 Checking correctness of dependencies...
 
 ┌──────────────────────────────────────────────────────────────────────────────┐
@@ -123,38 +123,38 @@ Checking correctness of dependencies...
 
 Build-Depends: base-files, base-passwd, bash, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, ncurses-base, ncurses-bin, perl-base, sed, login, sysvinit-utils, sysvinit, tar, bsdutils, mount, util-linux, libc6-dev | libc-dev, libc6-dev-sparc64, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), debhelper (>= 8), autotools-dev
 Checking for already installed dependencies...
-base-files: already installed (6.1)
+base-files: already installed (6.4)
 base-passwd: already installed (3.5.22+b1)
 bash: already installed (4.1-3)
 coreutils: already installed (8.5-1)
 dash: already installed (0.5.5.1-7.4)
-debianutils: already installed (3.4.4)
+debianutils: already installed (4.0.2)
 diffutils: already installed (1:3.0-1)
-dpkg: already installed (1.15.8.10)
-e2fsprogs: already installed (1.41.12-2)
+dpkg: already installed (1.16.0.3)
+e2fsprogs: already installed (1.41.12-4stable1)
 findutils: already installed (4.4.2-1+b2)
-grep: already installed (2.6.3-3)
+grep: already installed (2.8-2)
 gzip: already installed (1.3.12-9)
 hostname: already installed (3.06)
-ncurses-base: already installed (5.8+20110307-1)
-ncurses-bin: already installed (5.8+20110307-1)
-perl-base: already installed (5.10.1-19)
+ncurses-base: already installed (5.9-1)
+ncurses-bin: already installed (5.9-1)
+perl-base: already installed (5.12.4-1)
 sed: already installed (4.2.1-9)
 login: already installed (1:4.1.4.2+svn3283-3)
-sysvinit-utils: already installed (2.88dsf-13.1)
-sysvinit: already installed (2.88dsf-13.1)
+sysvinit-utils: already installed (2.88dsf-13.10)
+sysvinit: already installed (2.88dsf-13.10)
 tar: already installed (1.25-3)
-bsdutils: already installed (1:2.17.2-9.1)
-mount: already installed (2.17.2-9.1)
-util-linux: already installed (2.17.2-9.1)
-libc6-dev: already installed (2.11.2-11)
-libc6-dev-sparc64: already installed (2.11.2-11)
-gcc: already installed (4:4.4.5-6 >= 4:4.4.3 is satisfied)
-g++: already installed (4:4.4.5-6 >= 4:4.4.3 is satisfied)
-make: already installed (3.81-8)
-dpkg-dev: already installed (1.15.8.10 >= 1.13.5 is satisfied)
+bsdutils: already installed (1:2.19.1-2)
+mount: already installed (2.19.1-2)
+util-linux: already installed (2.19.1-2)
+libc6-dev: already installed (2.13-8)
+libc6-dev-sparc64: already installed (2.13-8)
+gcc: already installed (4:4.4.5-10 >= 4:4.4.3 is satisfied)
+g++: already installed (4:4.4.5-10 >= 4:4.4.3 is satisfied)
+make: already installed (3.81-8.1)
+dpkg-dev: already installed (1.16.0.3 >= 1.13.5 is satisfied)
 debhelper: missing
-Using default version 8.1.3
+Using default version 8.9.0
 autotools-dev: missing
 Checking for dependency conflicts...
 Installing positive dependencies: debhelper autotools-dev
@@ -162,120 +162,110 @@ Reading package lists...
 Building dependency tree...
 Reading state information...
 The following extra packages will be installed:
-  bsdmainutils dpkg-dev file gettext gettext-base groff-base html2text
-  intltool-debian libcroco3 libdpkg-perl libglib2.0-0 libmagic1 libpcre3
-  libpipeline1 libunistring0 libxml2 man-db po-debconf
+  bsdmainutils file gettext gettext-base groff-base html2text intltool-debian
+  libcroco3 libglib2.0-0 libmagic1 libpcre3 libpipeline1 libunistring0 libxml2
+  man-db po-debconf
 Suggested packages:
-  wamerican wordlist whois vacation dh-make debian-keyring gettext-doc groff
-  less www-browser libmail-box-perl
+  wamerican wordlist whois vacation dh-make gettext-doc groff less www-browser
+  libmail-box-perl
 Recommended packages:
-  libalgorithm-merge-perl curl wget lynx-cur autopoint libglib2.0-data
-  shared-mime-info xml-core libmail-sendmail-perl
+  curl wget lynx-cur autopoint libglib2.0-data shared-mime-info xml-core
+  libmail-sendmail-perl
 The following NEW packages will be installed:
   autotools-dev bsdmainutils debhelper file gettext gettext-base groff-base
   html2text intltool-debian libcroco3 libglib2.0-0 libmagic1 libpcre3
   libpipeline1 libunistring0 libxml2 man-db po-debconf
-The following packages will be upgraded:
-  dpkg-dev libdpkg-perl
-2 upgraded, 18 newly installed, 0 to remove and 7 not upgraded.
-Need to get 10.6 MB of archives.
-After this operation, 27.7 MB of additional disk space will be used.
-Get:1 http://mirror-ubc.debian.org/debian/ unstable/main bsdmainutils sparc 8.2.2 [205 kB]
-Get:2 http://mirror-ubc.debian.org/debian/ unstable/main groff-base sparc 1.21-5 [1152 kB]
-Get:3 http://mirror-ubc.debian.org/debian/ unstable/main libpipeline1 sparc 1.2.0-1 [35.8 kB]
-Get:4 http://mirror-ubc.debian.org/debian/ unstable/main man-db sparc 2.5.9-4 [1007 kB]
-Get:5 http://mirror-ubc.debian.org/debian/ unstable/main libmagic1 sparc 5.04-5 [239 kB]
-Get:6 http://mirror-ubc.debian.org/debian/ unstable/main file sparc 5.04-5 [49.5 kB]
-Get:7 http://mirror-ubc.debian.org/debian/ unstable/main gettext-base sparc 0.18.1.1-3 [140 kB]
-Get:8 http://mirror-ubc.debian.org/debian/ unstable/main libpcre3 sparc 8.12-3 [265 kB]
-Get:9 http://mirror-ubc.debian.org/debian/ unstable/main libxml2 sparc 2.7.8.dfsg-2 [840 kB]
-Get:10 http://mirror-ubc.debian.org/debian/ unstable/main autotools-dev sparc 20100122.1 [71.9 kB]
-Get:11 http://mirror-ubc.debian.org/debian/ unstable/main dpkg-dev sparc 1.16.0.1 [871 kB]
-Get:12 http://mirror-ubc.debian.org/debian/ unstable/main libdpkg-perl sparc 1.16.0.1 [748 kB]
-Get:13 http://mirror-ubc.debian.org/debian/ unstable/main html2text sparc 1.3.2a-15 [100 kB]
-Get:14 http://mirror-ubc.debian.org/debian/ unstable/main libglib2.0-0 sparc 2.28.4-1 [1553 kB]
-Get:15 http://mirror-ubc.debian.org/debian/ unstable/main libcroco3 sparc 0.6.2-1 [119 kB]
-Get:16 http://mirror-ubc.debian.org/debian/ unstable/main libunistring0 sparc 0.9.3-3 [424 kB]
-Get:17 http://mirror-ubc.debian.org/debian/ unstable/main gettext sparc 0.18.1.1-3 [2006 kB]
-Get:18 http://mirror-ubc.debian.org/debian/ unstable/main intltool-debian sparc 0.35.0+20060710.1 [30.8 kB]
-Get:19 http://mirror-ubc.debian.org/debian/ unstable/main po-debconf sparc 1.0.16+nmu1 [223 kB]
-Get:20 http://mirror-ubc.debian.org/debian/ unstable/main debhelper sparc 8.1.3 [554 kB]
+0 upgraded, 18 newly installed, 0 to remove and 12 not upgraded.
+Need to get 9037 kB of archives.
+After this operation, 27.6 MB of additional disk space will be used.
+Get:1 http://ftp.carnet.hr/debian/ unstable/main libpipeline1 sparc 1.2.0-3 [36.0 kB]
+Get:2 http://ftp.carnet.hr/debian/ unstable/main bsdmainutils sparc 8.2.3 [206 kB]
+Get:3 http://ftp.carnet.hr/debian/ unstable/main groff-base sparc 1.21-6 [1155 kB]
+Get:4 http://ftp.carnet.hr/debian/ unstable/main man-db sparc 2.6.0.2-1 [1013 kB]
+Get:5 http://ftp.carnet.hr/debian/ unstable/main libmagic1 sparc 5.04-5+b1 [239 kB]
+Get:6 http://ftp.carnet.hr/debian/ unstable/main file sparc 5.04-5+b1 [49.6 kB]
+Get:7 http://ftp.carnet.hr/debian/ unstable/main gettext-base sparc 0.18.1.1-3 [140 kB]
+Get:8 http://ftp.carnet.hr/debian/ unstable/main libpcre3 sparc 8.12-3 [265 kB]
+Get:9 http://ftp.carnet.hr/debian/ unstable/main libxml2 sparc 2.7.8.dfsg-3 [841 kB]
+Get:10 http://ftp.carnet.hr/debian/ unstable/main autotools-dev all 20110511.1 [73.8 kB]
+Get:11 http://ftp.carnet.hr/debian/ unstable/main html2text sparc 1.3.2a-15 [100 kB]
+Get:12 http://ftp.carnet.hr/debian/ unstable/main libglib2.0-0 sparc 2.28.6-1 [1556 kB]
+Get:13 http://ftp.carnet.hr/debian/ unstable/main libcroco3 sparc 0.6.2-1 [119 kB]
+Get:14 http://ftp.carnet.hr/debian/ unstable/main libunistring0 sparc 0.9.3-4 [424 kB]
+Get:15 http://ftp.carnet.hr/debian/ unstable/main gettext sparc 0.18.1.1-3 [2006 kB]
+Get:16 http://ftp.carnet.hr/debian/ unstable/main intltool-debian all 0.35.0+20060710.1 [30.8 kB]
+Get:17 http://ftp.carnet.hr/debian/ unstable/main po-debconf all 1.0.16+nmu1 [223 kB]
+Get:18 http://ftp.carnet.hr/debian/ unstable/main debhelper all 8.9.0 [559 kB]
 debconf: delaying package configuration, since apt-utils is not installed
-Fetched 10.6 MB in 2s (4004 kB/s)
-Selecting previously deselected package bsdmainutils.
-(Reading database ... 10348 files and directories currently installed.)
-Unpacking bsdmainutils (from .../bsdmainutils_8.2.2_sparc.deb) ...
-Selecting previously deselected package groff-base.
-Unpacking groff-base (from .../groff-base_1.21-5_sparc.deb) ...
+Fetched 9037 kB in 7s (1260 kB/s)
 Selecting previously deselected package libpipeline1.
-Unpacking libpipeline1 (from .../libpipeline1_1.2.0-1_sparc.deb) ...
+(Reading database ... 10826 files and directories currently installed.)
+Unpacking libpipeline1 (from .../libpipeline1_1.2.0-3_sparc.deb) ...
+Selecting previously deselected package bsdmainutils.
+Unpacking bsdmainutils (from .../bsdmainutils_8.2.3_sparc.deb) ...
+Selecting previously deselected package groff-base.
+Unpacking groff-base (from .../groff-base_1.21-6_sparc.deb) ...
 Selecting previously deselected package man-db.
-Unpacking man-db (from .../man-db_2.5.9-4_sparc.deb) ...
+Unpacking man-db (from .../man-db_2.6.0.2-1_sparc.deb) ...
 Selecting previously deselected package libmagic1.
-Unpacking libmagic1 (from .../libmagic1_5.04-5_sparc.deb) ...
+Unpacking libmagic1 (from .../libmagic1_5.04-5+b1_sparc.deb) ...
 Selecting previously deselected package file.
-Unpacking file (from .../archives/file_5.04-5_sparc.deb) ...
+Unpacking file (from .../file_5.04-5+b1_sparc.deb) ...
 Selecting previously deselected package gettext-base.
 Unpacking gettext-base (from .../gettext-base_0.18.1.1-3_sparc.deb) ...
 Selecting previously deselected package libpcre3.
 Unpacking libpcre3 (from .../libpcre3_8.12-3_sparc.deb) ...
 Selecting previously deselected package libxml2.
-Unpacking libxml2 (from .../libxml2_2.7.8.dfsg-2_sparc.deb) ...
+Unpacking libxml2 (from .../libxml2_2.7.8.dfsg-3_sparc.deb) ...
 Selecting previously deselected package autotools-dev.
-Unpacking autotools-dev (from .../autotools-dev_20100122.1_sparc.deb) ...
-Preparing to replace dpkg-dev 1.15.8.10 (using .../dpkg-dev_1.16.0.1_sparc.deb) ...
-Unpacking replacement dpkg-dev ...
-Preparing to replace libdpkg-perl 1.15.8.10 (using .../libdpkg-perl_1.16.0.1_sparc.deb) ...
-Unpacking replacement libdpkg-perl ...
+Unpacking autotools-dev (from .../autotools-dev_20110511.1_all.deb) ...
 Selecting previously deselected package html2text.
 Unpacking html2text (from .../html2text_1.3.2a-15_sparc.deb) ...
 Selecting previously deselected package libglib2.0-0.
-Unpacking libglib2.0-0 (from .../libglib2.0-0_2.28.4-1_sparc.deb) ...
+Unpacking libglib2.0-0 (from .../libglib2.0-0_2.28.6-1_sparc.deb) ...
 Selecting previously deselected package libcroco3.
 Unpacking libcroco3 (from .../libcroco3_0.6.2-1_sparc.deb) ...
 Selecting previously deselected package libunistring0.
-Unpacking libunistring0 (from .../libunistring0_0.9.3-3_sparc.deb) ...
+Unpacking libunistring0 (from .../libunistring0_0.9.3-4_sparc.deb) ...
 Selecting previously deselected package gettext.
 Unpacking gettext (from .../gettext_0.18.1.1-3_sparc.deb) ...
 Selecting previously deselected package intltool-debian.
-Unpacking intltool-debian (from .../intltool-debian_0.35.0+20060710.1_sparc.deb) ...
+Unpacking intltool-debian (from .../intltool-debian_0.35.0+20060710.1_all.deb) ...
 Selecting previously deselected package po-debconf.
-Unpacking po-debconf (from .../po-debconf_1.0.16+nmu1_sparc.deb) ...
+Unpacking po-debconf (from .../po-debconf_1.0.16+nmu1_all.deb) ...
 Selecting previously deselected package debhelper.
-Unpacking debhelper (from .../debhelper_8.1.3_sparc.deb) ...
-Setting up bsdmainutils (8.2.2) ...
+Unpacking debhelper (from .../debhelper_8.9.0_all.deb) ...
+Setting up libpipeline1 (1.2.0-3) ...
+Setting up bsdmainutils (8.2.3) ...
 update-alternatives: using /usr/bin/bsd-write to provide /usr/bin/write (write) in auto mode.
 update-alternatives: using /usr/bin/bsd-from to provide /usr/bin/from (from) in auto mode.
-Setting up groff-base (1.21-5) ...
-Setting up libpipeline1 (1.2.0-1) ...
-Setting up man-db (2.5.9-4) ...
+Setting up groff-base (1.21-6) ...
+Setting up man-db (2.6.0.2-1) ...
 Building database of manual pages ...
-Setting up libmagic1 (5.04-5) ...
-Setting up file (5.04-5) ...
+Setting up libmagic1 (5.04-5+b1) ...
+Setting up file (5.04-5+b1) ...
 Setting up gettext-base (0.18.1.1-3) ...
 Setting up libpcre3 (8.12-3) ...
-Setting up libxml2 (2.7.8.dfsg-2) ...
-Setting up autotools-dev (20100122.1) ...
-Setting up libdpkg-perl (1.16.0.1) ...
-Setting up dpkg-dev (1.16.0.1) ...
+Setting up libxml2 (2.7.8.dfsg-3) ...
+Setting up autotools-dev (20110511.1) ...
 Setting up html2text (1.3.2a-15) ...
-Setting up libglib2.0-0 (2.28.4-1) ...
+Setting up libglib2.0-0 (2.28.6-1) ...
 No schema files found: doing nothing.
 Setting up libcroco3 (0.6.2-1) ...
-Setting up libunistring0 (0.9.3-3) ...
+Setting up libunistring0 (0.9.3-4) ...
 Setting up gettext (0.18.1.1-3) ...
 Setting up intltool-debian (0.35.0+20060710.1) ...
 Setting up po-debconf (1.0.16+nmu1) ...
-Setting up debhelper (8.1.3) ...
+Setting up debhelper (8.9.0) ...
 Removing negative dependencies: 
 Reading package lists...
 Building dependency tree...
 Reading state information...
-0 upgraded, 0 newly installed, 0 to remove and 7 not upgraded.
+0 upgraded, 0 newly installed, 0 to remove and 12 not upgraded.
 Checking correctness of dependencies...
 Kernel: Linux 2.6.32-5-sparc64-smp sparc (sparc64)
-Toolchain package versions: binutils_2.21.0.20110327-2 dpkg-dev_1.16.0.1 g++-4.4_4.4.5-15 gcc-4.4_4.4.5-15 libc6-dev_2.11.2-11 libstdc++6_4.6.0-2 libstdc++6-4.4-dev_4.4.5-15 linux-libc-dev_2.6.38-2
-Package versions: apt_0.8.13 autotools-dev_20100122.1 base-files_6.1 base-passwd_3.5.22+b1 bash_4.1-3 binutils_2.21.0.20110327-2 bsdmainutils_8.2.2 bsdutils_1:2.17.2-9.1 build-essential_11.5 bzip2_1.0.5-6 coreutils_8.5-1 cpp_4:4.4.5-6 cpp-4.4_4.4.5-15 dash_0.5.5.1-7.4 debconf_1.5.38 debconf-english_1.5.38 debfoster_2.7-1.1 debhelper_8.1.3 debian-archive-keyring_2010.08.28 debianutils_3.4.4 diffutils_1:3.0-1 dpkg_1.15.8.10 dpkg-dev_1.16.0.1 e2fslibs_1.41.12-2 e2fsprogs_1.41.12-2 fakeroot_1.15.1-1 file_5.04-5 findutils_4.4.2-1+b2 g++_4:4.4.5-6 g++-4.4_4.4.5-15 gcc_4:4.4.5-6 gcc-4.4_4.4.5-15 gcc-4.4-base_4.4.5-15 gcc-4.6-base_4.6.0-2 gettext_0.18.1.1-3 gettext-base_0.18.1.1-3 gnupg_1.4.11-3 gpgv_1.4.11-3 grep_2.6.3-3 groff-base_1.21-5 gzip_1.3.12-9 hostname_3.06 html2text_1.3.2a-15 initscripts_2.88dsf-13.1 insserv_1.14.0-2.1 intltool-debian_0.35.0+20060710.1 libacl1_2.2.49-4 libattr1_1:2.4.44-2 libblkid1_2.17.2-9.1 libbz2-1.0_1.0.5-6 libc-bin_2.11.2-11 libc-dev-bin_2.11.2-11 libc6_2.11.2-11 libc6-dev_2.11.2-11 libc6-dev-sparc64_2.11.2-11 libc6-sparc64_2.11.2-11 libcomerr2_1.41.12-2 libcroco3_0.6.2-1 libdb4.7_4.7.25-12 libdb4.8_4.8.30-4 libdpkg-perl_1.16.0.1 libgc1c2_1:7.1-7 libgcc1_1:4.6.0-2 libgdbm3_1.8.3-9+b1 libglib2.0-0_2.28.4-1 libgmp10_2:5.0.1+dfsg-7 libgomp1_4.6.0-2 liblzma2_5.0.0-2 libmagic1_5.04-5 libmpfr4_3.0.0-9 libncurses5_5.8+20110307-1 libpam-modules_1.1.2-2 libpam-runtime_1.1.2-2 libpam0g_1.1.2-2 libpcre3_8.12-3 libpipeline1_1.2.0-1 libreadline6_6.1-3 libselinux1_2.0.98-1 libsepol1_2.0.42-1 libss2_1.41.12-2 libstdc++6_4.6.0-2 libstdc++6-4.4-dev_4.4.5-15 libtimedate-perl_1.2000-1 libunistring0_0.9.3-3 libusb-0.1-4_2:0.1.12-17 libuuid1_2.17.2-9.1 libxml2_2.7.8.dfsg-2 linux-libc-dev_2.6.38-2 login_1:4.1.4.2+svn3283-3 lsb-base_3.2-27 make_3.81-8 man-db_2.5.9-4 mawk_1.3.3-15+b1 mount_2.17.2-9.1 ncurses-base_5.8+20110307-1 ncurses-bin_5.8+20110307-1 passwd_1:4.1.4.2+svn3283-3 patch_2.6.1-1 perl_5.10.1-19 perl-base_5.10.1-19 perl-modules_5.10.1-19 po-debconf_1.0.16+nmu1 readline-common_6.1-3 sed_4.2.1-9 sensible-utils_0.0.6 sudo_1.7.4p6-1 sysv-rc_2.88dsf-13.1 sysvinit_2.88dsf-13.1 sysvinit-utils_2.88dsf-13.1 tar_1.25-3 tzdata_2011e-1 util-linux_2.17.2-9.1 xz-utils_5.0.0-2 zlib1g_1:1.2.3.4.dfsg-3
+Toolchain package versions: binutils_2.21.52.20110606-2 dpkg-dev_1.16.0.3 g++-4.4_4.4.6-6 gcc-4.4_4.4.6-6 libc6-dev_2.13-8 libstdc++6_4.6.1-1 libstdc++6-4.4-dev_4.4.6-6 linux-libc-dev_2.6.39-2
+Package versions: apt_0.8.15.1 autotools-dev_20110511.1 base-files_6.4 base-passwd_3.5.22+b1 bash_4.1-3 binutils_2.21.52.20110606-2 bsdmainutils_8.2.3 bsdutils_1:2.19.1-2 build-essential_11.5 bzip2_1.0.5-6 coreutils_8.5-1 cpp_4:4.4.5-10 cpp-4.4_4.4.6-6 dash_0.5.5.1-7.4 debconf_1.5.40 debfoster_2.7-1.1 debhelper_8.9.0 debian-archive-keyring_2010.08.28 debianutils_4.0.2 diffutils_1:3.0-1 dpkg_1.16.0.3 dpkg-dev_1.16.0.3 e2fslibs_1.41.12-4stable1 e2fsprogs_1.41.12-4stable1 fakeroot_1.16-1 file_5.04-5+b1 findutils_4.4.2-1+b2 g++_4:4.4.5-10 g++-4.4_4.4.6-6 gcc_4:4.4.5-10 gcc-4.4_4.4.6-6 gcc-4.4-base_4.4.6-6 gcc-4.6-base_4.6.1-1 gettext_0.18.1.1-3 gettext-base_0.18.1.1-3 gnupg_1.4.11-3 gpgv_1.4.11-3 grep_2.8-2 groff-base_1.21-6 gzip_1.3.12-9 hostname_3.06 html2text_1.3.2a-15 initscripts_2.88dsf-13.10 insserv_1.14.0-2.1 intltool-debian_0.35.0+20060710.1 libacl1_2.2.51-1 libattr1_1:2.4.46-1 libblkid1_2.19.1-2 libbz2-1.0_1.0.5-6 libc-bin_2.13-8 libc-dev-bin_2.13-8 libc6_2.13-8 libc6-dev_2.13-8 libc6-dev-sparc64_2.13-8 libc6-sparc64_2.13-8 libcomerr2_1.41.12-4stable1 libcroco3_0.6.2-1 libdb5.1_5.1.25-11 libdpkg-perl_1.16.0.3 libgc1c2_1:7.1-8 libgcc1_1:4.6.1-1 libgdbm3_1.8.3-10 libglib2.0-0_2.28.6-1 libgmp10_2:5.0.1+dfsg-7 libgomp1_4.6.1-1 liblzma2_5.0.0-2 libmagic1_5.04-5+b1 libmount1_2.19.1-2 libmpfr4_3.0.1-4 libncurses5_5.9-1 libpam-modules_1.1.3-2 libpam-modules-bin_1.1.3-2 libpam-runtime_1.1.3-2 libpam0g_1.1.3-2 libpcre3_8.12-3 libpipeline1_1.2.0-3 libreadline6_6.2-2 libselinux1_2.0.98-1.1 libsepol1_2.0.42-1 libss2_1.41.12-4stable1 libstdc++6_4.6.1-1 libstdc++6-4.4-dev_4.4.6-6 libtimedate-perl_1.2000-1 libunistring0_0.9.3-4 libusb-0.1-4_2:0.1.12-17 libuuid1_2.19.1-2 libxml2_2.7.8.dfsg-3 linux-libc-dev_2.6.39-2 login_1:4.1.4.2+svn3283-3 lsb-base_3.2-27 make_3.81-8.1 man-db_2.6.0.2-1 mawk_1.3.3-15+b1 mount_2.19.1-2 multiarch-support_2.13-8 ncurses-base_5.9-1 ncurses-bin_5.9-1 passwd_1:4.1.4.2+svn3283-3 patch_2.6.1-2 perl_5.12.4-1 perl-base_5.12.4-1 perl-modules_5.12.4-1 po-debconf_1.0.16+nmu1 readline-common_6.2-2 sed_4.2.1-9 sensible-utils_0.0.6 sudo_1.7.4p6-1 sysv-rc_2.88dsf-13.10 sysvinit_2.88dsf-13.10 sysvinit-utils_2.88dsf-13.10 tar_1.25-3 tzdata_2011h-2 util-linux_2.19.1-2 xz-utils_5.0.0-2 zlib1g_1:1.2.3.4.dfsg-3
 
 ┌──────────────────────────────────────────────────────────────────────────────┐
 │ Build                                                                        │
@@ -286,12 +276,12 @@ Unpack source
 ─────────────
 
 gpgv: keyblock resource `/home/buildd/.gnupg/trustedkeys.gpg': file open error
-gpgv: Signature made Wed Feb 16 03:48:56 2011 UTC using RSA key ID 2295D502
+gpgv: Signature made Mon Jul  4 10:16:21 2011 UTC using RSA key ID 2295D502
 gpgv: Can't check signature: public key not found
-dpkg-source: warning: failed to verify signature on ./libgtextutils_0.6-1.dsc
-dpkg-source: info: extracting libgtextutils in libgtextutils-0.6
-dpkg-source: info: unpacking libgtextutils_0.6.orig.tar.gz
-dpkg-source: info: applying libgtextutils_0.6-1.diff.gz
+dpkg-source: warning: failed to verify signature on ./libgtextutils_0.6.2-1.dsc
+dpkg-source: info: extracting libgtextutils in libgtextutils-0.6.2
+dpkg-source: info: unpacking libgtextutils_0.6.2.orig.tar.bz2
+dpkg-source: info: unpacking libgtextutils_0.6.2-1.debian.tar.gz
 
 Check disc space
 ────────────────
@@ -306,8 +296,8 @@ dpkg-buildpackage: export CXXFLAGS from dpkg-buildflags (origin: vendor): -g -O2
 dpkg-buildpackage: export FFLAGS from dpkg-buildflags (origin: vendor): -g -O2
 dpkg-buildpackage: export LDFLAGS from dpkg-buildflags (origin: vendor): 
 dpkg-buildpackage: source package libgtextutils
-dpkg-buildpackage: source version 0.6-1
- dpkg-source --before-build libgtextutils-0.6
+dpkg-buildpackage: source version 0.6.2-1
+ dpkg-source --before-build libgtextutils-0.6.2
 dpkg-buildpackage: host architecture sparc
  fakeroot debian/rules clean
 dh clean --with autotools_dev
@@ -320,6 +310,7 @@ dh build --with autotools_dev
    dh_testdir
    dh_autotools-dev_updateconfig
    dh_auto_configure
+configure: WARNING: unrecognized options: --disable-maintainer-mode
 checking for a BSD-compatible install... /usr/bin/install -c
 checking whether build environment is sane... yes
 checking for a thread-safe mkdir -p... /bin/mkdir -p
@@ -327,10 +318,10 @@ checking for gawk... no
 checking for mawk... mawk
 checking whether make sets $(MAKE)... yes
 checking for gcc... gcc
-checking for C compiler default output file name... a.out
 checking whether the C compiler works... yes
-checking whether we are cross compiling... no
+checking for C compiler default output file name... a.out
 checking for suffix of executables... 
+checking whether we are cross compiling... no
 checking for suffix of object files... o
 checking whether we are using the GNU C compiler... yes
 checking whether gcc accepts -g... yes
@@ -416,18 +407,19 @@ config.status: creating tests/Makefile
 config.status: creating config.h
 config.status: executing depfiles commands
 config.status: executing libtool commands
+configure: WARNING: unrecognized options: --disable-maintainer-mode
    dh_auto_build
-make[1]: Entering directory `/build/buildd-libgtextutils_0.6-1-sparc-A2sxLs/libgtextutils-0.6'
+make[1]: Entering directory `/build/buildd-libgtextutils_0.6.2-1-sparc-97iMTM/libgtextutils-0.6.2'
 make  all-recursive
-make[2]: Entering directory `/build/buildd-libgtextutils_0.6-1-sparc-A2sxLs/libgtextutils-0.6'
+make[2]: Entering directory `/build/buildd-libgtextutils_0.6.2-1-sparc-97iMTM/libgtextutils-0.6.2'
 Making all in m4
-make[3]: Entering directory `/build/buildd-libgtextutils_0.6-1-sparc-A2sxLs/libgtextutils-0.6/m4'
+make[3]: Entering directory `/build/buildd-libgtextutils_0.6.2-1-sparc-97iMTM/libgtextutils-0.6.2/m4'
 make[3]: Nothing to be done for `all'.
-make[3]: Leaving directory `/build/buildd-libgtextutils_0.6-1-sparc-A2sxLs/libgtextutils-0.6/m4'
+make[3]: Leaving directory `/build/buildd-libgtextutils_0.6.2-1-sparc-97iMTM/libgtextutils-0.6.2/m4'
 Making all in src
-make[3]: Entering directory `/build/buildd-libgtextutils_0.6-1-sparc-A2sxLs/libgtextutils-0.6/src'
+make[3]: Entering directory `/build/buildd-libgtextutils_0.6.2-1-sparc-97iMTM/libgtextutils-0.6.2/src'
 Making all in gtextutils
-make[4]: Entering directory `/build/buildd-libgtextutils_0.6-1-sparc-A2sxLs/libgtextutils-0.6/src/gtextutils'
+make[4]: Entering directory `/build/buildd-libgtextutils_0.6.2-1-sparc-97iMTM/libgtextutils-0.6.2/src/gtextutils'
 /bin/bash ../../libtool --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I../..     -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -c -o stream_wrapper.lo stream_wrapper.cpp
 libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../.. -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -c stream_wrapper.cpp  -fPIC -DPIC -o .libs/stream_wrapper.o
 libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../.. -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -c stream_wrapper.cpp -o stream_wrapper.o >/dev/null 2>&1
@@ -440,55 +432,55 @@ libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -g -O2 -Wall -Wextra -Wformat
 /bin/bash ../../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..     -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -c -o pipe_fitter.lo pipe_fitter.c
 libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -c pipe_fitter.c  -fPIC -DPIC -o .libs/pipe_fitter.o
 libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -c pipe_fitter.c -o pipe_fitter.o >/dev/null 2>&1
-/bin/bash ../../libtool --tag=CXX   --mode=link g++  -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -version-info 0:0:0 -release 0.6  -o libgtextutils.la -rpath /usr/lib stream_wrapper.lo text_line_reader.lo strnatcmp.lo pipe_fitter.lo  
-libtool: link: g++ -shared -nostdlib /usr/lib/gcc/sparc-linux-gnu/4.4.5/../../../../lib/crti.o /usr/lib/gcc/sparc-linux-gnu/4.4.5/crtbeginS.o  .libs/stream_wrapper.o .libs/text_line_reader.o .libs/strnatcmp.o .libs/pipe_fitter.o   -L/usr/lib/gcc/sparc-linux-gnu/4.4.5 -L/usr/lib/gcc/sparc-linux-gnu/4.4.5/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/sparc-linux-gnu/4.4.5/../../.. -lstdc++ -lm -lc -lgcc_s /usr/lib/gcc/sparc-linux-gnu/4.4.5/crtendS.o /usr/lib/gcc/sparc-linux-gnu/4.4.5/../../../../lib/crtn.o    -Wl,-soname -Wl,libgtextutils-0.6.so.0 -o .libs/libgtextutils-0.6.so.0.0.0
-libtool: link: (cd ".libs" && rm -f "libgtextutils-0.6.so.0" && ln -s "libgtextutils-0.6.so.0.0.0" "libgtextutils-0.6.so.0")
-libtool: link: (cd ".libs" && rm -f "libgtextutils.so" && ln -s "libgtextutils-0.6.so.0.0.0" "libgtextutils.so")
+/bin/bash ../../libtool --tag=CXX   --mode=link g++  -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -version-info 0:0:0 -release 0.6.2  -o libgtextutils.la -rpath /usr/lib stream_wrapper.lo text_line_reader.lo strnatcmp.lo pipe_fitter.lo  
+libtool: link: g++ -shared -nostdlib /usr/lib/sparc-linux-gnu/gcc/sparc-linux-gnu/4.4.6/../../../crti.o /usr/lib/sparc-linux-gnu/gcc/sparc-linux-gnu/4.4.6/crtbeginS.o  .libs/stream_wrapper.o .libs/text_line_reader.o .libs/strnatcmp.o .libs/pipe_fitter.o   -L/usr/lib/sparc-linux-gnu/gcc/sparc-linux-gnu/4.4.6 -L/usr/lib/sparc-linux-gnu/gcc/sparc-linux-gnu/4.4.6/../../.. -L/usr/lib/sparc-linux-gnu -lstdc++ -lm -lc -lgcc_s /usr/lib/sparc-linux-gnu/gcc/sparc-linux-gnu/4.4.6/crtendS.o /usr/lib/sparc-linux-gnu/gcc/sparc-linux-gnu/4.4.6/../../../crtn.o    -Wl,-soname -Wl,libgtextutils-0.6.2.so.0 -o .libs/libgtextutils-0.6.2.so.0.0.0
+libtool: link: (cd ".libs" && rm -f "libgtextutils-0.6.2.so.0" && ln -s "libgtextutils-0.6.2.so.0.0.0" "libgtextutils-0.6.2.so.0")
+libtool: link: (cd ".libs" && rm -f "libgtextutils.so" && ln -s "libgtextutils-0.6.2.so.0.0.0" "libgtextutils.so")
 libtool: link: ar cru .libs/libgtextutils.a  stream_wrapper.o text_line_reader.o strnatcmp.o pipe_fitter.o
 libtool: link: ranlib .libs/libgtextutils.a
 libtool: link: ( cd ".libs" && rm -f "libgtextutils.la" && ln -s "../libgtextutils.la" "libgtextutils.la" )
-make[4]: Leaving directory `/build/buildd-libgtextutils_0.6-1-sparc-A2sxLs/libgtextutils-0.6/src/gtextutils'
-make[4]: Entering directory `/build/buildd-libgtextutils_0.6-1-sparc-A2sxLs/libgtextutils-0.6/src'
+make[4]: Leaving directory `/build/buildd-libgtextutils_0.6.2-1-sparc-97iMTM/libgtextutils-0.6.2/src/gtextutils'
+make[4]: Entering directory `/build/buildd-libgtextutils_0.6.2-1-sparc-97iMTM/libgtextutils-0.6.2/src'
 make[4]: Nothing to be done for `all-am'.
-make[4]: Leaving directory `/build/buildd-libgtextutils_0.6-1-sparc-A2sxLs/libgtextutils-0.6/src'
-make[3]: Leaving directory `/build/buildd-libgtextutils_0.6-1-sparc-A2sxLs/libgtextutils-0.6/src'
+make[4]: Leaving directory `/build/buildd-libgtextutils_0.6.2-1-sparc-97iMTM/libgtextutils-0.6.2/src'
+make[3]: Leaving directory `/build/buildd-libgtextutils_0.6.2-1-sparc-97iMTM/libgtextutils-0.6.2/src'
 Making all in doc
-make[3]: Entering directory `/build/buildd-libgtextutils_0.6-1-sparc-A2sxLs/libgtextutils-0.6/doc'
+make[3]: Entering directory `/build/buildd-libgtextutils_0.6.2-1-sparc-97iMTM/libgtextutils-0.6.2/doc'
 make[3]: Nothing to be done for `all'.
-make[3]: Leaving directory `/build/buildd-libgtextutils_0.6-1-sparc-A2sxLs/libgtextutils-0.6/doc'
+make[3]: Leaving directory `/build/buildd-libgtextutils_0.6.2-1-sparc-97iMTM/libgtextutils-0.6.2/doc'
 Making all in tests
-make[3]: Entering directory `/build/buildd-libgtextutils_0.6-1-sparc-A2sxLs/libgtextutils-0.6/tests'
+make[3]: Entering directory `/build/buildd-libgtextutils_0.6.2-1-sparc-97iMTM/libgtextutils-0.6.2/tests'
 make[3]: Nothing to be done for `all'.
-make[3]: Leaving directory `/build/buildd-libgtextutils_0.6-1-sparc-A2sxLs/libgtextutils-0.6/tests'
-make[3]: Entering directory `/build/buildd-libgtextutils_0.6-1-sparc-A2sxLs/libgtextutils-0.6'
+make[3]: Leaving directory `/build/buildd-libgtextutils_0.6.2-1-sparc-97iMTM/libgtextutils-0.6.2/tests'
+make[3]: Entering directory `/build/buildd-libgtextutils_0.6.2-1-sparc-97iMTM/libgtextutils-0.6.2'
 make[3]: Nothing to be done for `all-am'.
-make[3]: Leaving directory `/build/buildd-libgtextutils_0.6-1-sparc-A2sxLs/libgtextutils-0.6'
-make[2]: Leaving directory `/build/buildd-libgtextutils_0.6-1-sparc-A2sxLs/libgtextutils-0.6'
-make[1]: Leaving directory `/build/buildd-libgtextutils_0.6-1-sparc-A2sxLs/libgtextutils-0.6'
+make[3]: Leaving directory `/build/buildd-libgtextutils_0.6.2-1-sparc-97iMTM/libgtextutils-0.6.2'
+make[2]: Leaving directory `/build/buildd-libgtextutils_0.6.2-1-sparc-97iMTM/libgtextutils-0.6.2'
+make[1]: Leaving directory `/build/buildd-libgtextutils_0.6.2-1-sparc-97iMTM/libgtextutils-0.6.2'
    dh_auto_test
-make[1]: Entering directory `/build/buildd-libgtextutils_0.6-1-sparc-A2sxLs/libgtextutils-0.6'
+make[1]: Entering directory `/build/buildd-libgtextutils_0.6.2-1-sparc-97iMTM/libgtextutils-0.6.2'
 Making check in m4
-make[2]: Entering directory `/build/buildd-libgtextutils_0.6-1-sparc-A2sxLs/libgtextutils-0.6/m4'
+make[2]: Entering directory `/build/buildd-libgtextutils_0.6.2-1-sparc-97iMTM/libgtextutils-0.6.2/m4'
 make[2]: Nothing to be done for `check'.
-make[2]: Leaving directory `/build/buildd-libgtextutils_0.6-1-sparc-A2sxLs/libgtextutils-0.6/m4'
+make[2]: Leaving directory `/build/buildd-libgtextutils_0.6.2-1-sparc-97iMTM/libgtextutils-0.6.2/m4'
 Making check in src
-make[2]: Entering directory `/build/buildd-libgtextutils_0.6-1-sparc-A2sxLs/libgtextutils-0.6/src'
+make[2]: Entering directory `/build/buildd-libgtextutils_0.6.2-1-sparc-97iMTM/libgtextutils-0.6.2/src'
 Making check in gtextutils
-make[3]: Entering directory `/build/buildd-libgtextutils_0.6-1-sparc-A2sxLs/libgtextutils-0.6/src/gtextutils'
+make[3]: Entering directory `/build/buildd-libgtextutils_0.6.2-1-sparc-97iMTM/libgtextutils-0.6.2/src/gtextutils'
 make[3]: Nothing to be done for `check'.
-make[3]: Leaving directory `/build/buildd-libgtextutils_0.6-1-sparc-A2sxLs/libgtextutils-0.6/src/gtextutils'
-make[3]: Entering directory `/build/buildd-libgtextutils_0.6-1-sparc-A2sxLs/libgtextutils-0.6/src'
+make[3]: Leaving directory `/build/buildd-libgtextutils_0.6.2-1-sparc-97iMTM/libgtextutils-0.6.2/src/gtextutils'
+make[3]: Entering directory `/build/buildd-libgtextutils_0.6.2-1-sparc-97iMTM/libgtextutils-0.6.2/src'
 make[3]: Nothing to be done for `check-am'.
-make[3]: Leaving directory `/build/buildd-libgtextutils_0.6-1-sparc-A2sxLs/libgtextutils-0.6/src'
-make[2]: Leaving directory `/build/buildd-libgtextutils_0.6-1-sparc-A2sxLs/libgtextutils-0.6/src'
+make[3]: Leaving directory `/build/buildd-libgtextutils_0.6.2-1-sparc-97iMTM/libgtextutils-0.6.2/src'
+make[2]: Leaving directory `/build/buildd-libgtextutils_0.6.2-1-sparc-97iMTM/libgtextutils-0.6.2/src'
 Making check in doc
-make[2]: Entering directory `/build/buildd-libgtextutils_0.6-1-sparc-A2sxLs/libgtextutils-0.6/doc'
+make[2]: Entering directory `/build/buildd-libgtextutils_0.6.2-1-sparc-97iMTM/libgtextutils-0.6.2/doc'
 make[2]: Nothing to be done for `check'.
-make[2]: Leaving directory `/build/buildd-libgtextutils_0.6-1-sparc-A2sxLs/libgtextutils-0.6/doc'
+make[2]: Leaving directory `/build/buildd-libgtextutils_0.6.2-1-sparc-97iMTM/libgtextutils-0.6.2/doc'
 Making check in tests
-make[2]: Entering directory `/build/buildd-libgtextutils_0.6-1-sparc-A2sxLs/libgtextutils-0.6/tests'
+make[2]: Entering directory `/build/buildd-libgtextutils_0.6.2-1-sparc-97iMTM/libgtextutils-0.6.2/tests'
 make  test_container_join test_natural_sort test_input_stream_wrapper test_text_reader test_text_reader_unget test_fd_outbuf test_fd_inbuf test_in_out_buf test_pipe_fitter test_string_tokenize 
-make[3]: Entering directory `/build/buildd-libgtextutils_0.6-1-sparc-A2sxLs/libgtextutils-0.6/tests'
+make[3]: Entering directory `/build/buildd-libgtextutils_0.6.2-1-sparc-97iMTM/libgtextutils-0.6.2/tests'
 g++ -DHAVE_CONFIG_H -I. -I.. -I../src    -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -c -o test_container_join.o test_container_join.cpp
 /bin/bash ../libtool --tag=CXX   --mode=link g++  -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1   -o test_container_join test_container_join.o ../src/gtextutils/libgtextutils.la 
 libtool: link: g++ -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -o .libs/test_container_join test_container_join.o  ../src/gtextutils/.libs/libgtextutils.so
@@ -519,9 +511,9 @@ libtool: link: gcc -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -W
 g++ -DHAVE_CONFIG_H -I. -I.. -I../src    -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -c -o test_string_tokenize.o test_string_tokenize.cpp
 /bin/bash ../libtool --tag=CXX   --mode=link g++  -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1   -o test_string_tokenize test_string_tokenize.o ../src/gtextutils/libgtextutils.la 
 libtool: link: g++ -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -o .libs/test_string_tokenize test_string_tokenize.o  ../src/gtextutils/.libs/libgtextutils.so
-make[3]: Leaving directory `/build/buildd-libgtextutils_0.6-1-sparc-A2sxLs/libgtextutils-0.6/tests'
+make[3]: Leaving directory `/build/buildd-libgtextutils_0.6.2-1-sparc-97iMTM/libgtextutils-0.6.2/tests'
 make  check-TESTS
-make[3]: Entering directory `/build/buildd-libgtextutils_0.6-1-sparc-A2sxLs/libgtextutils-0.6/tests'
+make[3]: Entering directory `/build/buildd-libgtextutils_0.6.2-1-sparc-97iMTM/libgtextutils-0.6.2/tests'
 0,1,2,3,4,5,6,7,8,9
 0-1-2-3-4-5-6-7-8-9
 keys  = 42	666
@@ -545,84 +537,74 @@ PASS: test_string_tokenize
 ===================
 All 10 tests passed
 ===================
-make[3]: Leaving directory `/build/buildd-libgtextutils_0.6-1-sparc-A2sxLs/libgtextutils-0.6/tests'
-make[2]: Leaving directory `/build/buildd-libgtextutils_0.6-1-sparc-A2sxLs/libgtextutils-0.6/tests'
-make[2]: Entering directory `/build/buildd-libgtextutils_0.6-1-sparc-A2sxLs/libgtextutils-0.6'
+make[3]: Leaving directory `/build/buildd-libgtextutils_0.6.2-1-sparc-97iMTM/libgtextutils-0.6.2/tests'
+make[2]: Leaving directory `/build/buildd-libgtextutils_0.6.2-1-sparc-97iMTM/libgtextutils-0.6.2/tests'
+make[2]: Entering directory `/build/buildd-libgtextutils_0.6.2-1-sparc-97iMTM/libgtextutils-0.6.2'
 make[2]: Nothing to be done for `check-am'.
-make[2]: Leaving directory `/build/buildd-libgtextutils_0.6-1-sparc-A2sxLs/libgtextutils-0.6'
-make[1]: Leaving directory `/build/buildd-libgtextutils_0.6-1-sparc-A2sxLs/libgtextutils-0.6'
+make[2]: Leaving directory `/build/buildd-libgtextutils_0.6.2-1-sparc-97iMTM/libgtextutils-0.6.2'
+make[1]: Leaving directory `/build/buildd-libgtextutils_0.6.2-1-sparc-97iMTM/libgtextutils-0.6.2'
  fakeroot debian/rules binary-arch
 dh binary-arch --with autotools_dev
    dh_testroot -a
    dh_prep -a
    dh_installdirs -a
    dh_auto_install -a
-make[1]: Entering directory `/build/buildd-libgtextutils_0.6-1-sparc-A2sxLs/libgtextutils-0.6'
+make[1]: Entering directory `/build/buildd-libgtextutils_0.6.2-1-sparc-97iMTM/libgtextutils-0.6.2'
 Making install in m4
-make[2]: Entering directory `/build/buildd-libgtextutils_0.6-1-sparc-A2sxLs/libgtextutils-0.6/m4'
-make[3]: Entering directory `/build/buildd-libgtextutils_0.6-1-sparc-A2sxLs/libgtextutils-0.6/m4'
+make[2]: Entering directory `/build/buildd-libgtextutils_0.6.2-1-sparc-97iMTM/libgtextutils-0.6.2/m4'
+make[3]: Entering directory `/build/buildd-libgtextutils_0.6.2-1-sparc-97iMTM/libgtextutils-0.6.2/m4'
 make[3]: Nothing to be done for `install-exec-am'.
-test -z "/usr/share/aclocal" || /bin/mkdir -p "/build/buildd-libgtextutils_0.6-1-sparc-A2sxLs/libgtextutils-0.6/debian/tmp/usr/share/aclocal"
-make[3]: Leaving directory `/build/buildd-libgtextutils_0.6-1-sparc-A2sxLs/libgtextutils-0.6/m4'
-make[2]: Leaving directory `/build/buildd-libgtextutils_0.6-1-sparc-A2sxLs/libgtextutils-0.6/m4'
+test -z "/usr/share/aclocal" || /bin/mkdir -p "/build/buildd-libgtextutils_0.6.2-1-sparc-97iMTM/libgtextutils-0.6.2/debian/tmp/usr/share/aclocal"
+make[3]: Leaving directory `/build/buildd-libgtextutils_0.6.2-1-sparc-97iMTM/libgtextutils-0.6.2/m4'
+make[2]: Leaving directory `/build/buildd-libgtextutils_0.6.2-1-sparc-97iMTM/libgtextutils-0.6.2/m4'
 Making install in src
-make[2]: Entering directory `/build/buildd-libgtextutils_0.6-1-sparc-A2sxLs/libgtextutils-0.6/src'
+make[2]: Entering directory `/build/buildd-libgtextutils_0.6.2-1-sparc-97iMTM/libgtextutils-0.6.2/src'
 Making install in gtextutils
-make[3]: Entering directory `/build/buildd-libgtextutils_0.6-1-sparc-A2sxLs/libgtextutils-0.6/src/gtextutils'
-make[4]: Entering directory `/build/buildd-libgtextutils_0.6-1-sparc-A2sxLs/libgtextutils-0.6/src/gtextutils'
-test -z "/usr/lib" || /bin/mkdir -p "/build/buildd-libgtextutils_0.6-1-sparc-A2sxLs/libgtextutils-0.6/debian/tmp/usr/lib"
- /bin/bash ../../libtool   --mode=install /usr/bin/install -c  'libgtextutils.la' '/build/buildd-libgtextutils_0.6-1-sparc-A2sxLs/libgtextutils-0.6/debian/tmp/usr/lib/libgtextutils.la'
-libtool: install: /usr/bin/install -c .libs/libgtextutils-0.6.so.0.0.0 /build/buildd-libgtextutils_0.6-1-sparc-A2sxLs/libgtextutils-0.6/debian/tmp/usr/lib/libgtextutils-0.6.so.0.0.0
-libtool: install: (cd /build/buildd-libgtextutils_0.6-1-sparc-A2sxLs/libgtextutils-0.6/debian/tmp/usr/lib && { ln -s -f libgtextutils-0.6.so.0.0.0 libgtextutils-0.6.so.0 || { rm -f libgtextutils-0.6.so.0 && ln -s libgtextutils-0.6.so.0.0.0 libgtextutils-0.6.so.0; }; })
-libtool: install: (cd /build/buildd-libgtextutils_0.6-1-sparc-A2sxLs/libgtextutils-0.6/debian/tmp/usr/lib && { ln -s -f libgtextutils-0.6.so.0.0.0 libgtextutils.so || { rm -f libgtextutils.so && ln -s libgtextutils-0.6.so.0.0.0 libgtextutils.so; }; })
-libtool: install: /usr/bin/install -c .libs/libgtextutils.lai /build/buildd-libgtextutils_0.6-1-sparc-A2sxLs/libgtextutils-0.6/debian/tmp/usr/lib/libgtextutils.la
-libtool: install: /usr/bin/install -c .libs/libgtextutils.a /build/buildd-libgtextutils_0.6-1-sparc-A2sxLs/libgtextutils-0.6/debian/tmp/usr/lib/libgtextutils.a
-libtool: install: chmod 644 /build/buildd-libgtextutils_0.6-1-sparc-A2sxLs/libgtextutils-0.6/debian/tmp/usr/lib/libgtextutils.a
-libtool: install: ranlib /build/buildd-libgtextutils_0.6-1-sparc-A2sxLs/libgtextutils-0.6/debian/tmp/usr/lib/libgtextutils.a
+make[3]: Entering directory `/build/buildd-libgtextutils_0.6.2-1-sparc-97iMTM/libgtextutils-0.6.2/src/gtextutils'
+make[4]: Entering directory `/build/buildd-libgtextutils_0.6.2-1-sparc-97iMTM/libgtextutils-0.6.2/src/gtextutils'
+test -z "/usr/lib" || /bin/mkdir -p "/build/buildd-libgtextutils_0.6.2-1-sparc-97iMTM/libgtextutils-0.6.2/debian/tmp/usr/lib"
+ /bin/bash ../../libtool   --mode=install /usr/bin/install -c   libgtextutils.la '/build/buildd-libgtextutils_0.6.2-1-sparc-97iMTM/libgtextutils-0.6.2/debian/tmp/usr/lib'
+libtool: install: /usr/bin/install -c .libs/libgtextutils-0.6.2.so.0.0.0 /build/buildd-libgtextutils_0.6.2-1-sparc-97iMTM/libgtextutils-0.6.2/debian/tmp/usr/lib/libgtextutils-0.6.2.so.0.0.0
+libtool: install: (cd /build/buildd-libgtextutils_0.6.2-1-sparc-97iMTM/libgtextutils-0.6.2/debian/tmp/usr/lib && { ln -s -f libgtextutils-0.6.2.so.0.0.0 libgtextutils-0.6.2.so.0 || { rm -f libgtextutils-0.6.2.so.0 && ln -s libgtextutils-0.6.2.so.0.0.0 libgtextutils-0.6.2.so.0; }; })
+libtool: install: (cd /build/buildd-libgtextutils_0.6.2-1-sparc-97iMTM/libgtextutils-0.6.2/debian/tmp/usr/lib && { ln -s -f libgtextutils-0.6.2.so.0.0.0 libgtextutils.so || { rm -f libgtextutils.so && ln -s libgtextutils-0.6.2.so.0.0.0 libgtextutils.so; }; })
+libtool: install: /usr/bin/install -c .libs/libgtextutils.lai /build/buildd-libgtextutils_0.6.2-1-sparc-97iMTM/libgtextutils-0.6.2/debian/tmp/usr/lib/libgtextutils.la
+libtool: install: /usr/bin/install -c .libs/libgtextutils.a /build/buildd-libgtextutils_0.6.2-1-sparc-97iMTM/libgtextutils-0.6.2/debian/tmp/usr/lib/libgtextutils.a
+libtool: install: chmod 644 /build/buildd-libgtextutils_0.6.2-1-sparc-97iMTM/libgtextutils-0.6.2/debian/tmp/usr/lib/libgtextutils.a
+libtool: install: ranlib /build/buildd-libgtextutils_0.6.2-1-sparc-97iMTM/libgtextutils-0.6.2/debian/tmp/usr/lib/libgtextutils.a
 libtool: install: warning: remember to run `libtool --finish /usr/lib'
-test -z "/usr/include/gtextutils/gtextutils" || /bin/mkdir -p "/build/buildd-libgtextutils_0.6-1-sparc-A2sxLs/libgtextutils-0.6/debian/tmp/usr/include/gtextutils/gtextutils"
- /usr/bin/install -c -m 644 'container_join.h' '/build/buildd-libgtextutils_0.6-1-sparc-A2sxLs/libgtextutils-0.6/debian/tmp/usr/include/gtextutils/gtextutils/container_join.h'
- /usr/bin/install -c -m 644 'text_line_reader.h' '/build/buildd-libgtextutils_0.6-1-sparc-A2sxLs/libgtextutils-0.6/debian/tmp/usr/include/gtextutils/gtextutils/text_line_reader.h'
- /usr/bin/install -c -m 644 'stream_wrapper.h' '/build/buildd-libgtextutils_0.6-1-sparc-A2sxLs/libgtextutils-0.6/debian/tmp/usr/include/gtextutils/gtextutils/stream_wrapper.h'
- /usr/bin/install -c -m 644 'natsort.h' '/build/buildd-libgtextutils_0.6-1-sparc-A2sxLs/libgtextutils-0.6/debian/tmp/usr/include/gtextutils/gtextutils/natsort.h'
- /usr/bin/install -c -m 644 'strnatcmp.h' '/build/buildd-libgtextutils_0.6-1-sparc-A2sxLs/libgtextutils-0.6/debian/tmp/usr/include/gtextutils/gtextutils/strnatcmp.h'
- /usr/bin/install -c -m 644 'outbuf3.hpp' '/build/buildd-libgtextutils_0.6-1-sparc-A2sxLs/libgtextutils-0.6/debian/tmp/usr/include/gtextutils/gtextutils/outbuf3.hpp'
- /usr/bin/install -c -m 644 'inbuf1.hpp' '/build/buildd-libgtextutils_0.6-1-sparc-A2sxLs/libgtextutils-0.6/debian/tmp/usr/include/gtextutils/gtextutils/inbuf1.hpp'
- /usr/bin/install -c -m 644 'tuple_parser.h' '/build/buildd-libgtextutils_0.6-1-sparc-A2sxLs/libgtextutils-0.6/debian/tmp/usr/include/gtextutils/gtextutils/tuple_parser.h'
- /usr/bin/install -c -m 644 'exit_manip.h' '/build/buildd-libgtextutils_0.6-1-sparc-A2sxLs/libgtextutils-0.6/debian/tmp/usr/include/gtextutils/gtextutils/exit_manip.h'
- /usr/bin/install -c -m 644 'string_tokenize.h' '/build/buildd-libgtextutils_0.6-1-sparc-A2sxLs/libgtextutils-0.6/debian/tmp/usr/include/gtextutils/gtextutils/string_tokenize.h'
- /usr/bin/install -c -m 644 'pipe_fitter.h' '/build/buildd-libgtextutils_0.6-1-sparc-A2sxLs/libgtextutils-0.6/debian/tmp/usr/include/gtextutils/gtextutils/pipe_fitter.h'
-make[4]: Leaving directory `/build/buildd-libgtextutils_0.6-1-sparc-A2sxLs/libgtextutils-0.6/src/gtextutils'
-make[3]: Leaving directory `/build/buildd-libgtextutils_0.6-1-sparc-A2sxLs/libgtextutils-0.6/src/gtextutils'
-make[3]: Entering directory `/build/buildd-libgtextutils_0.6-1-sparc-A2sxLs/libgtextutils-0.6/src'
-make[4]: Entering directory `/build/buildd-libgtextutils_0.6-1-sparc-A2sxLs/libgtextutils-0.6/src'
+test -z "/usr/include/gtextutils/gtextutils" || /bin/mkdir -p "/build/buildd-libgtextutils_0.6.2-1-sparc-97iMTM/libgtextutils-0.6.2/debian/tmp/usr/include/gtextutils/gtextutils"
+ /usr/bin/install -c -m 644 container_join.h text_line_reader.h stream_wrapper.h natsort.h strnatcmp.h outbuf3.hpp inbuf1.hpp tuple_parser.h exit_manip.h string_tokenize.h pipe_fitter.h '/build/buildd-libgtextutils_0.6.2-1-sparc-97iMTM/libgtextutils-0.6.2/debian/tmp/usr/include/gtextutils/gtextutils'
+make[4]: Leaving directory `/build/buildd-libgtextutils_0.6.2-1-sparc-97iMTM/libgtextutils-0.6.2/src/gtextutils'
+make[3]: Leaving directory `/build/buildd-libgtextutils_0.6.2-1-sparc-97iMTM/libgtextutils-0.6.2/src/gtextutils'
+make[3]: Entering directory `/build/buildd-libgtextutils_0.6.2-1-sparc-97iMTM/libgtextutils-0.6.2/src'
+make[4]: Entering directory `/build/buildd-libgtextutils_0.6.2-1-sparc-97iMTM/libgtextutils-0.6.2/src'
 make[4]: Nothing to be done for `install-exec-am'.
 make[4]: Nothing to be done for `install-data-am'.
-make[4]: Leaving directory `/build/buildd-libgtextutils_0.6-1-sparc-A2sxLs/libgtextutils-0.6/src'
-make[3]: Leaving directory `/build/buildd-libgtextutils_0.6-1-sparc-A2sxLs/libgtextutils-0.6/src'
-make[2]: Leaving directory `/build/buildd-libgtextutils_0.6-1-sparc-A2sxLs/libgtextutils-0.6/src'
+make[4]: Leaving directory `/build/buildd-libgtextutils_0.6.2-1-sparc-97iMTM/libgtextutils-0.6.2/src'
+make[3]: Leaving directory `/build/buildd-libgtextutils_0.6.2-1-sparc-97iMTM/libgtextutils-0.6.2/src'
+make[2]: Leaving directory `/build/buildd-libgtextutils_0.6.2-1-sparc-97iMTM/libgtextutils-0.6.2/src'
 Making install in doc
-make[2]: Entering directory `/build/buildd-libgtextutils_0.6-1-sparc-A2sxLs/libgtextutils-0.6/doc'
-make[3]: Entering directory `/build/buildd-libgtextutils_0.6-1-sparc-A2sxLs/libgtextutils-0.6/doc'
+make[2]: Entering directory `/build/buildd-libgtextutils_0.6.2-1-sparc-97iMTM/libgtextutils-0.6.2/doc'
+make[3]: Entering directory `/build/buildd-libgtextutils_0.6.2-1-sparc-97iMTM/libgtextutils-0.6.2/doc'
 make[3]: Nothing to be done for `install-exec-am'.
 make[3]: Nothing to be done for `install-data-am'.
-make[3]: Leaving directory `/build/buildd-libgtextutils_0.6-1-sparc-A2sxLs/libgtextutils-0.6/doc'
-make[2]: Leaving directory `/build/buildd-libgtextutils_0.6-1-sparc-A2sxLs/libgtextutils-0.6/doc'
+make[3]: Leaving directory `/build/buildd-libgtextutils_0.6.2-1-sparc-97iMTM/libgtextutils-0.6.2/doc'
+make[2]: Leaving directory `/build/buildd-libgtextutils_0.6.2-1-sparc-97iMTM/libgtextutils-0.6.2/doc'
 Making install in tests
-make[2]: Entering directory `/build/buildd-libgtextutils_0.6-1-sparc-A2sxLs/libgtextutils-0.6/tests'
-make[3]: Entering directory `/build/buildd-libgtextutils_0.6-1-sparc-A2sxLs/libgtextutils-0.6/tests'
+make[2]: Entering directory `/build/buildd-libgtextutils_0.6.2-1-sparc-97iMTM/libgtextutils-0.6.2/tests'
+make[3]: Entering directory `/build/buildd-libgtextutils_0.6.2-1-sparc-97iMTM/libgtextutils-0.6.2/tests'
 make[3]: Nothing to be done for `install-exec-am'.
 make[3]: Nothing to be done for `install-data-am'.
-make[3]: Leaving directory `/build/buildd-libgtextutils_0.6-1-sparc-A2sxLs/libgtextutils-0.6/tests'
-make[2]: Leaving directory `/build/buildd-libgtextutils_0.6-1-sparc-A2sxLs/libgtextutils-0.6/tests'
-make[2]: Entering directory `/build/buildd-libgtextutils_0.6-1-sparc-A2sxLs/libgtextutils-0.6'
-make[3]: Entering directory `/build/buildd-libgtextutils_0.6-1-sparc-A2sxLs/libgtextutils-0.6'
+make[3]: Leaving directory `/build/buildd-libgtextutils_0.6.2-1-sparc-97iMTM/libgtextutils-0.6.2/tests'
+make[2]: Leaving directory `/build/buildd-libgtextutils_0.6.2-1-sparc-97iMTM/libgtextutils-0.6.2/tests'
+make[2]: Entering directory `/build/buildd-libgtextutils_0.6.2-1-sparc-97iMTM/libgtextutils-0.6.2'
+make[3]: Entering directory `/build/buildd-libgtextutils_0.6.2-1-sparc-97iMTM/libgtextutils-0.6.2'
 make[3]: Nothing to be done for `install-exec-am'.
-test -z "/usr/lib/pkgconfig" || /bin/mkdir -p "/build/buildd-libgtextutils_0.6-1-sparc-A2sxLs/libgtextutils-0.6/debian/tmp/usr/lib/pkgconfig"
- /usr/bin/install -c -m 644 'gtextutils.pc' '/build/buildd-libgtextutils_0.6-1-sparc-A2sxLs/libgtextutils-0.6/debian/tmp/usr/lib/pkgconfig/gtextutils.pc'
-make[3]: Leaving directory `/build/buildd-libgtextutils_0.6-1-sparc-A2sxLs/libgtextutils-0.6'
-make[2]: Leaving directory `/build/buildd-libgtextutils_0.6-1-sparc-A2sxLs/libgtextutils-0.6'
-make[1]: Leaving directory `/build/buildd-libgtextutils_0.6-1-sparc-A2sxLs/libgtextutils-0.6'
+test -z "/usr/lib/pkgconfig" || /bin/mkdir -p "/build/buildd-libgtextutils_0.6.2-1-sparc-97iMTM/libgtextutils-0.6.2/debian/tmp/usr/lib/pkgconfig"
+ /usr/bin/install -c -m 644 gtextutils.pc '/build/buildd-libgtextutils_0.6.2-1-sparc-97iMTM/libgtextutils-0.6.2/debian/tmp/usr/lib/pkgconfig'
+make[3]: Leaving directory `/build/buildd-libgtextutils_0.6.2-1-sparc-97iMTM/libgtextutils-0.6.2'
+make[2]: Leaving directory `/build/buildd-libgtextutils_0.6.2-1-sparc-97iMTM/libgtextutils-0.6.2'
+make[1]: Leaving directory `/build/buildd-libgtextutils_0.6.2-1-sparc-97iMTM/libgtextutils-0.6.2'
    dh_install -a
    dh_installdocs -a
    dh_installchangelogs -a
@@ -647,6 +629,7 @@ make[1]: Leaving directory `/build/buildd-libgtextutils_0.6-1-sparc-A2sxLs/libgt
    dh_installxfonts -a
    dh_installgsettings -a
    dh_bugfiles -a
+   dh_ucf -a
    dh_lintian -a
    dh_gconf -a
    dh_icons -a
@@ -662,118 +645,123 @@ make[1]: Leaving directory `/build/buildd-libgtextutils_0.6-1-sparc-A2sxLs/libgt
    dh_gencontrol -a
    dh_md5sums -a
    dh_builddeb -a
-dpkg-deb: building package `libgtextutils-dev' in `../libgtextutils-dev_0.6-1_sparc.deb'.
-dpkg-deb: building package `libgtextutils0' in `../libgtextutils0_0.6-1_sparc.deb'.
- dpkg-genchanges -B -msparc Build Daemon (spontini) <buildd_sparc-spontini@buildd.debian.org> >../libgtextutils_0.6-1_sparc.changes
+dpkg-deb: building package `libgtextutils-dev' in `../libgtextutils-dev_0.6.2-1_sparc.deb'.
+dpkg-deb: building package `libgtextutils0' in `../libgtextutils0_0.6.2-1_sparc.deb'.
+ dpkg-genchanges -B -msparc Build Daemon (schroeder) <buildd_sparc-schroeder@buildd.debian.org> >../libgtextutils_0.6.2-1_sparc.changes
 dpkg-genchanges: arch-specific upload - not including arch-independent packages
 dpkg-genchanges: binary-only upload - not including any source code
- dpkg-source --after-build libgtextutils-0.6
+ dpkg-source --after-build libgtextutils-0.6.2
 dpkg-buildpackage: binary only upload (no source included)
 ────────────────────────────────────────────────────────────────────────────────
-Build finished at 20110409-1553
+Build finished at 20110704-1046
 
-libgtextutils_0.6-1_sparc.changes:
+libgtextutils_0.6.2-1_sparc.changes:
 Format: 1.8
-Date: Wed, 16 Feb 2011 12:35:53 +0900
+Date: Mon, 04 Jul 2011 18:55:22 +0900
 Source: libgtextutils
 Binary: libgtextutils-dev libgtextutils0
 Architecture: sparc
-Version: 0.6-1
+Version: 0.6.2-1
 Distribution: sid
 Urgency: low
-Maintainer: sparc Build Daemon (spontini) <buildd_sparc-spontini@buildd.debian.org>
+Maintainer: sparc Build Daemon (schroeder) <buildd_sparc-schroeder@buildd.debian.org>
 Changed-By: Charles Plessy <plessy@debian.org>
 Description: 
  libgtextutils-dev - Gordon Text_utils library (development files)
  libgtextutils0 - Gordon Text_utils library
-Closes: 613486
+Closes: 625365 626757
 Changes: 
- libgtextutils (0.6-1) unstable; urgency=low
+ libgtextutils (0.6.2-1) unstable; urgency=low
  .
-   * Initial release (Closes: #613486)
+   * New upstream release (Closes: #625365, #626757), whith new soname 0.6.2.
+   * debian/libgtextutils0.symbols upgraded to new soname.
+   * Breaks: fastx-toolkit =< 0.0.13-1 (debian/control).
+   * Incremented Standards-Version to reflect conformance with Policy 3.9.2
+     (debian/control, no changes needed).
 Checksums-Sha1: 
- af88e94fd8f9b48b2e32ee1dee5329fa7a33d84e 25756 libgtextutils-dev_0.6-1_sparc.deb
- a1221d65b1730c577b8c9406833e62e24895af94 20472 libgtextutils0_0.6-1_sparc.deb
+ 909678407e3f398ea901933ed28e148a0eaeb8b6 26048 libgtextutils-dev_0.6.2-1_sparc.deb
+ 7deca815287fe6e7817b6ea32e20328364b154c9 20744 libgtextutils0_0.6.2-1_sparc.deb
 Checksums-Sha256: 
- fd9f8981f6cc69a465f141decfef513a7576931b6ee324567526dacea8a8f7be 25756 libgtextutils-dev_0.6-1_sparc.deb
- e9fdc5173ca730bb98a310727987c63f3258fcd095690241cc1807597750cddd 20472 libgtextutils0_0.6-1_sparc.deb
+ 7b235a3e49866ac5729058b1106b17433549293dec5f105d97409816624420ac 26048 libgtextutils-dev_0.6.2-1_sparc.deb
+ 64a29d2b08833b1bb952780fcf79187a4ee0b2511bc052a562b2d158e217eae9 20744 libgtextutils0_0.6.2-1_sparc.deb
 Files: 
- 8048c911d26daaa2dbb67bc7bbfedd9c 25756 libdevel optional libgtextutils-dev_0.6-1_sparc.deb
- 9dbd092e42cc2138d0edc72bebc3ff19 20472 libs optional libgtextutils0_0.6-1_sparc.deb
+ 6899bbcc78719c6e8292787a625cc13a 26048 libdevel optional libgtextutils-dev_0.6.2-1_sparc.deb
+ eabe5fb3898db8258407f35b7fe58759 20744 libs optional libgtextutils0_0.6.2-1_sparc.deb
 
 ┌──────────────────────────────────────────────────────────────────────────────┐
 │ Package contents                                                             │
 └──────────────────────────────────────────────────────────────────────────────┘
 
 
-libgtextutils-dev_0.6-1_sparc.deb
-─────────────────────────────────
+libgtextutils-dev_0.6.2-1_sparc.deb
+───────────────────────────────────
 
  new debian package, version 2.0.
- size 25756 bytes: control archive= 1013 bytes.
-     437 bytes,    12 lines      control              
+ size 26048 bytes: control archive= 1013 bytes.
+     441 bytes,    12 lines      control              
     1354 bytes,    17 lines      md5sums              
  Package: libgtextutils-dev
  Source: libgtextutils
- Version: 0.6-1
+ Version: 0.6.2-1
  Architecture: sparc
  Maintainer: Debian Med Packaging Team <debian-med-packaging@lists.alioth.debian.org>
  Installed-Size: 164
- Depends: libgtextutils0 (= 0.6-1)
+ Depends: libgtextutils0 (= 0.6.2-1)
  Section: libdevel
  Priority: optional
  Homepage: http://hannonlab.cshl.edu/fastx_toolkit/
  Description: Gordon Text_utils library (development files)
   Development files for the Gordon Text_utils (gtextutils) library.
 
-drwxr-xr-x root/root         0 2011-04-09 15:52 ./
-drwxr-xr-x root/root         0 2011-04-09 15:52 ./usr/
-drwxr-xr-x root/root         0 2011-04-09 15:52 ./usr/share/
-drwxr-xr-x root/root         0 2011-04-09 15:52 ./usr/share/doc/
-drwxr-xr-x root/root         0 2011-04-09 15:52 ./usr/share/doc/libgtextutils-dev/
+drwxr-xr-x root/root         0 2011-07-04 10:46 ./
+drwxr-xr-x root/root         0 2011-07-04 10:46 ./usr/
+drwxr-xr-x root/root         0 2011-07-04 10:46 ./usr/include/
+drwxr-xr-x root/root         0 2011-07-04 10:46 ./usr/include/gtextutils/
+drwxr-xr-x root/root         0 2011-07-04 10:46 ./usr/include/gtextutils/gtextutils/
+-rw-r--r-- root/root      1143 2011-07-04 10:46 ./usr/include/gtextutils/gtextutils/pipe_fitter.h
+-rw-r--r-- root/root      1984 2011-07-04 10:46 ./usr/include/gtextutils/gtextutils/string_tokenize.h
+-rw-r--r-- root/root      6023 2011-07-04 10:46 ./usr/include/gtextutils/gtextutils/container_join.h
+-rw-r--r-- root/root      1287 2011-07-04 10:46 ./usr/include/gtextutils/gtextutils/strnatcmp.h
+-rw-r--r-- root/root      1472 2011-07-04 10:46 ./usr/include/gtextutils/gtextutils/stream_wrapper.h
+-rw-r--r-- root/root      4068 2011-07-04 10:46 ./usr/include/gtextutils/gtextutils/outbuf3.hpp
+-rw-r--r-- root/root     11049 2011-07-04 10:46 ./usr/include/gtextutils/gtextutils/tuple_parser.h
+-rw-r--r-- root/root      1852 2011-07-04 10:46 ./usr/include/gtextutils/gtextutils/text_line_reader.h
+-rw-r--r-- root/root      2990 2011-07-04 10:46 ./usr/include/gtextutils/gtextutils/natsort.h
+-rw-r--r-- root/root      4354 2011-07-04 10:46 ./usr/include/gtextutils/gtextutils/inbuf1.hpp
+-rw-r--r-- root/root      2094 2011-07-04 10:46 ./usr/include/gtextutils/gtextutils/exit_manip.h
+drwxr-xr-x root/root         0 2011-07-04 10:46 ./usr/share/
+drwxr-xr-x root/root         0 2011-07-04 10:46 ./usr/share/doc/
+drwxr-xr-x root/root         0 2011-07-04 10:46 ./usr/share/doc/libgtextutils-dev/
 -rw-r--r-- root/root       314 2009-02-25 22:33 ./usr/share/doc/libgtextutils-dev/THANKS
--rw-r--r-- root/root     38877 2011-04-09 15:50 ./usr/share/doc/libgtextutils-dev/copyright
--rw-r--r-- root/root       261 2011-04-09 15:51 ./usr/share/doc/libgtextutils-dev/README
+-rw-r--r-- root/root     38905 2011-07-04 09:58 ./usr/share/doc/libgtextutils-dev/copyright
+-rw-r--r-- root/root       261 2011-07-04 10:45 ./usr/share/doc/libgtextutils-dev/README
+-rw-r--r-- root/root       356 2011-07-04 09:58 ./usr/share/doc/libgtextutils-dev/changelog.Debian.gz
 -rw-r--r-- root/root       429 2009-02-25 22:33 ./usr/share/doc/libgtextutils-dev/NEWS.gz
--rw-r--r-- root/root       158 2011-04-09 15:50 ./usr/share/doc/libgtextutils-dev/changelog.Debian.gz
-drwxr-xr-x root/root         0 2011-04-09 15:52 ./usr/lib/
-drwxr-xr-x root/root         0 2011-04-09 15:52 ./usr/lib/pkgconfig/
--rw-r--r-- root/root       229 2011-04-09 15:52 ./usr/lib/pkgconfig/gtextutils.pc
-drwxr-xr-x root/root         0 2011-04-09 15:52 ./usr/include/
-drwxr-xr-x root/root         0 2011-04-09 15:52 ./usr/include/gtextutils/
-drwxr-xr-x root/root         0 2011-04-09 15:52 ./usr/include/gtextutils/gtextutils/
--rw-r--r-- root/root      4354 2011-04-09 15:52 ./usr/include/gtextutils/gtextutils/inbuf1.hpp
--rw-r--r-- root/root      1143 2011-04-09 15:52 ./usr/include/gtextutils/gtextutils/pipe_fitter.h
--rw-r--r-- root/root      2094 2011-04-09 15:52 ./usr/include/gtextutils/gtextutils/exit_manip.h
--rw-r--r-- root/root      1852 2011-04-09 15:52 ./usr/include/gtextutils/gtextutils/text_line_reader.h
--rw-r--r-- root/root      6023 2011-04-09 15:52 ./usr/include/gtextutils/gtextutils/container_join.h
--rw-r--r-- root/root      4068 2011-04-09 15:52 ./usr/include/gtextutils/gtextutils/outbuf3.hpp
--rw-r--r-- root/root      1984 2011-04-09 15:52 ./usr/include/gtextutils/gtextutils/string_tokenize.h
--rw-r--r-- root/root      2990 2011-04-09 15:52 ./usr/include/gtextutils/gtextutils/natsort.h
--rw-r--r-- root/root      1287 2011-04-09 15:52 ./usr/include/gtextutils/gtextutils/strnatcmp.h
--rw-r--r-- root/root      1472 2011-04-09 15:52 ./usr/include/gtextutils/gtextutils/stream_wrapper.h
--rw-r--r-- root/root     11049 2011-04-09 15:52 ./usr/include/gtextutils/gtextutils/tuple_parser.h
-lrwxrwxrwx root/root         0 2011-04-09 15:52 ./usr/lib/libgtextutils.so -> libgtextutils-0.6.so.0.0.0
+drwxr-xr-x root/root         0 2011-07-04 10:46 ./usr/lib/
+drwxr-xr-x root/root         0 2011-07-04 10:46 ./usr/lib/pkgconfig/
+-rw-r--r-- root/root       231 2011-07-04 10:46 ./usr/lib/pkgconfig/gtextutils.pc
+lrwxrwxrwx root/root         0 2011-07-04 10:46 ./usr/lib/libgtextutils.so -> libgtextutils-0.6.2.so.0.0.0
 
 
-libgtextutils0_0.6-1_sparc.deb
-──────────────────────────────
+libgtextutils0_0.6.2-1_sparc.deb
+────────────────────────────────
 
  new debian package, version 2.0.
- size 20472 bytes: control archive= 967 bytes.
-     536 bytes,    13 lines      control              
-     225 bytes,     3 lines      md5sums              
+ size 20744 bytes: control archive= 986 bytes.
+     574 bytes,    14 lines      control              
+     227 bytes,     3 lines      md5sums              
      135 bytes,     7 lines   *  postinst             #!/bin/sh
      132 bytes,     7 lines   *  postrm               #!/bin/sh
-      35 bytes,     1 lines      shlibs               
-     453 bytes,    13 lines      symbols              
+      37 bytes,     1 lines      shlibs               
+     479 bytes,    13 lines      symbols              
  Package: libgtextutils0
  Source: libgtextutils
- Version: 0.6-1
+ Version: 0.6.2-1
  Architecture: sparc
  Maintainer: Debian Med Packaging Team <debian-med-packaging@lists.alioth.debian.org>
  Installed-Size: 104
  Depends: libc6 (>= 2.6), libgcc1 (>= 1:4.1.1), libstdc++6 (>= 4.4.0)
+ Breaks: fastx-toolkit (<= 0.0.13-1)
  Section: libs
  Priority: optional
  Homepage: http://hannonlab.cshl.edu/fastx_toolkit/
@@ -781,16 +769,16 @@ libgtextutils0_0.6-1_sparc.deb
   The Gordon Text_utils (gtextutils) library is a text utilities library used by
   the FASTX-Toolkit, a suite of programs for biological sequence analysis.
 
-drwxr-xr-x root/root         0 2011-04-09 15:52 ./
-drwxr-xr-x root/root         0 2011-04-09 15:52 ./usr/
-drwxr-xr-x root/root         0 2011-04-09 15:52 ./usr/share/
-drwxr-xr-x root/root         0 2011-04-09 15:52 ./usr/share/doc/
-drwxr-xr-x root/root         0 2011-04-09 15:52 ./usr/share/doc/libgtextutils0/
--rw-r--r-- root/root     38877 2011-04-09 15:50 ./usr/share/doc/libgtextutils0/copyright
--rw-r--r-- root/root       158 2011-04-09 15:50 ./usr/share/doc/libgtextutils0/changelog.Debian.gz
-drwxr-xr-x root/root         0 2011-04-09 15:52 ./usr/lib/
--rw-r--r-- root/root     13480 2011-04-09 15:52 ./usr/lib/libgtextutils-0.6.so.0.0.0
-lrwxrwxrwx root/root         0 2011-04-09 15:52 ./usr/lib/libgtextutils-0.6.so.0 -> libgtextutils-0.6.so.0.0.0
+drwxr-xr-x root/root         0 2011-07-04 10:46 ./
+drwxr-xr-x root/root         0 2011-07-04 10:46 ./usr/
+drwxr-xr-x root/root         0 2011-07-04 10:46 ./usr/share/
+drwxr-xr-x root/root         0 2011-07-04 10:46 ./usr/share/doc/
+drwxr-xr-x root/root         0 2011-07-04 10:46 ./usr/share/doc/libgtextutils0/
+-rw-r--r-- root/root     38905 2011-07-04 09:58 ./usr/share/doc/libgtextutils0/copyright
+-rw-r--r-- root/root       356 2011-07-04 09:58 ./usr/share/doc/libgtextutils0/changelog.Debian.gz
+drwxr-xr-x root/root         0 2011-07-04 10:46 ./usr/lib/
+-rw-r--r-- root/root     13548 2011-07-04 10:46 ./usr/lib/libgtextutils-0.6.2.so.0.0.0
+lrwxrwxrwx root/root         0 2011-07-04 10:46 ./usr/lib/libgtextutils-0.6.2.so.0 -> libgtextutils-0.6.2.so.0.0.0
 
 
 ┌──────────────────────────────────────────────────────────────────────────────┐
@@ -804,7 +792,7 @@ Built successfully
 │ Post Build                                                                   │
 └──────────────────────────────────────────────────────────────────────────────┘
 
-Purging /var/lib/schroot/mount/sid-sparc-sbuild-511d8f23-aaa4-4efb-a505-e91e1683b87e/build/buildd-libgtextutils_0.6-1-sparc-A2sxLs
+Purging /var/lib/schroot/mount/sid-sparc-sbuild-8ada4d71-c40d-4452-858e-2d3950955cd6/build/buildd-libgtextutils_0.6.2-1-sparc-97iMTM
 Not cleaning session: cloned chroot in use
 
 ┌──────────────────────────────────────────────────────────────────────────────┐
@@ -812,18 +800,18 @@ Not cleaning session: cloned chroot in use
 └──────────────────────────────────────────────────────────────────────────────┘
 
 Architecture: sparc
-Build-Space: 5948
-Build-Time: 163
+Build-Space: 6000
+Build-Time: 70
 Distribution: sid
-Install-Time: 81
-Job: libgtextutils_0.6-1
+Install-Time: 51
+Job: libgtextutils_0.6.2-1
 Package: libgtextutils
-Package-Time: 343
-Source-Version: 0.6-1
-Space: 5948
+Package-Time: 166
+Source-Version: 0.6.2-1
+Space: 6000
 Status: successful
-Version: 0.6-1
+Version: 0.6.2-1
 ────────────────────────────────────────────────────────────────────────────────
-Finished at 20110409-1553
-Build needed 00:05:43, 5948k disc space
-Signature with key '3B3DF88C' requested:
+Finished at 20110704-1046
+Build needed 00:02:46, 6000k disc space
+Signature with key '9BBB678A' requested:
