@@ -7,7 +7,7 @@ Build-Depends: autotools-dev,
                debhelper (>= 9),
                dh-exec,
                libtool
-Standards-Version: 3.9.2
+Standards-Version: 3.9.5
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=debian-med/libgtextutils.git
 Vcs-Git: git://anonscm.debian.org/debian-med/libgtextutils.git -b debian/unstable
 Homepage: http://hannonlab.cshl.edu/fastx_toolkit/
