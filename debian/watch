@@ -1,2 +1,3 @@
 version=3
-http://hannonlab.cshl.edu/fastx_toolkit/download.html libgtextutils-(.+).tar.bz2
+opts=filenamemangle=s/.+\/v?(\d\S*)\.tar\.gz/libgtextutils-$1.tar.gz/ \
+  https://github.com/agordon/libgtextutils/tags .*/v?(\d\S*)\.tar\.gz
