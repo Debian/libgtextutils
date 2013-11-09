@@ -8,8 +8,8 @@ Build-Depends: autotools-dev,
                dh-exec,
                libtool
 Standards-Version: 3.9.2
-Vcs-Browser: http://git.debian.org/?p=debian-med/libgtextutils.git
-Vcs-Git: git://git.debian.org/git/debian-med/libgtextutils.git
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=debian-med/libgtextutils.git
+Vcs-Git: git://anonscm.debian.org/debian-med/libgtextutils.git -b debian/unstable
 Homepage: http://hannonlab.cshl.edu/fastx_toolkit/
 
 Package: libgtextutils-dev
