@@ -1,6 +1,6 @@
 /*
    Gordon's Text-Utilities Library
-   Copyright (C) 2009 Assaf Gordon (gordon@cshl.edu)
+   Copyright (C) 2009-2013 Assaf Gordon (assafgordon@gmail.com)
 
    This program is free software: you can redistribute it and/or modify
    it under the terms of the GNU Affero General Public License as published by
@@ -39,8 +39,7 @@ int main()
 
 	//Pipe output through a GZIP program
 	fd = pipe_output_command ( "gzip", "pipe_out.txt.gz", &pid ) ;
-	if (write ( fd, text, strlen(text))==-1)
-		err(1,"write(to gzip pipe) failed");
+	write ( fd, text, strlen(text))  ;
 	pipe_close(fd, pid);
 
 
