@@ -4,13 +4,14 @@ Priority: optional
 Maintainer: Debian Med Packaging Team <debian-med-packaging@lists.alioth.debian.org>
 DM-Upload-Allowed: yes
 Uploaders: Charles Plessy <plessy@debian.org>
-Build-Depends: debhelper (>= 9), autotools-dev, libtool
+Build-Depends: autotools-dev, debhelper (>= 9), dh-exec, libtool
 Standards-Version: 3.9.2
 Vcs-Browser: http://git.debian.org/?p=debian-med/libgtextutils.git
 Vcs-Git: git://git.debian.org/git/debian-med/libgtextutils.git
 Homepage: http://hannonlab.cshl.edu/fastx_toolkit/
 
 Package: libgtextutils-dev
+Multi-Arch: same
 Section: libdevel
 Architecture: any
 Depends: libgtextutils0 (= ${binary:Version}), ${misc:Depends}
@@ -18,6 +19,7 @@ Description: Gordon Text_utils library (development files)
  Development files for the Gordon Text_utils (gtextutils) library.
 
 Package: libgtextutils0
+Multi-Arch: same
 Section: libs
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
