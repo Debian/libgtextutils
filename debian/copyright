@@ -1,4 +1,4 @@
-Format: http://dep.debian.net/deps/dep5/
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Source: http://hannonlab.cshl.edu/fastx_toolkit/libgtextutils-0.6.2.tar.bz2
 
 Files: *
@@ -17,17 +17,14 @@ License: AGPL-3+
       You should have received a copy of the GNU Affero General Public License
       along with this program.  If not, see <http://www.gnu.org/licenses/>
 
-
 Files: src/gtextutils/natsort.h
 Copyright: © 2000, 2004 by Martin Pool <mbp sourcefrog net>
            © 2009 Assaf Gordon (gordon@cshl.edu)
 License: AGPL-3+ and zlib
 
-
 Files: src/gtextutils/strnatcmp.c src/gtextutils/strnatcmp.h
 Copyright: © 2000, 2004 by Martin Pool <mbp sourcefrog net>
 License: zlib
-
 
 Files: src/Makefile.am src/gtextutils/Makefile.am Makefile.am m4/Makefile.am doc/Makefile.am tests/Makefile.am
 Copyright: © 2008 Assaf Gordon <gordon@cshl.edu>
@@ -40,12 +37,10 @@ License: special
   WITHOUT ANY WARRANTY, to the extent permitted by law; without even the
   implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
-
 Files: src/gtextutils/inbuf1.hpp src/gtextutils/outbuf3.hpp
 Copyright: © 1999 Nicolai M. Josuttis
            © 2009 Assaf Gordon (gordon@cshl.edu)
 License: AGPL-3+ and other
-
 
 License: AGPL-3+
   		    GNU AFFERO GENERAL PUBLIC LICENSE
@@ -732,4 +727,3 @@ License: zlib
   2. Altered source versions must be plainly marked as such, and must not be
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
-
