@@ -1,3 +1,14 @@
+libgtextutils (0.7~rc1-1) UNRELEASED; urgency=low
+
+  ff09484 debian/watch: monitor source code repository on GitHub.
+  c1cf1d6 Imported Upstream version 0.7~rc1
+  642f472 Vebose debhelper.
+  4d75c55 Build-depend on libtool.
+  98624c0 Use Debhelper 9.
+  78899ca Normalised debian/copyright with ‘cme fix dpkg-copyright‘.
+
+ -- Charles Plessy <plessy@debian.org>  Sat, 09 Nov 2013 09:54:20 +0900
+
 libgtextutils (0.6.2-1) unstable; urgency=low
 
   * New upstream release (Closes: #625365, #626757), whith new soname 0.6.2.
