@@ -1,4 +1,4 @@
-# Copyright (C) 2008 Assaf Gordon <gordon@cshl.edu>
+# Copyright (C) 2008-2013 Assaf Gordon <assafgordon@gmail.com>
 #  
 # This file is free software; as a special exception the author gives
 # unlimited permission to copy and/or distribute it, with or without 
@@ -9,15 +9,16 @@
 # implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 
-EXTRA_DIST = test.txt
-noinst_DATA = test.txt
-
 if TUPLE_PARSER_CHECK
 TUPLE_PROG = test_tuple_parser \
 	     test_tuple_parser_file
 else
 TUPLE_PROG = 
 endif
+
+AM_TESTS_ENVIRONMENT=\
+	printf "first line\nsecond line\nthird line\nfourth line\n" > test.txt;
+
 
 check_PROGRAMS = test_container_join \
 		 test_natural_sort \
@@ -33,8 +34,8 @@ check_PROGRAMS = test_container_join \
 
 TESTS = $(check_PROGRAMS)
 
-LDADD = $(top_srcdir)/src/gtextutils/libgtextutils.la
-INCLUDES = -I$(top_srcdir)/src
+LDADD = $(top_builddir)/src/gtextutils/libgtextutils.la
+AM_CPPFLAGS = -I$(top_srcdir)/src
 
 test_container_join_SOURCES = test_container_join.cpp tests_assertion.h
 test_natural_sort_SOURCES = test_natural_sort.cpp tests_assertion.h
