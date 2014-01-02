@@ -7,7 +7,6 @@ libgtextutils (0.7~rc1-1) UNRELEASED; urgency=low
   98624c0 Use Debhelper 9.
   78899ca Normalised debian/copyright with ‘cme fix dpkg-copyright‘.
   4321fac Correct for building from GitHub repository.
-  3dfc11b Switch back to the source format 1.0
   1954d04 Run the ‘reconf’ command before dh_auto_configure.
   54445b3 Make the packages multi-architecture.
   fae902a Normalised with ‘config-model-edit’.
@@ -15,6 +14,7 @@ libgtextutils (0.7~rc1-1) UNRELEASED; urgency=low
   f1e771b Updated symbols file.
   5bd1b39 Conforms to Policy 3.9.5.
   1bc54cd Source package not managed anymore with git-buildpackage.
+  7baf0c9 Document the repository structure in ‘debian/gbp.conf’.
 
  -- Charles Plessy <plessy@debian.org>  Sat, 09 Nov 2013 09:54:20 +0900
 
