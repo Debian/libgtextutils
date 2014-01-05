@@ -1,4 +1,4 @@
-libgtextutils (0.7~rc1-1) UNRELEASED; urgency=low
+libgtextutils (0.7-1) UNRELEASED; urgency=low
 
   c1cf1d6 New upstream pre-release.
   ff09484 debian/watch: monitor source code repository on GitHub.
@@ -13,10 +13,8 @@ libgtextutils (0.7~rc1-1) UNRELEASED; urgency=low
   4050657 Normalised VCS URLs.
   f1e771b Updated symbols file.
   5bd1b39 Conforms to Policy 3.9.5.
-  1bc54cd Source package not managed anymore with git-buildpackage.
-  7baf0c9 Document the repository structure in ‘debian/gbp.conf’.
 
- -- Charles Plessy <plessy@debian.org>  Sat, 09 Nov 2013 09:54:20 +0900
+ -- Charles Plessy <plessy@debian.org>  Mon, 06 Jan 2014 07:32:35 +0900
 
 libgtextutils (0.6.2-1) unstable; urgency=low
 
