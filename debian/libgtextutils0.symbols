@@ -1,4 +1,4 @@
-libgtextutils-0.7 libgtextutils0 #MINVER#
+libgtextutils-0.7.so.0 libgtextutils0 #MINVER#
  _ZN14TextLineReader9next_lineEv@Base 0.7
  _ZN14TextLineReaderC1ERSi@Base 0.7
  _ZN14TextLineReaderC2ERSi@Base 0.7
