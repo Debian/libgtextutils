@@ -1,26 +1,29 @@
-sbuild (Debian sbuild) 0.62.4 (25 Jun 2011) on anx191
+sbuild (Debian sbuild) 0.64.1 (13 Oct 2013) on aqwa.igloo
 
 ╔══════════════════════════════════════════════════════════════════════════════╗
-║ libgtextutils 0.6.2-1 (amd64)                              04 Jul 2011 19:01 ║
+║ libgtextutils 0.7-1 (amd64)                              08 janv. 2014 09:15 ║
 ╚══════════════════════════════════════════════════════════════════════════════╝
 
 Package: libgtextutils
-Version: 0.6.2-1
-Source Version: 0.6.2-1
+Version: 0.7-1
+Source Version: 0.7-1
 Distribution: unstable
-Architecture: amd64
+Machine Architecture: amd64
+Host Architecture: amd64
+Build Architecture: amd64
 
-I: NOTICE: Log filtering will replace 'build/libgtextutils-ROcJxS/libgtextutils-0.6.2' with '«PKGBUILDDIR»'
-I: NOTICE: Log filtering will replace 'build/libgtextutils-ROcJxS' with '«BUILDDIR»'
-I: NOTICE: Log filtering will replace 'var/lib/schroot/mount/sid-amd64-sbuild-0584ac64-ab05-4892-bea0-6de2ec550426' with '«CHROOT»'
+I: NOTICE: Log filtering will replace 'build/libgtextutils-YJ6KDV/libgtextutils-0.7' with '«PKGBUILDDIR»'
+I: NOTICE: Log filtering will replace 'build/libgtextutils-YJ6KDV' with '«BUILDDIR»'
+I: NOTICE: Log filtering will replace 'var/lib/schroot/mount/unstable-amd64-sbuild-d4765e26-5dd7-4956-866c-60e74885a68a' with '«CHROOT»'
 
 ┌──────────────────────────────────────────────────────────────────────────────┐
 │ Update chroot                                                                │
 └──────────────────────────────────────────────────────────────────────────────┘
 
-Hit http://ftp.jp.debian.org sid InRelease
-Hit http://ftp.jp.debian.org sid/main amd64 Packages/DiffIndex
-Hit http://ftp.jp.debian.org sid/main TranslationIndex
+Hit http://ftp.jp.debian.org unstable InRelease
+Hit http://ftp.jp.debian.org unstable/main Sources/DiffIndex
+Hit http://ftp.jp.debian.org unstable/main amd64 Packages/DiffIndex
+Hit http://ftp.jp.debian.org unstable/main Translation-en/DiffIndex
 Reading package lists...
 Reading package lists...
 Building dependency tree...
@@ -35,14 +38,14 @@ Reading state information...
 Local sources
 ─────────────
 
-libgtextutils_0.6.2-1.dsc exists in .; copying to chroot
+libgtextutils_0.7-1.dsc exists in .; copying to chroot
 
 Check arch
 ──────────
 
 Merged Build-Depends: build-essential, fakeroot
 Filtered Build-Depends: build-essential, fakeroot
-dpkg-deb: building package `sbuild-build-depends-core-dummy' in `/«BUILDDIR»/resolver-KaYoCm/apt_archive/sbuild-build-depends-core-dummy.deb'.
+dpkg-deb: building package `sbuild-build-depends-core-dummy' in `/«BUILDDIR»/resolver-kXTjxD/apt_archive/sbuild-build-depends-core-dummy.deb'.
 OK
 Reading package lists...
 
@@ -54,37 +57,20 @@ Installing build dependencies
 Reading package lists...
 Building dependency tree...
 Reading state information...
-sbuild-build-depends-core-dummy is already the newest version.
-The following packages were automatically installed and are no longer required:
-  libkrb5-3 libatk1.0-0 libk5crypto3 libjaxp1.3-java libgtk2.0-common
-  libxfixes3 junit4 libaccess-bridge-java libjargs-java libxcomposite1
-  liboro-java liblcms1 libunistring0 libxerces2-java debhelper libwrap0
-  libavalon-framework-java libatk1.0-data ttf-dejavu-core libx11-data
-  libxalan2-java libdbus-1-3 unzip libpipeline1 libcap2 java-common po-debconf
-  libpcre3 libnspr4-0d groff-base gettext-base java-wrappers
-  default-jre-headless libcairo2 libgnutls26 libcommons-logging-java
-  intltool-debian libtasn1-3 openjdk-6-jre-lib libfreetype6 libthai-data
-  shared-mime-info libglib2.0-0 libexpat1 libcommons-math-java libdatrie1
-  openjdk-6-jre-headless fontconfig libavahi-common-data libsam-java
-  libgdk-pixbuf2.0-0 gettext libxcb1 ant libaccess-bridge-java-jni default-jdk
-  libxau6 libpixman-1-0 libcups2 default-jre libxinerama1 libkrb5support0
-  libgif4 libcommons-net-java libxft2 fontconfig-config libbsf-java libcroco3
-  libxml-commons-external-java tzdata-java libice6 libxdmcp6 libgcrypt11
-  libthai0 libxml2 libkeyutils1 file libasound2 libflac8 libxrender1
-  libconcurrent-java libvorbisenc2 libjama-java ucf libasyncns0 libtiff4
-  libjasper1 libswing-layout-java libjpeg62 libxtst6 libavahi-client3
-  x11-common libx11-6 man-db libfontconfig1 ca-certificates-java html2text
-  openssl libhamcrest-java libpango1.0-0 libsm6 libpulse0 libxdamage1
-  libxcb-render0 libgssapi-krb5-2 libxi6 libvorbis0a openjdk-6-jdk
-  libbatik-java libxcursor1 libxcb-shm0 libjlibeps-java libxext6 openjdk-6-jre
-  libavahi-common3 liblog4j1.2-java libcommons-io-java libxrandr2 libnss3-1d
-  ca-certificates libsndfile1 libsqlite3-0 libgtk2.0-0 libmagic1 libssl1.0.0
-  libgpg-error0 libogg0
-Use 'apt-get autoremove' to remove them.
-0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
-Merged Build-Depends: base-files, base-passwd, bash, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, ncurses-base, ncurses-bin, perl-base, sed, login, sysvinit-utils, sysvinit, tar, bsdutils, mount, util-linux, libc6-dev | libc-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), debhelper (>= 8), autotools-dev
-Filtered Build-Depends: base-files, base-passwd, bash, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, ncurses-base, ncurses-bin, perl-base, sed, login, sysvinit-utils, sysvinit, tar, bsdutils, mount, util-linux, libc6-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), debhelper (>= 8), autotools-dev
-dpkg-deb: building package `sbuild-build-depends-libgtextutils-dummy' in `/«BUILDDIR»/resolver-1vzJL0/apt_archive/sbuild-build-depends-libgtextutils-dummy.deb'.
+The following NEW packages will be installed:
+  sbuild-build-depends-core-dummy
+debconf: delaying package configuration, since apt-utils is not installed
+0 upgraded, 1 newly installed, 0 to remove and 0 not upgraded.
+Need to get 0 B/772 B of archives.
+After this operation, 0 B of additional disk space will be used.
+Selecting previously unselected package sbuild-build-depends-core-dummy.
+(Reading database ... 11149 files and directories currently installed.)
+Preparing to unpack .../sbuild-build-depends-core-dummy.deb ...
+Unpacking sbuild-build-depends-core-dummy (0.invalid.0) ...
+Setting up sbuild-build-depends-core-dummy (0.invalid.0) ...
+Merged Build-Depends: base-files, base-passwd, bash, bsdutils, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, libc-bin, login, mount, ncurses-base, ncurses-bin, perl-base, sed, sysvinit, sysvinit-utils, tar, util-linux, libc6-dev | libc-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), automake, autotools-dev, debhelper (>= 9), dh-exec, libtool
+Filtered Build-Depends: base-files, base-passwd, bash, bsdutils, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, libc-bin, login, mount, ncurses-base, ncurses-bin, perl-base, sed, sysvinit, sysvinit-utils, tar, util-linux, libc6-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), automake, autotools-dev, debhelper (>= 9), dh-exec, libtool
+dpkg-deb: building package `sbuild-build-depends-libgtextutils-dummy' in `/«BUILDDIR»/resolver-aRbCiY/apt_archive/sbuild-build-depends-libgtextutils-dummy.deb'.
 OK
 Reading package lists...
 
@@ -96,53 +82,142 @@ Installing build dependencies
 Reading package lists...
 Building dependency tree...
 Reading state information...
-The following packages were automatically installed and are no longer required:
-  libkrb5-3 libatk1.0-0 libk5crypto3 libjaxp1.3-java libgtk2.0-common
-  libxfixes3 junit4 libaccess-bridge-java libjargs-java libxcomposite1
-  liboro-java liblcms1 libxerces2-java libwrap0 libavalon-framework-java
-  libatk1.0-data ttf-dejavu-core libx11-data libxalan2-java libdbus-1-3 unzip
-  libcap2 java-common libnspr4-0d java-wrappers default-jre-headless libcairo2
-  libgnutls26 libcommons-logging-java libtasn1-3 openjdk-6-jre-lib
-  libfreetype6 libthai-data libexpat1 libcommons-math-java libdatrie1
-  openjdk-6-jre-headless fontconfig libavahi-common-data libsam-java
-  libgdk-pixbuf2.0-0 libxcb1 ant libaccess-bridge-java-jni default-jdk libxau6
-  libpixman-1-0 libcups2 default-jre libxinerama1 libkrb5support0 libgif4
-  libcommons-net-java libxft2 fontconfig-config libbsf-java
-  libxml-commons-external-java tzdata-java libice6 libxdmcp6 libgcrypt11
-  libthai0 libkeyutils1 libasound2 libflac8 libxrender1 libconcurrent-java
-  libvorbisenc2 libjama-java ucf libasyncns0 libtiff4 libjasper1
-  libswing-layout-java libjpeg62 libxtst6 libavahi-client3 x11-common libx11-6
-  libfontconfig1 ca-certificates-java openssl libhamcrest-java libpango1.0-0
-  libsm6 libpulse0 libxdamage1 libxcb-render0 libgssapi-krb5-2 libxi6
-  libvorbis0a openjdk-6-jdk libbatik-java libxcursor1 libxcb-shm0
-  libjlibeps-java libxext6 openjdk-6-jre libavahi-common3 liblog4j1.2-java
-  libcommons-io-java libxrandr2 libnss3-1d ca-certificates libsndfile1
-  libsqlite3-0 libgtk2.0-0 libssl1.0.0 libgpg-error0 libogg0
-Use 'apt-get autoremove' to remove them.
 The following extra packages will be installed:
-  autotools-dev
+  autoconf automake autotools-dev bsdmainutils debhelper dh-exec file gettext
+  gettext-base groff-base intltool-debian libasprintf0c2 libcroco3 libffi6
+  libglib2.0-0 libmagic1 libpipeline1 libsigsegv2 libtool libunistring0
+  libxml2 m4 man-db po-debconf
+Suggested packages:
+  autoconf2.13 autoconf-archive gnu-standards autoconf-doc wamerican wordlist
+  whois vacation dh-make gettext-doc groff libtool-doc automaken gfortran
+  fortran95-compiler gcj-jdk less www-browser libmail-box-perl
+Recommended packages:
+  curl wget lynx-cur autopoint libasprintf-dev libgettextpo-dev
+  libglib2.0-data shared-mime-info libltdl-dev xml-core libmail-sendmail-perl
 The following NEW packages will be installed:
-  autotools-dev sbuild-build-depends-libgtextutils-dummy
+  autoconf automake autotools-dev bsdmainutils debhelper dh-exec file gettext
+  gettext-base groff-base intltool-debian libasprintf0c2 libcroco3 libffi6
+  libglib2.0-0 libmagic1 libpipeline1 libsigsegv2 libtool libunistring0
+  libxml2 m4 man-db po-debconf sbuild-build-depends-libgtextutils-dummy
 debconf: delaying package configuration, since apt-utils is not installed
-0 upgraded, 2 newly installed, 0 to remove and 0 not upgraded.
-Need to get 0 B/74.7 kB of archives.
-After this operation, 225 kB of additional disk space will be used.
-Selecting previously deselected package autotools-dev.
-(Reading database ... 16393 files and directories currently installed.)
-Unpacking autotools-dev (from .../autotools-dev_20110511.1_all.deb) ...
-Selecting previously deselected package sbuild-build-depends-libgtextutils-dummy.
-Unpacking sbuild-build-depends-libgtextutils-dummy (from .../sbuild-build-depends-libgtextutils-dummy.deb) ...
-Processing triggers for man-db ...
-Setting up autotools-dev (20110511.1) ...
+0 upgraded, 25 newly installed, 0 to remove and 0 not upgraded.
+Need to get 0 B/9894 kB of archives.
+After this operation, 30.7 MB of additional disk space will be used.
+Selecting previously unselected package libpipeline1:amd64.
+(Reading database ... 11149 files and directories currently installed.)
+Preparing to unpack .../libpipeline1_1.2.6-1_amd64.deb ...
+Unpacking libpipeline1:amd64 (1.2.6-1) ...
+Selecting previously unselected package groff-base.
+Preparing to unpack .../groff-base_1.22.2-3_amd64.deb ...
+Unpacking groff-base (1.22.2-3) ...
+Selecting previously unselected package bsdmainutils.
+Preparing to unpack .../bsdmainutils_9.0.5_amd64.deb ...
+Unpacking bsdmainutils (9.0.5) ...
+Selecting previously unselected package man-db.
+Preparing to unpack .../man-db_2.6.5-3_amd64.deb ...
+Unpacking man-db (2.6.5-3) ...
+Selecting previously unselected package libasprintf0c2:amd64.
+Preparing to unpack .../libasprintf0c2_0.18.3.1-2_amd64.deb ...
+Unpacking libasprintf0c2:amd64 (0.18.3.1-2) ...
+Selecting previously unselected package libmagic1:amd64.
+Preparing to unpack .../libmagic1_1%3a5.14-2_amd64.deb ...
+Unpacking libmagic1:amd64 (1:5.14-2) ...
+Selecting previously unselected package libxml2:amd64.
+Preparing to unpack .../libxml2_2.9.1+dfsg1-3_amd64.deb ...
+Unpacking libxml2:amd64 (2.9.1+dfsg1-3) ...
+Selecting previously unselected package libffi6:amd64.
+Preparing to unpack .../libffi6_3.0.13-10_amd64.deb ...
+Unpacking libffi6:amd64 (3.0.13-10) ...
+Selecting previously unselected package libglib2.0-0:amd64.
+Preparing to unpack .../libglib2.0-0_2.36.4-1_amd64.deb ...
+Unpacking libglib2.0-0:amd64 (2.36.4-1) ...
+Selecting previously unselected package libcroco3:amd64.
+Preparing to unpack .../libcroco3_0.6.8-2_amd64.deb ...
+Unpacking libcroco3:amd64 (0.6.8-2) ...
+Selecting previously unselected package libsigsegv2:amd64.
+Preparing to unpack .../libsigsegv2_2.10-2_amd64.deb ...
+Unpacking libsigsegv2:amd64 (2.10-2) ...
+Selecting previously unselected package libunistring0:amd64.
+Preparing to unpack .../libunistring0_0.9.3-5_amd64.deb ...
+Unpacking libunistring0:amd64 (0.9.3-5) ...
+Selecting previously unselected package file.
+Preparing to unpack .../file_1%3a5.14-2_amd64.deb ...
+Unpacking file (1:5.14-2) ...
+Selecting previously unselected package gettext-base.
+Preparing to unpack .../gettext-base_0.18.3.1-2_amd64.deb ...
+Unpacking gettext-base (0.18.3.1-2) ...
+Selecting previously unselected package m4.
+Preparing to unpack .../archives/m4_1.4.17-2_amd64.deb ...
+Unpacking m4 (1.4.17-2) ...
+Selecting previously unselected package autoconf.
+Preparing to unpack .../autoconf_2.69-2_all.deb ...
+Unpacking autoconf (2.69-2) ...
+Selecting previously unselected package autotools-dev.
+Preparing to unpack .../autotools-dev_20130810.1_all.deb ...
+Unpacking autotools-dev (20130810.1) ...
+Selecting previously unselected package automake.
+Preparing to unpack .../automake_1%3a1.14.1-2_all.deb ...
+Unpacking automake (1:1.14.1-2) ...
+Selecting previously unselected package gettext.
+Preparing to unpack .../gettext_0.18.3.1-2_amd64.deb ...
+Unpacking gettext (0.18.3.1-2) ...
+Selecting previously unselected package intltool-debian.
+Preparing to unpack .../intltool-debian_0.35.0+20060710.1_all.deb ...
+Unpacking intltool-debian (0.35.0+20060710.1) ...
+Selecting previously unselected package po-debconf.
+Preparing to unpack .../po-debconf_1.0.16+nmu2_all.deb ...
+Unpacking po-debconf (1.0.16+nmu2) ...
+Selecting previously unselected package debhelper.
+Preparing to unpack .../debhelper_9.20131227_all.deb ...
+Unpacking debhelper (9.20131227) ...
+Selecting previously unselected package libtool.
+Preparing to unpack .../libtool_2.4.2-1.6_amd64.deb ...
+Unpacking libtool (2.4.2-1.6) ...
+Selecting previously unselected package dh-exec.
+Preparing to unpack .../dh-exec_0.12_amd64.deb ...
+Unpacking dh-exec (0.12) ...
+Selecting previously unselected package sbuild-build-depends-libgtextutils-dummy.
+Preparing to unpack .../sbuild-build-depends-libgtextutils-dummy.deb ...
+Unpacking sbuild-build-depends-libgtextutils-dummy (0.invalid.0) ...
+Setting up libpipeline1:amd64 (1.2.6-1) ...
+Setting up groff-base (1.22.2-3) ...
+Setting up bsdmainutils (9.0.5) ...
+update-alternatives: using /usr/bin/bsd-write to provide /usr/bin/write (write) in auto mode
+update-alternatives: using /usr/bin/bsd-from to provide /usr/bin/from (from) in auto mode
+Setting up man-db (2.6.5-3) ...
+Not building database; man-db/auto-update is not 'true'.
+Setting up libasprintf0c2:amd64 (0.18.3.1-2) ...
+Setting up libmagic1:amd64 (1:5.14-2) ...
+Setting up libxml2:amd64 (2.9.1+dfsg1-3) ...
+Setting up libffi6:amd64 (3.0.13-10) ...
+Setting up libglib2.0-0:amd64 (2.36.4-1) ...
+No schema files found: doing nothing.
+Setting up libcroco3:amd64 (0.6.8-2) ...
+Setting up libsigsegv2:amd64 (2.10-2) ...
+Setting up libunistring0:amd64 (0.9.3-5) ...
+Setting up file (1:5.14-2) ...
+Setting up gettext-base (0.18.3.1-2) ...
+Setting up m4 (1.4.17-2) ...
+Setting up autoconf (2.69-2) ...
+Setting up autotools-dev (20130810.1) ...
+Setting up automake (1:1.14.1-2) ...
+update-alternatives: using /usr/bin/automake-1.14 to provide /usr/bin/automake (automake) in auto mode
+Setting up gettext (0.18.3.1-2) ...
+Setting up intltool-debian (0.35.0+20060710.1) ...
+Setting up po-debconf (1.0.16+nmu2) ...
+Setting up debhelper (9.20131227) ...
+Setting up libtool (2.4.2-1.6) ...
+Setting up dh-exec (0.12) ...
 Setting up sbuild-build-depends-libgtextutils-dummy (0.invalid.0) ...
+Processing triggers for libc-bin (2.17-97) ...
 
 ┌──────────────────────────────────────────────────────────────────────────────┐
 │ Build environment                                                            │
 └──────────────────────────────────────────────────────────────────────────────┘
 
-Kernel: Linux 2.6.32-5-amd64 amd64 (x86_64)
-Toolchain package versions: binutils_2.21.52.20110703-1 dpkg-dev_1.16.0.3 g++-4.6_4.6.1-1 gcc-4.6_4.6.1-1 libc6-dev_2.13-9 libstdc++6_4.6.1-1 libstdc++6-4.6-dev_4.6.1-1 linux-libc-dev_2.6.39-2
-Package versions: ant_1.8.2-2 apt_0.8.15.1 autotools-dev_20110511.1 base-files_6.4 base-passwd_3.5.22 bash_4.1-3 binutils_2.21.52.20110703-1 bsdmainutils_8.2.3 bsdutils_1:2.19.1-2 build-essential_11.5 bzip2_1.0.5-6 ca-certificates_20110502 ca-certificates-java_20110531 coreutils_8.5-1 cpp_4:4.6.0-6 cpp-4.6_4.6.1-1 dash_0.5.5.1-7.4 debconf_1.5.40 debconf-i18n_1.5.40 debfoster_2.7-1.1 debhelper_8.9.0 debian-archive-keyring_2010.08.28 debianutils_4.0.2 default-jdk_1:1.6-40 default-jre_1:1.6-40 default-jre-headless_1:1.6-40 diffutils_1:3.0-1 dpkg_1.16.0.3 dpkg-dev_1.16.0.3 e2fslibs_1.42~WIP-2011-07-02-1 e2fsprogs_1.42~WIP-2011-07-02-1 fakeroot_1.16-1 file_5.04-5+b1 findutils_4.4.2-1+b1 fontconfig_2.8.0-3 fontconfig-config_2.8.0-3 g++_4:4.6.0-6 g++-4.6_4.6.1-1 gcc_4:4.6.0-6 gcc-4.6_4.6.1-1 gcc-4.6-base_4.6.1-1 gettext_0.18.1.1-3 gettext-base_0.18.1.1-3 gnupg_1.4.11-3 gpgv_1.4.11-3 grep_2.8-2 groff-base_1.21-6 gzip_1.3.12-9 hostname_3.06 html2text_1.3.2a-15 initscripts_2.88dsf-13.10 insserv_1.14.0-2.1 intltool-debian_0.35.0+20060710.1 java-common_0.40 java-wrappers_0.1.22 junit4_4.8.2-2 libaccess-bridge-java_1.26.2-5 libaccess-bridge-java-jni_1.26.2-5 libacl1_2.2.51-1 libasound2_1.0.23-4 libasyncns0_0.8-2 libatk1.0-0_2.0.1-2 libatk1.0-data_2.0.1-2 libattr1_1:2.4.46-1 libavahi-client3_0.6.30-5 libavahi-common-data_0.6.30-5 libavahi-common3_0.6.30-5 libavalon-framework-java_4.2.0-7 libbatik-java_1.7-7 libblkid1_2.19.1-2 libbsf-java_1:2.4.0-4 libbz2-1.0_1.0.5-6 libc-bin_2.13-9 libc-dev-bin_2.13-9 libc6_2.13-9 libc6-dev_2.13-9 libcairo2_1.10.2-6 libcap2_1:2.21-1 libclass-isa-perl_0.36-1 libcloog-ppl0_0.15.9-3 libcomerr2_1.42~WIP-2011-07-02-1 libcommons-io-java_1.4-3 libcommons-logging-java_1.1.1-8 libcommons-math-java_2.2-1 libcommons-net-java_1.4.1-2 libconcurrent-java_1.3.4-4 libcroco3_0.6.2-1 libcups2_1.4.6-11 libdatrie1_0.2.4-3 libdb4.7_4.7.25-20 libdb4.8_4.8.30-9 libdb5.1_5.1.25-11 libdbus-1-3_1.4.12-4 libdpkg-perl_1.16.0.3 libelfg0_0.8.13-3 libexpat1_2.0.1-7 libflac8_1.2.1-3 libfontconfig1_2.8.0-3 libfreetype6_2.4.4-2 libgc1c2_1:7.1-8 libgcc1_1:4.6.1-1 libgcrypt11_1.4.6-7 libgdbm3_1.8.3-10 libgdk-pixbuf2.0-0_2.23.5-1 libgif4_4.1.6-9 libglib2.0-0_2.28.6-1 libgmp10_2:5.0.1+dfsg-7 libgmpxx4ldbl_2:5.0.1+dfsg-7 libgnutls26_2.10.5-2 libgomp1_4.6.1-1 libgpg-error0_1.10-0.3 libgssapi-krb5-2_1.9.1+dfsg-1+b1 libgtk2.0-0_2.24.4-3 libgtk2.0-common_2.24.4-3 libhamcrest-java_1.1-8 libice6_2:1.0.7-2 libjama-java_1.0.2-3 libjargs-java_1.0.0-3 libjasper1_1.900.1-7+b1 libjaxp1.3-java_1.3.05-1 libjlibeps-java_0.1+2-1 libjpeg62_6b1-1 libk5crypto3_1.9.1+dfsg-1+b1 libkeyutils1_1.4-5 libkrb5-3_1.9.1+dfsg-1+b1 libkrb5support0_1.9.1+dfsg-1+b1 liblcms1_1.18.dfsg-1.2+b4 liblocale-gettext-perl_1.05-6+b1 liblog4j1.2-java_1.2.15-11 liblzma2_5.0.0-2 libmagic1_5.04-5+b1 libmount1_2.19.1-2 libmpc2_0.9-3 libmpfr4_3.0.1-4 libncurses5_5.9-1 libnspr4-0d_4.8.8-2 libnss3-1d_3.12.10-1 libogg0_1.2.2~dfsg-1 liboro-java_2.0.8a-7 libpam-modules_1.1.3-2 libpam-modules-bin_1.1.3-2 libpam-runtime_1.1.3-2 libpam0g_1.1.3-2 libpango1.0-0_1.28.4-1 libpcre3_8.12-3 libpipeline1_1.2.0-3 libpixman-1-0_0.22.0-1 libpng12-0_1.2.44-2 libpod-plainer-perl_1.03-1 libppl-c4_0.11.2-3 libppl9_0.11.2-3 libpulse0_0.9.21-4.1 libpwl5_0.11.2-3 libquadmath0_4.6.1-1 libreadline6_6.2-2 libsam-java_1.46-1 libselinux1_2.0.98-1.1 libsepol1_2.0.42-1 libslang2_2.2.4-2 libsm6_2:1.2.0-2 libsndfile1_1.0.24-1 libsqlite3-0_3.7.7-2 libss2_1.42~WIP-2011-07-02-1 libssl1.0.0_1.0.0d-3 libstdc++6_4.6.1-1 libstdc++6-4.6-dev_4.6.1-1 libswing-layout-java_1.0.4-1 libswitch-perl_2.16-1 libtasn1-3_2.9-4 libtext-charwidth-perl_0.04-6+b1 libtext-iconv-perl_1.7-2+b1 libtext-wrapi18n-perl_0.06-7 libthai-data_0.1.15-2 libthai0_0.1.15-2 libtiff4_3.9.5-1 libtimedate-perl_1.2000-1 libunistring0_0.9.3-4 libusb-0.1-4_2:0.1.12-17 libuuid1_2.19.1-2 libvorbis0a_1.3.2-1 libvorbisenc2_1.3.2-1 libwrap0_7.6.q-21 libx11-6_2:1.4.3-2 libx11-data_2:1.4.3-2 libxalan2-java_2.7.1-5 libxau6_1:1.0.6-3 libxcb-render0_1.7-3 libxcb-shm0_1.7-3 libxcb1_1.7-3 libxcomposite1_1:0.4.3-2 libxcursor1_1:1.1.12-1 libxdamage1_1:1.1.3-2 libxdmcp6_1:1.1.0-3 libxerces2-java_2.9.1-4.1 libxext6_2:1.3.0-3 libxfixes3_1:5.0-4 libxft2_2.2.0-3 libxi6_2:1.4.3-3 libxinerama1_2:1.1.1-3 libxml-commons-external-java_1.3.05-2 libxml2_2.7.8.dfsg-3 libxrandr2_2:1.3.2-2 libxrender1_1:0.9.6-2 libxtst6_2:1.2.0-1 linux-libc-dev_2.6.39-2 login_1:4.1.4.2+svn3283-3 lsb-base_3.2-27 make_3.81-8.1 man-db_2.6.0.2-1 mawk_1.3.3-15 mount_2.19.1-2 multiarch-support_2.13-9 ncurses-base_5.9-1 ncurses-bin_5.9-1 openjdk-6-jdk_6b18-1.8.7-5 openjdk-6-jre_6b18-1.8.7-5 openjdk-6-jre-headless_6b18-1.8.7-5 openjdk-6-jre-lib_6b18-1.8.7-5 openssl_1.0.0d-3 passwd_1:4.1.4.2+svn3283-3 patch_2.6.1-2 perl_5.12.4-1 perl-base_5.12.4-1 perl-modules_5.12.4-1 po-debconf_1.0.16+nmu1 readline-common_6.2-2 sbuild-build-depends-core-dummy_0.invalid.0 sbuild-build-depends-libgtextutils-dummy_0.invalid.0 sed_4.2.1-9 sensible-utils_0.0.6 shared-mime-info_0.90-1 sysv-rc_2.88dsf-13.10 sysvinit_2.88dsf-13.10 sysvinit-utils_2.88dsf-13.10 tar_1.25-3 ttf-dejavu-core_2.33-1 tzdata_2011h-2 tzdata-java_2011h-2 ucf_3.0025+nmu2 unzip_6.0-5 util-linux_2.19.1-2 x11-common_1:7.6+7 xz-utils_5.0.0-2 zlib1g_1:1.2.3.4.dfsg-3
+Kernel: Linux 3.10-1-amd64 amd64 (x86_64)
+Toolchain package versions: binutils_2.24-2 dpkg-dev_1.17.5 g++-4.8_4.8.2-12 gcc-4.8_4.8.2-12 libc6-dev_2.17-97 libstdc++-4.8-dev_4.8.2-12 libstdc++6_4.8.2-12 linux-libc-dev_3.12.6-2
+Package versions: apt_0.9.14.2 autoconf_2.69-2 automake_1:1.14.1-2 autotools-dev_20130810.1 base-files_7.2 base-passwd_3.5.30 bash_4.2+dfsg-1 binutils_2.24-2 bsdmainutils_9.0.5 bsdutils_1:2.20.1-5.5 build-essential_11.6 bzip2_1.0.6-5 coreutils_8.21-1 cpp_4:4.8.2-1 cpp-4.8_4.8.2-12 dash_0.5.7-3+nmu1 debconf_1.5.52 debconf-i18n_1.5.52 debfoster_2.7-1.2 debhelper_9.20131227 debian-archive-keyring_2012.4 debianutils_4.4 dh-exec_0.12 diffutils_1:3.3-1 dpkg_1.17.5 dpkg-dev_1.17.5 e2fslibs_1.42.9-2 e2fsprogs_1.42.9-2 eatmydata_26-2 fakeroot_1.20-3 file_1:5.14-2 findutils_4.4.2-7 g++_4:4.8.2-1 g++-4.8_4.8.2-12 gcc_4:4.8.2-1 gcc-4.7-base_4.7.3-9 gcc-4.8_4.8.2-12 gcc-4.8-base_4.8.2-12 gettext_0.18.3.1-2 gettext-base_0.18.3.1-2 gnupg_1.4.16-1 gpgv_1.4.16-1 grep_2.15-2 groff-base_1.22.2-3 gzip_1.6-3 hostname_3.15 initscripts_2.88dsf-45 insserv_1.14.0-5 intltool-debian_0.35.0+20060710.1 libacl1_2.2.52-1 libapt-pkg4.12_0.9.14.2 libarchive-extract-perl_0.70-1 libasan0_4.8.2-12 libasprintf0c2_0.18.3.1-2 libatomic1_4.8.2-12 libattr1_1:2.4.47-1 libaudit-common_1:2.3.2-3 libaudit1_1:2.3.2-3 libblkid1_2.20.1-5.5 libbz2-1.0_1.0.6-5 libc-bin_2.17-97 libc-dev-bin_2.17-97 libc6_2.17-97 libc6-dev_2.17-97 libcap2_1:2.22-1.2 libclass-isa-perl_0.36-5 libcloog-isl4_0.18.1-3 libcomerr2_1.42.9-2 libcroco3_0.6.8-2 libdb5.1_5.1.29-7 libdebconfclient0_0.186 libdpkg-perl_1.17.5 libfakeroot_1.20-3 libffi6_3.0.13-10 libgc1c2_1:7.2d-6 libgcc-4.8-dev_4.8.2-12 libgcc1_1:4.8.2-12 libgdbm3_1.8.3-12 libglib2.0-0_2.36.4-1 libgmp10_2:5.1.3+dfsg-1 libgomp1_4.8.2-12 libisl10_0.12.1-2 libitm1_4.8.2-12 liblocale-gettext-perl_1.05-7+b2 liblog-message-simple-perl_0.10-1 liblzma5_5.1.1alpha+20120614-2 libmagic1_1:5.14-2 libmodule-pluggable-perl_4.8-1 libmount1_2.20.1-5.5 libmpc3_1.0.1-1 libmpfr4_3.1.2-1 libncurses5_5.9+20130608-1 libpam-modules_1.1.3-10 libpam-modules-bin_1.1.3-10 libpam-runtime_1.1.3-10 libpam0g_1.1.3-10 libpcre3_1:8.31-2 libpipeline1_1.2.6-1 libpod-latex-perl_0.61-1 libquadmath0_4.8.2-12 libreadline6_6.2+dfsg-0.1 libselinux1_2.2.1-1 libsemanage-common_2.2-1 libsemanage1_2.2-1 libsepol1_2.2-1 libsigsegv2_2.10-2 libslang2_2.2.4-16 libss2_1.42.9-2 libstdc++-4.8-dev_4.8.2-12 libstdc++6_4.8.2-12 libswitch-perl_2.16-2 libterm-ui-perl_0.42-1 libtext-charwidth-perl_0.04-7+b2 libtext-iconv-perl_1.7-5+b1 libtext-soundex-perl_3.4-1+b1 libtext-wrapi18n-perl_0.06-7 libtimedate-perl_2.3000-1 libtinfo5_5.9+20130608-1 libtool_2.4.2-1.6 libtsan0_4.8.2-12 libunistring0_0.9.3-5 libusb-0.1-4_2:0.1.12-23.3 libustr-1.0-1_1.0.4-3 libuuid1_2.20.1-5.5 libxml2_2.9.1+dfsg1-3 linux-libc-dev_3.12.6-2 login_1:4.1.5.1-1 lsb-base_4.1+Debian12 m4_1.4.17-2 make_3.81-8.3 man-db_2.6.5-3 mawk_1.3.3-17 mount_2.20.1-5.5 multiarch-support_2.17-97 ncurses-base_5.9+20130608-1 ncurses-bin_5.9+20130608-1 passwd_1:4.1.5.1-1 patch_2.7.1-4 perl_5.18.1-5 perl-base_5.18.1-5 perl-modules_5.18.1-5 po-debconf_1.0.16+nmu2 readline-common_6.2+dfsg-0.1 sbuild-build-depends-core-dummy_0.invalid.0 sbuild-build-depends-libgtextutils-dummy_0.invalid.0 sed_4.2.2-3 sensible-utils_0.0.9 sysv-rc_2.88dsf-45 sysvinit_2.88dsf-45 sysvinit-core_2.88dsf-45 sysvinit-utils_2.88dsf-45 tar_1.27-4 tzdata_2013i-1 util-linux_2.20.1-5.5 xz-utils_5.1.1alpha+20120614-2 zlib1g_1:1.2.8.dfsg-1
 
 ┌──────────────────────────────────────────────────────────────────────────────┐
 │ Build                                                                        │
@@ -152,10 +227,10 @@ Package versions: ant_1.8.2-2 apt_0.8.15.1 autotools-dev_20110511.1 base-files_6
 Unpack source
 ─────────────
 
-dpkg-source: warning: extracting unsigned source package (libgtextutils_0.6.2-1.dsc)
-dpkg-source: info: extracting libgtextutils in libgtextutils-0.6.2
-dpkg-source: info: unpacking libgtextutils_0.6.2.orig.tar.bz2
-dpkg-source: info: unpacking libgtextutils_0.6.2-1.debian.tar.gz
+dpkg-source: warning: extracting unsigned source package (libgtextutils_0.7-1.dsc)
+dpkg-source: info: extracting libgtextutils in libgtextutils-0.7
+dpkg-source: info: unpacking libgtextutils_0.7.orig.tar.gz
+dpkg-source: info: unpacking libgtextutils_0.7-1.debian.tar.gz
 
 Check disc space
 ────────────────
@@ -168,47 +243,96 @@ User Environment
 HOME=/sbuild-nonexistent
 LOGNAME=charles
 PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
-SCHROOT_CHROOT_NAME=sid-amd64-sbuild
+SCHROOT_ALIAS_NAME=unstable-amd64-sbuild
+SCHROOT_CHROOT_NAME=unstable-amd64-sbuild
 SCHROOT_COMMAND=env
 SCHROOT_GID=1000
 SCHROOT_GROUP=charles
-SCHROOT_SESSION_ID=sid-amd64-sbuild-0584ac64-ab05-4892-bea0-6de2ec550426
-SCHROOT_UID=31051
+SCHROOT_SESSION_ID=unstable-amd64-sbuild-d4765e26-5dd7-4956-866c-60e74885a68a
+SCHROOT_UID=1000
 SCHROOT_USER=charles
 SHELL=/bin/sh
 TERM=xterm
 USER=charles
 USERNAME=charles
+XDG_RUNTIME_DIR=/run/user/1000
+XDG_SEAT=seat0
+XDG_SESSION_ID=2
+XDG_VTNR=7
 
 dpkg-buildpackage
 ─────────────────
 
-dpkg-buildpackage: export CFLAGS from dpkg-buildflags (origin: vendor): -g -O2
-dpkg-buildpackage: export CPPFLAGS from dpkg-buildflags (origin: vendor): 
-dpkg-buildpackage: export CXXFLAGS from dpkg-buildflags (origin: vendor): -g -O2
-dpkg-buildpackage: export FFLAGS from dpkg-buildflags (origin: vendor): -g -O2
-dpkg-buildpackage: export LDFLAGS from dpkg-buildflags (origin: vendor): 
 dpkg-buildpackage: source package libgtextutils
-dpkg-buildpackage: source version 0.6.2-1
+dpkg-buildpackage: source version 0.7-1
+dpkg-buildpackage: source distribution unstable
 dpkg-buildpackage: source changed by Charles Plessy <plessy@debian.org>
- dpkg-source --before-build libgtextutils-0.6.2
+ dpkg-source --before-build libgtextutils-0.7
 dpkg-buildpackage: host architecture amd64
+dpkg-source: info: using options from libgtextutils-0.7/debian/source/options: --single-debian-patch
  fakeroot debian/rules clean
 dh clean --with autotools_dev
    dh_testdir
    dh_auto_clean
    dh_autotools-dev_restoreconfig
+	for c_g in `find . -type f -name config.guess` ; do if test -e "$c_g.dh-orig" ; then mv -f "$c_g.dh-orig" "$c_g" ; fi ; done
+	for c_s in `find . -type f -name config.sub`   ; do if test -e "$c_s.dh-orig" ; then mv -f "$c_s.dh-orig" "$c_s" ; fi ; done
+	find . -type f \( -name config.guess.dh-orig -o -name config.sub.dh-orig \) -delete
    dh_clean
- dpkg-source -b libgtextutils-0.6.2
+	rm -f debian/libgtextutils-dev.substvars
+	rm -f debian/libgtextutils-dev.*.debhelper
+	rm -rf debian/libgtextutils-dev/
+	rm -f debian/libgtextutils0.substvars
+	rm -f debian/libgtextutils0.*.debhelper
+	rm -rf debian/libgtextutils0/
+	rm -f debian/*.debhelper.log
+	rm -f debian/files
+	find .  \( \( -type f -a \
+	        \( -name '#*#' -o -name '.*~' -o -name '*~' -o -name DEADJOE \
+		 -o -name '*.orig' -o -name '*.rej' -o -name '*.bak' \
+		 -o -name '.*.orig' -o -name .*.rej -o -name '.SUMS' \
+		 -o -name TAGS -o \( -path '*/.deps/*' -a -name '*.P' \) \
+		\) -exec rm -f {} + \) -o \
+		\( -type d -a -name autom4te.cache -prune -exec rm -rf {} + \) \)
+	rm -f *-stamp
+ dpkg-source -b libgtextutils-0.7
+dpkg-source: info: using options from libgtextutils-0.7/debian/source/options: --single-debian-patch
 dpkg-source: info: using source format `3.0 (quilt)'
-dpkg-source: info: building libgtextutils using existing ./libgtextutils_0.6.2.orig.tar.bz2
-dpkg-source: info: building libgtextutils in libgtextutils_0.6.2-1.debian.tar.gz
-dpkg-source: info: building libgtextutils in libgtextutils_0.6.2-1.dsc
+dpkg-source: info: building libgtextutils using existing ./libgtextutils_0.7.orig.tar.gz
+dpkg-source: info: building libgtextutils in libgtextutils_0.7-1.debian.tar.gz
+dpkg-source: info: building libgtextutils in libgtextutils_0.7-1.dsc
  debian/rules build
 dh build --with autotools_dev
    dh_testdir
    dh_autotools-dev_updateconfig
-   dh_auto_configure
+	for c_g in `find -type f -name config.guess` ; do if ! test -e "$c_g.dh-orig" ; then mv -f "$c_g" "$c_g.dh-orig" ; cp -f /usr/share/misc/config.guess "$c_g" ; fi ; done
+	for c_s in `find -type f -name config.sub`   ; do if ! test -e "$c_s.dh-orig" ; then mv -f "$c_s" "$c_s.dh-orig" ; cp -f /usr/share/misc/config.sub   "$c_s" ; fi ; done
+   debian/rules override_dh_auto_configure
+make[1]: Entering directory `/«PKGBUILDDIR»'
+./reconf
+- libtoolize.
+libtoolize: putting auxiliary files in AC_CONFIG_AUX_DIR, `config'.
+libtoolize: linking file `config/config.guess'
+libtoolize: linking file `config/config.sub'
+libtoolize: linking file `config/install-sh'
+libtoolize: linking file `config/ltmain.sh'
+libtoolize: putting macros in AC_CONFIG_MACRO_DIR, `m4'.
+libtoolize: linking file `m4/libtool.m4'
+libtoolize: linking file `m4/ltoptions.m4'
+libtoolize: linking file `m4/ltsugar.m4'
+libtoolize: linking file `m4/ltversion.m4'
+libtoolize: linking file `m4/lt~obsolete.m4'
+- aclocal.
+- autoconf.
+- autoheader.
+- automake.
+configure.ac:26: installing 'config/compile'
+configure.ac:19: installing 'config/missing'
+Makefile.am: installing './INSTALL'
+src/gtextutils/Makefile.am: installing 'config/depcomp'
+parallel-tests: installing 'config/test-driver'
+dh_auto_configure
+	./configure --build=x86_64-linux-gnu --prefix=/usr --includedir=\${prefix}/include --mandir=\${prefix}/share/man --infodir=\${prefix}/share/info --sysconfdir=/etc --localstatedir=/var --libdir=\${prefix}/lib/x86_64-linux-gnu --libexecdir=\${prefix}/lib/x86_64-linux-gnu --disable-maintainer-mode --disable-dependency-tracking
 configure: WARNING: unrecognized options: --disable-maintainer-mode
 checking for a BSD-compatible install... /usr/bin/install -c
 checking whether build environment is sane... yes
@@ -216,6 +340,7 @@ checking for a thread-safe mkdir -p... /bin/mkdir -p
 checking for gawk... no
 checking for mawk... mawk
 checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
 checking for gcc... gcc
 checking whether the C compiler works... yes
 checking for C compiler default output file name... a.out
@@ -225,6 +350,7 @@ checking for suffix of object files... o
 checking whether we are using the GNU C compiler... yes
 checking whether gcc accepts -g... yes
 checking for gcc option to accept ISO C89... none needed
+checking whether gcc understands -c and -o together... yes
 checking for style of include used by make... GNU
 checking dependency style of gcc... none
 checking for g++... g++
@@ -233,6 +359,7 @@ checking whether g++ accepts -g... yes
 checking dependency style of g++... none
 checking build system type... x86_64-pc-linux-gnu
 checking host system type... x86_64-pc-linux-gnu
+checking how to print strings... printf
 checking for a sed that does not truncate output... /bin/sed
 checking for grep that handles long lines and -e... /bin/grep
 checking for egrep... /bin/grep -E
@@ -245,13 +372,21 @@ checking whether ln -s works... yes
 checking the maximum length of command line arguments... 3458764513820540925
 checking whether the shell understands some XSI constructs... yes
 checking whether the shell understands "+="... yes
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
 checking for /usr/bin/ld option to reload object files... -r
 checking for objdump... objdump
 checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
 checking for ar... ar
+checking for archiver @FILE support... @
 checking for strip... strip
 checking for ranlib... ranlib
 checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for mt... no
+checking if : is a manifest tool... no
 checking how to run the C preprocessor... gcc -E
 checking for ANSI C header files... yes
 checking for sys/types.h... yes
@@ -264,10 +399,6 @@ checking for inttypes.h... yes
 checking for stdint.h... yes
 checking for unistd.h... yes
 checking for dlfcn.h... yes
-checking whether we are using the GNU C++ compiler... (cached) yes
-checking whether g++ accepts -g... (cached) yes
-checking dependency style of g++... (cached) none
-checking how to run the C++ preprocessor... g++ -E
 checking for objdir... .libs
 checking if gcc supports -fno-rtti -fno-exceptions... no
 checking for gcc option to produce PIC... -fPIC -DPIC
@@ -283,6 +414,7 @@ checking whether stripping libraries is possible... yes
 checking if libtool supports shared libraries... yes
 checking whether to build shared libraries... yes
 checking whether to build static libraries... yes
+checking how to run the C++ preprocessor... g++ -E
 checking for ld used by g++... /usr/bin/ld -m elf_x86_64
 checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
 checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
@@ -292,11 +424,11 @@ checking if g++ static flag -static works... yes
 checking if g++ supports -c -o file.o... yes
 checking if g++ supports -c -o file.o... (cached) yes
 checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
-checking dynamic linker characteristics... GNU/Linux ld.so
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
 checking how to hardcode library paths into programs... immediate
+checking that generated files are newer than configure... done
 configure: creating ./config.status
 config.status: creating Makefile
-config.status: creating README
 config.status: creating doc/Makefile
 config.status: creating m4/Makefile
 config.status: creating src/Makefile
@@ -307,7 +439,9 @@ config.status: creating config.h
 config.status: executing depfiles commands
 config.status: executing libtool commands
 configure: WARNING: unrecognized options: --disable-maintainer-mode
+make[1]: Leaving directory `/«PKGBUILDDIR»'
    dh_auto_build
+	make -j1
 make[1]: Entering directory `/«PKGBUILDDIR»'
 make  all-recursive
 make[2]: Entering directory `/«PKGBUILDDIR»'
@@ -319,22 +453,22 @@ Making all in src
 make[3]: Entering directory `/«PKGBUILDDIR»/src'
 Making all in gtextutils
 make[4]: Entering directory `/«PKGBUILDDIR»/src/gtextutils'
-/bin/bash ../../libtool --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I../..     -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -c -o stream_wrapper.lo stream_wrapper.cpp
-libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../.. -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -c stream_wrapper.cpp  -fPIC -DPIC -o .libs/stream_wrapper.o
-libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../.. -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -c stream_wrapper.cpp -o stream_wrapper.o >/dev/null 2>&1
-/bin/bash ../../libtool --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I../..     -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -c -o text_line_reader.lo text_line_reader.cpp
-libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../.. -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -c text_line_reader.cpp  -fPIC -DPIC -o .libs/text_line_reader.o
-libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../.. -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -c text_line_reader.cpp -o text_line_reader.o >/dev/null 2>&1
-/bin/bash ../../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..     -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -c -o strnatcmp.lo strnatcmp.c
-libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -c strnatcmp.c  -fPIC -DPIC -o .libs/strnatcmp.o
-libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -c strnatcmp.c -o strnatcmp.o >/dev/null 2>&1
-/bin/bash ../../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..     -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -c -o pipe_fitter.lo pipe_fitter.c
-libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -c pipe_fitter.c  -fPIC -DPIC -o .libs/pipe_fitter.o
-libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -c pipe_fitter.c -o pipe_fitter.o >/dev/null 2>&1
-/bin/bash ../../libtool --tag=CXX   --mode=link g++  -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -version-info 0:0:0 -release 0.6.2  -o libgtextutils.la -rpath /usr/lib stream_wrapper.lo text_line_reader.lo strnatcmp.lo pipe_fitter.lo  
-libtool: link: g++ -shared -nostdlib /usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu/4.6.1/../../../crti.o /usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu/4.6.1/crtbeginS.o  .libs/stream_wrapper.o .libs/text_line_reader.o .libs/strnatcmp.o .libs/pipe_fitter.o   -L/usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu/4.6.1 -L/usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu/4.6.1/../../.. -L/usr/lib/x86_64-linux-gnu -lstdc++ -lm -lc -lgcc_s /usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu/4.6.1/crtendS.o /usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu/4.6.1/../../../crtn.o    -Wl,-soname -Wl,libgtextutils-0.6.2.so.0 -o .libs/libgtextutils-0.6.2.so.0.0.0
-libtool: link: (cd ".libs" && rm -f "libgtextutils-0.6.2.so.0" && ln -s "libgtextutils-0.6.2.so.0.0.0" "libgtextutils-0.6.2.so.0")
-libtool: link: (cd ".libs" && rm -f "libgtextutils.so" && ln -s "libgtextutils-0.6.2.so.0.0.0" "libgtextutils.so")
+/bin/bash ../../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I../..   -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -c -o stream_wrapper.lo stream_wrapper.cpp
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../.. -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -c stream_wrapper.cpp  -fPIC -DPIC -o .libs/stream_wrapper.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../.. -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -c stream_wrapper.cpp -o stream_wrapper.o >/dev/null 2>&1
+/bin/bash ../../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I../..   -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -c -o text_line_reader.lo text_line_reader.cpp
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../.. -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -c text_line_reader.cpp  -fPIC -DPIC -o .libs/text_line_reader.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../.. -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -c text_line_reader.cpp -o text_line_reader.o >/dev/null 2>&1
+/bin/bash ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..   -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -c -o strnatcmp.lo strnatcmp.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -c strnatcmp.c  -fPIC -DPIC -o .libs/strnatcmp.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -c strnatcmp.c -o strnatcmp.o >/dev/null 2>&1
+/bin/bash ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..   -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -c -o pipe_fitter.lo pipe_fitter.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -c pipe_fitter.c  -fPIC -DPIC -o .libs/pipe_fitter.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -c pipe_fitter.c -o pipe_fitter.o >/dev/null 2>&1
+/bin/bash ../../libtool  --tag=CXX   --mode=link g++  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -version-info 0:0:0 -release 0.7 -Wl,-z,relro -o libgtextutils.la -rpath /usr/lib/x86_64-linux-gnu stream_wrapper.lo text_line_reader.lo strnatcmp.lo pipe_fitter.lo  
+libtool: link: g++  -fPIC -DPIC -shared -nostdlib /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbeginS.o  .libs/stream_wrapper.o .libs/text_line_reader.o .libs/strnatcmp.o .libs/pipe_fitter.o   -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. -lstdc++ -lm -lc -lgcc_s /usr/lib/gcc/x86_64-linux-gnu/4.8/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o  -O2 -O1 -O1 -Wl,-z -Wl,relro   -Wl,-soname -Wl,libgtextutils-0.7.so.0 -o .libs/libgtextutils-0.7.so.0.0.0
+libtool: link: (cd ".libs" && rm -f "libgtextutils-0.7.so.0" && ln -s "libgtextutils-0.7.so.0.0.0" "libgtextutils-0.7.so.0")
+libtool: link: (cd ".libs" && rm -f "libgtextutils.so" && ln -s "libgtextutils-0.7.so.0.0.0" "libgtextutils.so")
 libtool: link: ar cru .libs/libgtextutils.a  stream_wrapper.o text_line_reader.o strnatcmp.o pipe_fitter.o
 libtool: link: ranlib .libs/libgtextutils.a
 libtool: link: ( cd ".libs" && rm -f "libgtextutils.la" && ln -s "../libgtextutils.la" "libgtextutils.la" )
@@ -356,6 +490,7 @@ make[3]: Leaving directory `/«PKGBUILDDIR»'
 make[2]: Leaving directory `/«PKGBUILDDIR»'
 make[1]: Leaving directory `/«PKGBUILDDIR»'
    dh_auto_test
+	make -j1 check
 make[1]: Entering directory `/«PKGBUILDDIR»'
 Making check in m4
 make[2]: Entering directory `/«PKGBUILDDIR»/m4'
@@ -379,62 +514,65 @@ Making check in tests
 make[2]: Entering directory `/«PKGBUILDDIR»/tests'
 make  test_container_join test_natural_sort test_input_stream_wrapper test_text_reader test_text_reader_unget test_fd_outbuf test_fd_inbuf test_in_out_buf test_pipe_fitter test_string_tokenize 
 make[3]: Entering directory `/«PKGBUILDDIR»/tests'
-g++ -DHAVE_CONFIG_H -I. -I.. -I../src    -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -c -o test_container_join.o test_container_join.cpp
-/bin/bash ../libtool --tag=CXX   --mode=link g++  -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1   -o test_container_join test_container_join.o ../src/gtextutils/libgtextutils.la 
-libtool: link: g++ -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -o .libs/test_container_join test_container_join.o  ../src/gtextutils/.libs/libgtextutils.so
-g++ -DHAVE_CONFIG_H -I. -I.. -I../src    -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -c -o test_natural_sort.o test_natural_sort.cpp
-/bin/bash ../libtool --tag=CXX   --mode=link g++  -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1   -o test_natural_sort test_natural_sort.o ../src/gtextutils/libgtextutils.la 
-libtool: link: g++ -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -o .libs/test_natural_sort test_natural_sort.o  ../src/gtextutils/.libs/libgtextutils.so
-g++ -DHAVE_CONFIG_H -I. -I.. -I../src    -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -c -o test_input_stream_wrapper.o test_input_stream_wrapper.cpp
-/bin/bash ../libtool --tag=CXX   --mode=link g++  -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1   -o test_input_stream_wrapper test_input_stream_wrapper.o ../src/gtextutils/libgtextutils.la 
-libtool: link: g++ -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -o .libs/test_input_stream_wrapper test_input_stream_wrapper.o  ../src/gtextutils/.libs/libgtextutils.so
-g++ -DHAVE_CONFIG_H -I. -I.. -I../src    -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -c -o test_text_reader.o test_text_reader.cpp
-/bin/bash ../libtool --tag=CXX   --mode=link g++  -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1   -o test_text_reader test_text_reader.o ../src/gtextutils/libgtextutils.la 
-libtool: link: g++ -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -o .libs/test_text_reader test_text_reader.o  ../src/gtextutils/.libs/libgtextutils.so
-g++ -DHAVE_CONFIG_H -I. -I.. -I../src    -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -c -o test_text_reader_unget.o test_text_reader_unget.cpp
-/bin/bash ../libtool --tag=CXX   --mode=link g++  -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1   -o test_text_reader_unget test_text_reader_unget.o ../src/gtextutils/libgtextutils.la 
-libtool: link: g++ -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -o .libs/test_text_reader_unget test_text_reader_unget.o  ../src/gtextutils/.libs/libgtextutils.so
-g++ -DHAVE_CONFIG_H -I. -I.. -I../src    -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -c -o test_fd_outbuf.o test_fd_outbuf.cpp
-/bin/bash ../libtool --tag=CXX   --mode=link g++  -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1   -o test_fd_outbuf test_fd_outbuf.o ../src/gtextutils/libgtextutils.la 
-libtool: link: g++ -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -o .libs/test_fd_outbuf test_fd_outbuf.o  ../src/gtextutils/.libs/libgtextutils.so
-g++ -DHAVE_CONFIG_H -I. -I.. -I../src    -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -c -o test_fd_inbuf.o test_fd_inbuf.cpp
-/bin/bash ../libtool --tag=CXX   --mode=link g++  -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1   -o test_fd_inbuf test_fd_inbuf.o ../src/gtextutils/libgtextutils.la 
-libtool: link: g++ -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -o .libs/test_fd_inbuf test_fd_inbuf.o  ../src/gtextutils/.libs/libgtextutils.so
-g++ -DHAVE_CONFIG_H -I. -I.. -I../src    -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -c -o test_in_out_buf.o test_in_out_buf.cpp
-/bin/bash ../libtool --tag=CXX   --mode=link g++  -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1   -o test_in_out_buf test_in_out_buf.o ../src/gtextutils/libgtextutils.la 
-libtool: link: g++ -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -o .libs/test_in_out_buf test_in_out_buf.o  ../src/gtextutils/.libs/libgtextutils.so
-gcc -DHAVE_CONFIG_H -I. -I.. -I../src    -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -c test_pipe_fitter.c
-/bin/bash ../libtool --tag=CC   --mode=link gcc  -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1   -o test_pipe_fitter test_pipe_fitter.o ../src/gtextutils/libgtextutils.la 
-libtool: link: gcc -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -o .libs/test_pipe_fitter test_pipe_fitter.o  ../src/gtextutils/.libs/libgtextutils.so
-g++ -DHAVE_CONFIG_H -I. -I.. -I../src    -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -c -o test_string_tokenize.o test_string_tokenize.cpp
-/bin/bash ../libtool --tag=CXX   --mode=link g++  -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1   -o test_string_tokenize test_string_tokenize.o ../src/gtextutils/libgtextutils.la 
-libtool: link: g++ -g -O2 -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -o .libs/test_string_tokenize test_string_tokenize.o  ../src/gtextutils/.libs/libgtextutils.so
+g++ -DHAVE_CONFIG_H -I. -I..  -I../src -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -c -o test_container_join.o test_container_join.cpp
+/bin/bash ../libtool  --tag=CXX   --mode=link g++  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1  -Wl,-z,relro -o test_container_join test_container_join.o ../src/gtextutils/libgtextutils.la 
+libtool: link: g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -Wl,-z -Wl,relro -o .libs/test_container_join test_container_join.o  ../src/gtextutils/.libs/libgtextutils.so
+g++ -DHAVE_CONFIG_H -I. -I..  -I../src -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -c -o test_natural_sort.o test_natural_sort.cpp
+/bin/bash ../libtool  --tag=CXX   --mode=link g++  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1  -Wl,-z,relro -o test_natural_sort test_natural_sort.o ../src/gtextutils/libgtextutils.la 
+libtool: link: g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -Wl,-z -Wl,relro -o .libs/test_natural_sort test_natural_sort.o  ../src/gtextutils/.libs/libgtextutils.so
+g++ -DHAVE_CONFIG_H -I. -I..  -I../src -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -c -o test_input_stream_wrapper.o test_input_stream_wrapper.cpp
+/bin/bash ../libtool  --tag=CXX   --mode=link g++  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1  -Wl,-z,relro -o test_input_stream_wrapper test_input_stream_wrapper.o ../src/gtextutils/libgtextutils.la 
+libtool: link: g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -Wl,-z -Wl,relro -o .libs/test_input_stream_wrapper test_input_stream_wrapper.o  ../src/gtextutils/.libs/libgtextutils.so
+g++ -DHAVE_CONFIG_H -I. -I..  -I../src -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -c -o test_text_reader.o test_text_reader.cpp
+/bin/bash ../libtool  --tag=CXX   --mode=link g++  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1  -Wl,-z,relro -o test_text_reader test_text_reader.o ../src/gtextutils/libgtextutils.la 
+libtool: link: g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -Wl,-z -Wl,relro -o .libs/test_text_reader test_text_reader.o  ../src/gtextutils/.libs/libgtextutils.so
+g++ -DHAVE_CONFIG_H -I. -I..  -I../src -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -c -o test_text_reader_unget.o test_text_reader_unget.cpp
+/bin/bash ../libtool  --tag=CXX   --mode=link g++  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1  -Wl,-z,relro -o test_text_reader_unget test_text_reader_unget.o ../src/gtextutils/libgtextutils.la 
+libtool: link: g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -Wl,-z -Wl,relro -o .libs/test_text_reader_unget test_text_reader_unget.o  ../src/gtextutils/.libs/libgtextutils.so
+g++ -DHAVE_CONFIG_H -I. -I..  -I../src -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -c -o test_fd_outbuf.o test_fd_outbuf.cpp
+/bin/bash ../libtool  --tag=CXX   --mode=link g++  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1  -Wl,-z,relro -o test_fd_outbuf test_fd_outbuf.o ../src/gtextutils/libgtextutils.la 
+libtool: link: g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -Wl,-z -Wl,relro -o .libs/test_fd_outbuf test_fd_outbuf.o  ../src/gtextutils/.libs/libgtextutils.so
+g++ -DHAVE_CONFIG_H -I. -I..  -I../src -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -c -o test_fd_inbuf.o test_fd_inbuf.cpp
+/bin/bash ../libtool  --tag=CXX   --mode=link g++  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1  -Wl,-z,relro -o test_fd_inbuf test_fd_inbuf.o ../src/gtextutils/libgtextutils.la 
+libtool: link: g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -Wl,-z -Wl,relro -o .libs/test_fd_inbuf test_fd_inbuf.o  ../src/gtextutils/.libs/libgtextutils.so
+g++ -DHAVE_CONFIG_H -I. -I..  -I../src -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -c -o test_in_out_buf.o test_in_out_buf.cpp
+/bin/bash ../libtool  --tag=CXX   --mode=link g++  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1  -Wl,-z,relro -o test_in_out_buf test_in_out_buf.o ../src/gtextutils/libgtextutils.la 
+libtool: link: g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -Wl,-z -Wl,relro -o .libs/test_in_out_buf test_in_out_buf.o  ../src/gtextutils/.libs/libgtextutils.so
+gcc -DHAVE_CONFIG_H -I. -I..  -I../src -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -c -o test_pipe_fitter.o test_pipe_fitter.c
+/bin/bash ../libtool  --tag=CC   --mode=link gcc  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1  -Wl,-z,relro -o test_pipe_fitter test_pipe_fitter.o ../src/gtextutils/libgtextutils.la 
+libtool: link: gcc -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -Wl,-z -Wl,relro -o .libs/test_pipe_fitter test_pipe_fitter.o  ../src/gtextutils/.libs/libgtextutils.so
+g++ -DHAVE_CONFIG_H -I. -I..  -I../src -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -c -o test_string_tokenize.o test_string_tokenize.cpp
+/bin/bash ../libtool  --tag=CXX   --mode=link g++  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1  -Wl,-z,relro -o test_string_tokenize test_string_tokenize.o ../src/gtextutils/libgtextutils.la 
+libtool: link: g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -Wl,-z -Wl,relro -o .libs/test_string_tokenize test_string_tokenize.o  ../src/gtextutils/.libs/libgtextutils.so
 make[3]: Leaving directory `/«PKGBUILDDIR»/tests'
 make  check-TESTS
 make[3]: Entering directory `/«PKGBUILDDIR»/tests'
-0,1,2,3,4,5,6,7,8,9
-0-1-2-3-4-5-6-7-8-9
-keys  = 42	666
-keys  = 42,666
-values= Don't Panic	Beast
-values= Don't Panic,Beast
+make[4]: Entering directory `/«PKGBUILDDIR»/tests'
 PASS: test_container_join
-Regular sort:                    ChR13	chr1	chr10	chr11	chr2	chr20	chr4	chrX
-Natural sort (case sensitive):   ChR13	chr1	chr2	chr4	chr10	chr11	chr20	chrX
-Natural sort (case-insensitive): chr1	chr2	chr4	chr10	chr11	ChR13	chr20	chrX
 PASS: test_natural_sort
 PASS: test_input_stream_wrapper
 PASS: test_text_reader
 PASS: test_text_reader_unget
-Hello World from File-Descriptor Output Stream (josuttifs_fdostream)!
 PASS: test_fd_outbuf
 PASS: test_fd_inbuf
 PASS: test_in_out_buf
 PASS: test_pipe_fitter
 PASS: test_string_tokenize
-===================
-All 10 tests passed
-===================
+make[5]: Entering directory `/«PKGBUILDDIR»/tests'
+make[5]: Nothing to be done for `all'.
+make[5]: Leaving directory `/«PKGBUILDDIR»/tests'
+============================================================================
+Testsuite summary for Gordon-Text_utils-Library 0.7
+============================================================================
+# TOTAL: 10
+# PASS:  10
+# SKIP:  0
+# XFAIL: 0
+# FAIL:  0
+# XPASS: 0
+# ERROR: 0
+============================================================================
+make[4]: Leaving directory `/«PKGBUILDDIR»/tests'
 make[3]: Leaving directory `/«PKGBUILDDIR»/tests'
 make[2]: Leaving directory `/«PKGBUILDDIR»/tests'
 make[2]: Entering directory `/«PKGBUILDDIR»'
@@ -444,14 +582,22 @@ make[1]: Leaving directory `/«PKGBUILDDIR»'
 dh binary --with autotools_dev
    dh_testroot
    dh_prep
-   dh_installdirs
+	rm -f debian/libgtextutils-dev.substvars
+	rm -f debian/libgtextutils-dev.*.debhelper
+	rm -rf debian/libgtextutils-dev/
+	rm -f debian/libgtextutils0.substvars
+	rm -f debian/libgtextutils0.*.debhelper
+	rm -rf debian/libgtextutils0/
    dh_auto_install
+	install -d debian/libgtextutils-dev
+	install -d debian/libgtextutils0
+	make -j1 install DESTDIR=/«PKGBUILDDIR»/debian/tmp AM_UPDATE_INFO_DIR=no
 make[1]: Entering directory `/«PKGBUILDDIR»'
 Making install in m4
 make[2]: Entering directory `/«PKGBUILDDIR»/m4'
 make[3]: Entering directory `/«PKGBUILDDIR»/m4'
 make[3]: Nothing to be done for `install-exec-am'.
-test -z "/usr/share/aclocal" || /bin/mkdir -p "/«PKGBUILDDIR»/debian/tmp/usr/share/aclocal"
+ /bin/mkdir -p '/«PKGBUILDDIR»/debian/tmp/usr/share/aclocal'
 make[3]: Leaving directory `/«PKGBUILDDIR»/m4'
 make[2]: Leaving directory `/«PKGBUILDDIR»/m4'
 Making install in src
@@ -459,17 +605,17 @@ make[2]: Entering directory `/«PKGBUILDDIR»/src'
 Making install in gtextutils
 make[3]: Entering directory `/«PKGBUILDDIR»/src/gtextutils'
 make[4]: Entering directory `/«PKGBUILDDIR»/src/gtextutils'
-test -z "/usr/lib" || /bin/mkdir -p "/«PKGBUILDDIR»/debian/tmp/usr/lib"
- /bin/bash ../../libtool   --mode=install /usr/bin/install -c   libgtextutils.la '/«PKGBUILDDIR»/debian/tmp/usr/lib'
-libtool: install: /usr/bin/install -c .libs/libgtextutils-0.6.2.so.0.0.0 /«PKGBUILDDIR»/debian/tmp/usr/lib/libgtextutils-0.6.2.so.0.0.0
-libtool: install: (cd /«PKGBUILDDIR»/debian/tmp/usr/lib && { ln -s -f libgtextutils-0.6.2.so.0.0.0 libgtextutils-0.6.2.so.0 || { rm -f libgtextutils-0.6.2.so.0 && ln -s libgtextutils-0.6.2.so.0.0.0 libgtextutils-0.6.2.so.0; }; })
-libtool: install: (cd /«PKGBUILDDIR»/debian/tmp/usr/lib && { ln -s -f libgtextutils-0.6.2.so.0.0.0 libgtextutils.so || { rm -f libgtextutils.so && ln -s libgtextutils-0.6.2.so.0.0.0 libgtextutils.so; }; })
-libtool: install: /usr/bin/install -c .libs/libgtextutils.lai /«PKGBUILDDIR»/debian/tmp/usr/lib/libgtextutils.la
-libtool: install: /usr/bin/install -c .libs/libgtextutils.a /«PKGBUILDDIR»/debian/tmp/usr/lib/libgtextutils.a
-libtool: install: chmod 644 /«PKGBUILDDIR»/debian/tmp/usr/lib/libgtextutils.a
-libtool: install: ranlib /«PKGBUILDDIR»/debian/tmp/usr/lib/libgtextutils.a
-libtool: install: warning: remember to run `libtool --finish /usr/lib'
-test -z "/usr/include/gtextutils/gtextutils" || /bin/mkdir -p "/«PKGBUILDDIR»/debian/tmp/usr/include/gtextutils/gtextutils"
+ /bin/mkdir -p '/«PKGBUILDDIR»/debian/tmp/usr/lib/x86_64-linux-gnu'
+ /bin/bash ../../libtool   --mode=install /usr/bin/install -c   libgtextutils.la '/«PKGBUILDDIR»/debian/tmp/usr/lib/x86_64-linux-gnu'
+libtool: install: /usr/bin/install -c .libs/libgtextutils-0.7.so.0.0.0 /«PKGBUILDDIR»/debian/tmp/usr/lib/x86_64-linux-gnu/libgtextutils-0.7.so.0.0.0
+libtool: install: (cd /«PKGBUILDDIR»/debian/tmp/usr/lib/x86_64-linux-gnu && { ln -s -f libgtextutils-0.7.so.0.0.0 libgtextutils-0.7.so.0 || { rm -f libgtextutils-0.7.so.0 && ln -s libgtextutils-0.7.so.0.0.0 libgtextutils-0.7.so.0; }; })
+libtool: install: (cd /«PKGBUILDDIR»/debian/tmp/usr/lib/x86_64-linux-gnu && { ln -s -f libgtextutils-0.7.so.0.0.0 libgtextutils.so || { rm -f libgtextutils.so && ln -s libgtextutils-0.7.so.0.0.0 libgtextutils.so; }; })
+libtool: install: /usr/bin/install -c .libs/libgtextutils.lai /«PKGBUILDDIR»/debian/tmp/usr/lib/x86_64-linux-gnu/libgtextutils.la
+libtool: install: /usr/bin/install -c .libs/libgtextutils.a /«PKGBUILDDIR»/debian/tmp/usr/lib/x86_64-linux-gnu/libgtextutils.a
+libtool: install: chmod 644 /«PKGBUILDDIR»/debian/tmp/usr/lib/x86_64-linux-gnu/libgtextutils.a
+libtool: install: ranlib /«PKGBUILDDIR»/debian/tmp/usr/lib/x86_64-linux-gnu/libgtextutils.a
+libtool: install: warning: remember to run `libtool --finish /usr/lib/x86_64-linux-gnu'
+ /bin/mkdir -p '/«PKGBUILDDIR»/debian/tmp/usr/include/gtextutils/gtextutils'
  /usr/bin/install -c -m 644 container_join.h text_line_reader.h stream_wrapper.h natsort.h strnatcmp.h outbuf3.hpp inbuf1.hpp tuple_parser.h exit_manip.h string_tokenize.h pipe_fitter.h '/«PKGBUILDDIR»/debian/tmp/usr/include/gtextutils/gtextutils'
 make[4]: Leaving directory `/«PKGBUILDDIR»/src/gtextutils'
 make[3]: Leaving directory `/«PKGBUILDDIR»/src/gtextutils'
@@ -497,59 +643,139 @@ make[2]: Leaving directory `/«PKGBUILDDIR»/tests'
 make[2]: Entering directory `/«PKGBUILDDIR»'
 make[3]: Entering directory `/«PKGBUILDDIR»'
 make[3]: Nothing to be done for `install-exec-am'.
-test -z "/usr/lib/pkgconfig" || /bin/mkdir -p "/«PKGBUILDDIR»/debian/tmp/usr/lib/pkgconfig"
- /usr/bin/install -c -m 644 gtextutils.pc '/«PKGBUILDDIR»/debian/tmp/usr/lib/pkgconfig'
+ /bin/mkdir -p '/«PKGBUILDDIR»/debian/tmp/usr/lib/x86_64-linux-gnu/pkgconfig'
+ /usr/bin/install -c -m 644 gtextutils.pc '/«PKGBUILDDIR»/debian/tmp/usr/lib/x86_64-linux-gnu/pkgconfig'
 make[3]: Leaving directory `/«PKGBUILDDIR»'
 make[2]: Leaving directory `/«PKGBUILDDIR»'
 make[1]: Leaving directory `/«PKGBUILDDIR»'
    dh_install
+	install -d debian/libgtextutils-dev/usr/include/
+	cp -a debian/tmp/usr/include/gtextutils/gtextutils/ debian/libgtextutils-dev/usr/include//
+	install -d debian/libgtextutils-dev/usr/lib/x86_64-linux-gnu/
+	cp -a debian/tmp/usr/lib/x86_64-linux-gnu/libgtextutils.so debian/libgtextutils-dev/usr/lib/x86_64-linux-gnu//
+	install -d debian/libgtextutils-dev/usr/lib/x86_64-linux-gnu/pkgconfig/
+	cp -a debian/tmp/usr/lib/x86_64-linux-gnu/pkgconfig/gtextutils.pc debian/libgtextutils-dev/usr/lib/x86_64-linux-gnu/pkgconfig//
+	install -d debian/libgtextutils0/usr/lib/x86_64-linux-gnu/
+	cp -a debian/tmp/usr/lib/x86_64-linux-gnu/libgtextutils-0.7.so.0 debian/libgtextutils0/usr/lib/x86_64-linux-gnu//
+	cp -a debian/tmp/usr/lib/x86_64-linux-gnu/libgtextutils-0.7.so.0.0.0 debian/libgtextutils0/usr/lib/x86_64-linux-gnu//
    dh_installdocs
+	install -g 0 -o 0 -d debian/libgtextutils-dev/usr/share/doc/libgtextutils-dev
+	cp -a NEWS debian/libgtextutils-dev/usr/share/doc/libgtextutils-dev
+	cp -a README debian/libgtextutils-dev/usr/share/doc/libgtextutils-dev
+	cp -a THANKS debian/libgtextutils-dev/usr/share/doc/libgtextutils-dev
+	chown -R 0:0 debian/libgtextutils-dev/usr/share/doc
+	chmod -R go=rX debian/libgtextutils-dev/usr/share/doc
+	chmod -R u\+rw debian/libgtextutils-dev/usr/share/doc
+	install -g 0 -o 0 -m 644 -p debian/copyright debian/libgtextutils-dev/usr/share/doc/libgtextutils-dev/copyright
+	install -g 0 -o 0 -d debian/libgtextutils0/usr/share/doc/libgtextutils0
+	install -g 0 -o 0 -m 644 -p debian/copyright debian/libgtextutils0/usr/share/doc/libgtextutils0/copyright
    dh_installchangelogs
-   dh_installexamples
-   dh_installman
-   dh_installcatalogs
-   dh_installcron
-   dh_installdebconf
-   dh_installemacsen
-   dh_installifupdown
-   dh_installinfo
-   dh_installinit
-   dh_installmenu
-   dh_installmime
-   dh_installmodules
-   dh_installlogcheck
-   dh_installlogrotate
-   dh_installpam
-   dh_installppp
-   dh_installudev
-   dh_installwm
-   dh_installxfonts
-   dh_installgsettings
-   dh_bugfiles
-   dh_ucf
-   dh_lintian
-   dh_gconf
-   dh_icons
+	install -o 0 -g 0 -p -m644 debian/changelog debian/libgtextutils-dev/usr/share/doc/libgtextutils-dev/changelog.Debian
+	install -o 0 -g 0 -p -m644 debian/changelog debian/libgtextutils0/usr/share/doc/libgtextutils0/changelog.Debian
    dh_perl
-   dh_usrlocal
    dh_link
+	rm -f debian/libgtextutils-dev/usr/lib/x86_64-linux-gnu/libgtextutils.so
+	ln -sf libgtextutils-0.7.so.0.0.0 debian/libgtextutils-dev/usr/lib/x86_64-linux-gnu/libgtextutils.so
+	rm -f debian/libgtextutils0/usr/lib/x86_64-linux-gnu/libgtextutils-0.7.so.0
+	ln -sf libgtextutils-0.7.so.0.0.0 debian/libgtextutils0/usr/lib/x86_64-linux-gnu/libgtextutils-0.7.so.0
    dh_compress
+	cd debian/libgtextutils-dev
+	chmod a-x usr/share/doc/libgtextutils-dev/changelog.Debian usr/share/doc/libgtextutils-dev/NEWS
+	gzip -9nf usr/share/doc/libgtextutils-dev/changelog.Debian usr/share/doc/libgtextutils-dev/NEWS
+	cd '/«PKGBUILDDIR»'
+	cd debian/libgtextutils0
+	chmod a-x usr/share/doc/libgtextutils0/changelog.Debian
+	gzip -9nf usr/share/doc/libgtextutils0/changelog.Debian
+	cd '/«PKGBUILDDIR»'
    dh_fixperms
+	find debian/libgtextutils-dev  -print0 2>/dev/null | xargs -0r chown --no-dereference 0:0
+	find debian/libgtextutils-dev ! -type l  -print0 2>/dev/null | xargs -0r chmod go=rX,u+rw,a-s
+	find debian/libgtextutils-dev/usr/share/doc -type f  ! -regex 'debian/libgtextutils-dev/usr/share/doc/[^/]*/examples/.*' -print0 2>/dev/null | xargs -0r chmod 644
+	find debian/libgtextutils-dev/usr/share/doc -type d  -print0 2>/dev/null | xargs -0r chmod 755
+	find debian/libgtextutils-dev/usr/share/man debian/libgtextutils-dev/usr/man/ debian/libgtextutils-dev/usr/X11*/man/ -type f  -print0 2>/dev/null | xargs -0r chmod 644
+	find debian/libgtextutils-dev -perm -5 -type f \( -name '*.so.*' -or -name '*.so' -or -name '*.la' -or -name '*.a' \)  -print0 2>/dev/null | xargs -0r chmod 644
+	find debian/libgtextutils-dev/usr/include -type f  -print0 2>/dev/null | xargs -0r chmod 644
+	find debian/libgtextutils-dev/usr/share/applications -type f  -print0 2>/dev/null | xargs -0r chmod 644
+	find debian/libgtextutils-dev -perm -5 -type f \( -name '*.cmxs' \)  -print0 2>/dev/null | xargs -0r chmod 644
+	find debian/libgtextutils-dev/usr/lib/perl5 debian/libgtextutils-dev/usr/share/perl5 -type f -perm -5 -name '*.pm'  -print0 2>/dev/null | xargs -0r chmod a-X
+	find debian/libgtextutils-dev/usr/lib -type f -name '*.ali'  -print0 2>/dev/null | xargs -0r chmod uga-w
+	find debian/libgtextutils0  -print0 2>/dev/null | xargs -0r chown --no-dereference 0:0
+	find debian/libgtextutils0 ! -type l  -print0 2>/dev/null | xargs -0r chmod go=rX,u+rw,a-s
+	find debian/libgtextutils0/usr/share/doc -type f  ! -regex 'debian/libgtextutils0/usr/share/doc/[^/]*/examples/.*' -print0 2>/dev/null | xargs -0r chmod 644
+	find debian/libgtextutils0/usr/share/doc -type d  -print0 2>/dev/null | xargs -0r chmod 755
+	find debian/libgtextutils0/usr/share/man debian/libgtextutils0/usr/man/ debian/libgtextutils0/usr/X11*/man/ -type f  -print0 2>/dev/null | xargs -0r chmod 644
+	find debian/libgtextutils0 -perm -5 -type f \( -name '*.so.*' -or -name '*.so' -or -name '*.la' -or -name '*.a' \)  -print0 2>/dev/null | xargs -0r chmod 644
+	find debian/libgtextutils0/usr/include -type f  -print0 2>/dev/null | xargs -0r chmod 644
+	find debian/libgtextutils0/usr/share/applications -type f  -print0 2>/dev/null | xargs -0r chmod 644
+	find debian/libgtextutils0 -perm -5 -type f \( -name '*.cmxs' \)  -print0 2>/dev/null | xargs -0r chmod 644
+	find debian/libgtextutils0/usr/lib/perl5 debian/libgtextutils0/usr/share/perl5 -type f -perm -5 -name '*.pm'  -print0 2>/dev/null | xargs -0r chmod a-X
+	find debian/libgtextutils0/usr/lib -type f -name '*.ali'  -print0 2>/dev/null | xargs -0r chmod uga-w
    dh_strip
+	strip --remove-section=.comment --remove-section=.note --strip-unneeded debian/libgtextutils0/usr/lib/x86_64-linux-gnu/libgtextutils-0.7.so.0.0.0
    dh_makeshlibs
+	rm -f debian/libgtextutils-dev/DEBIAN/shlibs
+	rm -f debian/libgtextutils0/DEBIAN/shlibs
+	install -d debian/libgtextutils0/DEBIAN
+	echo 'libgtextutils-0.7 0 libgtextutils0' >>debian/libgtextutils0/DEBIAN/shlibs
+	echo "# Automatically added by dh_makeshlibs">> debian/libgtextutils0.postinst.debhelper
+	sed "" /usr/share/debhelper/autoscripts/postinst-makeshlibs >> debian/libgtextutils0.postinst.debhelper
+	echo '# End automatically added section' >> debian/libgtextutils0.postinst.debhelper
+	echo "# Automatically added by dh_makeshlibs">> debian/libgtextutils0.postrm.debhelper
+	sed "" /usr/share/debhelper/autoscripts/postrm-makeshlibs >> debian/libgtextutils0.postrm.debhelper
+	echo '# End automatically added section' >> debian/libgtextutils0.postrm.debhelper
+	chmod 644 debian/libgtextutils0/DEBIAN/shlibs
+	chown 0:0 debian/libgtextutils0/DEBIAN/shlibs
+	dpkg-gensymbols -plibgtextutils0 -Idebian/libgtextutils0.symbols -Pdebian/libgtextutils0 "-edebian/libgtextutils0/usr/lib/x86_64-linux-gnu/libgtextutils-0.7.so.0.0.0\
+"
+	(grep -s -v misc:Pre-Depends debian/libgtextutils0.substvars; echo misc:Pre-Depends=multiarch-support) > debian/libgtextutils0.substvars.new
+	mv debian/libgtextutils0.substvars.new debian/libgtextutils0.substvars
    dh_shlibdeps
+	install -o 0 -g 0 -d debian/libgtextutils-dev/DEBIAN
+	dpkg-shlibdeps -Tdebian/libgtextutils0.substvars debian/libgtextutils0/usr/lib/x86_64-linux-gnu/libgtextutils-0.7.so.0.0.0
    dh_installdeb
+	printf '#!/bin/sh
+set -e
+' > debian/libgtextutils0/DEBIAN/postinst
+	cat debian/libgtextutils0.postinst.debhelper >> debian/libgtextutils0/DEBIAN/postinst
+	chown 0:0 debian/libgtextutils0/DEBIAN/postinst
+	chmod 755 debian/libgtextutils0/DEBIAN/postinst
+	printf '#!/bin/sh
+set -e
+' > debian/libgtextutils0/DEBIAN/postrm
+	cat debian/libgtextutils0.postrm.debhelper >> debian/libgtextutils0/DEBIAN/postrm
+	chown 0:0 debian/libgtextutils0/DEBIAN/postrm
+	chmod 755 debian/libgtextutils0/DEBIAN/postrm
    dh_gencontrol
+	echo misc:Depends= >> debian/libgtextutils-dev.substvars
+	dpkg-gencontrol -plibgtextutils-dev -ldebian/changelog -Tdebian/libgtextutils-dev.substvars -Pdebian/libgtextutils-dev
+dpkg-gencontrol: warning: File::FcntlLock not available; using flock which is not NFS-safe
+	chmod 644 debian/libgtextutils-dev/DEBIAN/control
+	chown 0:0 debian/libgtextutils-dev/DEBIAN/control
+	echo misc:Depends= >> debian/libgtextutils0.substvars
+	dpkg-gencontrol -plibgtextutils0 -ldebian/changelog -Tdebian/libgtextutils0.substvars -Pdebian/libgtextutils0
+dpkg-gencontrol: warning: File::FcntlLock not available; using flock which is not NFS-safe
+dpkg-gencontrol: warning: package libgtextutils0: unused substitution variable ${misc:Pre-Depends}
+	chmod 644 debian/libgtextutils0/DEBIAN/control
+	chown 0:0 debian/libgtextutils0/DEBIAN/control
    dh_md5sums
+	(cd debian/libgtextutils-dev >/dev/null ; find . -type f  ! -regex './DEBIAN/.*' -printf '%P\0' | LC_ALL=C sort -z | xargs -r0 md5sum > DEBIAN/md5sums) >/dev/null
+	chmod 644 debian/libgtextutils-dev/DEBIAN/md5sums
+	chown 0:0 debian/libgtextutils-dev/DEBIAN/md5sums
+	(cd debian/libgtextutils0 >/dev/null ; find . -type f  ! -regex './DEBIAN/.*' -printf '%P\0' | LC_ALL=C sort -z | xargs -r0 md5sum > DEBIAN/md5sums) >/dev/null
+	chmod 644 debian/libgtextutils0/DEBIAN/md5sums
+	chown 0:0 debian/libgtextutils0/DEBIAN/md5sums
    dh_builddeb
-dpkg-deb: building package `libgtextutils-dev' in `../libgtextutils-dev_0.6.2-1_amd64.deb'.
-dpkg-deb: building package `libgtextutils0' in `../libgtextutils0_0.6.2-1_amd64.deb'.
- dpkg-genchanges  >../libgtextutils_0.6.2-1_amd64.changes
+	dpkg-deb --build debian/libgtextutils-dev ..
+dpkg-deb: building package `libgtextutils-dev' in `../libgtextutils-dev_0.7-1_amd64.deb'.
+	dpkg-deb --build debian/libgtextutils0 ..
+dpkg-deb: building package `libgtextutils0' in `../libgtextutils0_0.7-1_amd64.deb'.
+ dpkg-genchanges  >../libgtextutils_0.7-1_amd64.changes
 dpkg-genchanges: including full source code in upload
- dpkg-source --after-build libgtextutils-0.6.2
+ dpkg-source --after-build libgtextutils-0.7
+dpkg-source: info: using options from libgtextutils-0.7/debian/source/options: --single-debian-patch
 dpkg-buildpackage: full upload (original source is included)
 ────────────────────────────────────────────────────────────────────────────────
-Build finished at 20110704-1902
+Build finished at 20140108-0916
 
 Finished
 ────────
@@ -557,19 +783,212 @@ Finished
 I: Built successfully
 
 ┌──────────────────────────────────────────────────────────────────────────────┐
+│ Post Build Chroot                                                            │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+lintian
+───────
+
+Merged Build-Depends: lintian
+Filtered Build-Depends: lintian
+dpkg-deb: building package `sbuild-build-depends-lintian-dummy' in `/«BUILDDIR»/resolver-BTH150/apt_archive/sbuild-build-depends-lintian-dummy.deb'.
+OK
+Reading package lists...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Install lintian build dependencies (apt-based resolver)                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+  diffstat hardening-includes libapt-pkg-perl libarchive-zip-perl
+  libclass-accessor-perl libclone-perl libdigest-hmac-perl libemail-valid-perl
+  libfile-basedir-perl libio-pty-perl libio-socket-inet6-perl
+  libio-socket-ssl-perl libio-string-perl libipc-run-perl
+  liblist-moreutils-perl libmailtools-perl libnet-dns-perl
+  libnet-domain-tld-perl libnet-ip-perl libnet-smtp-ssl-perl
+  libnet-ssleay-perl libparse-debianchangelog-perl libsocket6-perl libssl1.0.0
+  libsub-name-perl libtext-levenshtein-perl liburi-perl lintian netbase
+  patchutils t1utils
+Suggested packages:
+  libwww-perl binutils-multiarch libtext-template-perl
+Recommended packages:
+  libauthen-sasl-perl libhtml-parser-perl libhtml-template-perl
+  libxml-simple-perl libperlio-gzip-perl ifupdown
+The following NEW packages will be installed:
+  diffstat hardening-includes libapt-pkg-perl libarchive-zip-perl
+  libclass-accessor-perl libclone-perl libdigest-hmac-perl libemail-valid-perl
+  libfile-basedir-perl libio-pty-perl libio-socket-inet6-perl
+  libio-socket-ssl-perl libio-string-perl libipc-run-perl
+  liblist-moreutils-perl libmailtools-perl libnet-dns-perl
+  libnet-domain-tld-perl libnet-ip-perl libnet-smtp-ssl-perl
+  libnet-ssleay-perl libparse-debianchangelog-perl libsocket6-perl libssl1.0.0
+  libsub-name-perl libtext-levenshtein-perl liburi-perl lintian netbase
+  patchutils sbuild-build-depends-lintian-dummy t1utils
+debconf: delaying package configuration, since apt-utils is not installed
+0 upgraded, 32 newly installed, 0 to remove and 0 not upgraded.
+Need to get 0 B/3494 kB of archives.
+After this operation, 11.2 MB of additional disk space will be used.
+Selecting previously unselected package libssl1.0.0:amd64.
+(Reading database ... 12880 files and directories currently installed.)
+Preparing to unpack .../libssl1.0.0_1.0.1f-1_amd64.deb ...
+Unpacking libssl1.0.0:amd64 (1.0.1f-1) ...
+Selecting previously unselected package netbase.
+Preparing to unpack .../archives/netbase_5.2_all.deb ...
+Unpacking netbase (5.2) ...
+Selecting previously unselected package diffstat.
+Preparing to unpack .../diffstat_1.58-1_amd64.deb ...
+Unpacking diffstat (1.58-1) ...
+Selecting previously unselected package hardening-includes.
+Preparing to unpack .../hardening-includes_2.5_all.deb ...
+Unpacking hardening-includes (2.5) ...
+Selecting previously unselected package libapt-pkg-perl.
+Preparing to unpack .../libapt-pkg-perl_0.1.29+b1_amd64.deb ...
+Unpacking libapt-pkg-perl (0.1.29+b1) ...
+Selecting previously unselected package libarchive-zip-perl.
+Preparing to unpack .../libarchive-zip-perl_1.30-7_all.deb ...
+Unpacking libarchive-zip-perl (1.30-7) ...
+Selecting previously unselected package libsub-name-perl.
+Preparing to unpack .../libsub-name-perl_0.05-1+b3_amd64.deb ...
+Unpacking libsub-name-perl (0.05-1+b3) ...
+Selecting previously unselected package libclass-accessor-perl.
+Preparing to unpack .../libclass-accessor-perl_0.34-1_all.deb ...
+Unpacking libclass-accessor-perl (0.34-1) ...
+Selecting previously unselected package libclone-perl.
+Preparing to unpack .../libclone-perl_0.36-1_amd64.deb ...
+Unpacking libclone-perl (0.36-1) ...
+Selecting previously unselected package libdigest-hmac-perl.
+Preparing to unpack .../libdigest-hmac-perl_1.03+dfsg-1_all.deb ...
+Unpacking libdigest-hmac-perl (1.03+dfsg-1) ...
+Selecting previously unselected package libnet-ssleay-perl.
+Preparing to unpack .../libnet-ssleay-perl_1.55-1+b2_amd64.deb ...
+Unpacking libnet-ssleay-perl (1.55-1+b2) ...
+Selecting previously unselected package libio-socket-ssl-perl.
+Preparing to unpack .../libio-socket-ssl-perl_1.962-1_all.deb ...
+Unpacking libio-socket-ssl-perl (1.962-1) ...
+Selecting previously unselected package libnet-smtp-ssl-perl.
+Preparing to unpack .../libnet-smtp-ssl-perl_1.01-3_all.deb ...
+Unpacking libnet-smtp-ssl-perl (1.01-3) ...
+Selecting previously unselected package libmailtools-perl.
+Preparing to unpack .../libmailtools-perl_2.12-1_all.deb ...
+Unpacking libmailtools-perl (2.12-1) ...
+Selecting previously unselected package libnet-ip-perl.
+Preparing to unpack .../libnet-ip-perl_1.26-1_all.deb ...
+Unpacking libnet-ip-perl (1.26-1) ...
+Selecting previously unselected package libsocket6-perl.
+Preparing to unpack .../libsocket6-perl_0.23+ds-0+nmu1_amd64.deb ...
+Unpacking libsocket6-perl (0.23+ds-0+nmu1) ...
+Selecting previously unselected package libio-socket-inet6-perl.
+Preparing to unpack .../libio-socket-inet6-perl_2.71-1_all.deb ...
+Unpacking libio-socket-inet6-perl (2.71-1) ...
+Selecting previously unselected package libnet-dns-perl.
+Preparing to unpack .../libnet-dns-perl_0.68-1.2_amd64.deb ...
+Unpacking libnet-dns-perl (0.68-1.2) ...
+Selecting previously unselected package libnet-domain-tld-perl.
+Preparing to unpack .../libnet-domain-tld-perl_1.70-1_all.deb ...
+Unpacking libnet-domain-tld-perl (1.70-1) ...
+Selecting previously unselected package libemail-valid-perl.
+Preparing to unpack .../libemail-valid-perl_1.192-1_all.deb ...
+Unpacking libemail-valid-perl (1.192-1) ...
+Selecting previously unselected package libfile-basedir-perl.
+Preparing to unpack .../libfile-basedir-perl_0.03-1_all.deb ...
+Unpacking libfile-basedir-perl (0.03-1) ...
+Selecting previously unselected package libio-pty-perl.
+Preparing to unpack .../libio-pty-perl_1%3a1.08-1+b3_amd64.deb ...
+Unpacking libio-pty-perl (1:1.08-1+b3) ...
+Selecting previously unselected package libio-string-perl.
+Preparing to unpack .../libio-string-perl_1.08-3_all.deb ...
+Unpacking libio-string-perl (1.08-3) ...
+Selecting previously unselected package libipc-run-perl.
+Preparing to unpack .../libipc-run-perl_0.92-1_all.deb ...
+Unpacking libipc-run-perl (0.92-1) ...
+Selecting previously unselected package liblist-moreutils-perl.
+Preparing to unpack .../liblist-moreutils-perl_0.33-1+b2_amd64.deb ...
+Unpacking liblist-moreutils-perl (0.33-1+b2) ...
+Selecting previously unselected package libparse-debianchangelog-perl.
+Preparing to unpack .../libparse-debianchangelog-perl_1.2.0-1_all.deb ...
+Unpacking libparse-debianchangelog-perl (1.2.0-1) ...
+Selecting previously unselected package libtext-levenshtein-perl.
+Preparing to unpack .../libtext-levenshtein-perl_0.06~01-2_all.deb ...
+Unpacking libtext-levenshtein-perl (0.06~01-2) ...
+Selecting previously unselected package liburi-perl.
+Preparing to unpack .../liburi-perl_1.60-1_all.deb ...
+Unpacking liburi-perl (1.60-1) ...
+Selecting previously unselected package patchutils.
+Preparing to unpack .../patchutils_0.3.2-3_amd64.deb ...
+Unpacking patchutils (0.3.2-3) ...
+Selecting previously unselected package t1utils.
+Preparing to unpack .../t1utils_1.37-2_amd64.deb ...
+Unpacking t1utils (1.37-2) ...
+Selecting previously unselected package lintian.
+Preparing to unpack .../lintian_2.5.20_all.deb ...
+Unpacking lintian (2.5.20) ...
+Selecting previously unselected package sbuild-build-depends-lintian-dummy.
+Preparing to unpack .../sbuild-build-depends-lintian-dummy.deb ...
+Unpacking sbuild-build-depends-lintian-dummy (0.invalid.0) ...
+Processing triggers for man-db (2.6.5-3) ...
+Not building database; man-db/auto-update is not 'true'.
+Setting up libssl1.0.0:amd64 (1.0.1f-1) ...
+Setting up netbase (5.2) ...
+Setting up diffstat (1.58-1) ...
+Setting up hardening-includes (2.5) ...
+Setting up libapt-pkg-perl (0.1.29+b1) ...
+Setting up libarchive-zip-perl (1.30-7) ...
+Setting up libsub-name-perl (0.05-1+b3) ...
+Setting up libclass-accessor-perl (0.34-1) ...
+Setting up libclone-perl (0.36-1) ...
+Setting up libdigest-hmac-perl (1.03+dfsg-1) ...
+Setting up libnet-ssleay-perl (1.55-1+b2) ...
+Setting up libio-socket-ssl-perl (1.962-1) ...
+Setting up libnet-smtp-ssl-perl (1.01-3) ...
+Setting up libmailtools-perl (2.12-1) ...
+Setting up libnet-ip-perl (1.26-1) ...
+Setting up libsocket6-perl (0.23+ds-0+nmu1) ...
+Setting up libio-socket-inet6-perl (2.71-1) ...
+Setting up libnet-dns-perl (0.68-1.2) ...
+Setting up libnet-domain-tld-perl (1.70-1) ...
+Setting up libemail-valid-perl (1.192-1) ...
+Setting up libfile-basedir-perl (0.03-1) ...
+Setting up libio-pty-perl (1:1.08-1+b3) ...
+Setting up libio-string-perl (1.08-3) ...
+Setting up libipc-run-perl (0.92-1) ...
+Setting up liblist-moreutils-perl (0.33-1+b2) ...
+Setting up libparse-debianchangelog-perl (1.2.0-1) ...
+Setting up libtext-levenshtein-perl (0.06~01-2) ...
+Setting up liburi-perl (1.60-1) ...
+Setting up patchutils (0.3.2-3) ...
+Setting up t1utils (1.37-2) ...
+Setting up lintian (2.5.20) ...
+Setting up sbuild-build-depends-lintian-dummy (0.invalid.0) ...
+Processing triggers for libc-bin (2.17-97) ...
+P: libgtextutils source: debian-watch-may-check-gpg-signature
+P: libgtextutils-dev: no-upstream-changelog
+I: libgtextutils-dev: extended-description-is-probably-too-short
+W: libgtextutils0: package-name-doesnt-match-sonames libgtextutils-0.7-0
+P: libgtextutils0: no-upstream-changelog
+I: libgtextutils0: extended-description-is-probably-too-short
+W: libgtextutils0: dev-pkg-without-shlib-symlink usr/lib/x86_64-linux-gnu/libgtextutils-0.7.so.0.0.0 usr/lib/x86_64-linux-gnu/libgtextutils-0.7.so
+
+I: Lintian run was successful.
+
+┌──────────────────────────────────────────────────────────────────────────────┐
 │ Changes                                                                      │
 └──────────────────────────────────────────────────────────────────────────────┘
 
 
-libgtextutils_0.6.2-1_amd64.changes:
-────────────────────────────────────
+libgtextutils_0.7-1_amd64.changes:
+──────────────────────────────────
 
 Format: 1.8
-Date: Mon, 04 Jul 2011 18:55:22 +0900
+Date: Wed, 08 Jan 2014 09:15:22 +0900
 Source: libgtextutils
 Binary: libgtextutils-dev libgtextutils0
 Architecture: source amd64
-Version: 0.6.2-1
+Version: 0.7-1
 Distribution: unstable
 Urgency: low
 Maintainer: Debian Med Packaging Team <debian-med-packaging@lists.alioth.debian.org>
@@ -577,142 +996,140 @@ Changed-By: Charles Plessy <plessy@debian.org>
 Description: 
  libgtextutils-dev - Gordon Text_utils library (development files)
  libgtextutils0 - Gordon Text_utils library
-Closes: 625365 626757
 Changes: 
- libgtextutils (0.6.2-1) unstable; urgency=low
+ libgtextutils (0.7-1) unstable; urgency=low
  .
-   * New upstream release (Closes: #625365, #626757), whith new soname 0.6.2.
-   * debian/libgtextutils0.symbols upgraded to new soname.
-   * Breaks: fastx-toolkit =< 0.0.13-1 (debian/control).
-   * Incremented Standards-Version to reflect conformance with Policy 3.9.2
-     (debian/control, no changes needed).
+   * New upstream release.
+ .
+   ff09484 debian/watch: monitor source code repository on GitHub.
+   4d75c55 7ffa331 Build-depend on automake and libtool.
+   1954d04 Run the ‘reconf’ command before dh_auto_configure.
+   642f472 Vebose debhelper.
+   98624c0 Use Debhelper 9.
+   54445b3 Made the packages multi-architecture.
+   f1e771b Updated symbols file.
+   78899ca Normalised debian/copyright with ‘cme fix dpkg-copyright‘.
+   fae902a Normalised debian/control with ‘cme fix dpkg-control’.
+   4050657 Normalised VCS URLs.
+   5bd1b39 Conforms to Policy 3.9.5.
 Checksums-Sha1: 
- bf6473fd2e9b8ecdacd0acc5057b37f233d5f496 1100 libgtextutils_0.6.2-1.dsc
- 653ea42a5f76714dee1572b2ff78468b0d0ccb14 276103 libgtextutils_0.6.2.orig.tar.bz2
- 148bc35ed7f14ceda6c2799ec2cbc9c132be159c 14681 libgtextutils_0.6.2-1.debian.tar.gz
- c95489843887b9e523bfad7784ca99906d400109 25920 libgtextutils-dev_0.6.2-1_amd64.deb
- 2b7a69449cbfc56460ed082359a676652d671577 21098 libgtextutils0_0.6.2-1_amd64.deb
+ 2980e46dcb57264e1a86add136641d4ce93687f1 1205 libgtextutils_0.7-1.dsc
+ f17a0dffa9020123f10d1e3cea38f503dd8125da 32478 libgtextutils_0.7.orig.tar.gz
+ a1c4b3983ab8ffd2b1708dc97230ad890307731c 15376 libgtextutils_0.7-1.debian.tar.gz
+ 0df04673e8e5be41cf95b1c65a89b84d5b6a676c 23496 libgtextutils-dev_0.7-1_amd64.deb
+ eff6299c611ee42938d2b63ae530d18941e24f7d 19036 libgtextutils0_0.7-1_amd64.deb
 Checksums-Sha256: 
- 03cc2fee3821eebbb8a15abd8a949d4b3b0c176173a12e7cec51d0df2d7ee407 1100 libgtextutils_0.6.2-1.dsc
- 14af5612ca70022ca4371ff50aff0b3f1fe287bc4536a728a9c48ba7160f9861 276103 libgtextutils_0.6.2.orig.tar.bz2
- 847bbc42c7a1b6d07243ce5429a3259e985036d54d721ac87bc1ba9d4ce52254 14681 libgtextutils_0.6.2-1.debian.tar.gz
- 87e1ae1cf7a6e706e0870700770b012b239326ed7116aea9cf6b026cd294c006 25920 libgtextutils-dev_0.6.2-1_amd64.deb
- b2895f5cc70d9bf609b8110e556f6a3accb52c017346cc8cf7e2493ba7c3d4ee 21098 libgtextutils0_0.6.2-1_amd64.deb
+ 9a38a408bba268f937e9de6229ec962e1cfefa0f89420c404fa8f30822733043 1205 libgtextutils_0.7-1.dsc
+ 9eed751dea812ab247486f040754815bd3d0239557d0f91c0152d1b5b10dbc3e 32478 libgtextutils_0.7.orig.tar.gz
+ fd845e36f4882496b82085e1e20925f5529463acadd2d635513e74cba4483045 15376 libgtextutils_0.7-1.debian.tar.gz
+ fc15a5070555ddc9710177a147ff3cf8865931142714a3870f032b524b7454b1 23496 libgtextutils-dev_0.7-1_amd64.deb
+ 80a19c4448a268873872dbc48d9b7708e35114bf9f466cc9ced1742d24f5dcfc 19036 libgtextutils0_0.7-1_amd64.deb
 Files: 
- 30f4081630d7fc7348ee4e04fa72d72b 1100 science optional libgtextutils_0.6.2-1.dsc
- 6b37627b342a12b6f1522ae7b77f325c 276103 science optional libgtextutils_0.6.2.orig.tar.bz2
- b79514a29a3f4b7ac41e53fbf09716fd 14681 science optional libgtextutils_0.6.2-1.debian.tar.gz
- f57d8268d809f3fcc524ca5ccd256dc1 25920 libdevel optional libgtextutils-dev_0.6.2-1_amd64.deb
- 8f253c99fb4f1d1c776656cfd115a897 21098 libs optional libgtextutils0_0.6.2-1_amd64.deb
+ e34df9b940256d14ce1d0a80b6ad112f 1205 science optional libgtextutils_0.7-1.dsc
+ acb1e606705595c1ffb4013a04cc17f5 32478 science optional libgtextutils_0.7.orig.tar.gz
+ a5d8882dc2e39286cb99b3ce9bb9e6e7 15376 science optional libgtextutils_0.7-1.debian.tar.gz
+ de383d547b008f65c81518c60747078b 23496 libdevel optional libgtextutils-dev_0.7-1_amd64.deb
+ c37d6bbf58cad806fae0e8d431b4599a 19036 libs optional libgtextutils0_0.7-1_amd64.deb
 
 ┌──────────────────────────────────────────────────────────────────────────────┐
 │ Package contents                                                             │
 └──────────────────────────────────────────────────────────────────────────────┘
 
 
-libgtextutils-dev_0.6.2-1_amd64.deb
-───────────────────────────────────
+libgtextutils-dev_0.7-1_amd64.deb
+─────────────────────────────────
 
  new debian package, version 2.0.
- size 25920 bytes: control archive= 1010 bytes.
-     441 bytes,    12 lines      control              
-    1354 bytes,    17 lines      md5sums              
+ size 23496 bytes: control archive=1031 bytes.
+     454 bytes,    13 lines      control              
+    1250 bytes,    17 lines      md5sums              
  Package: libgtextutils-dev
  Source: libgtextutils
- Version: 0.6.2-1
+ Version: 0.7-1
  Architecture: amd64
  Maintainer: Debian Med Packaging Team <debian-med-packaging@lists.alioth.debian.org>
- Installed-Size: 164
- Depends: libgtextutils0 (= 0.6.2-1)
+ Installed-Size: 122
+ Depends: libgtextutils0 (= 0.7-1)
  Section: libdevel
  Priority: optional
+ Multi-Arch: same
  Homepage: http://hannonlab.cshl.edu/fastx_toolkit/
  Description: Gordon Text_utils library (development files)
   Development files for the Gordon Text_utils (gtextutils) library.
 
-drwxr-xr-x root/root         0 2011-07-04 19:02 ./
-drwxr-xr-x root/root         0 2011-07-04 19:02 ./usr/
-drwxr-xr-x root/root         0 2011-07-04 19:02 ./usr/lib/
-drwxr-xr-x root/root         0 2011-07-04 19:02 ./usr/lib/pkgconfig/
--rw-r--r-- root/root       231 2011-07-04 19:02 ./usr/lib/pkgconfig/gtextutils.pc
-drwxr-xr-x root/root         0 2011-07-04 19:02 ./usr/include/
-drwxr-xr-x root/root         0 2011-07-04 19:02 ./usr/include/gtextutils/
-drwxr-xr-x root/root         0 2011-07-04 19:02 ./usr/include/gtextutils/gtextutils/
--rw-r--r-- root/root      6023 2011-07-04 19:02 ./usr/include/gtextutils/gtextutils/container_join.h
--rw-r--r-- root/root     11049 2011-07-04 19:02 ./usr/include/gtextutils/gtextutils/tuple_parser.h
--rw-r--r-- root/root      2094 2011-07-04 19:02 ./usr/include/gtextutils/gtextutils/exit_manip.h
--rw-r--r-- root/root      2990 2011-07-04 19:02 ./usr/include/gtextutils/gtextutils/natsort.h
--rw-r--r-- root/root      1143 2011-07-04 19:02 ./usr/include/gtextutils/gtextutils/pipe_fitter.h
--rw-r--r-- root/root      1852 2011-07-04 19:02 ./usr/include/gtextutils/gtextutils/text_line_reader.h
--rw-r--r-- root/root      1287 2011-07-04 19:02 ./usr/include/gtextutils/gtextutils/strnatcmp.h
--rw-r--r-- root/root      1984 2011-07-04 19:02 ./usr/include/gtextutils/gtextutils/string_tokenize.h
--rw-r--r-- root/root      4068 2011-07-04 19:02 ./usr/include/gtextutils/gtextutils/outbuf3.hpp
--rw-r--r-- root/root      1472 2011-07-04 19:02 ./usr/include/gtextutils/gtextutils/stream_wrapper.h
--rw-r--r-- root/root      4354 2011-07-04 19:02 ./usr/include/gtextutils/gtextutils/inbuf1.hpp
-drwxr-xr-x root/root         0 2011-07-04 19:02 ./usr/share/
-drwxr-xr-x root/root         0 2011-07-04 19:02 ./usr/share/doc/
-drwxr-xr-x root/root         0 2011-07-04 19:02 ./usr/share/doc/libgtextutils-dev/
--rw-r--r-- root/root       429 2009-02-26 07:33 ./usr/share/doc/libgtextutils-dev/NEWS.gz
--rw-r--r-- root/root       314 2009-02-26 07:33 ./usr/share/doc/libgtextutils-dev/THANKS
--rw-r--r-- root/root     38905 2011-07-04 18:58 ./usr/share/doc/libgtextutils-dev/copyright
--rw-r--r-- root/root       261 2011-07-04 19:02 ./usr/share/doc/libgtextutils-dev/README
--rw-r--r-- root/root       356 2011-07-04 18:58 ./usr/share/doc/libgtextutils-dev/changelog.Debian.gz
-lrwxrwxrwx root/root         0 2011-07-04 19:02 ./usr/lib/libgtextutils.so -> libgtextutils-0.6.2.so.0.0.0
+drwxr-xr-x root/root         0 2014-01-08 09:16 ./
+drwxr-xr-x root/root         0 2014-01-08 09:16 ./usr/
+drwxr-xr-x root/root         0 2014-01-08 09:16 ./usr/share/
+drwxr-xr-x root/root         0 2014-01-08 09:16 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-01-08 09:16 ./usr/share/doc/libgtextutils-dev/
+-rw-r--r-- root/root       440 2014-01-06 06:02 ./usr/share/doc/libgtextutils-dev/NEWS.gz
+-rw-r--r-- root/root     38979 2014-01-06 07:40 ./usr/share/doc/libgtextutils-dev/copyright
+-rw-r--r-- root/root       261 2014-01-06 06:02 ./usr/share/doc/libgtextutils-dev/README
+-rw-r--r-- root/root       673 2014-01-08 09:15 ./usr/share/doc/libgtextutils-dev/changelog.Debian.gz
+-rw-r--r-- root/root       314 2014-01-06 06:02 ./usr/share/doc/libgtextutils-dev/THANKS
+drwxr-xr-x root/root         0 2014-01-08 09:16 ./usr/include/
+drwxr-xr-x root/root         0 2014-01-08 09:16 ./usr/include/gtextutils/
+-rw-r--r-- root/root      1154 2014-01-08 09:16 ./usr/include/gtextutils/pipe_fitter.h
+-rw-r--r-- root/root      3929 2014-01-08 09:16 ./usr/include/gtextutils/outbuf3.hpp
+-rw-r--r-- root/root     11049 2014-01-08 09:16 ./usr/include/gtextutils/tuple_parser.h
+-rw-r--r-- root/root      3001 2014-01-08 09:16 ./usr/include/gtextutils/natsort.h
+-rw-r--r-- root/root      1483 2014-01-08 09:16 ./usr/include/gtextutils/stream_wrapper.h
+-rw-r--r-- root/root      4220 2014-01-08 09:16 ./usr/include/gtextutils/inbuf1.hpp
+-rw-r--r-- root/root      1287 2014-01-08 09:16 ./usr/include/gtextutils/strnatcmp.h
+-rw-r--r-- root/root      1995 2014-01-08 09:16 ./usr/include/gtextutils/string_tokenize.h
+-rw-r--r-- root/root      6034 2014-01-08 09:16 ./usr/include/gtextutils/container_join.h
+-rw-r--r-- root/root      1863 2014-01-08 09:16 ./usr/include/gtextutils/text_line_reader.h
+-rw-r--r-- root/root      2105 2014-01-08 09:16 ./usr/include/gtextutils/exit_manip.h
+drwxr-xr-x root/root         0 2014-01-08 09:16 ./usr/lib/
+drwxr-xr-x root/root         0 2014-01-08 09:16 ./usr/lib/x86_64-linux-gnu/
+drwxr-xr-x root/root         0 2014-01-08 09:16 ./usr/lib/x86_64-linux-gnu/pkgconfig/
+-rw-r--r-- root/root       241 2014-01-08 09:16 ./usr/lib/x86_64-linux-gnu/pkgconfig/gtextutils.pc
+lrwxrwxrwx root/root         0 2014-01-08 09:16 ./usr/lib/x86_64-linux-gnu/libgtextutils.so -> libgtextutils-0.7.so.0.0.0
 
 
-libgtextutils0_0.6.2-1_amd64.deb
-────────────────────────────────
+libgtextutils0_0.7-1_amd64.deb
+──────────────────────────────
 
  new debian package, version 2.0.
- size 21098 bytes: control archive= 978 bytes.
-     574 bytes,    14 lines      control              
-     227 bytes,     3 lines      md5sums              
+ size 19036 bytes: control archive=1027 bytes.
+     552 bytes,    14 lines      control              
+     242 bytes,     3 lines      md5sums              
      135 bytes,     7 lines   *  postinst             #!/bin/sh
      132 bytes,     7 lines   *  postrm               #!/bin/sh
-      37 bytes,     1 lines      shlibs               
-     479 bytes,    13 lines      symbols              
+      35 bytes,     1 lines      shlibs               
+     642 bytes,    16 lines      symbols              
  Package: libgtextutils0
  Source: libgtextutils
- Version: 0.6.2-1
+ Version: 0.7-1
  Architecture: amd64
  Maintainer: Debian Med Packaging Team <debian-med-packaging@lists.alioth.debian.org>
- Installed-Size: 104
+ Installed-Size: 90
  Depends: libc6 (>= 2.3), libgcc1 (>= 1:4.1.1), libstdc++6 (>= 4.4.0)
- Breaks: fastx-toolkit (<= 0.0.13-1)
  Section: libs
  Priority: optional
+ Multi-Arch: same
  Homepage: http://hannonlab.cshl.edu/fastx_toolkit/
  Description: Gordon Text_utils library
   The Gordon Text_utils (gtextutils) library is a text utilities library used by
   the FASTX-Toolkit, a suite of programs for biological sequence analysis.
 
-drwxr-xr-x root/root         0 2011-07-04 19:02 ./
-drwxr-xr-x root/root         0 2011-07-04 19:02 ./usr/
-drwxr-xr-x root/root         0 2011-07-04 19:02 ./usr/lib/
--rw-r--r-- root/root     15312 2011-07-04 19:02 ./usr/lib/libgtextutils-0.6.2.so.0.0.0
-drwxr-xr-x root/root         0 2011-07-04 19:02 ./usr/share/
-drwxr-xr-x root/root         0 2011-07-04 19:02 ./usr/share/doc/
-drwxr-xr-x root/root         0 2011-07-04 19:02 ./usr/share/doc/libgtextutils0/
--rw-r--r-- root/root     38905 2011-07-04 18:58 ./usr/share/doc/libgtextutils0/copyright
--rw-r--r-- root/root       356 2011-07-04 18:58 ./usr/share/doc/libgtextutils0/changelog.Debian.gz
-lrwxrwxrwx root/root         0 2011-07-04 19:02 ./usr/lib/libgtextutils-0.6.2.so.0 -> libgtextutils-0.6.2.so.0.0.0
+drwxr-xr-x root/root         0 2014-01-08 09:16 ./
+drwxr-xr-x root/root         0 2014-01-08 09:16 ./usr/
+drwxr-xr-x root/root         0 2014-01-08 09:16 ./usr/share/
+drwxr-xr-x root/root         0 2014-01-08 09:16 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-01-08 09:16 ./usr/share/doc/libgtextutils0/
+-rw-r--r-- root/root     38979 2014-01-06 07:40 ./usr/share/doc/libgtextutils0/copyright
+-rw-r--r-- root/root       673 2014-01-08 09:15 ./usr/share/doc/libgtextutils0/changelog.Debian.gz
+drwxr-xr-x root/root         0 2014-01-08 09:16 ./usr/lib/
+drwxr-xr-x root/root         0 2014-01-08 09:16 ./usr/lib/x86_64-linux-gnu/
+-rw-r--r-- root/root     18632 2014-01-08 09:16 ./usr/lib/x86_64-linux-gnu/libgtextutils-0.7.so.0.0.0
+lrwxrwxrwx root/root         0 2014-01-08 09:16 ./usr/lib/x86_64-linux-gnu/libgtextutils-0.7.so.0 -> libgtextutils-0.7.so.0.0.0
 
 
 ┌──────────────────────────────────────────────────────────────────────────────┐
 │ Post Build                                                                   │
 └──────────────────────────────────────────────────────────────────────────────┘
 
-
-lintian
-───────
-
-P: libgtextutils-dev: no-upstream-changelog
-I: libgtextutils-dev: extended-description-is-probably-too-short
-W: libgtextutils0: package-name-doesnt-match-sonames libgtextutils-0.6.2-0
-P: libgtextutils0: no-upstream-changelog
-I: libgtextutils0: extended-description-is-probably-too-short
-
-I: Lintian run was successful.
 
 ┌──────────────────────────────────────────────────────────────────────────────┐
 │ Cleanup                                                                      │
@@ -722,85 +1139,122 @@ Purging /«BUILDDIR»
 Reading package lists...
 Building dependency tree...
 Reading state information...
-The following packages were automatically installed and are no longer required:
-  libkrb5-3 libatk1.0-0 libk5crypto3 libjaxp1.3-java libgtk2.0-common
-  libxfixes3 junit4 libaccess-bridge-java libjargs-java libxcomposite1
-  liboro-java liblcms1 libxerces2-java libwrap0 libavalon-framework-java
-  libatk1.0-data ttf-dejavu-core libx11-data libxalan2-java libdbus-1-3 unzip
-  libcap2 java-common libnspr4-0d java-wrappers default-jre-headless libcairo2
-  libgnutls26 libcommons-logging-java libtasn1-3 openjdk-6-jre-lib
-  libfreetype6 libthai-data libexpat1 libcommons-math-java libdatrie1
-  openjdk-6-jre-headless fontconfig libavahi-common-data libsam-java
-  libgdk-pixbuf2.0-0 libxcb1 ant libaccess-bridge-java-jni default-jdk libxau6
-  libpixman-1-0 libcups2 default-jre libxinerama1 libkrb5support0 libgif4
-  libcommons-net-java libxft2 fontconfig-config libbsf-java
-  libxml-commons-external-java tzdata-java libice6 libxdmcp6 libgcrypt11
-  libthai0 libkeyutils1 libasound2 libflac8 libxrender1 libconcurrent-java
-  libvorbisenc2 libjama-java ucf libasyncns0 libtiff4 libjasper1
-  libswing-layout-java libjpeg62 libxtst6 libavahi-client3 x11-common libx11-6
-  libfontconfig1 ca-certificates-java openssl libhamcrest-java libpango1.0-0
-  libsm6 libpulse0 libxdamage1 libxcb-render0 libgssapi-krb5-2 libxi6
-  libvorbis0a openjdk-6-jdk libbatik-java libxcursor1 libxcb-shm0
-  libjlibeps-java libxext6 openjdk-6-jre libavahi-common3 liblog4j1.2-java
-  libcommons-io-java libxrandr2 libnss3-1d ca-certificates libsndfile1
-  libsqlite3-0 libgtk2.0-0 libssl1.0.0 libgpg-error0 libogg0
-Use 'apt-get autoremove' to remove them.
 0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
 Reading package lists...
 Building dependency tree...
 Reading state information...
-The following packages were automatically installed and are no longer required:
-  libkrb5-3 libatk1.0-0 libk5crypto3 libjaxp1.3-java libgtk2.0-common
-  libxfixes3 junit4 libaccess-bridge-java libjargs-java libxcomposite1
-  liboro-java liblcms1 libunistring0 libxerces2-java debhelper libwrap0
-  libavalon-framework-java libatk1.0-data ttf-dejavu-core libx11-data
-  libxalan2-java libdbus-1-3 unzip libpipeline1 libcap2 java-common po-debconf
-  libpcre3 libnspr4-0d groff-base gettext-base java-wrappers
-  default-jre-headless libcairo2 libgnutls26 libcommons-logging-java
-  intltool-debian libtasn1-3 openjdk-6-jre-lib libfreetype6 libthai-data
-  shared-mime-info libglib2.0-0 libexpat1 libcommons-math-java libdatrie1
-  openjdk-6-jre-headless fontconfig libavahi-common-data libsam-java
-  libgdk-pixbuf2.0-0 gettext libxcb1 ant libaccess-bridge-java-jni default-jdk
-  libxau6 libpixman-1-0 libcups2 default-jre libxinerama1 libkrb5support0
-  libgif4 libcommons-net-java libxft2 fontconfig-config libbsf-java libcroco3
-  libxml-commons-external-java tzdata-java libice6 libxdmcp6 libgcrypt11
-  libthai0 libxml2 libkeyutils1 file libasound2 libflac8 libxrender1
-  libconcurrent-java libvorbisenc2 libjama-java ucf libasyncns0 libtiff4
-  libjasper1 libswing-layout-java libjpeg62 libxtst6 libavahi-client3
-  x11-common libx11-6 man-db libfontconfig1 ca-certificates-java html2text
-  openssl libhamcrest-java libpango1.0-0 libsm6 libpulse0 libxdamage1
-  libxcb-render0 libgssapi-krb5-2 libxi6 libvorbis0a openjdk-6-jdk
-  libbatik-java libxcursor1 libxcb-shm0 libjlibeps-java libxext6 openjdk-6-jre
-  libavahi-common3 liblog4j1.2-java libcommons-io-java libxrandr2 libnss3-1d
-  ca-certificates libsndfile1 libsqlite3-0 libgtk2.0-0 libmagic1 libssl1.0.0
-  libgpg-error0 libogg0
-Use 'apt-get autoremove' to remove them.
 The following packages will be REMOVED:
-  autotools-dev* sbuild-build-depends-libgtextutils-dummy*
-0 upgraded, 0 newly installed, 2 to remove and 0 not upgraded.
-After this operation, 225 kB disk space will be freed.
-(Reading database ... 16410 files and directories currently installed.)
-Removing sbuild-build-depends-libgtextutils-dummy ...
-Removing autotools-dev ...
-Processing triggers for man-db ...
+  autoconf* automake* autotools-dev* bsdmainutils* debhelper* dh-exec*
+  diffstat* file* gettext* gettext-base* groff-base* hardening-includes*
+  intltool-debian* libapt-pkg-perl* libarchive-zip-perl* libasprintf0c2*
+  libclass-accessor-perl* libclone-perl* libcroco3* libdigest-hmac-perl*
+  libemail-valid-perl* libffi6* libfile-basedir-perl* libglib2.0-0*
+  libio-pty-perl* libio-socket-inet6-perl* libio-socket-ssl-perl*
+  libio-string-perl* libipc-run-perl* liblist-moreutils-perl* libmagic1*
+  libmailtools-perl* libnet-dns-perl* libnet-domain-tld-perl* libnet-ip-perl*
+  libnet-smtp-ssl-perl* libnet-ssleay-perl* libparse-debianchangelog-perl*
+  libpipeline1* libsigsegv2* libsocket6-perl* libssl1.0.0* libsub-name-perl*
+  libtext-levenshtein-perl* libtool* libunistring0* liburi-perl* libxml2*
+  lintian* m4* man-db* netbase* patchutils* po-debconf*
+  sbuild-build-depends-core-dummy* sbuild-build-depends-libgtextutils-dummy*
+  sbuild-build-depends-lintian-dummy* t1utils*
+0 upgraded, 0 newly installed, 58 to remove and 0 not upgraded.
+After this operation, 41.9 MB disk space will be freed.
+(Reading database ... 14075 files and directories currently installed.)
+Removing sbuild-build-depends-libgtextutils-dummy (0.invalid.0) ...
+Removing automake (1:1.14.1-2) ...
+Removing autoconf (2.69-2) ...
+Purging configuration files for autoconf (2.69-2) ...
+Removing libtool (2.4.2-1.6) ...
+Removing autotools-dev (20130810.1) ...
+Removing sbuild-build-depends-lintian-dummy (0.invalid.0) ...
+Removing lintian (2.5.20) ...
+Purging configuration files for lintian (2.5.20) ...
+Removing dh-exec (0.12) ...
+Removing debhelper (9.20131227) ...
+Removing man-db (2.6.5-3) ...
+Purging configuration files for man-db (2.6.5-3) ...
+Removing bsdmainutils (9.0.5) ...
+Purging configuration files for bsdmainutils (9.0.5) ...
+Removing diffstat (1.58-1) ...
+Removing file (1:5.14-2) ...
+Removing po-debconf (1.0.16+nmu2) ...
+Removing intltool-debian (0.35.0+20060710.1) ...
+Removing gettext (0.18.3.1-2) ...
+Removing gettext-base (0.18.3.1-2) ...
+Removing groff-base (1.22.2-3) ...
+Purging configuration files for groff-base (1.22.2-3) ...
+Removing hardening-includes (2.5) ...
+Removing libapt-pkg-perl (0.1.29+b1) ...
+Removing libarchive-zip-perl (1.30-7) ...
+Removing libasprintf0c2:amd64 (0.18.3.1-2) ...
+Removing libparse-debianchangelog-perl (1.2.0-1) ...
+Removing libclass-accessor-perl (0.34-1) ...
+Removing libclone-perl (0.36-1) ...
+Removing libcroco3:amd64 (0.6.8-2) ...
+Purging configuration files for libcroco3:amd64 (0.6.8-2) ...
+Removing libemail-valid-perl (1.192-1) ...
+Removing libnet-dns-perl (0.68-1.2) ...
+Removing libdigest-hmac-perl (1.03+dfsg-1) ...
+Removing libglib2.0-0:amd64 (2.36.4-1) ...
+Purging configuration files for libglib2.0-0:amd64 (2.36.4-1) ...
+Removing libffi6:amd64 (3.0.13-10) ...
+Purging configuration files for libffi6:amd64 (3.0.13-10) ...
+Removing libfile-basedir-perl (0.03-1) ...
+Removing libipc-run-perl (0.92-1) ...
+Removing libio-pty-perl (1:1.08-1+b3) ...
+Removing libio-socket-inet6-perl (2.71-1) ...
+Removing libmailtools-perl (2.12-1) ...
+Removing libnet-smtp-ssl-perl (1.01-3) ...
+Removing libio-socket-ssl-perl (1.962-1) ...
+Removing libio-string-perl (1.08-3) ...
+Removing liblist-moreutils-perl (0.33-1+b2) ...
+Removing libmagic1:amd64 (1:5.14-2) ...
+Purging configuration files for libmagic1:amd64 (1:5.14-2) ...
+Removing libnet-domain-tld-perl (1.70-1) ...
+Removing libnet-ip-perl (1.26-1) ...
+Removing libnet-ssleay-perl (1.55-1+b2) ...
+Removing libpipeline1:amd64 (1.2.6-1) ...
+Purging configuration files for libpipeline1:amd64 (1.2.6-1) ...
+Removing m4 (1.4.17-2) ...
+Removing libsigsegv2:amd64 (2.10-2) ...
+Purging configuration files for libsigsegv2:amd64 (2.10-2) ...
+Removing libsocket6-perl (0.23+ds-0+nmu1) ...
+Removing libssl1.0.0:amd64 (1.0.1f-1) ...
+Purging configuration files for libssl1.0.0:amd64 (1.0.1f-1) ...
+Removing libsub-name-perl (0.05-1+b3) ...
+Removing libtext-levenshtein-perl (0.06~01-2) ...
+Removing libunistring0:amd64 (0.9.3-5) ...
+Purging configuration files for libunistring0:amd64 (0.9.3-5) ...
+Removing liburi-perl (1.60-1) ...
+Removing libxml2:amd64 (2.9.1+dfsg1-3) ...
+Purging configuration files for libxml2:amd64 (2.9.1+dfsg1-3) ...
+Removing netbase (5.2) ...
+Purging configuration files for netbase (5.2) ...
+Removing patchutils (0.3.2-3) ...
+Removing sbuild-build-depends-core-dummy (0.invalid.0) ...
+Removing t1utils (1.37-2) ...
+Processing triggers for libc-bin (2.17-97) ...
 
 ┌──────────────────────────────────────────────────────────────────────────────┐
 │ Summary                                                                      │
 └──────────────────────────────────────────────────────────────────────────────┘
 
-Architecture: amd64
-Build-Space: 6928
-Build-Time: 12
+Build Architecture: amd64
+Build-Space: 7880
+Build-Time: 28
 Distribution: unstable
-Install-Time: 6
-Job: libgtextutils_0.6.2-1.dsc
+Host Architecture: amd64
+Install-Time: 13
+Job: libgtextutils_0.7-1.dsc
 Lintian: pass
+Machine Architecture: amd64
 Package: libgtextutils
-Package-Time: 20
-Source-Version: 0.6.2-1
-Space: 6928
+Package-Time: 47
+Source-Version: 0.7-1
+Space: 7880
 Status: successful
-Version: 0.6.2-1
+Version: 0.7-1
 ────────────────────────────────────────────────────────────────────────────────
-Finished at 20110704-1902
-Build needed 00:00:20, 6928k disc space
+Finished at 20140108-0916
+Build needed 00:00:47, 7880k disc space

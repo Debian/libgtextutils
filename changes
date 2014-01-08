@@ -1,12 +1,9 @@
------BEGIN PGP SIGNED MESSAGE-----
-Hash: SHA256
-
 Format: 1.8
-Date: Mon, 04 Jul 2011 18:55:22 +0900
+Date: Wed, 08 Jan 2014 09:15:22 +0900
 Source: libgtextutils
 Binary: libgtextutils-dev libgtextutils0
-Architecture: source amd64
-Version: 0.6.2-1
+Architecture: source
+Version: 0.7-1
 Distribution: unstable
 Urgency: low
 Maintainer: Debian Med Packaging Team <debian-med-packaging@lists.alioth.debian.org>
@@ -14,48 +11,31 @@ Changed-By: Charles Plessy <plessy@debian.org>
 Description: 
  libgtextutils-dev - Gordon Text_utils library (development files)
  libgtextutils0 - Gordon Text_utils library
-Closes: 625365 626757
 Changes: 
- libgtextutils (0.6.2-1) unstable; urgency=low
+ libgtextutils (0.7-1) unstable; urgency=low
  .
-   * New upstream release (Closes: #625365, #626757), whith new soname 0.6.2.
-   * debian/libgtextutils0.symbols upgraded to new soname.
-   * Breaks: fastx-toolkit =< 0.0.13-1 (debian/control).
-   * Incremented Standards-Version to reflect conformance with Policy 3.9.2
-     (debian/control, no changes needed).
+   * New upstream release.
+ .
+   ff09484 debian/watch: monitor source code repository on GitHub.
+   4d75c55 7ffa331 Build-depend on automake and libtool.
+   1954d04 Run the ‘reconf’ command before dh_auto_configure.
+   642f472 Vebose debhelper.
+   98624c0 Use Debhelper 9.
+   54445b3 Made the packages multi-architecture.
+   f1e771b Updated symbols file.
+   78899ca Normalised debian/copyright with ‘cme fix dpkg-copyright‘.
+   fae902a Normalised debian/control with ‘cme fix dpkg-control’.
+   4050657 Normalised VCS URLs.
+   5bd1b39 Conforms to Policy 3.9.5.
 Checksums-Sha1: 
- 37cb95f90dfd238aa117afa0e8340c1dc06385c4 1986 libgtextutils_0.6.2-1.dsc
- 653ea42a5f76714dee1572b2ff78468b0d0ccb14 276103 libgtextutils_0.6.2.orig.tar.bz2
- 148bc35ed7f14ceda6c2799ec2cbc9c132be159c 14681 libgtextutils_0.6.2-1.debian.tar.gz
- c95489843887b9e523bfad7784ca99906d400109 25920 libgtextutils-dev_0.6.2-1_amd64.deb
- 2b7a69449cbfc56460ed082359a676652d671577 21098 libgtextutils0_0.6.2-1_amd64.deb
+ 6540efc76d299fae44ae5b7b17d01a36311eba9a 1205 libgtextutils_0.7-1.dsc
+ f17a0dffa9020123f10d1e3cea38f503dd8125da 32478 libgtextutils_0.7.orig.tar.gz
+ 3eb553ff8bb7adcd926e6b0e297411976dbfc4ac 15354 libgtextutils_0.7-1.debian.tar.gz
 Checksums-Sha256: 
- 5d45fb0c8842bd3c4f2b9234197dc12e895d8c6d72aad4c5c32fa8433210693a 1986 libgtextutils_0.6.2-1.dsc
- 14af5612ca70022ca4371ff50aff0b3f1fe287bc4536a728a9c48ba7160f9861 276103 libgtextutils_0.6.2.orig.tar.bz2
- 847bbc42c7a1b6d07243ce5429a3259e985036d54d721ac87bc1ba9d4ce52254 14681 libgtextutils_0.6.2-1.debian.tar.gz
- 87e1ae1cf7a6e706e0870700770b012b239326ed7116aea9cf6b026cd294c006 25920 libgtextutils-dev_0.6.2-1_amd64.deb
- b2895f5cc70d9bf609b8110e556f6a3accb52c017346cc8cf7e2493ba7c3d4ee 21098 libgtextutils0_0.6.2-1_amd64.deb
+ db6226fe4877167dcdfa53d2bdccd5f53d38960274b7d2f9b8b1646011bd87a7 1205 libgtextutils_0.7-1.dsc
+ 9eed751dea812ab247486f040754815bd3d0239557d0f91c0152d1b5b10dbc3e 32478 libgtextutils_0.7.orig.tar.gz
+ 8fb4c8f60141b97ccd7f678d3034938c3afbe9bf3fd5d303d21771398d6c6f7b 15354 libgtextutils_0.7-1.debian.tar.gz
 Files: 
- 513864f93b87a07ff64c1c0f94a31d7c 1986 science optional libgtextutils_0.6.2-1.dsc
- 6b37627b342a12b6f1522ae7b77f325c 276103 science optional libgtextutils_0.6.2.orig.tar.bz2
- b79514a29a3f4b7ac41e53fbf09716fd 14681 science optional libgtextutils_0.6.2-1.debian.tar.gz
- f57d8268d809f3fcc524ca5ccd256dc1 25920 libdevel optional libgtextutils-dev_0.6.2-1_amd64.deb
- 8f253c99fb4f1d1c776656cfd115a897 21098 libs optional libgtextutils0_0.6.2-1_amd64.deb
-
------BEGIN PGP SIGNATURE-----
-Version: GnuPG v1.4.10 (GNU/Linux)
-
-iQIcBAEBCAAGBQJOEZL4AAoJEMW9bI8ildUCEp4P/3StV4A3Jbbw/2iQnp0+WwH7
-wR25D52wKqIK4MiPalHOEQwX1Ia1OMxYb8mJnLJa/eZ+7TQUHJ0DplqXD52b4LoH
-V6GD2yMAEtK5PgDnbO1BQ2/P+Ag177HdBn2gck+IWpift+h3pOGTQUt1/Bma4Wrd
-kCawJPkWQa/oy9v6lQWmuO+tHH/6pY49cqqK3Bm7a6spZBbvOmSDxWWJMoGzDKoM
-tLxnf6tFCiwiXi609QXAfK7BRAu7ncjDZyTdF/MW1KEytoRk/ClKi4FI+OtMCWup
-5P9zWAD7+eiEmn0+R9T1XwyiejBdVd8x12pQ1BhMypZEdIIGJ83q7JdhTYxHX3/k
-8M7yPUz4RFpCQmu/LDv/dnSd+aorALcpn2+OMIMyUHxlYO5b7xNTHesWy0UKo/OT
-M1JKOBh3v63r8VVYeeUsOfN/L+KAXbeT0omg/cv8k5N6yDFdkqGCsB8m32bWh83w
-nmB2fJmJmhVYOZXJX6K+4dG1ff4mh9n2NIskKNu5pVKI6JWOwLnmGN6Bu17Gzlee
-Z1JEbXKOiMoVjVU+E+ZNArkGRgS5Ipx8teOYBVLt0eOyGJ1NiS9hHk5m693ybB3Z
-WxP7ZwwcYOOwqr7fHlKgYVYPqxqMDESvXl/W9i9cZLRLGpOg1pGI7CJK0dPcIsoV
-GSLBeh7UDr5XOLDiwNPD
-=oQNs
------END PGP SIGNATURE-----
+ 13899f8de0233e43d365d447569d8953 1205 science optional libgtextutils_0.7-1.dsc
+ acb1e606705595c1ffb4013a04cc17f5 32478 science optional libgtextutils_0.7.orig.tar.gz
+ 4888e8a4ac560189b1d1829184f0c9a0 15354 science optional libgtextutils_0.7-1.debian.tar.gz
