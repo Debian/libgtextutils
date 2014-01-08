@@ -1,74 +1,74 @@
-From buildd@fano.debian.org Wed Jan 08 00:58:46 2014
-Return-path: <buildd@fano.debian.org>
-Received: from muffat.debian.org ([2607:f8f0:610:4000:6564:a62:ce0c:1392])
+From buildd@hoiby.debian.org Wed Jan 08 02:00:04 2014
+Return-path: <buildd@hoiby.debian.org>
+Received: from mailly.debian.org ([2001:41b8:202:deb:6564:a62:52c3:4b72])
  from C=NA, ST=NA, L=Ankh Morpork, O=Debian SMTP, OU=Debian SMTP CA,
- CN=muffat.debian.org, EMAIL=hostmaster@muffat.debian.org (verified)
+ CN=mailly.debian.org, EMAIL=hostmaster@mailly.debian.org (verified)
  by wuiet.debian.org with esmtps (TLS1.2:DHE_RSA_AES_128_CBC_SHA1:128)
- (Exim 4.80) (envelope-from <buildd@fano.debian.org>)
- id 1W0hTq-0003JK-7J
- for logs@buildd.debian.org; Wed, 08 Jan 2014 00:58:46 +0000
-Received: from fano.debian.org ([2607:f8f0:610:4000:6564:a62:19:110])
+ (Exim 4.80) (envelope-from <buildd@hoiby.debian.org>)
+ id 1W0iR9-0008OV-V3
+ for logs@buildd.debian.org; Wed, 08 Jan 2014 02:00:04 +0000
+Received: from [217.140.96.71] (helo=hoiby.debian.org)
  from C=NA, ST=NA, L=Ankh Morpork, O=Debian SMTP, OU=Debian SMTP CA,
- CN=fano.debian.org, EMAIL=hostmaster@fano.debian.org (verified)
- by muffat.debian.org with esmtps (TLS1.2:DHE_RSA_AES_128_CBC_SHA1:128)
- (Exim 4.80) (envelope-from <buildd@fano.debian.org>)
- id 1W0hTo-0004oJ-Fo; Wed, 08 Jan 2014 00:58:44 +0000
-Received: from buildd by fano.debian.org with local (Exim 4.80)
- (envelope-from <buildd@fano.debian.org>)
- id 1W0hTn-000Os8-Dm; Wed, 08 Jan 2014 00:58:43 +0000
+ CN=hoiby.debian.org, EMAIL=hostmaster@hoiby.debian.org (verified)
+ by mailly.debian.org with esmtps (TLS1.2:DHE_RSA_AES_128_CBC_SHA1:128)
+ (Exim 4.80) (envelope-from <buildd@hoiby.debian.org>)
+ id 1W0iR9-0001HC-AR
+ for logs@buildd.debian.org; Wed, 08 Jan 2014 02:00:03 +0000
+Received: from buildd by hoiby.debian.org with local (Exim 4.80)
+ (envelope-from <buildd@hoiby.debian.org>)
+ id 1W0iR6-0004Xl-8r; Wed, 08 Jan 2014 02:00:00 +0000
 Content-Transfer-Encoding: binary
 MIME-Version: 1.0
 X-Mailer: MIME::Lite 3.028 (F2.82; B3.13; Q3.13)
-Date: Wed, 8 Jan 2014 00:58:43 +0000
-From: buildd on fano <buildd@fano.debian.org>
-To: christoph@debian.org,logs@buildd.debian.org
-Subject: Log for successful build of libgtextutils_0.7-1 on kfreebsd-amd64
- (dist=sid)
-Key-Id: 1B08409D
-Message-Id: <E1W0hTn-000Os8-Dm@fano.debian.org>
+Date: Wed, 8 Jan 2014 01:59:59 +0000
+From: buildd on hoiby <buildd@hoiby.debian.org>
+To: buildd-porters@hoiby.debian.org,logs@buildd.debian.org
+Subject: Log for successful build of libgtextutils_0.7-1 on armhf (dist=sid)
+Key-Id: 0019C62E
+Message-Id: <E1W0iR6-0004Xl-8r@hoiby.debian.org>
 Delivered-To: logs@buildd.debian.org
 
-sbuild (Debian sbuild) 0.64.0 (18 May 2013) on fano.debian.org
+sbuild (Debian sbuild) 0.64.0 (18 May 2013) on hoiby.debian.org
 
 ╔══════════════════════════════════════════════════════════════════════════════╗
-║ libgtextutils 0.7-1 (kfreebsd-amd64)                       08 Jan 2014 00:55 ║
+║ libgtextutils 0.7-1 (armhf)                                08 Jan 2014 01:49 ║
 ╚══════════════════════════════════════════════════════════════════════════════╝
 
 Package: libgtextutils
 Version: 0.7-1
 Source Version: 0.7-1
 Distribution: sid
-Machine Architecture: kfreebsd-amd64
-Host Architecture: kfreebsd-amd64
-Build Architecture: kfreebsd-amd64
+Machine Architecture: armhf
+Host Architecture: armhf
+Build Architecture: armhf
 
-I: NOTICE: Log filtering will replace 'build/libgtextutils-F5xrBU/libgtextutils-0.7' with '«PKGBUILDDIR»'
-I: NOTICE: Log filtering will replace 'build/libgtextutils-F5xrBU' with '«BUILDDIR»'
-I: NOTICE: Log filtering will replace 'var/lib/schroot/mount/sid-ka-sbuild-1389142557-90392' with '«CHROOT»'
+I: NOTICE: Log filtering will replace 'build/libgtextutils-V7Kyk8/libgtextutils-0.7' with '«PKGBUILDDIR»'
+I: NOTICE: Log filtering will replace 'build/libgtextutils-V7Kyk8' with '«BUILDDIR»'
+I: NOTICE: Log filtering will replace 'var/lib/schroot/mount/sid-armhf-sbuild-50730de2-f6df-454c-9fca-70443e4e7725' with '«CHROOT»'
 
 ┌──────────────────────────────────────────────────────────────────────────────┐
 │ Update chroot                                                                │
 └──────────────────────────────────────────────────────────────────────────────┘
 
-Get:1 http://mirror-ubc.debian.org unstable InRelease [206 kB]
-Get:2 http://mirror-ubc.debian.org unstable/main Sources [9015 kB]
-Get:3 http://incoming.debian.org unstable InRelease [206 kB]
-Get:4 http://incoming.debian.org buildd-unstable InRelease [103 kB]
-Get:5 http://mirror-ubc.debian.org unstable/contrib Sources [68.4 kB]
-Get:6 http://mirror-ubc.debian.org unstable/non-free Sources [127 kB]
-Get:7 http://mirror-ubc.debian.org unstable/main kfreebsd-amd64 Packages [8096 kB]
-Get:8 http://incoming.debian.org unstable/main Sources [9015 kB]
-Get:9 http://mirror-ubc.debian.org unstable/contrib kfreebsd-amd64 Packages [48.5 kB]
-Get:10 http://incoming.debian.org unstable/contrib Sources [68.4 kB]
-Get:11 http://incoming.debian.org unstable/non-free Sources [127 kB]
-Get:12 http://incoming.debian.org unstable/main kfreebsd-amd64 Packages [8096 kB]
-Get:13 http://incoming.debian.org unstable/contrib kfreebsd-amd64 Packages [48.5 kB]
-Get:14 http://incoming.debian.org buildd-unstable/main Sources [49.5 kB]
-Get:15 http://incoming.debian.org buildd-unstable/contrib Sources [20 B]
-Get:16 http://incoming.debian.org buildd-unstable/non-free Sources [1078 B]
-Get:17 http://incoming.debian.org buildd-unstable/main kfreebsd-amd64 Packages [40.7 kB]
-Get:18 http://incoming.debian.org buildd-unstable/contrib kfreebsd-amd64 Packages [20 B]
-Fetched 35.3 MB in 7s (4564 kB/s)
+Get:1 http://incoming.debian.org unstable InRelease [206 kB]
+Get:2 http://ftp.uk.debian.org unstable InRelease [206 kB]
+Get:3 http://incoming.debian.org buildd-unstable InRelease [103 kB]
+Get:4 http://ftp.uk.debian.org unstable/main Sources [7193 kB]
+Get:5 http://incoming.debian.org unstable/main Sources [7193 kB]
+Get:6 http://ftp.uk.debian.org unstable/contrib Sources [58.2 kB]
+Get:7 http://ftp.uk.debian.org unstable/non-free Sources [106 kB]
+Get:8 http://ftp.uk.debian.org unstable/main armhf Packages [6535 kB]
+Get:9 http://incoming.debian.org unstable/contrib Sources [58.2 kB]
+Get:10 http://incoming.debian.org unstable/non-free Sources [106 kB]
+Get:11 http://incoming.debian.org unstable/main armhf Packages [6535 kB]
+Get:12 http://ftp.uk.debian.org unstable/contrib armhf Packages [41.6 kB]
+Get:13 http://incoming.debian.org unstable/contrib armhf Packages [41.6 kB]
+Get:14 http://incoming.debian.org buildd-unstable/main Sources [41.0 kB]
+Get:15 http://incoming.debian.org buildd-unstable/contrib Sources [32 B]
+Get:16 http://incoming.debian.org buildd-unstable/non-free Sources [1140 B]
+Get:17 http://incoming.debian.org buildd-unstable/main armhf Packages [41.3 kB]
+Get:18 http://incoming.debian.org buildd-unstable/contrib armhf Packages [32 B]
+Fetched 28.5 MB in 1min 46s (266 kB/s)
 Reading package lists...
 
 ┌──────────────────────────────────────────────────────────────────────────────┐
@@ -93,7 +93,7 @@ Need to get 49.9 kB of source archives.
 Get:1 http://incoming.debian.org/debian-buildd/ buildd-unstable/main libgtextutils 0.7-1 (dsc) [2091 B]
 Get:2 http://incoming.debian.org/debian-buildd/ buildd-unstable/main libgtextutils 0.7-1 (tar) [32.5 kB]
 Get:3 http://incoming.debian.org/debian-buildd/ buildd-unstable/main libgtextutils 0.7-1 (diff) [15.4 kB]
-Fetched 49.9 kB in 0s (106 kB/s)
+Fetched 49.9 kB in 0s (77.5 kB/s)
 Download complete and in download only mode
 
 Check arch
@@ -101,7 +101,7 @@ Check arch
 
 Merged Build-Depends: build-essential, fakeroot
 Filtered Build-Depends: build-essential, fakeroot
-dpkg-deb: building package `sbuild-build-depends-core-dummy' in `/«BUILDDIR»/resolver-lGjFJD/apt_archive/sbuild-build-depends-core-dummy.deb'.
+dpkg-deb: building package `sbuild-build-depends-core-dummy' in `/«BUILDDIR»/resolver-kcKQM7/apt_archive/sbuild-build-depends-core-dummy.deb'.
 OK
 Reading package lists...
 
@@ -116,17 +116,17 @@ Reading state information...
 The following NEW packages will be installed:
   sbuild-build-depends-core-dummy
 debconf: delaying package configuration, since apt-utils is not installed
-0 upgraded, 1 newly installed, 0 to remove and 49 not upgraded.
-Need to get 0 B/772 B of archives.
+0 upgraded, 1 newly installed, 0 to remove and 28 not upgraded.
+Need to get 0 B/764 B of archives.
 After this operation, 0 B of additional disk space will be used.
 Selecting previously unselected package sbuild-build-depends-core-dummy.
-(Reading database ... 11612 files and directories currently installed.)
+(Reading database ... 11008 files and directories currently installed.)
 Preparing to unpack .../sbuild-build-depends-core-dummy.deb ...
 Unpacking sbuild-build-depends-core-dummy (0.invalid.0) ...
 Setting up sbuild-build-depends-core-dummy (0.invalid.0) ...
-Merged Build-Depends: base-files, base-passwd, bash, bsdutils, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, freebsd-utils, grep, gzip, hostname, libc-bin, login, ncurses-base, ncurses-bin, perl-base, sed, sysvinit, sysvinit-utils, tar, util-linux, libc6-dev | libc-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), automake, autotools-dev, debhelper (>= 9), dh-exec, libtool
-Filtered Build-Depends: base-files, base-passwd, bash, bsdutils, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, freebsd-utils, grep, gzip, hostname, libc-bin, login, ncurses-base, ncurses-bin, perl-base, sed, sysvinit, sysvinit-utils, tar, util-linux, libc6-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), automake, autotools-dev, debhelper (>= 9), dh-exec, libtool
-dpkg-deb: building package `sbuild-build-depends-libgtextutils-dummy' in `/«BUILDDIR»/resolver-tFC72h/apt_archive/sbuild-build-depends-libgtextutils-dummy.deb'.
+Merged Build-Depends: base-files, base-passwd, bash, bsdutils, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, libc-bin, login, mount, ncurses-base, ncurses-bin, perl-base, sed, sysvinit, sysvinit-utils, tar, util-linux, libc6-dev | libc-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), automake, autotools-dev, debhelper (>= 9), dh-exec, libtool
+Filtered Build-Depends: base-files, base-passwd, bash, bsdutils, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, libc-bin, login, mount, ncurses-base, ncurses-bin, perl-base, sed, sysvinit, sysvinit-utils, tar, util-linux, libc6-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), automake, autotools-dev, debhelper (>= 9), dh-exec, libtool
+dpkg-deb: building package `sbuild-build-depends-libgtextutils-dummy' in `/«BUILDDIR»/resolver-2_uC9W/apt_archive/sbuild-build-depends-libgtextutils-dummy.deb'.
 OK
 Reading package lists...
 
@@ -155,80 +155,80 @@ The following NEW packages will be installed:
   gettext-base groff-base intltool-debian libasprintf0c2 libcroco3 libffi6
   libglib2.0-0 libmagic1 libpipeline1 libsigsegv2 libtool libunistring0
   libxml2 m4 man-db po-debconf sbuild-build-depends-libgtextutils-dummy
-0 upgraded, 25 newly installed, 0 to remove and 49 not upgraded.
-Need to get 10.0 MB/10.0 MB of archives.
-After this operation, 29.5 MB of additional disk space will be used.
-Get:1 http://mirror-ubc.debian.org/debian/ unstable/main libpipeline1 kfreebsd-amd64 1.2.6-1 [25.2 kB]
-Get:2 http://mirror-ubc.debian.org/debian/ unstable/main groff-base kfreebsd-amd64 1.22.2-3 [743 kB]
-Get:3 http://mirror-ubc.debian.org/debian/ unstable/main bsdmainutils kfreebsd-amd64 9.0.5 [211 kB]
-Get:4 http://mirror-ubc.debian.org/debian/ unstable/main man-db kfreebsd-amd64 2.6.5-3 [973 kB]
-Get:5 http://mirror-ubc.debian.org/debian/ unstable/main libasprintf0c2 kfreebsd-amd64 0.18.3.1-2 [29.1 kB]
-Get:6 http://mirror-ubc.debian.org/debian/ unstable/main libmagic1 kfreebsd-amd64 1:5.14-2 [216 kB]
-Get:7 http://mirror-ubc.debian.org/debian/ unstable/main libxml2 kfreebsd-amd64 2.9.1+dfsg1-3 [922 kB]
-Get:8 http://mirror-ubc.debian.org/debian/ unstable/main libffi6 kfreebsd-amd64 3.0.13-10 [18.8 kB]
-Get:9 http://mirror-ubc.debian.org/debian/ unstable/main libglib2.0-0 kfreebsd-amd64 2.36.4-1 [2049 kB]
-Get:10 http://mirror-ubc.debian.org/debian/ unstable/main libcroco3 kfreebsd-amd64 0.6.8-2 [134 kB]
-Get:11 http://mirror-ubc.debian.org/debian/ unstable/main libsigsegv2 kfreebsd-amd64 2.10-2 [28.5 kB]
-Get:12 http://mirror-ubc.debian.org/debian/ unstable/main libunistring0 kfreebsd-amd64 0.9.3-5 [434 kB]
-Get:13 http://mirror-ubc.debian.org/debian/ unstable/main file kfreebsd-amd64 1:5.14-2 [54.2 kB]
-Get:14 http://mirror-ubc.debian.org/debian/ unstable/main gettext-base kfreebsd-amd64 0.18.3.1-2 [115 kB]
-Get:15 http://mirror-ubc.debian.org/debian/ unstable/main m4 kfreebsd-amd64 1.4.17-2 [254 kB]
-Get:16 http://mirror-ubc.debian.org/debian/ unstable/main autoconf all 2.69-2 [339 kB]
-Get:17 http://mirror-ubc.debian.org/debian/ unstable/main autotools-dev all 20130810.1 [69.6 kB]
-Get:18 http://mirror-ubc.debian.org/debian/ unstable/main automake all 1:1.14.1-2 [724 kB]
-Get:19 http://mirror-ubc.debian.org/debian/ unstable/main gettext kfreebsd-amd64 0.18.3.1-2 [1197 kB]
-Get:20 http://mirror-ubc.debian.org/debian/ unstable/main intltool-debian all 0.35.0+20060710.1 [30.8 kB]
-Get:21 http://mirror-ubc.debian.org/debian/ unstable/main po-debconf all 1.0.16+nmu2 [224 kB]
-Get:22 http://mirror-ubc.debian.org/debian/ unstable/main debhelper all 9.20131227 [687 kB]
-Get:23 http://mirror-ubc.debian.org/debian/ unstable/main libtool kfreebsd-amd64 2.4.2-1.6 [505 kB]
-Get:24 http://mirror-ubc.debian.org/debian/ unstable/main dh-exec kfreebsd-amd64 0.12 [21.9 kB]
+0 upgraded, 25 newly installed, 0 to remove and 28 not upgraded.
+Need to get 9438 kB/9439 kB of archives.
+After this operation, 28.2 MB of additional disk space will be used.
+Get:1 http://ftp.uk.debian.org/debian/ unstable/main libpipeline1 armhf 1.2.6-1 [20.5 kB]
+Get:2 http://ftp.uk.debian.org/debian/ unstable/main groff-base armhf 1.22.2-3 [677 kB]
+Get:3 http://ftp.uk.debian.org/debian/ unstable/main bsdmainutils armhf 9.0.5 [204 kB]
+Get:4 http://ftp.uk.debian.org/debian/ unstable/main man-db armhf 2.6.5-3 [949 kB]
+Get:5 http://ftp.uk.debian.org/debian/ unstable/main libasprintf0c2 armhf 0.18.3.1-2 [28.9 kB]
+Get:6 http://ftp.uk.debian.org/debian/ unstable/main libmagic1 armhf 1:5.14-2 [214 kB]
+Get:7 http://ftp.uk.debian.org/debian/ unstable/main libxml2 armhf 2.9.1+dfsg1-3 [703 kB]
+Get:8 http://ftp.uk.debian.org/debian/ unstable/main libffi6 armhf 3.0.13-10 [17.2 kB]
+Get:9 http://ftp.uk.debian.org/debian/ unstable/main libglib2.0-0 armhf 2.36.4-1 [1920 kB]
+Get:10 http://ftp.uk.debian.org/debian/ unstable/main libcroco3 armhf 0.6.8-2 [121 kB]
+Get:11 http://ftp.uk.debian.org/debian/ unstable/main libsigsegv2 armhf 2.10-2 [28.8 kB]
+Get:12 http://ftp.uk.debian.org/debian/ unstable/main libunistring0 armhf 0.9.3-5+b1 [404 kB]
+Get:13 http://ftp.uk.debian.org/debian/ unstable/main file armhf 1:5.14-2 [53.9 kB]
+Get:14 http://ftp.uk.debian.org/debian/ unstable/main gettext-base armhf 0.18.3.1-2 [112 kB]
+Get:15 http://ftp.uk.debian.org/debian/ unstable/main m4 armhf 1.4.17-2 [239 kB]
+Get:16 http://ftp.uk.debian.org/debian/ unstable/main autoconf all 2.69-2 [339 kB]
+Get:17 http://ftp.uk.debian.org/debian/ unstable/main autotools-dev all 20130810.1 [69.6 kB]
+Get:18 http://ftp.uk.debian.org/debian/ unstable/main automake all 1:1.14.1-2 [724 kB]
+Get:19 http://ftp.uk.debian.org/debian/ unstable/main gettext armhf 0.18.3.1-2 [1146 kB]
+Get:20 http://ftp.uk.debian.org/debian/ unstable/main intltool-debian all 0.35.0+20060710.1 [30.8 kB]
+Get:21 http://ftp.uk.debian.org/debian/ unstable/main po-debconf all 1.0.16+nmu2 [224 kB]
+Get:22 http://ftp.uk.debian.org/debian/ unstable/main debhelper all 9.20131227 [687 kB]
+Get:23 http://ftp.uk.debian.org/debian/ unstable/main libtool armhf 2.4.2-1.6 [505 kB]
+Get:24 http://ftp.uk.debian.org/debian/ unstable/main dh-exec armhf 0.12 [20.8 kB]
 debconf: delaying package configuration, since apt-utils is not installed
-Fetched 10.0 MB in 1s (6262 kB/s)
-Selecting previously unselected package libpipeline1:kfreebsd-amd64.
-(Reading database ... 11612 files and directories currently installed.)
-Preparing to unpack .../libpipeline1_1.2.6-1_kfreebsd-amd64.deb ...
-Unpacking libpipeline1:kfreebsd-amd64 (1.2.6-1) ...
+Fetched 9438 kB in 5s (1877 kB/s)
+Selecting previously unselected package libpipeline1:armhf.
+(Reading database ... 11008 files and directories currently installed.)
+Preparing to unpack .../libpipeline1_1.2.6-1_armhf.deb ...
+Unpacking libpipeline1:armhf (1.2.6-1) ...
 Selecting previously unselected package groff-base.
-Preparing to unpack .../groff-base_1.22.2-3_kfreebsd-amd64.deb ...
+Preparing to unpack .../groff-base_1.22.2-3_armhf.deb ...
 Unpacking groff-base (1.22.2-3) ...
 Selecting previously unselected package bsdmainutils.
-Preparing to unpack .../bsdmainutils_9.0.5_kfreebsd-amd64.deb ...
+Preparing to unpack .../bsdmainutils_9.0.5_armhf.deb ...
 Unpacking bsdmainutils (9.0.5) ...
 Selecting previously unselected package man-db.
-Preparing to unpack .../man-db_2.6.5-3_kfreebsd-amd64.deb ...
+Preparing to unpack .../man-db_2.6.5-3_armhf.deb ...
 Unpacking man-db (2.6.5-3) ...
-Selecting previously unselected package libasprintf0c2:kfreebsd-amd64.
-Preparing to unpack .../libasprintf0c2_0.18.3.1-2_kfreebsd-amd64.deb ...
-Unpacking libasprintf0c2:kfreebsd-amd64 (0.18.3.1-2) ...
-Selecting previously unselected package libmagic1:kfreebsd-amd64.
-Preparing to unpack .../libmagic1_1%3a5.14-2_kfreebsd-amd64.deb ...
-Unpacking libmagic1:kfreebsd-amd64 (1:5.14-2) ...
-Selecting previously unselected package libxml2:kfreebsd-amd64.
-Preparing to unpack .../libxml2_2.9.1+dfsg1-3_kfreebsd-amd64.deb ...
-Unpacking libxml2:kfreebsd-amd64 (2.9.1+dfsg1-3) ...
-Selecting previously unselected package libffi6:kfreebsd-amd64.
-Preparing to unpack .../libffi6_3.0.13-10_kfreebsd-amd64.deb ...
-Unpacking libffi6:kfreebsd-amd64 (3.0.13-10) ...
-Selecting previously unselected package libglib2.0-0:kfreebsd-amd64.
-Preparing to unpack .../libglib2.0-0_2.36.4-1_kfreebsd-amd64.deb ...
-Unpacking libglib2.0-0:kfreebsd-amd64 (2.36.4-1) ...
-Selecting previously unselected package libcroco3:kfreebsd-amd64.
-Preparing to unpack .../libcroco3_0.6.8-2_kfreebsd-amd64.deb ...
-Unpacking libcroco3:kfreebsd-amd64 (0.6.8-2) ...
-Selecting previously unselected package libsigsegv2:kfreebsd-amd64.
-Preparing to unpack .../libsigsegv2_2.10-2_kfreebsd-amd64.deb ...
-Unpacking libsigsegv2:kfreebsd-amd64 (2.10-2) ...
-Selecting previously unselected package libunistring0:kfreebsd-amd64.
-Preparing to unpack .../libunistring0_0.9.3-5_kfreebsd-amd64.deb ...
-Unpacking libunistring0:kfreebsd-amd64 (0.9.3-5) ...
+Selecting previously unselected package libasprintf0c2:armhf.
+Preparing to unpack .../libasprintf0c2_0.18.3.1-2_armhf.deb ...
+Unpacking libasprintf0c2:armhf (0.18.3.1-2) ...
+Selecting previously unselected package libmagic1:armhf.
+Preparing to unpack .../libmagic1_1%3a5.14-2_armhf.deb ...
+Unpacking libmagic1:armhf (1:5.14-2) ...
+Selecting previously unselected package libxml2:armhf.
+Preparing to unpack .../libxml2_2.9.1+dfsg1-3_armhf.deb ...
+Unpacking libxml2:armhf (2.9.1+dfsg1-3) ...
+Selecting previously unselected package libffi6:armhf.
+Preparing to unpack .../libffi6_3.0.13-10_armhf.deb ...
+Unpacking libffi6:armhf (3.0.13-10) ...
+Selecting previously unselected package libglib2.0-0:armhf.
+Preparing to unpack .../libglib2.0-0_2.36.4-1_armhf.deb ...
+Unpacking libglib2.0-0:armhf (2.36.4-1) ...
+Selecting previously unselected package libcroco3:armhf.
+Preparing to unpack .../libcroco3_0.6.8-2_armhf.deb ...
+Unpacking libcroco3:armhf (0.6.8-2) ...
+Selecting previously unselected package libsigsegv2:armhf.
+Preparing to unpack .../libsigsegv2_2.10-2_armhf.deb ...
+Unpacking libsigsegv2:armhf (2.10-2) ...
+Selecting previously unselected package libunistring0:armhf.
+Preparing to unpack .../libunistring0_0.9.3-5+b1_armhf.deb ...
+Unpacking libunistring0:armhf (0.9.3-5+b1) ...
 Selecting previously unselected package file.
-Preparing to unpack .../file_1%3a5.14-2_kfreebsd-amd64.deb ...
+Preparing to unpack .../file_1%3a5.14-2_armhf.deb ...
 Unpacking file (1:5.14-2) ...
 Selecting previously unselected package gettext-base.
-Preparing to unpack .../gettext-base_0.18.3.1-2_kfreebsd-amd64.deb ...
+Preparing to unpack .../gettext-base_0.18.3.1-2_armhf.deb ...
 Unpacking gettext-base (0.18.3.1-2) ...
 Selecting previously unselected package m4.
-Preparing to unpack .../m4_1.4.17-2_kfreebsd-amd64.deb ...
+Preparing to unpack .../archives/m4_1.4.17-2_armhf.deb ...
 Unpacking m4 (1.4.17-2) ...
 Selecting previously unselected package autoconf.
 Preparing to unpack .../autoconf_2.69-2_all.deb ...
@@ -240,7 +240,7 @@ Selecting previously unselected package automake.
 Preparing to unpack .../automake_1%3a1.14.1-2_all.deb ...
 Unpacking automake (1:1.14.1-2) ...
 Selecting previously unselected package gettext.
-Preparing to unpack .../gettext_0.18.3.1-2_kfreebsd-amd64.deb ...
+Preparing to unpack .../gettext_0.18.3.1-2_armhf.deb ...
 Unpacking gettext (0.18.3.1-2) ...
 Selecting previously unselected package intltool-debian.
 Preparing to unpack .../intltool-debian_0.35.0+20060710.1_all.deb ...
@@ -252,30 +252,30 @@ Selecting previously unselected package debhelper.
 Preparing to unpack .../debhelper_9.20131227_all.deb ...
 Unpacking debhelper (9.20131227) ...
 Selecting previously unselected package libtool.
-Preparing to unpack .../libtool_2.4.2-1.6_kfreebsd-amd64.deb ...
+Preparing to unpack .../libtool_2.4.2-1.6_armhf.deb ...
 Unpacking libtool (2.4.2-1.6) ...
 Selecting previously unselected package dh-exec.
-Preparing to unpack .../dh-exec_0.12_kfreebsd-amd64.deb ...
+Preparing to unpack .../dh-exec_0.12_armhf.deb ...
 Unpacking dh-exec (0.12) ...
 Selecting previously unselected package sbuild-build-depends-libgtextutils-dummy.
 Preparing to unpack .../sbuild-build-depends-libgtextutils-dummy.deb ...
 Unpacking sbuild-build-depends-libgtextutils-dummy (0.invalid.0) ...
-Setting up libpipeline1:kfreebsd-amd64 (1.2.6-1) ...
+Setting up libpipeline1:armhf (1.2.6-1) ...
 Setting up groff-base (1.22.2-3) ...
 Setting up bsdmainutils (9.0.5) ...
 update-alternatives: using /usr/bin/bsd-write to provide /usr/bin/write (write) in auto mode
 update-alternatives: using /usr/bin/bsd-from to provide /usr/bin/from (from) in auto mode
 Setting up man-db (2.6.5-3) ...
 Not building database; man-db/auto-update is not 'true'.
-Setting up libasprintf0c2:kfreebsd-amd64 (0.18.3.1-2) ...
-Setting up libmagic1:kfreebsd-amd64 (1:5.14-2) ...
-Setting up libxml2:kfreebsd-amd64 (2.9.1+dfsg1-3) ...
-Setting up libffi6:kfreebsd-amd64 (3.0.13-10) ...
-Setting up libglib2.0-0:kfreebsd-amd64 (2.36.4-1) ...
+Setting up libasprintf0c2:armhf (0.18.3.1-2) ...
+Setting up libmagic1:armhf (1:5.14-2) ...
+Setting up libxml2:armhf (2.9.1+dfsg1-3) ...
+Setting up libffi6:armhf (3.0.13-10) ...
+Setting up libglib2.0-0:armhf (2.36.4-1) ...
 No schema files found: doing nothing.
-Setting up libcroco3:kfreebsd-amd64 (0.6.8-2) ...
-Setting up libsigsegv2:kfreebsd-amd64 (2.10-2) ...
-Setting up libunistring0:kfreebsd-amd64 (0.9.3-5) ...
+Setting up libcroco3:armhf (0.6.8-2) ...
+Setting up libsigsegv2:armhf (2.10-2) ...
+Setting up libunistring0:armhf (0.9.3-5+b1) ...
 Setting up file (1:5.14-2) ...
 Setting up gettext-base (0.18.3.1-2) ...
 Setting up m4 (1.4.17-2) ...
@@ -296,9 +296,9 @@ Processing triggers for libc-bin (2.17-97) ...
 │ Build environment                                                            │
 └──────────────────────────────────────────────────────────────────────────────┘
 
-Kernel: GNU/kFreeBSD 9.0-2-amd64 kfreebsd-amd64 (x86_64)
-Toolchain package versions: binutils_2.23.91.20131123-1 dpkg-dev_1.17.1 g++-4.8_4.8.2-7 gcc-4.8_4.8.2-7 kfreebsd-kernel-headers_9.2~5 libc0.1-dev_2.17-97 libstdc++-4.8-dev_4.8.2-7 libstdc++6_4.8.2-7
-Package versions: apt_0.9.13.1 autoconf_2.69-2 automake_1:1.14.1-2 autotools-dev_20130810.1 base-files_7.2 base-passwd_3.5.28 bash_4.2+dfsg-1 binutils_2.23.91.20131123-1 bsdmainutils_9.0.5 bsdutils_1:2.20.1-5.5 build-essential_11.6 bzip2_1.0.6-5 coreutils_8.21-1 cpp_4:4.8.1-3 cpp-4.8_4.8.2-7 dash_0.5.7-3 debconf_1.5.52 debfoster_2.7-1.2 debhelper_9.20131227 debian-archive-keyring_2012.4 debianutils_4.4 dh-exec_0.12 diffutils_1:3.3-1 dpkg_1.17.5 dpkg-dev_1.17.1 e2fslibs_1.42.8-1 e2fsprogs_1.42.8-1 fakeroot_1.18.4-2 file_1:5.14-2 findutils_4.4.2-7 freebsd-utils_9.2-1 g++_4:4.8.1-3 g++-4.8_4.8.2-7 gcc_4:4.8.1-3 gcc-4.7-base_4.7.3-9 gcc-4.8_4.8.2-7 gcc-4.8-base_4.8.2-7 gettext_0.18.3.1-2 gettext-base_0.18.3.1-2 gnupg_1.4.15-1.1 gpgv_1.4.15-1.1 grep_2.15-2 groff-base_1.22.2-3 gzip_1.6-2 hostname_3.15 initscripts_2.88dsf-43 insserv_1.14.0-5 intltool-debian_0.35.0+20060710.1 kbdcontrol_9.2-1 kfreebsd-kernel-headers_9.2~5 libacl1_2.2.52-1 libapt-pkg4.12_0.9.13.1 libarchive-extract-perl_0.68-1 libasprintf0c2_0.18.3.1-2 libatomic1_4.8.2-7 libattr1_1:2.4.47-1 libblkid1_2.20.1-5.5 libbsd0_0.6.0-1 libbz2-1.0_1.0.6-5 libc-bin_2.17-97 libc-dev-bin_2.17-97 libc0.1_2.17-97 libc0.1-dev_2.17-97 libcam6_9.2+ds1-8 libcloog-isl4_0.18.1-3 libcomerr2_1.42.8-1 libcroco3_0.6.8-2 libdb5.1_5.1.29-7 libdpkg-perl_1.17.1 libexpat1_2.1.0-4 libffi6_3.0.13-10 libfreebsd-glue-0_0.2.3 libgc1c2_1:7.2d-5 libgcc-4.8-dev_4.8.2-7 libgcc1_1:4.8.2-7 libgdbm3_1.8.3-12 libgeom1_9.2+ds1-8 libglib2.0-0_2.36.4-1 libgmp10_2:5.1.2+dfsg-3 libgomp1_4.8.2-7 libgssglue1_0.4-2 libisl10_0.12.1-2 libjail1_9.2+ds1-8 libkiconv4_9.2+ds1-8 libkvm0_9.2+ds1-8 liblog-message-simple-perl_0.10-1 liblzma5_5.1.1alpha+20120614-2 libmagic1_1:5.14-2 libmodule-pluggable-perl_4.8-1 libmpc3_1.0.1-1 libmpfr4_3.1.2-1 libncurses5_5.9+20130608-1 libpam-modules_1.1.3-9 libpam-modules-bin_1.1.3-9 libpam-runtime_1.1.3-9 libpam0g_1.1.3-9 libpcre3_1:8.31-2 libpipeline1_1.2.6-1 libpod-latex-perl_0.61-1 libquadmath0_4.8.2-7 libreadline6_6.2+dfsg-0.1 libsbuf6_9.2+ds1-8 libsigsegv2_2.10-2 libslang2_2.2.4-15 libss2_1.42.8-1 libstdc++-4.8-dev_4.8.2-7 libstdc++6_4.8.2-7 libterm-ui-perl_0.38-1 libtimedate-perl_2.3000-1 libtinfo5_5.9+20130608-1 libtirpc1_0.2.2-5 libtool_2.4.2-1.6 libunistring0_0.9.3-5 libusb-0.1-4_2:0.1.12-23.3 libuuid1_2.20.1-5.5 libxml2_2.9.1+dfsg1-3 login_1:4.1.5.1-1 lsb-base_4.1+Debian12 m4_1.4.17-2 make_3.81-8.3 man-db_2.6.5-3 mawk_1.3.3-17 multiarch-support_2.17-97 ncurses-base_5.9+20130608-1 ncurses-bin_5.9+20130608-1 passwd_1:4.1.5.1-1 patch_2.7.1-4 perl_5.18.1-5 perl-base_5.18.1-5 perl-modules_5.18.1-5 po-debconf_1.0.16+nmu2 readline-common_6.2+dfsg-0.1 sbuild-build-depends-core-dummy_0.invalid.0 sbuild-build-depends-libgtextutils-dummy_0.invalid.0 sed_4.2.2-2 sensible-utils_0.0.9 sysv-rc_2.88dsf-43 sysvinit_2.88dsf-43 sysvinit-utils_2.88dsf-43 tar_1.26+dfsg-10 tzdata_2013h-1 util-linux_2.20.1-5.5 xz-utils_5.1.1alpha+20120614-2 zlib1g_1:1.2.8.dfsg-1
+Kernel: Linux 3.2.0-4-mx5 armhf (armv7l)
+Toolchain package versions: binutils_2.24-2 dpkg-dev_1.17.5 g++-4.8_4.8.2-10 gcc-4.8_4.8.2-10 libc6-dev_2.17-97 libstdc++-4.8-dev_4.8.2-10 libstdc++6_4.8.2-10 linux-libc-dev_3.11.10-1
+Package versions: apt_0.9.14.1 autoconf_2.69-2 automake_1:1.14.1-2 autotools-dev_20130810.1 base-files_7.2 base-passwd_3.5.28 bash_4.2+dfsg-1 binutils_2.24-2 bsdmainutils_9.0.5 bsdutils_1:2.20.1-5.5 build-essential_11.6 bzip2_1.0.6-5 coreutils_8.21-1 cpp_4:4.8.2-1 cpp-4.8_4.8.2-10 dash_0.5.7-3 debconf_1.5.52 debconf-i18n_1.5.52 debfoster_2.7-1.2 debhelper_9.20131227 debian-archive-keyring_2012.4 debianutils_4.4 dh-exec_0.12 diffutils_1:3.3-1 dpkg_1.17.5 dpkg-dev_1.17.5 e2fslibs_1.42.8-1 e2fsprogs_1.42.8-1 fakeroot_1.20-3 file_1:5.14-2 findutils_4.4.2-7 g++_4:4.8.2-1 g++-4.8_4.8.2-10 gcc_4:4.8.2-1 gcc-4.5-base_4.5.4-1 gcc-4.6-base_4.6.4-5 gcc-4.7-base_4.7.3-9 gcc-4.8_4.8.2-10 gcc-4.8-base_4.8.2-10 gettext_0.18.3.1-2 gettext-base_0.18.3.1-2 gnupg_1.4.15-3 gpgv_1.4.15-3 grep_2.15-2 groff-base_1.22.2-3 gzip_1.6-3 hostname_3.15 initscripts_2.88dsf-43 insserv_1.14.0-5 intltool-debian_0.35.0+20060710.1 libacl1_2.2.52-1 libapt-pkg4.12_0.9.14.1 libasan0_4.8.2-10 libasprintf0c2_0.18.3.1-2 libatomic1_4.8.2-10 libattr1_1:2.4.47-1 libaudit-common_1:2.3.2-2 libaudit1_1:2.3.2-2 libblkid1_2.20.1-5.5 libbz2-1.0_1.0.6-5 libc-bin_2.17-97 libc-dev-bin_2.17-97 libc6_2.17-97 libc6-dev_2.17-97 libcap2_1:2.22-1.2 libcloog-isl4_0.18.1-3 libcomerr2_1.42.8-1 libcroco3_0.6.8-2 libdb5.1_5.1.29-7 libdpkg-perl_1.17.5 libfakeroot_1.20-3 libffi6_3.0.13-10 libfile-fcntllock-perl_0.14-2+b1 libgc1c2_1:7.2d-6 libgcc-4.8-dev_4.8.2-10 libgcc1_1:4.8.2-10 libgdbm3_1.8.3-12 libglib2.0-0_2.36.4-1 libgmp10_2:5.1.3+dfsg-1 libgomp1_4.8.2-10 libisl10_0.12.1-2 liblocale-gettext-perl_1.05-7+b4 liblzma5_5.1.1alpha+20120614-2 libmagic1_1:5.14-2 libmount1_2.20.1-5.5 libmpc3_1.0.1-1 libmpfr4_3.1.2-1 libncurses5_5.9+20130608-1 libpam-modules_1.1.3-10 libpam-modules-bin_1.1.3-10 libpam-runtime_1.1.3-10 libpam0g_1.1.3-10 libpcre3_1:8.31-2 libpipeline1_1.2.6-1 libreadline6_6.2+dfsg-0.1 libselinux1_2.2.1-1 libsemanage-common_2.2-1 libsemanage1_2.2-1 libsepol1_2.2-1 libsigsegv2_2.10-2 libslang2_2.2.4-16 libss2_1.42.8-1 libstdc++-4.8-dev_4.8.2-10 libstdc++6_4.8.2-10 libtext-charwidth-perl_0.04-7+b3 libtext-iconv-perl_1.7-5+b1 libtext-wrapi18n-perl_0.06-7 libtimedate-perl_2.3000-1 libtinfo5_5.9+20130608-1 libtool_2.4.2-1.6 libunistring0_0.9.3-5+b1 libusb-0.1-4_2:0.1.12-23.3 libustr-1.0-1_1.0.4-3 libuuid1_2.20.1-5.5 libxml2_2.9.1+dfsg1-3 linux-libc-dev_3.11.10-1 login_1:4.1.5.1-1 lsb-base_4.1+Debian12 m4_1.4.17-2 make_3.81-8.3 man-db_2.6.5-3 mawk_1.3.3-17 mount_2.20.1-5.5 multiarch-support_2.17-97 ncurses-base_5.9+20130608-1 ncurses-bin_5.9+20130608-1 passwd_1:4.1.5.1-1 patch_2.7.1-4 perl_5.18.1-5 perl-base_5.18.1-5 perl-modules_5.18.1-5 po-debconf_1.0.16+nmu2 readline-common_6.2+dfsg-0.1 sbuild-build-depends-core-dummy_0.invalid.0 sbuild-build-depends-libgtextutils-dummy_0.invalid.0 sed_4.2.2-3 sensible-utils_0.0.9 sudo_1.8.8-2 sysv-rc_2.88dsf-43 sysvinit_2.88dsf-43 sysvinit-utils_2.88dsf-43 tar_1.27-4 tzdata_2013i-1 util-linux_2.20.1-5.5 xz-utils_5.1.1alpha+20120614-2 zlib1g_1:1.2.8.dfsg-1
 
 ┌──────────────────────────────────────────────────────────────────────────────┐
 │ Build                                                                        │
@@ -324,20 +324,21 @@ Sufficient free space for build
 User Environment
 ────────────────
 
-DEB_BUILD_OPTIONS=parallel=2
 HOME=/sbuild-nonexistent
 LOGNAME=buildd
 PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
-SCHROOT_ALIAS_NAME=sid-kfreebsd-amd64-sbuild
-SCHROOT_CHROOT_NAME=sid-ka-sbuild
+SCHROOT_ALIAS_NAME=sid-armhf-sbuild
+SCHROOT_CHROOT_NAME=sid-armhf-sbuild
 SCHROOT_COMMAND=env
 SCHROOT_GID=1009
 SCHROOT_GROUP=buildd
-SCHROOT_SESSION_ID=sid-ka-sbuild-1389142557-90392
+SCHROOT_SESSION_ID=sid-armhf-sbuild-50730de2-f6df-454c-9fca-70443e4e7725
 SCHROOT_UID=2952
 SCHROOT_USER=buildd
 SHELL=/bin/sh
+TERM=screen
 USER=buildd
+USERNAME=buildd
 
 dpkg-buildpackage
 ─────────────────
@@ -346,7 +347,7 @@ dpkg-buildpackage: source package libgtextutils
 dpkg-buildpackage: source version 0.7-1
 dpkg-buildpackage: source distribution unstable
  dpkg-source --before-build libgtextutils-0.7
-dpkg-buildpackage: host architecture kfreebsd-amd64
+dpkg-buildpackage: host architecture armhf
 dpkg-source: info: using options from libgtextutils-0.7/debian/source/options: --single-debian-patch
  fakeroot debian/rules clean
 dh clean --with autotools_dev
@@ -404,7 +405,7 @@ Makefile.am: installing './INSTALL'
 src/gtextutils/Makefile.am: installing 'config/depcomp'
 parallel-tests: installing 'config/test-driver'
 dh_auto_configure
-	./configure --build=x86_64-kfreebsd-gnu --prefix=/usr --includedir=\${prefix}/include --mandir=\${prefix}/share/man --infodir=\${prefix}/share/info --sysconfdir=/etc --localstatedir=/var --libdir=\${prefix}/lib/x86_64-kfreebsd-gnu --libexecdir=\${prefix}/lib/x86_64-kfreebsd-gnu --disable-maintainer-mode --disable-dependency-tracking
+	./configure --build=arm-linux-gnueabihf --prefix=/usr --includedir=\${prefix}/include --mandir=\${prefix}/share/man --infodir=\${prefix}/share/info --sysconfdir=/etc --localstatedir=/var --libdir=\${prefix}/lib/arm-linux-gnueabihf --libexecdir=\${prefix}/lib/arm-linux-gnueabihf --disable-maintainer-mode --disable-dependency-tracking
 configure: WARNING: unrecognized options: --disable-maintainer-mode
 checking for a BSD-compatible install... /usr/bin/install -c
 checking whether build environment is sane... yes
@@ -429,8 +430,8 @@ checking for g++... g++
 checking whether we are using the GNU C++ compiler... yes
 checking whether g++ accepts -g... yes
 checking dependency style of g++... none
-checking build system type... x86_64-pc-kfreebsd-gnu
-checking host system type... x86_64-pc-kfreebsd-gnu
+checking build system type... arm-unknown-linux-gnueabihf
+checking host system type... arm-unknown-linux-gnueabihf
 checking how to print strings... printf
 checking for a sed that does not truncate output... /bin/sed
 checking for grep that handles long lines and -e... /bin/grep
@@ -441,11 +442,11 @@ checking if the linker (/usr/bin/ld) is GNU ld... yes
 checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
 checking the name lister (/usr/bin/nm -B) interface... BSD nm
 checking whether ln -s works... yes
-checking the maximum length of command line arguments... 196608
+checking the maximum length of command line arguments... 805306365
 checking whether the shell understands some XSI constructs... yes
 checking whether the shell understands "+="... yes
-checking how to convert x86_64-pc-kfreebsd-gnu file names to x86_64-pc-kfreebsd-gnu format... func_convert_file_noop
-checking how to convert x86_64-pc-kfreebsd-gnu file names to toolchain format... func_convert_file_noop
+checking how to convert arm-unknown-linux-gnueabihf file names to arm-unknown-linux-gnueabihf format... func_convert_file_noop
+checking how to convert arm-unknown-linux-gnueabihf file names to toolchain format... func_convert_file_noop
 checking for /usr/bin/ld option to reload object files... -r
 checking for objdump... objdump
 checking how to recognize dependent libraries... pass_all
@@ -478,7 +479,7 @@ checking if gcc PIC flag -fPIC -DPIC works... yes
 checking if gcc static flag -static works... yes
 checking if gcc supports -c -o file.o... yes
 checking if gcc supports -c -o file.o... (cached) yes
-checking whether the gcc linker (/usr/bin/ld -m elf_x86_64_fbsd) supports shared libraries... yes
+checking whether the gcc linker (/usr/bin/ld) supports shared libraries... yes
 checking whether -lc should be explicitly linked in... no
 checking dynamic linker characteristics... GNU/Linux ld.so
 checking how to hardcode library paths into programs... immediate
@@ -487,15 +488,15 @@ checking if libtool supports shared libraries... yes
 checking whether to build shared libraries... yes
 checking whether to build static libraries... yes
 checking how to run the C++ preprocessor... g++ -E
-checking for ld used by g++... /usr/bin/ld -m elf_x86_64_fbsd
-checking if the linker (/usr/bin/ld -m elf_x86_64_fbsd) is GNU ld... yes
-checking whether the g++ linker (/usr/bin/ld -m elf_x86_64_fbsd) supports shared libraries... yes
+checking for ld used by g++... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking whether the g++ linker (/usr/bin/ld) supports shared libraries... yes
 checking for g++ option to produce PIC... -fPIC -DPIC
 checking if g++ PIC flag -fPIC -DPIC works... yes
 checking if g++ static flag -static works... yes
 checking if g++ supports -c -o file.o... yes
 checking if g++ supports -c -o file.o... (cached) yes
-checking whether the g++ linker (/usr/bin/ld -m elf_x86_64_fbsd) supports shared libraries... yes
+checking whether the g++ linker (/usr/bin/ld) supports shared libraries... yes
 checking dynamic linker characteristics... (cached) GNU/Linux ld.so
 checking how to hardcode library paths into programs... immediate
 checking that generated files are newer than configure... done
@@ -537,8 +538,8 @@ libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -D_FORTIFY_SOURCE=2 -g -O2 -f
 /bin/bash ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..   -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -c -o pipe_fitter.lo pipe_fitter.c
 libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -c pipe_fitter.c  -fPIC -DPIC -o .libs/pipe_fitter.o
 libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -c pipe_fitter.c -o pipe_fitter.o >/dev/null 2>&1
-/bin/bash ../../libtool  --tag=CXX   --mode=link g++  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -version-info 0:0:0 -release 0.7 -Wl,-z,relro -o libgtextutils.la -rpath /usr/lib/x86_64-kfreebsd-gnu stream_wrapper.lo text_line_reader.lo strnatcmp.lo pipe_fitter.lo  
-libtool: link: g++  -fPIC -DPIC -shared -nostdlib /usr/lib/gcc/x86_64-kfreebsd-gnu/4.8/../../../x86_64-kfreebsd-gnu/crti.o /usr/lib/gcc/x86_64-kfreebsd-gnu/4.8/crtbeginS.o  .libs/stream_wrapper.o .libs/text_line_reader.o .libs/strnatcmp.o .libs/pipe_fitter.o   -L/usr/lib/gcc/x86_64-kfreebsd-gnu/4.8 -L/usr/lib/gcc/x86_64-kfreebsd-gnu/4.8/../../../x86_64-kfreebsd-gnu -L/usr/lib/gcc/x86_64-kfreebsd-gnu/4.8/../../../../lib -L/lib/x86_64-kfreebsd-gnu -L/lib/../lib -L/usr/lib/x86_64-kfreebsd-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-kfreebsd-gnu/4.8/../../.. -lstdc++ -lm -lc -lgcc_s /usr/lib/gcc/x86_64-kfreebsd-gnu/4.8/crtendS.o /usr/lib/gcc/x86_64-kfreebsd-gnu/4.8/../../../x86_64-kfreebsd-gnu/crtn.o  -O2 -O1 -O1 -Wl,-z -Wl,relro   -Wl,-soname -Wl,libgtextutils-0.7.so.0 -o .libs/libgtextutils-0.7.so.0.0.0
+/bin/bash ../../libtool  --tag=CXX   --mode=link g++  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -Wextra -Wformat-nonliteral -Wformat-security -Wswitch-default -Wswitch-enum -Wunused-parameter -Wfloat-equal -Werror -DDEBUG -g -O1 -DDEBUG -g -O1 -version-info 0:0:0 -release 0.7 -Wl,-z,relro -o libgtextutils.la -rpath /usr/lib/arm-linux-gnueabihf stream_wrapper.lo text_line_reader.lo strnatcmp.lo pipe_fitter.lo  
+libtool: link: g++  -fPIC -DPIC -shared -nostdlib /usr/lib/gcc/arm-linux-gnueabihf/4.8/../../../arm-linux-gnueabihf/crti.o /usr/lib/gcc/arm-linux-gnueabihf/4.8/crtbeginS.o  .libs/stream_wrapper.o .libs/text_line_reader.o .libs/strnatcmp.o .libs/pipe_fitter.o   -L/usr/lib/gcc/arm-linux-gnueabihf/4.8 -L/usr/lib/gcc/arm-linux-gnueabihf/4.8/../../../arm-linux-gnueabihf -L/usr/lib/gcc/arm-linux-gnueabihf/4.8/../../.. -L/lib/arm-linux-gnueabihf -L/usr/lib/arm-linux-gnueabihf -lstdc++ -lm -lc -lgcc_s /usr/lib/gcc/arm-linux-gnueabihf/4.8/crtendS.o /usr/lib/gcc/arm-linux-gnueabihf/4.8/../../../arm-linux-gnueabihf/crtn.o  -O2 -O1 -O1 -Wl,-z -Wl,relro   -Wl,-soname -Wl,libgtextutils-0.7.so.0 -o .libs/libgtextutils-0.7.so.0.0.0
 libtool: link: (cd ".libs" && rm -f "libgtextutils-0.7.so.0" && ln -s "libgtextutils-0.7.so.0.0.0" "libgtextutils-0.7.so.0")
 libtool: link: (cd ".libs" && rm -f "libgtextutils.so" && ln -s "libgtextutils-0.7.so.0.0.0" "libgtextutils.so")
 libtool: link: ar cru .libs/libgtextutils.a  stream_wrapper.o text_line_reader.o strnatcmp.o pipe_fitter.o
@@ -558,7 +559,6 @@ make[3]: Entering directory `/«PKGBUILDDIR»/tests'
 make[3]: Nothing to be done for `all'.
 make[3]: Leaving directory `/«PKGBUILDDIR»/tests'
 make[3]: Entering directory `/«PKGBUILDDIR»'
-make[3]: Nothing to be done for `all-am'.
 make[3]: Leaving directory `/«PKGBUILDDIR»'
 make[2]: Leaving directory `/«PKGBUILDDIR»'
 make[1]: Leaving directory `/«PKGBUILDDIR»'
@@ -649,7 +649,6 @@ make[4]: Leaving directory `/«PKGBUILDDIR»/tests'
 make[3]: Leaving directory `/«PKGBUILDDIR»/tests'
 make[2]: Leaving directory `/«PKGBUILDDIR»/tests'
 make[2]: Entering directory `/«PKGBUILDDIR»'
-make[2]: Nothing to be done for `check-am'.
 make[2]: Leaving directory `/«PKGBUILDDIR»'
 make[1]: Leaving directory `/«PKGBUILDDIR»'
  fakeroot debian/rules binary-arch
@@ -679,16 +678,16 @@ make[2]: Entering directory `/«PKGBUILDDIR»/src'
 Making install in gtextutils
 make[3]: Entering directory `/«PKGBUILDDIR»/src/gtextutils'
 make[4]: Entering directory `/«PKGBUILDDIR»/src/gtextutils'
- /bin/mkdir -p '/«PKGBUILDDIR»/debian/tmp/usr/lib/x86_64-kfreebsd-gnu'
- /bin/bash ../../libtool   --mode=install /usr/bin/install -c   libgtextutils.la '/«PKGBUILDDIR»/debian/tmp/usr/lib/x86_64-kfreebsd-gnu'
-libtool: install: /usr/bin/install -c .libs/libgtextutils-0.7.so.0.0.0 /«PKGBUILDDIR»/debian/tmp/usr/lib/x86_64-kfreebsd-gnu/libgtextutils-0.7.so.0.0.0
-libtool: install: (cd /«PKGBUILDDIR»/debian/tmp/usr/lib/x86_64-kfreebsd-gnu && { ln -s -f libgtextutils-0.7.so.0.0.0 libgtextutils-0.7.so.0 || { rm -f libgtextutils-0.7.so.0 && ln -s libgtextutils-0.7.so.0.0.0 libgtextutils-0.7.so.0; }; })
-libtool: install: (cd /«PKGBUILDDIR»/debian/tmp/usr/lib/x86_64-kfreebsd-gnu && { ln -s -f libgtextutils-0.7.so.0.0.0 libgtextutils.so || { rm -f libgtextutils.so && ln -s libgtextutils-0.7.so.0.0.0 libgtextutils.so; }; })
-libtool: install: /usr/bin/install -c .libs/libgtextutils.lai /«PKGBUILDDIR»/debian/tmp/usr/lib/x86_64-kfreebsd-gnu/libgtextutils.la
-libtool: install: /usr/bin/install -c .libs/libgtextutils.a /«PKGBUILDDIR»/debian/tmp/usr/lib/x86_64-kfreebsd-gnu/libgtextutils.a
-libtool: install: chmod 644 /«PKGBUILDDIR»/debian/tmp/usr/lib/x86_64-kfreebsd-gnu/libgtextutils.a
-libtool: install: ranlib /«PKGBUILDDIR»/debian/tmp/usr/lib/x86_64-kfreebsd-gnu/libgtextutils.a
-libtool: install: warning: remember to run `libtool --finish /usr/lib/x86_64-kfreebsd-gnu'
+ /bin/mkdir -p '/«PKGBUILDDIR»/debian/tmp/usr/lib/arm-linux-gnueabihf'
+ /bin/bash ../../libtool   --mode=install /usr/bin/install -c   libgtextutils.la '/«PKGBUILDDIR»/debian/tmp/usr/lib/arm-linux-gnueabihf'
+libtool: install: /usr/bin/install -c .libs/libgtextutils-0.7.so.0.0.0 /«PKGBUILDDIR»/debian/tmp/usr/lib/arm-linux-gnueabihf/libgtextutils-0.7.so.0.0.0
+libtool: install: (cd /«PKGBUILDDIR»/debian/tmp/usr/lib/arm-linux-gnueabihf && { ln -s -f libgtextutils-0.7.so.0.0.0 libgtextutils-0.7.so.0 || { rm -f libgtextutils-0.7.so.0 && ln -s libgtextutils-0.7.so.0.0.0 libgtextutils-0.7.so.0; }; })
+libtool: install: (cd /«PKGBUILDDIR»/debian/tmp/usr/lib/arm-linux-gnueabihf && { ln -s -f libgtextutils-0.7.so.0.0.0 libgtextutils.so || { rm -f libgtextutils.so && ln -s libgtextutils-0.7.so.0.0.0 libgtextutils.so; }; })
+libtool: install: /usr/bin/install -c .libs/libgtextutils.lai /«PKGBUILDDIR»/debian/tmp/usr/lib/arm-linux-gnueabihf/libgtextutils.la
+libtool: install: /usr/bin/install -c .libs/libgtextutils.a /«PKGBUILDDIR»/debian/tmp/usr/lib/arm-linux-gnueabihf/libgtextutils.a
+libtool: install: chmod 644 /«PKGBUILDDIR»/debian/tmp/usr/lib/arm-linux-gnueabihf/libgtextutils.a
+libtool: install: ranlib /«PKGBUILDDIR»/debian/tmp/usr/lib/arm-linux-gnueabihf/libgtextutils.a
+libtool: install: warning: remember to run `libtool --finish /usr/lib/arm-linux-gnueabihf'
  /bin/mkdir -p '/«PKGBUILDDIR»/debian/tmp/usr/include/gtextutils/gtextutils'
  /usr/bin/install -c -m 644 container_join.h text_line_reader.h stream_wrapper.h natsort.h strnatcmp.h outbuf3.hpp inbuf1.hpp tuple_parser.h exit_manip.h string_tokenize.h pipe_fitter.h '/«PKGBUILDDIR»/debian/tmp/usr/include/gtextutils/gtextutils'
 make[4]: Leaving directory `/«PKGBUILDDIR»/src/gtextutils'
@@ -717,21 +716,21 @@ make[2]: Leaving directory `/«PKGBUILDDIR»/tests'
 make[2]: Entering directory `/«PKGBUILDDIR»'
 make[3]: Entering directory `/«PKGBUILDDIR»'
 make[3]: Nothing to be done for `install-exec-am'.
- /bin/mkdir -p '/«PKGBUILDDIR»/debian/tmp/usr/lib/x86_64-kfreebsd-gnu/pkgconfig'
- /usr/bin/install -c -m 644 gtextutils.pc '/«PKGBUILDDIR»/debian/tmp/usr/lib/x86_64-kfreebsd-gnu/pkgconfig'
+ /bin/mkdir -p '/«PKGBUILDDIR»/debian/tmp/usr/lib/arm-linux-gnueabihf/pkgconfig'
+ /usr/bin/install -c -m 644 gtextutils.pc '/«PKGBUILDDIR»/debian/tmp/usr/lib/arm-linux-gnueabihf/pkgconfig'
 make[3]: Leaving directory `/«PKGBUILDDIR»'
 make[2]: Leaving directory `/«PKGBUILDDIR»'
 make[1]: Leaving directory `/«PKGBUILDDIR»'
    dh_install -a
 	install -d debian/libgtextutils-dev/usr/include/
 	cp -a debian/tmp/usr/include/gtextutils/gtextutils/ debian/libgtextutils-dev/usr/include//
-	install -d debian/libgtextutils-dev/usr/lib/x86_64-kfreebsd-gnu/
-	cp -a debian/tmp/usr/lib/x86_64-kfreebsd-gnu/libgtextutils.so debian/libgtextutils-dev/usr/lib/x86_64-kfreebsd-gnu//
-	install -d debian/libgtextutils-dev/usr/lib/x86_64-kfreebsd-gnu/pkgconfig/
-	cp -a debian/tmp/usr/lib/x86_64-kfreebsd-gnu/pkgconfig/gtextutils.pc debian/libgtextutils-dev/usr/lib/x86_64-kfreebsd-gnu/pkgconfig//
-	install -d debian/libgtextutils0/usr/lib/x86_64-kfreebsd-gnu/
-	cp -a debian/tmp/usr/lib/x86_64-kfreebsd-gnu/libgtextutils-0.7.so.0 debian/libgtextutils0/usr/lib/x86_64-kfreebsd-gnu//
-	cp -a debian/tmp/usr/lib/x86_64-kfreebsd-gnu/libgtextutils-0.7.so.0.0.0 debian/libgtextutils0/usr/lib/x86_64-kfreebsd-gnu//
+	install -d debian/libgtextutils-dev/usr/lib/arm-linux-gnueabihf/
+	cp -a debian/tmp/usr/lib/arm-linux-gnueabihf/libgtextutils.so debian/libgtextutils-dev/usr/lib/arm-linux-gnueabihf//
+	install -d debian/libgtextutils-dev/usr/lib/arm-linux-gnueabihf/pkgconfig/
+	cp -a debian/tmp/usr/lib/arm-linux-gnueabihf/pkgconfig/gtextutils.pc debian/libgtextutils-dev/usr/lib/arm-linux-gnueabihf/pkgconfig//
+	install -d debian/libgtextutils0/usr/lib/arm-linux-gnueabihf/
+	cp -a debian/tmp/usr/lib/arm-linux-gnueabihf/libgtextutils-0.7.so.0 debian/libgtextutils0/usr/lib/arm-linux-gnueabihf//
+	cp -a debian/tmp/usr/lib/arm-linux-gnueabihf/libgtextutils-0.7.so.0.0.0 debian/libgtextutils0/usr/lib/arm-linux-gnueabihf//
    dh_installdocs -a
 	install -g 0 -o 0 -d debian/libgtextutils-dev/usr/share/doc/libgtextutils-dev
 	cp -a NEWS debian/libgtextutils-dev/usr/share/doc/libgtextutils-dev
@@ -748,14 +747,14 @@ make[1]: Leaving directory `/«PKGBUILDDIR»'
 	install -o 0 -g 0 -p -m644 debian/changelog debian/libgtextutils0/usr/share/doc/libgtextutils0/changelog.Debian
    dh_perl -a
    dh_link -a
-	rm -f debian/libgtextutils-dev/usr/lib/x86_64-kfreebsd-gnu/libgtextutils.so
-	ln -sf libgtextutils-0.7.so.0.0.0 debian/libgtextutils-dev/usr/lib/x86_64-kfreebsd-gnu/libgtextutils.so
-	rm -f debian/libgtextutils0/usr/lib/x86_64-kfreebsd-gnu/libgtextutils-0.7.so.0
-	ln -sf libgtextutils-0.7.so.0.0.0 debian/libgtextutils0/usr/lib/x86_64-kfreebsd-gnu/libgtextutils-0.7.so.0
+	rm -f debian/libgtextutils-dev/usr/lib/arm-linux-gnueabihf/libgtextutils.so
+	ln -sf libgtextutils-0.7.so.0.0.0 debian/libgtextutils-dev/usr/lib/arm-linux-gnueabihf/libgtextutils.so
+	rm -f debian/libgtextutils0/usr/lib/arm-linux-gnueabihf/libgtextutils-0.7.so.0
+	ln -sf libgtextutils-0.7.so.0.0.0 debian/libgtextutils0/usr/lib/arm-linux-gnueabihf/libgtextutils-0.7.so.0
    dh_compress -a
 	cd debian/libgtextutils-dev
-	chmod a-x usr/share/doc/libgtextutils-dev/NEWS usr/share/doc/libgtextutils-dev/changelog.Debian
-	gzip -9nf usr/share/doc/libgtextutils-dev/NEWS usr/share/doc/libgtextutils-dev/changelog.Debian
+	chmod a-x usr/share/doc/libgtextutils-dev/changelog.Debian usr/share/doc/libgtextutils-dev/NEWS
+	gzip -9nf usr/share/doc/libgtextutils-dev/changelog.Debian usr/share/doc/libgtextutils-dev/NEWS
 	cd '/«PKGBUILDDIR»'
 	cd debian/libgtextutils0
 	chmod a-x usr/share/doc/libgtextutils0/changelog.Debian
@@ -785,7 +784,7 @@ make[1]: Leaving directory `/«PKGBUILDDIR»'
 	find debian/libgtextutils0/usr/lib/perl5 debian/libgtextutils0/usr/share/perl5 -type f -perm -5 -name '*.pm'  -print0 2>/dev/null | xargs -0r chmod a-X
 	find debian/libgtextutils0/usr/lib -type f -name '*.ali'  -print0 2>/dev/null | xargs -0r chmod uga-w
    dh_strip -a
-	strip --remove-section=.comment --remove-section=.note --strip-unneeded debian/libgtextutils0/usr/lib/x86_64-kfreebsd-gnu/libgtextutils-0.7.so.0.0.0
+	strip --remove-section=.comment --remove-section=.note --strip-unneeded debian/libgtextutils0/usr/lib/arm-linux-gnueabihf/libgtextutils-0.7.so.0.0.0
    dh_makeshlibs -a
 	rm -f debian/libgtextutils-dev/DEBIAN/shlibs
 	rm -f debian/libgtextutils0/DEBIAN/shlibs
@@ -799,13 +798,13 @@ make[1]: Leaving directory `/«PKGBUILDDIR»'
 	echo '# End automatically added section' >> debian/libgtextutils0.postrm.debhelper
 	chmod 644 debian/libgtextutils0/DEBIAN/shlibs
 	chown 0:0 debian/libgtextutils0/DEBIAN/shlibs
-	dpkg-gensymbols -plibgtextutils0 -Idebian/libgtextutils0.symbols -Pdebian/libgtextutils0 "-edebian/libgtextutils0/usr/lib/x86_64-kfreebsd-gnu/libgtextutils-0.7.so.0.0.0\
+	dpkg-gensymbols -plibgtextutils0 -Idebian/libgtextutils0.symbols -Pdebian/libgtextutils0 "-edebian/libgtextutils0/usr/lib/arm-linux-gnueabihf/libgtextutils-0.7.so.0.0.0\
 "
 	(grep -s -v misc:Pre-Depends debian/libgtextutils0.substvars; echo misc:Pre-Depends=multiarch-support) > debian/libgtextutils0.substvars.new
 	mv debian/libgtextutils0.substvars.new debian/libgtextutils0.substvars
    dh_shlibdeps -a
 	install -o 0 -g 0 -d debian/libgtextutils-dev/DEBIAN
-	dpkg-shlibdeps -Tdebian/libgtextutils0.substvars debian/libgtextutils0/usr/lib/x86_64-kfreebsd-gnu/libgtextutils-0.7.so.0.0.0
+	dpkg-shlibdeps -Tdebian/libgtextutils0.substvars debian/libgtextutils0/usr/lib/arm-linux-gnueabihf/libgtextutils-0.7.so.0.0.0
    dh_installdeb -a
 	printf '#!/bin/sh
 set -e
@@ -822,12 +821,10 @@ set -e
    dh_gencontrol -a
 	echo misc:Depends= >> debian/libgtextutils-dev.substvars
 	dpkg-gencontrol -plibgtextutils-dev -ldebian/changelog -Tdebian/libgtextutils-dev.substvars -Pdebian/libgtextutils-dev
-dpkg-gencontrol: warning: File::FcntlLock not available; using flock which is not NFS-safe
 	chmod 644 debian/libgtextutils-dev/DEBIAN/control
 	chown 0:0 debian/libgtextutils-dev/DEBIAN/control
 	echo misc:Depends= >> debian/libgtextutils0.substvars
 	dpkg-gencontrol -plibgtextutils0 -ldebian/changelog -Tdebian/libgtextutils0.substvars -Pdebian/libgtextutils0
-dpkg-gencontrol: warning: File::FcntlLock not available; using flock which is not NFS-safe
 dpkg-gencontrol: warning: package libgtextutils0: unused substitution variable ${misc:Pre-Depends}
 	chmod 644 debian/libgtextutils0/DEBIAN/control
 	chown 0:0 debian/libgtextutils0/DEBIAN/control
@@ -839,18 +836,18 @@ dpkg-gencontrol: warning: package libgtextutils0: unused substitution variable $
 	chmod 644 debian/libgtextutils0/DEBIAN/md5sums
 	chown 0:0 debian/libgtextutils0/DEBIAN/md5sums
    dh_builddeb -a
-	dpkg-deb --build debian/libgtextutils0 ..
 	dpkg-deb --build debian/libgtextutils-dev ..
-dpkg-deb: building package `libgtextutils-dev' in `../libgtextutils-dev_0.7-1_kfreebsd-amd64.deb'.
-dpkg-deb: building package `libgtextutils0' in `../libgtextutils0_0.7-1_kfreebsd-amd64.deb'.
- dpkg-genchanges -B -mkfreebsd-amd64 Build Daemon (fano) <buildd_kfreebsd-amd64-fano@buildd.debian.org> >../libgtextutils_0.7-1_kfreebsd-amd64.changes
+dpkg-deb: building package `libgtextutils-dev' in `../libgtextutils-dev_0.7-1_armhf.deb'.
+	dpkg-deb --build debian/libgtextutils0 ..
+dpkg-deb: building package `libgtextutils0' in `../libgtextutils0_0.7-1_armhf.deb'.
+ dpkg-genchanges -B -marmhf Build Daemon (hoiby) <buildd_armhf-hoiby@buildd.debian.org> >../libgtextutils_0.7-1_armhf.changes
 dpkg-genchanges: arch-specific upload - not including arch-independent packages
 dpkg-genchanges: binary-only upload - not including any source code
  dpkg-source --after-build libgtextutils-0.7
 dpkg-source: info: using options from libgtextutils-0.7/debian/source/options: --single-debian-patch
 dpkg-buildpackage: binary only upload (no source included)
 ────────────────────────────────────────────────────────────────────────────────
-Build finished at 20140108-0058
+Build finished at 20140108-0159
 
 Finished
 ────────
@@ -867,18 +864,18 @@ I: Built successfully
 └──────────────────────────────────────────────────────────────────────────────┘
 
 
-libgtextutils_0.7-1_kfreebsd-amd64.changes:
-───────────────────────────────────────────
+libgtextutils_0.7-1_armhf.changes:
+──────────────────────────────────
 
 Format: 1.8
 Date: Wed, 08 Jan 2014 09:15:22 +0900
 Source: libgtextutils
 Binary: libgtextutils-dev libgtextutils0
-Architecture: kfreebsd-amd64
+Architecture: armhf
 Version: 0.7-1
 Distribution: sid
 Urgency: low
-Maintainer: kfreebsd-amd64 Build Daemon (fano) <buildd_kfreebsd-amd64-fano@buildd.debian.org>
+Maintainer: armhf Build Daemon (hoiby) <buildd_armhf-hoiby@buildd.debian.org>
 Changed-By: Charles Plessy <plessy@debian.org>
 Description: 
  libgtextutils-dev - Gordon Text_utils library (development files)
@@ -900,33 +897,33 @@ Changes:
    4050657 Normalised VCS URLs.
    5bd1b39 Conforms to Policy 3.9.5.
 Checksums-Sha1: 
- b79f27999a4e18dc39ee862097a5cf7633517fc5 23662 libgtextutils-dev_0.7-1_kfreebsd-amd64.deb
- 59c1f9c6eb442c9403ae47415bda6538235e180c 19018 libgtextutils0_0.7-1_kfreebsd-amd64.deb
+ 0b3af8b291bbb0c8c28392a418448a707b3bc47c 23498 libgtextutils-dev_0.7-1_armhf.deb
+ 9826475f77f73deaf02c1ec195d653e3f5706370 18516 libgtextutils0_0.7-1_armhf.deb
 Checksums-Sha256: 
- 2a150bfe4b51873e7020b14686bf12be975118539d75686d8de969fdefda1299 23662 libgtextutils-dev_0.7-1_kfreebsd-amd64.deb
- fed2ccec6bfaab01eabe02b2f95865b84247c05c80944c15d2e855d9ed515fd8 19018 libgtextutils0_0.7-1_kfreebsd-amd64.deb
+ 825d24d04ae43a06db1224d3be2d18c9e94167eb88b6080da7a58c36e50b8000 23498 libgtextutils-dev_0.7-1_armhf.deb
+ 504b385099160add31c14b8dc1ca55b65e3e5c83e10859d7318f3e58eed32cb0 18516 libgtextutils0_0.7-1_armhf.deb
 Files: 
- 26ff2ce46c818f64ea1010e000edd233 23662 libdevel optional libgtextutils-dev_0.7-1_kfreebsd-amd64.deb
- 137757f00b41ff7f86df8651f8c814ee 19018 libs optional libgtextutils0_0.7-1_kfreebsd-amd64.deb
+ e4ae3c88f9a6b44cc88ba3a3792ca2f8 23498 libdevel optional libgtextutils-dev_0.7-1_armhf.deb
+ b1e0d8ee4694a0d9390ae21f8238e8d1 18516 libs optional libgtextutils0_0.7-1_armhf.deb
 
 ┌──────────────────────────────────────────────────────────────────────────────┐
 │ Package contents                                                             │
 └──────────────────────────────────────────────────────────────────────────────┘
 
 
-libgtextutils-dev_0.7-1_kfreebsd-amd64.deb
-──────────────────────────────────────────
+libgtextutils-dev_0.7-1_armhf.deb
+─────────────────────────────────
 
  new debian package, version 2.0.
- size 23662 bytes: control archive=1042 bytes.
-     462 bytes,    13 lines      control              
+ size 23498 bytes: control archive=1038 bytes.
+     454 bytes,    13 lines      control              
     1253 bytes,    17 lines      md5sums              
  Package: libgtextutils-dev
  Source: libgtextutils
  Version: 0.7-1
- Architecture: kfreebsd-amd64
+ Architecture: armhf
  Maintainer: Debian Med Packaging Team <debian-med-packaging@lists.alioth.debian.org>
- Installed-Size: 83
+ Installed-Size: 122
  Depends: libgtextutils0 (= 0.7-1)
  Section: libdevel
  Priority: optional
@@ -935,42 +932,42 @@ libgtextutils-dev_0.7-1_kfreebsd-amd64.deb
  Description: Gordon Text_utils library (development files)
   Development files for the Gordon Text_utils (gtextutils) library.
 
-drwxr-xr-x root/root         0 2014-01-08 00:58 ./
-drwxr-xr-x root/root         0 2014-01-08 00:58 ./usr/
-drwxr-xr-x root/root         0 2014-01-08 00:58 ./usr/include/
-drwxr-xr-x root/root         0 2014-01-08 00:58 ./usr/include/gtextutils/
--rw-r--r-- root/root      6034 2014-01-08 00:58 ./usr/include/gtextutils/container_join.h
--rw-r--r-- root/root      1863 2014-01-08 00:58 ./usr/include/gtextutils/text_line_reader.h
--rw-r--r-- root/root      1483 2014-01-08 00:58 ./usr/include/gtextutils/stream_wrapper.h
--rw-r--r-- root/root      3001 2014-01-08 00:58 ./usr/include/gtextutils/natsort.h
--rw-r--r-- root/root      1287 2014-01-08 00:58 ./usr/include/gtextutils/strnatcmp.h
--rw-r--r-- root/root      3929 2014-01-08 00:58 ./usr/include/gtextutils/outbuf3.hpp
--rw-r--r-- root/root      4220 2014-01-08 00:58 ./usr/include/gtextutils/inbuf1.hpp
--rw-r--r-- root/root     11049 2014-01-08 00:58 ./usr/include/gtextutils/tuple_parser.h
--rw-r--r-- root/root      2105 2014-01-08 00:58 ./usr/include/gtextutils/exit_manip.h
--rw-r--r-- root/root      1995 2014-01-08 00:58 ./usr/include/gtextutils/string_tokenize.h
--rw-r--r-- root/root      1154 2014-01-08 00:58 ./usr/include/gtextutils/pipe_fitter.h
-drwxr-xr-x root/root         0 2014-01-08 00:58 ./usr/lib/
-drwxr-xr-x root/root         0 2014-01-08 00:58 ./usr/lib/x86_64-kfreebsd-gnu/
-drwxr-xr-x root/root         0 2014-01-08 00:58 ./usr/lib/x86_64-kfreebsd-gnu/pkgconfig/
--rw-r--r-- root/root       244 2014-01-08 00:58 ./usr/lib/x86_64-kfreebsd-gnu/pkgconfig/gtextutils.pc
-drwxr-xr-x root/root         0 2014-01-08 00:58 ./usr/share/
-drwxr-xr-x root/root         0 2014-01-08 00:58 ./usr/share/doc/
-drwxr-xr-x root/root         0 2014-01-08 00:58 ./usr/share/doc/libgtextutils-dev/
+drwxr-xr-x root/root         0 2014-01-08 01:59 ./
+drwxr-xr-x root/root         0 2014-01-08 01:59 ./usr/
+drwxr-xr-x root/root         0 2014-01-08 01:59 ./usr/share/
+drwxr-xr-x root/root         0 2014-01-08 01:59 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-01-08 01:59 ./usr/share/doc/libgtextutils-dev/
 -rw-r--r-- root/root       261 2014-01-05 21:02 ./usr/share/doc/libgtextutils-dev/README
--rw-r--r-- root/root       314 2014-01-05 21:02 ./usr/share/doc/libgtextutils-dev/THANKS
--rw-r--r-- root/root     38979 2014-01-05 22:40 ./usr/share/doc/libgtextutils-dev/copyright
 -rw-r--r-- root/root       440 2014-01-05 21:02 ./usr/share/doc/libgtextutils-dev/NEWS.gz
 -rw-r--r-- root/root       673 2014-01-08 00:15 ./usr/share/doc/libgtextutils-dev/changelog.Debian.gz
-lrwxrwxr-x root/root         0 2014-01-08 00:58 ./usr/lib/x86_64-kfreebsd-gnu/libgtextutils.so -> libgtextutils-0.7.so.0.0.0
+-rw-r--r-- root/root     38979 2014-01-05 22:40 ./usr/share/doc/libgtextutils-dev/copyright
+-rw-r--r-- root/root       314 2014-01-05 21:02 ./usr/share/doc/libgtextutils-dev/THANKS
+drwxr-xr-x root/root         0 2014-01-08 01:59 ./usr/lib/
+drwxr-xr-x root/root         0 2014-01-08 01:59 ./usr/lib/arm-linux-gnueabihf/
+drwxr-xr-x root/root         0 2014-01-08 01:59 ./usr/lib/arm-linux-gnueabihf/pkgconfig/
+-rw-r--r-- root/root       244 2014-01-08 01:59 ./usr/lib/arm-linux-gnueabihf/pkgconfig/gtextutils.pc
+drwxr-xr-x root/root         0 2014-01-08 01:59 ./usr/include/
+drwxr-xr-x root/root         0 2014-01-08 01:59 ./usr/include/gtextutils/
+-rw-r--r-- root/root      2105 2014-01-08 01:59 ./usr/include/gtextutils/exit_manip.h
+-rw-r--r-- root/root      1995 2014-01-08 01:59 ./usr/include/gtextutils/string_tokenize.h
+-rw-r--r-- root/root      1154 2014-01-08 01:59 ./usr/include/gtextutils/pipe_fitter.h
+-rw-r--r-- root/root     11049 2014-01-08 01:59 ./usr/include/gtextutils/tuple_parser.h
+-rw-r--r-- root/root      1863 2014-01-08 01:59 ./usr/include/gtextutils/text_line_reader.h
+-rw-r--r-- root/root      6034 2014-01-08 01:59 ./usr/include/gtextutils/container_join.h
+-rw-r--r-- root/root      1287 2014-01-08 01:59 ./usr/include/gtextutils/strnatcmp.h
+-rw-r--r-- root/root      3929 2014-01-08 01:59 ./usr/include/gtextutils/outbuf3.hpp
+-rw-r--r-- root/root      3001 2014-01-08 01:59 ./usr/include/gtextutils/natsort.h
+-rw-r--r-- root/root      1483 2014-01-08 01:59 ./usr/include/gtextutils/stream_wrapper.h
+-rw-r--r-- root/root      4220 2014-01-08 01:59 ./usr/include/gtextutils/inbuf1.hpp
+lrwxrwxrwx root/root         0 2014-01-08 01:59 ./usr/lib/arm-linux-gnueabihf/libgtextutils.so -> libgtextutils-0.7.so.0.0.0
 
 
-libgtextutils0_0.7-1_kfreebsd-amd64.deb
-───────────────────────────────────────
+libgtextutils0_0.7-1_armhf.deb
+──────────────────────────────
 
  new debian package, version 2.0.
- size 19018 bytes: control archive=1042 bytes.
-     567 bytes,    14 lines      control              
+ size 18516 bytes: control archive=1035 bytes.
+     552 bytes,    14 lines      control              
      245 bytes,     3 lines      md5sums              
      135 bytes,     7 lines   *  postinst             #!/bin/sh
      132 bytes,     7 lines   *  postrm               #!/bin/sh
@@ -979,10 +976,10 @@ libgtextutils0_0.7-1_kfreebsd-amd64.deb
  Package: libgtextutils0
  Source: libgtextutils
  Version: 0.7-1
- Architecture: kfreebsd-amd64
+ Architecture: armhf
  Maintainer: Debian Med Packaging Team <debian-med-packaging@lists.alioth.debian.org>
- Installed-Size: 62
- Depends: libc0.1 (>= 2.17-91), libgcc1 (>= 1:4.1.1), libstdc++6 (>= 4.4.0)
+ Installed-Size: 86
+ Depends: libc6 (>= 2.4), libgcc1 (>= 1:4.4.0), libstdc++6 (>= 4.4.0)
  Section: libs
  Priority: optional
  Multi-Arch: same
@@ -991,17 +988,17 @@ libgtextutils0_0.7-1_kfreebsd-amd64.deb
   The Gordon Text_utils (gtextutils) library is a text utilities library used by
   the FASTX-Toolkit, a suite of programs for biological sequence analysis.
 
-drwxr-xr-x root/root         0 2014-01-08 00:58 ./
-drwxr-xr-x root/root         0 2014-01-08 00:58 ./usr/
-drwxr-xr-x root/root         0 2014-01-08 00:58 ./usr/lib/
-drwxr-xr-x root/root         0 2014-01-08 00:58 ./usr/lib/x86_64-kfreebsd-gnu/
--rw-r--r-- root/root     18632 2014-01-08 00:58 ./usr/lib/x86_64-kfreebsd-gnu/libgtextutils-0.7.so.0.0.0
-drwxr-xr-x root/root         0 2014-01-08 00:58 ./usr/share/
-drwxr-xr-x root/root         0 2014-01-08 00:58 ./usr/share/doc/
-drwxr-xr-x root/root         0 2014-01-08 00:58 ./usr/share/doc/libgtextutils0/
--rw-r--r-- root/root     38979 2014-01-05 22:40 ./usr/share/doc/libgtextutils0/copyright
+drwxr-xr-x root/root         0 2014-01-08 01:59 ./
+drwxr-xr-x root/root         0 2014-01-08 01:59 ./usr/
+drwxr-xr-x root/root         0 2014-01-08 01:59 ./usr/share/
+drwxr-xr-x root/root         0 2014-01-08 01:59 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-01-08 01:59 ./usr/share/doc/libgtextutils0/
 -rw-r--r-- root/root       673 2014-01-08 00:15 ./usr/share/doc/libgtextutils0/changelog.Debian.gz
-lrwxrwxr-x root/root         0 2014-01-08 00:58 ./usr/lib/x86_64-kfreebsd-gnu/libgtextutils-0.7.so.0 -> libgtextutils-0.7.so.0.0.0
+-rw-r--r-- root/root     38979 2014-01-05 22:40 ./usr/share/doc/libgtextutils0/copyright
+drwxr-xr-x root/root         0 2014-01-08 01:59 ./usr/lib/
+drwxr-xr-x root/root         0 2014-01-08 01:59 ./usr/lib/arm-linux-gnueabihf/
+-rw-r--r-- root/root     13852 2014-01-08 01:59 ./usr/lib/arm-linux-gnueabihf/libgtextutils-0.7.so.0.0.0
+lrwxrwxrwx root/root         0 2014-01-08 01:59 ./usr/lib/arm-linux-gnueabihf/libgtextutils-0.7.so.0 -> libgtextutils-0.7.so.0.0.0
 
 
 ┌──────────────────────────────────────────────────────────────────────────────┐
@@ -1020,24 +1017,24 @@ Not cleaning session: cloned chroot in use
 │ Summary                                                                      │
 └──────────────────────────────────────────────────────────────────────────────┘
 
-Build Architecture: kfreebsd-amd64
-Build-Space: 7590
-Build-Time: 49
+Build Architecture: armhf
+Build-Space: 6884
+Build-Time: 246
 Distribution: sid
-Host Architecture: kfreebsd-amd64
-Install-Time: 27
+Host Architecture: armhf
+Install-Time: 215
 Job: libgtextutils_0.7-1
-Machine Architecture: kfreebsd-amd64
+Machine Architecture: armhf
 Package: libgtextutils
-Package-Time: 152
+Package-Time: 625
 Source-Version: 0.7-1
-Space: 7590
+Space: 6884
 Status: successful
 Version: 0.7-1
 ────────────────────────────────────────────────────────────────────────────────
-Finished at 20140108-0058
-Build needed 00:02:32, 7590k disc space
-Signature with key '1B08409D' requested:
- signfile /home/buildd/build/libgtextutils_0.7-1_kfreebsd-amd64.changes 1B08409D
+Finished at 20140108-0159
+Build needed 00:10:25, 6884k disc space
+Signature with key '0019C62E' requested:
+ signfile /home/buildd/build/libgtextutils_0.7-1_armhf.changes 0019C62E
 
 Successfully signed changes file
