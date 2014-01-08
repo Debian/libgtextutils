@@ -1,20 +1,20 @@
-libgtextutils (0.7-1) UNRELEASED; urgency=low
+libgtextutils (0.7-1) unstable; urgency=low
 
-  c1cf1d6 New upstream pre-release.
+  * New upstream release.
+
   ff09484 debian/watch: monitor source code repository on GitHub.
-  642f472 Vebose debhelper.
-  4d75c55 Build-depend on libtool.
-  98624c0 Use Debhelper 9.
-  78899ca Normalised debian/copyright with ‘cme fix dpkg-copyright‘.
-  4321fac Correct for building from GitHub repository.
+  4d75c55 7ffa331 Build-depend on automake and libtool.
   1954d04 Run the ‘reconf’ command before dh_auto_configure.
-  54445b3 Make the packages multi-architecture.
-  fae902a Normalised with ‘config-model-edit’.
-  4050657 Normalised VCS URLs.
+  642f472 Vebose debhelper.
+  98624c0 Use Debhelper 9.
+  54445b3 Made the packages multi-architecture.
   f1e771b Updated symbols file.
+  78899ca Normalised debian/copyright with ‘cme fix dpkg-copyright‘.
+  fae902a Normalised debian/control with ‘cme fix dpkg-control’.
+  4050657 Normalised VCS URLs.
   5bd1b39 Conforms to Policy 3.9.5.
 
- -- Charles Plessy <plessy@debian.org>  Mon, 06 Jan 2014 07:32:35 +0900
+ -- Charles Plessy <plessy@debian.org>  Wed, 08 Jan 2014 09:15:22 +0900
 
 libgtextutils (0.6.2-1) unstable; urgency=low
 
